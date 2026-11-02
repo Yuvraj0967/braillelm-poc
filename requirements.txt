@@ -1,0 +1,13 @@
+# Core training/eval deps. On your laptop (CPU only):
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+#   pip install transformers peft datasets sacrebleu
+# On the 4090 machine, install the normal CUDA torch build instead:
+#   pip install torch   (picks the CUDA wheel automatically)
+torch
+transformers>=4.44
+peft>=0.12
+datasets
+sacrebleu
+# Optional: full UEB via liblouis. If the Python bindings don't install,
+# prep_data.py falls back to the built-in engine automatically.
+# louis

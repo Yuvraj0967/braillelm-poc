@@ -1,0 +1,18 @@
+# Generated data and artifacts
+data/
+braille_tokens.json
+out_*/
+out/
+experiment_results.json
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# Logs and OS files
+*.log
+.DS_Store
+Thumbs.db
