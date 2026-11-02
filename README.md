@@ -20,6 +20,7 @@ inspect end to end.
 - [The three arms (and the controls)](#the-three-arms-and-the-controls)
 - [How the pipeline works](#how-the-pipeline-works)
 - [Architecture](#architecture)
+- [Live demo](#live-demo)
 - [Repository layout](#repository-layout)
 - [Quickstart](#quickstart)
 - [Running the experiments](#running-the-experiments)
@@ -249,6 +250,31 @@ loop, orchestration sequence and design trade-offs are in
 
 ---
 
+## Live demo
+
+A local web app runs the merged native checkpoint and the baseline side by side
+on your machine. It is the fastest way to see the claim, and it is designed to
+be shown in a presentation.
+
+![BrailleLM demo](demo/preview.png)
+
+```bash
+# Download the native checkpoint first (see demo/README.md), then:
+python demo/server.py --open
+```
+
+The page opens at `http://127.0.0.1:7860`, loads the model in the background,
+and serves eight held-out examples. For each input it shows the native
+translation, the control arm's translation, latency, token counts, tokens per
+cell, and a six-dot cell tape. The reference is revealed only after the model
+answers. Add `?run=1&sample=2` to the URL to auto-run a sample during rehearsal.
+
+The demo needs no API key and no network after the checkpoint is on disk. See
+[`demo/README.md`](demo/README.md) for checkpoint paths, flags, and
+troubleshooting.
+
+---
+
 ## Repository layout
 
 ```text
@@ -265,6 +291,7 @@ loop, orchestration sequence and design trade-offs are in
 ├── sentences.txt           600-sentence input corpus
 ├── requirements.txt        Python dependencies
 ├── ARCHITECTURE.md         components, data flow, model and experiment design
+├── demo/                   local web demo: live native model + control arm
 ├── docs/                   report PDF/HTML and the results write-up
 ├── benchmark/              120 held-out items, prompts, references, scorer
 ├── results/                predictions, comparison pack, timings
@@ -599,8 +626,9 @@ is not carrying the result and the tokenizer alone is doing the work.
 | Artifact | Location | What it is |
 |---|---|---|
 | Full report | [`docs/BrailleLM_Report.pdf`](docs/BrailleLM_Report.pdf) | 26 pages: protocol, model/data cards, vocabulary, all 120 rows, comparison kit |
-| Report (HTML) | [`docs/BrailleLM_Report.html`](docs/BrailleLM_Report.html) | The same report as a standalone page |
+| Report (HTML) | [`docs/braillelm_report.html`](docs/braillelm_report.html) | The same report as a standalone page |
 | Results write-up | [`docs/RESULTS.md`](docs/RESULTS.md) | The 120-item numbers, interpretation and caveats |
+| Live demo | [`demo/`](demo/) | Local web app with live native inference and the control arm |
 | Benchmark kit | [`benchmark/`](benchmark/) | 120 braille inputs, references, prompts, few-shot examples, scorer |
 | Raw results | [`results/`](results/) | Predictions for all three arms, comparison pack, timing measurements |
 | Baseline adapter | [`models/baseline-lora/`](models/baseline-lora/) | 1.8 MB LoRA adapter, tracked in git |

@@ -1,0 +1,1277 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BrailleLM — braille to print, live</title>
+<style>
+  :root {
+    --paper: #f3eee3;
+    --paper-deep: #e9e1d1;
+    --panel: #f7f2e8;
+    --ink: #191612;
+    --ink-soft: #3f382f;
+    --muted: #756b5b;
+    --line: #cec3ae;
+    --line-soft: #ded5c4;
+    --accent: #b03a2a;
+    --accent-soft: #f0ddd6;
+    --good: #2f5d46;
+    --good-soft: #dce8dd;
+    --serif: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
+    --mono: "SF Mono", "Cascadia Mono", "Consolas", "Roboto Mono", "Courier New", monospace;
+    --braille: "Segoe UI Symbol", "Apple Symbols", "Noto Sans Symbols 2", "DejaVu Sans", sans-serif;
+  }
+
+  * { box-sizing: border-box; }
+  [hidden] { display: none !important; }
+  html, body { margin: 0; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--serif);
+    font-size: 16px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+  }
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    pointer-events: none;
+    opacity: .05;
+    mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
+  }
+
+  .page {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 34px 34px 28px;
+  }
+
+  /* ---- masthead ---- */
+  .masthead {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+    gap: 36px;
+    align-items: end;
+    border-bottom: 2px solid var(--ink);
+    padding-bottom: 24px;
+  }
+  .kicker {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--mono);
+    font-size: 9.5px;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 12px;
+  }
+  .kicker::before {
+    content: "";
+    width: 7px; height: 7px;
+    background: var(--accent);
+    display: inline-block;
+    flex: none;
+  }
+  h1 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: clamp(44px, 6vw, 68px);
+    line-height: .94;
+    letter-spacing: -.035em;
+    margin: 0 0 12px;
+  }
+  h1 .lm { font-style: italic; color: var(--accent); }
+  .tagline {
+    max-width: 46ch;
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.42;
+    color: var(--ink-soft);
+  }
+
+  .bench-label {
+    font-family: var(--mono);
+    font-size: 9px;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--muted);
+    text-align: right;
+    margin-bottom: 10px;
+  }
+  .bench-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+  .bench {
+    padding: 10px 10px 10px 12px;
+    border-left: 1px solid var(--line);
+  }
+  .bench:first-child { border-left: 0; padding-left: 0; }
+  .bench b {
+    display: block;
+    font-family: var(--mono);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -.03em;
+  }
+  .bench span {
+    display: block;
+    font-family: var(--mono);
+    font-size: 8px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-top: 3px;
+  }
+  .status {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 7px;
+    margin-top: 10px;
+    font-family: var(--mono);
+    font-size: 9px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .status i {
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    background: var(--muted);
+    flex: none;
+  }
+  .status[data-state="loading"] i { background: #b78127; animation: pulse 1.3s ease-in-out infinite; }
+  .status[data-state="ready"] i { background: var(--good); }
+  .status[data-state="error"] i { background: var(--accent); }
+  @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .25; } }
+
+  /* ---- layout ---- */
+  .grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.02fr) minmax(0, 1fr);
+    gap: 18px;
+    margin-top: 22px;
+  }
+  .panel {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 2px;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.65), 0 1px 2px rgba(40,32,20,.04);
+    min-width: 0;
+    transition: border-color .18s ease;
+  }
+  .panel:focus-within { border-color: #a99a80; }
+  .panel.wide { grid-column: 1 / -1; }
+  .panel-head {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    padding: 12px 17px;
+    border-bottom: 1px solid var(--line);
+  }
+  .num {
+    font-family: var(--mono);
+    font-size: 9.5px;
+    color: var(--accent);
+    letter-spacing: .08em;
+  }
+  .panel h2 {
+    margin: 0;
+    font-family: var(--mono);
+    font-size: 10.5px;
+    font-weight: 600;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+  }
+  .panel-note {
+    margin-left: auto;
+    font-family: var(--mono);
+    font-size: 8.5px;
+    letter-spacing: .05em;
+    color: var(--muted);
+    text-align: right;
+  }
+  .tabs { margin-left: auto; display: flex; gap: 0; }
+  .tab {
+    appearance: none;
+    background: transparent;
+    border: 1px solid var(--line);
+    border-left: 0;
+    color: var(--muted);
+    font-family: var(--mono);
+    font-size: 8.5px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    padding: 5px 9px;
+    cursor: pointer;
+  }
+  .tab:first-child { border-left: 1px solid var(--line); }
+  .tab[aria-selected="true"] {
+    background: var(--ink);
+    border-color: var(--ink);
+    color: var(--paper);
+  }
+  .tab:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+
+  /* ---- input ---- */
+  #input {
+    display: block;
+    width: 100%;
+    min-height: 148px;
+    max-height: 320px;
+    resize: vertical;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: var(--ink);
+    padding: 15px 17px;
+    font-family: var(--braille);
+    font-size: 26px;
+    line-height: 1.55;
+    letter-spacing: 1.5px;
+    caret-color: var(--accent);
+  }
+  #input.print-mode {
+    font-family: var(--serif);
+    font-size: 20px;
+    line-height: 1.45;
+    letter-spacing: 0;
+  }
+  #input::placeholder { color: #a99d89; font-style: italic; letter-spacing: 0; font-size: 15px; }
+  .input-foot {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    align-items: center;
+    border-top: 1px dashed var(--line);
+    padding: 7px 17px;
+    font-family: var(--mono);
+    font-size: 9px;
+    color: var(--muted);
+    letter-spacing: .03em;
+  }
+  .hint { white-space: nowrap; }
+  kbd {
+    font-family: var(--mono);
+    font-size: 8px;
+    border: 1px solid var(--line);
+    border-bottom-width: 2px;
+    border-radius: 2px;
+    padding: 1px 4px;
+    color: var(--ink-soft);
+    background: var(--paper);
+  }
+
+  .samples { padding: 11px 17px 13px; border-top: 1px solid var(--line-soft); }
+  .samples-label {
+    font-family: var(--mono);
+    font-size: 8px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 7px;
+  }
+  .chips {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 4px;
+  }
+  .chip {
+    appearance: none;
+    display: grid;
+    grid-template-columns: 20px minmax(0, 1fr);
+    grid-template-rows: auto auto;
+    column-gap: 7px;
+    text-align: left;
+    background: transparent;
+    border: 1px solid transparent;
+    border-left: 2px solid var(--line);
+    padding: 5px 7px 5px 6px;
+    cursor: pointer;
+    color: var(--ink-soft);
+    font-family: inherit;
+  }
+  .chip:hover { background: var(--paper-deep); border-left-color: #9c8d73; }
+  .chip.active { border-left-color: var(--accent); background: var(--accent-soft); }
+  .chip:focus-visible { outline: 2px solid var(--accent); outline-offset: -1px; }
+  .chip-id {
+    grid-row: 1 / 3;
+    font-family: var(--mono);
+    font-size: 8.5px;
+    color: var(--muted);
+    padding-top: 2px;
+  }
+  .chip-text {
+    font-size: 11.5px;
+    line-height: 1.25;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .chip-meta {
+    font-family: var(--mono);
+    font-size: 7.5px;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-top: 1px;
+  }
+
+  .actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 17px;
+    border-top: 1px solid var(--line);
+  }
+  .switch {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    user-select: none;
+    font-family: var(--mono);
+    font-size: 8.5px;
+    letter-spacing: .04em;
+    color: var(--ink-soft);
+  }
+  .switch input {
+    appearance: none;
+    width: 27px;
+    height: 15px;
+    border-radius: 8px;
+    background: #c3b7a2;
+    position: relative;
+    cursor: pointer;
+    transition: background .15s ease;
+    flex: none;
+    margin: 0;
+  }
+  .switch input::after {
+    content: "";
+    position: absolute;
+    top: 2px; left: 2px;
+    width: 11px; height: 11px;
+    border-radius: 50%;
+    background: var(--paper);
+    transition: transform .15s ease;
+  }
+  .switch input:checked { background: var(--ink); }
+  .switch input:checked::after { transform: translateX(12px); }
+  .switch input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  #compare-note {
+    display: block;
+    font-size: 7.5px;
+    color: var(--muted);
+    letter-spacing: .02em;
+    margin-top: 1px;
+  }
+  .primary {
+    margin-left: auto;
+    appearance: none;
+    border: 1px solid var(--ink);
+    background: var(--ink);
+    color: var(--paper);
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    transition: background .15s ease, border-color .15s ease;
+  }
+  .primary .arrow { font-size: 13px; line-height: 1; }
+  .primary:hover:not(:disabled) { background: var(--accent); border-color: var(--accent); }
+  .primary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .primary:disabled { cursor: progress; opacity: .6; }
+  .primary.busy .arrow { animation: nudge .8s ease-in-out infinite alternate; }
+  @keyframes nudge { from { transform: translateX(0); } to { transform: translateX(4px); } }
+  .copy {
+    appearance: none;
+    background: transparent;
+    border: 1px solid var(--line);
+    color: var(--muted);
+    font-family: var(--mono);
+    font-size: 8px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    padding: 4px 7px;
+    cursor: pointer;
+  }
+  .copy:hover { border-color: var(--ink); color: var(--ink); }
+
+  .error {
+    margin: 0 17px 13px;
+    border: 1px solid #d5a99f;
+    border-left: 3px solid var(--accent);
+    background: var(--accent-soft);
+    color: #6d2118;
+    font-family: var(--mono);
+    font-size: 9.5px;
+    line-height: 1.5;
+    padding: 8px 10px;
+  }
+
+  /* ---- output ---- */
+  .output-body { padding: 17px 20px 15px; min-height: 146px; }
+  .translation {
+    font-size: clamp(22px, 2.6vw, 30px);
+    line-height: 1.3;
+    letter-spacing: -.012em;
+    margin: 0;
+    min-height: 78px;
+    overflow-wrap: anywhere;
+  }
+  .translation.empty {
+    font-size: 16px;
+    font-style: italic;
+    color: #9b8f7c;
+    letter-spacing: 0;
+    padding-top: 20px;
+  }
+  .translation.reveal { animation: reveal .28s ease both; }
+  @keyframes reveal { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+  .verdict {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-top: 13px;
+    font-family: var(--mono);
+    font-size: 8.5px;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    padding: 5px 8px;
+    border: 1px solid var(--line);
+    color: var(--muted);
+    width: fit-content;
+  }
+  .verdict.ok { border-color: #a8c3ac; background: var(--good-soft); color: var(--good); }
+  .verdict.diff { border-color: #d5a99f; background: var(--accent-soft); color: #7a2a1f; }
+  .verdict.neutral { border-style: dashed; }
+  .reference {
+    border-top: 1px dashed var(--line);
+    background: rgba(233,225,209,.55);
+    padding: 10px 20px 11px;
+  }
+  .micro-label {
+    display: block;
+    font-family: var(--mono);
+    font-size: 7.5px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 3px;
+  }
+  .reference p { margin: 0; font-size: 15px; line-height: 1.35; }
+
+  .meta-strip {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    border-top: 1px solid var(--line);
+  }
+  .meta-strip div {
+    padding: 8px 11px 9px;
+    border-left: 1px solid var(--line);
+  }
+  .meta-strip div:first-child { border-left: 0; }
+  .meta-strip b {
+    display: block;
+    font-family: var(--mono);
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: -.02em;
+    line-height: 1.25;
+  }
+  .meta-strip span {
+    display: block;
+    font-family: var(--mono);
+    font-size: 7.5px;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-top: 2px;
+  }
+
+  .baseline {
+    margin: 14px 17px 16px;
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--accent);
+    background: rgba(176,58,42,.035);
+    padding: 10px 13px 11px;
+  }
+  .baseline-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 10px;
+    font-family: var(--mono);
+    font-size: 8px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+  .baseline-head span {
+    color: var(--muted);
+    letter-spacing: .04em;
+    text-transform: none;
+    font-size: 7.5px;
+  }
+  .baseline-output {
+    font-size: 18px;
+    line-height: 1.35;
+    margin: 7px 0 6px;
+    color: var(--ink-soft);
+  }
+  .baseline-meta {
+    font-family: var(--mono);
+    font-size: 8px;
+    color: var(--muted);
+    letter-spacing: .03em;
+  }
+  .baseline-caption {
+    font-size: 11px;
+    color: var(--muted);
+    font-style: italic;
+    margin-top: 4px;
+  }
+
+  /* ---- cell tape ---- */
+  .tape-head-actions { margin-left: auto; display: flex; gap: 10px; align-items: center; }
+  .tape {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px 7px;
+    padding: 15px 17px 10px;
+    align-items: flex-start;
+  }
+  .tape-empty {
+    margin: 0;
+    padding: 6px 0;
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--muted);
+  }
+  .cell {
+    width: 36px;
+    text-align: center;
+  }
+  .cell-box {
+    height: 42px;
+    border: 1px solid var(--line);
+    background: var(--paper);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.7);
+    transition: border-color .12s ease, background .12s ease;
+  }
+  .cell:hover .cell-box { border-color: var(--accent); background: #fffaf0; }
+  .cell.space .cell-box {
+    border-style: dashed;
+    background: transparent;
+    box-shadow: none;
+  }
+  .dots {
+    display: grid;
+    grid-template-columns: repeat(2, 6px);
+    grid-template-rows: repeat(3, 6px);
+    gap: 3px;
+  }
+  .dot {
+    width: 6px; height: 6px;
+    border: 1px solid #b7aa94;
+    border-radius: 50%;
+    display: block;
+  }
+  .dot.on {
+    background: var(--ink);
+    border-color: var(--ink);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.35);
+  }
+  .cell:hover .dot.on { background: var(--accent); border-color: var(--accent); }
+  .cell-label {
+    display: block;
+    font-family: var(--mono);
+    font-size: 7.5px;
+    color: var(--muted);
+    line-height: 1.4;
+    margin-top: 2px;
+    height: 11px;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .tape-legend {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    padding: 0 17px 13px;
+    font-family: var(--mono);
+    font-size: 7.5px;
+    color: var(--muted);
+    letter-spacing: .04em;
+    text-transform: uppercase;
+  }
+  .encoded {
+    margin: 0 17px 14px;
+    padding: 8px 10px;
+    border: 1px dashed var(--line);
+    background: rgba(233,225,209,.5);
+    font-family: var(--braille);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    overflow-wrap: anywhere;
+  }
+
+  /* ---- how it works ---- */
+  .how-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .how-step {
+    padding: 16px 18px 17px;
+    border-left: 1px solid var(--line);
+  }
+  .how-step:first-child { border-left: 0; }
+  .step-num {
+    font-family: var(--mono);
+    font-size: 8px;
+    color: var(--accent);
+    letter-spacing: .12em;
+    display: block;
+    margin-bottom: 7px;
+  }
+  .how-step h3 {
+    font-family: var(--serif);
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 5px;
+    line-height: 1.25;
+  }
+  .how-step p {
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.48;
+    color: var(--muted);
+  }
+  .how-step code {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--ink-soft);
+    background: var(--paper-deep);
+    padding: 0 3px;
+  }
+  .caveat {
+    border-top: 1px dashed var(--line);
+    padding: 10px 18px 12px;
+    font-family: var(--mono);
+    font-size: 8px;
+    line-height: 1.6;
+    letter-spacing: .02em;
+    color: var(--muted);
+  }
+  .caveat b { color: var(--ink-soft); font-weight: 600; }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+    flex-wrap: wrap;
+    border-top: 1px solid var(--line);
+    margin-top: 24px;
+    padding-top: 13px;
+    font-family: var(--mono);
+    font-size: 7.5px;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  @media (max-width: 900px) {
+    .masthead { grid-template-columns: 1fr; gap: 22px; align-items: start; }
+    .bench-label { text-align: left; }
+    .grid { grid-template-columns: 1fr; }
+    .panel.wide { grid-column: auto; }
+    .how-grid { grid-template-columns: 1fr; }
+    .how-step { border-left: 0; border-top: 1px solid var(--line); }
+    .how-step:first-child { border-top: 0; }
+    .status { justify-content: flex-start; }
+  }
+  @media (max-width: 620px) {
+    .page { padding: 22px 16px 20px; }
+    .bench-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .bench:nth-child(3) { border-left: 0; padding-left: 0; }
+    .chips { grid-template-columns: 1fr; }
+    .actions { flex-wrap: wrap; }
+    .primary { width: 100%; justify-content: center; }
+    .meta-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .meta-strip div:nth-child(3) { border-left: 0; border-top: 1px solid var(--line); }
+    .meta-strip div:nth-child(4) { border-top: 1px solid var(--line); }
+    #input { font-size: 22px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="masthead">
+    <div>
+      <div class="kicker">Research prototype · Unified English Braille, Grade 1</div>
+      <h1>Braille<span class="lm">LM</span></h1>
+      <p class="tagline">A small language model that reads braille cells directly and writes English print. Both arms below are the same 135M-parameter model; only the input representation differs.</p>
+    </div>
+    <div class="benchmark">
+      <div class="bench-label">Held-out benchmark · native arm</div>
+      <div class="bench-grid" aria-label="Benchmark scores">
+        <div class="bench"><b id="score-exact">120/120</b><span>exact match</span></div>
+        <div class="bench"><b id="score-bleu">100.0</b><span>sacreBLEU</span></div>
+        <div class="bench"><b id="score-cer">0.0%</b><span>character error</span></div>
+        <div class="bench"><b id="score-vocab">138/138</b><span>vocabulary</span></div>
+      </div>
+      <div class="status" id="status" data-state="loading" role="status" aria-live="polite">
+        <i></i><span>warming up the model</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="grid">
+    <section class="panel input-panel" aria-labelledby="input-title">
+      <div class="panel-head">
+        <span class="num">01</span>
+        <h2 id="input-title">Source</h2>
+        <div class="tabs" role="tablist" aria-label="Input type">
+          <button class="tab" id="tab-braille" role="tab" aria-selected="true" data-mode="braille">Braille</button>
+          <button class="tab" id="tab-print" role="tab" aria-selected="false" data-mode="print">English</button>
+        </div>
+      </div>
+
+      <label for="input" class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Braille or English input</label>
+      <textarea id="input" class="braille-mode" spellcheck="false" autocomplete="off" autocapitalize="off"
+        placeholder="Paste Unicode braille here, or choose a held-out example below."></textarea>
+      <div class="input-foot">
+        <span id="input-count">0 cells · 0 words</span>
+        <span class="hint"><kbd>Ctrl</kbd> + <kbd>Enter</kbd></span>
+      </div>
+
+      <div class="samples">
+        <div class="samples-label">Held-out examples · reference revealed after translation</div>
+        <div class="chips" id="sample-list"></div>
+      </div>
+
+      <div class="actions">
+        <label class="switch" for="compare">
+          <input type="checkbox" id="compare" checked>
+          <span>Compare control arm<span id="compare-note">stock tokenizer</span></span>
+        </label>
+        <button class="primary" id="go" disabled>
+          <span id="go-label">Translate</span><span class="arrow" aria-hidden="true">→</span>
+        </button>
+      </div>
+      <div class="error" id="error" role="alert" hidden></div>
+    </section>
+
+    <section class="panel output-panel" aria-labelledby="output-title" aria-live="polite">
+      <div class="panel-head">
+        <span class="num">02</span>
+        <h2 id="output-title">Translation</h2>
+        <span class="panel-note" id="engine-tag">Native · braille tokens</span>
+      </div>
+
+      <div class="output-body">
+        <p class="translation empty" id="output">The model's English sentence will appear here.</p>
+        <div class="verdict" id="verdict" hidden></div>
+      </div>
+
+      <div class="reference" id="reference-block" hidden>
+        <span class="micro-label">Held-out reference</span>
+        <p id="reference-text"></p>
+      </div>
+
+      <div class="meta-strip" aria-label="Run statistics">
+        <div><b id="stat-latency">—</b><span>latency</span></div>
+        <div><b id="stat-cells">—</b><span>cells in</span></div>
+        <div><b id="stat-tokens">—</b><span>model tokens</span></div>
+        <div><b id="stat-tpc">—</b><span>tokens / cell</span></div>
+      </div>
+
+      <div class="encoded" id="encoded-block" hidden>
+        <span class="micro-label">Braille encoding of the English input</span>
+        <span id="encoded-braille"></span>
+      </div>
+
+      <div class="baseline" id="baseline-card" hidden>
+        <div class="baseline-head">
+          <span>Control arm · stock tokenizer</span>
+          <span id="baseline-model">SmolLM2-135M</span>
+        </div>
+        <div class="baseline-output" id="baseline-output"></div>
+        <div class="baseline-meta" id="baseline-meta"></div>
+        <div class="baseline-caption" id="baseline-caption"></div>
+      </div>
+    </section>
+
+    <section class="panel wide" aria-labelledby="tape-title">
+      <div class="panel-head">
+        <span class="num">03</span>
+        <h2 id="tape-title">Cell tape</h2>
+        <div class="tape-head-actions">
+          <span class="panel-note">Each box is one UEB cell · dots 1–6</span>
+          <button class="copy" id="copy" type="button" hidden>Copy output</button>
+        </div>
+      </div>
+      <div class="tape" id="tape"><p class="tape-empty">Run a translation to inspect the input cell by cell.</p></div>
+      <div class="tape-legend">
+        <span>● raised dot</span><span>○ blank</span><span>␣ braille space</span><span>CAP capital sign</span>
+      </div>
+    </section>
+
+    <section class="panel wide" aria-labelledby="how-title">
+      <div class="panel-head">
+        <span class="num">04</span>
+        <h2 id="how-title">What is happening inside</h2>
+        <span class="panel-note">SmolLM2-135M · 30 layers · 49,329 tokens</span>
+      </div>
+      <div class="how-grid">
+        <div class="how-step">
+          <span class="step-num">STEP 01</span>
+          <h3>Braille is tokenised as braille</h3>
+          <p>The native arm adds 177 braille tokens: 27 base cells plus 150 merges learned with BPE. A 54-cell sentence costs 24 tokens here — 0.44 per cell — while the stock tokenizer spends about 3 per cell. The control arm keeps that stock vocabulary, which fragments each cell into several byte-level pieces.</p>
+        </div>
+        <div class="how-step">
+          <span class="step-num">STEP 02</span>
+          <h3>New tokens start with meaning</h3>
+          <p>Braille-aware fine-tuning initialises each new braille token with the average embedding of the print string its cells spell — <code>the</code>, <code>ing</code>, <code>storm</code>. The model does not have to learn what a cell looks like from zero.</p>
+        </div>
+        <div class="how-step">
+          <span class="step-num">STEP 03</span>
+          <h3>A small adapter learns the mapping</h3>
+          <p>LoRA r=8 on <code>q_proj</code> and <code>v_proj</code>, 460,800 trainable parameters, one epoch over 480 synthetic pairs. Decoding is greedy, 64 new tokens, on CPU. No retrieval and no reference is visible to the model.</p>
+        </div>
+      </div>
+      <div class="caveat"><b>Scope:</b> the model was trained on a closed 138-word synthetic corpus with three sentence patterns and six-dot Grade 1 braille. It is a proof of concept for the tokenizer, not a general braille translator. Sentences outside that distribution are expected to fail.</div>
+    </section>
+  </main>
+
+  <footer>
+    <span>BrailleLM · braille → print · local inference</span>
+    <span>UEB Grade 1 · no contractions · CPU · offline</span>
+  </footer>
+</div>
+
+<script>
+(() => {
+  "use strict";
+
+  const $ = (id) => document.getElementById(id);
+  const input = $("input");
+  const state = {
+    mode: "braille",
+    meta: null,
+    samples: [],
+    selected: null,
+    busy: false,
+    timer: null,
+    lastOutput: "",
+    autoRan: false,
+  };
+
+  const PLACEHOLDERS = {
+    braille: "Paste Unicode braille here, or choose a held-out example below.",
+    print: "Type an English sentence using words from the 138-word corpus.",
+  };
+
+  function countCells(text) {
+    let cells = 0;
+    for (const ch of text) {
+      const code = ch.codePointAt(0);
+      if (code >= 0x2800 && code <= 0x28ff) cells += 1;
+    }
+    return cells;
+  }
+
+  function brailleWords(text) {
+    return text.split(/[\u2800\s]+/).filter(Boolean).length;
+  }
+
+  function updateCount() {
+    const text = input.value;
+    if (state.mode === "braille") {
+      const cells = countCells(text);
+      const words = brailleWords(text);
+      $("input-count").textContent = `${cells} ${cells === 1 ? "cell" : "cells"} · ${words} ${words === 1 ? "word" : "words"}`;
+    } else {
+      const chars = text.length;
+      const words = text.trim() ? text.trim().split(/\s+/).length : 0;
+      $("input-count").textContent = `${chars} ${chars === 1 ? "character" : "characters"} · ${words} ${words === 1 ? "word" : "words"}`;
+    }
+  }
+
+  function setStatus(kind, text) {
+    const el = $("status");
+    el.dataset.state = kind;
+    el.querySelector("span").textContent = text;
+  }
+
+  function showError(message) {
+    const el = $("error");
+    el.textContent = message;
+    el.hidden = false;
+  }
+
+  function hideError() {
+    $("error").hidden = true;
+  }
+
+  function truncate(text, max) {
+    if (text.length <= max) return text;
+    return text.slice(0, max - 1).replace(/\s+\S*$/, "") + "…";
+  }
+
+  function renderSamples() {
+    const list = $("sample-list");
+    list.textContent = "";
+    state.samples.forEach((sample, index) => {
+      const chip = document.createElement("button");
+      chip.type = "button";
+      chip.className = "chip";
+      chip.dataset.index = String(index);
+      chip.setAttribute("aria-label", `Load held-out sentence ${sample.id}`);
+
+      const id = document.createElement("span");
+      id.className = "chip-id";
+      id.textContent = String(sample.id).padStart(2, "0");
+
+      const text = document.createElement("span");
+      text.className = "chip-text";
+      text.textContent = "Held-out sentence";
+
+      const meta = document.createElement("span");
+      meta.className = "chip-meta";
+      meta.textContent = `${sample.words} words · test split`;
+
+      chip.append(id, text, meta);
+      chip.addEventListener("click", () => {
+        selectSample(index);
+        input.focus();
+      });
+      list.append(chip);
+    });
+  }
+
+  function selectSample(index) {
+    if (!state.samples[index]) return;
+    state.selected = index;
+    const sample = state.samples[index];
+    input.value = state.mode === "braille" ? sample.braille : sample.print;
+    document.querySelectorAll(".chip").forEach((chip) => {
+      chip.classList.toggle("active", Number(chip.dataset.index) === index);
+    });
+    updateCount();
+    hideError();
+  }
+
+  function setMode(mode) {
+    if (mode === state.mode) return;
+    state.mode = mode;
+    $("tab-braille").setAttribute("aria-selected", String(mode === "braille"));
+    $("tab-print").setAttribute("aria-selected", String(mode === "print"));
+    input.classList.toggle("print-mode", mode === "print");
+    input.classList.toggle("braille-mode", mode === "braille");
+    input.placeholder = PLACEHOLDERS[mode];
+    if (state.selected !== null) {
+      selectSample(state.selected);
+    } else {
+      input.value = "";
+      updateCount();
+    }
+    hideError();
+    input.focus();
+  }
+
+  function setBusy(busy) {
+    state.busy = busy;
+    const button = $("go");
+    button.disabled = busy || !state.meta || state.meta.status !== "ready";
+    button.classList.toggle("busy", busy);
+    $("go-label").textContent = busy ? "Reading cells" : "Translate";
+  }
+
+  function renderScores(scores) {
+    const native = scores && scores.native;
+    if (!native) return;
+    if (native.exact != null && native.n) {
+      $("score-exact").textContent = `${native.exact}/${native.n}`;
+    }
+    if (native.bleu != null) $("score-bleu").textContent = Number(native.bleu).toFixed(1);
+    if (native.cer != null) $("score-cer").textContent = `${(Number(native.cer) * 100).toFixed(1)}%`;
+    if (native.vocab != null) {
+      $("score-vocab").textContent = `${native.vocab}/${native.vocab_reference || 138}`;
+    }
+  }
+
+  function updateCompareNote(meta) {
+    const note = $("compare-note");
+    const baseline = meta && meta.baseline;
+    if (!baseline || !baseline.enabled) {
+      note.textContent = "not available";
+      return;
+    }
+    if (baseline.error) {
+      note.textContent = "control arm unavailable";
+    } else if (baseline.ready) {
+      note.textContent = baseline.vocab ? `stock tokenizer · ${baseline.vocab.toLocaleString()} tokens` : "stock tokenizer";
+    } else {
+      note.textContent = "control arm warming up";
+    }
+  }
+
+  function maybeAutoRun() {
+    if (state.autoRan || !state.meta || state.meta.status !== "ready" || !state.samples.length) return;
+    const params = new URLSearchParams(window.location.search);
+    if (!params.has("run")) return;
+    const requested = Number(params.get("sample") || "1");
+    const index = Number.isFinite(requested)
+      ? Math.max(0, Math.min(state.samples.length - 1, requested - 1))
+      : 0;
+    selectSample(index);
+    state.autoRan = true;
+    translate();
+  }
+
+  async function loadMeta() {
+    clearTimeout(state.timer);
+    try {
+      const response = await fetch("/api/meta", { cache: "no-store" });
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      const meta = await response.json();
+      state.meta = meta;
+      renderScores(meta.scores);
+      updateCompareNote(meta);
+
+      if (meta.status === "ready") {
+        setStatus("ready", `model ready · ${(meta.native.vocab || 0).toLocaleString()} tokens`);
+        setBusy(state.busy);
+      } else if (meta.error) {
+        setStatus("error", "model failed to load");
+        showError(meta.error);
+      } else {
+        setStatus("loading", meta.stage || "warming up the model");
+      }
+
+      if (meta.samples && meta.samples.length && state.samples.length === 0) {
+        state.samples = meta.samples;
+        renderSamples();
+        selectSample(0);
+      }
+
+      maybeAutoRun();
+
+      const baselinePending = meta.baseline && meta.baseline.enabled &&
+        !meta.baseline.ready && !meta.baseline.error;
+      if ((meta.status !== "ready" || baselinePending) && !meta.error) {
+        state.timer = setTimeout(loadMeta, 1200);
+      }
+    } catch (error) {
+      setStatus("error", "backend offline");
+      showError("Cannot reach the demo server. Run `python demo/server.py --open` from the repository root, then reload this page.");
+      state.timer = setTimeout(loadMeta, 3000);
+    }
+  }
+
+  function renderTape(cells) {
+    const tape = $("tape");
+    tape.textContent = "";
+    if (!cells || !cells.length) {
+      const empty = document.createElement("p");
+      empty.className = "tape-empty";
+      empty.textContent = "Run a translation to inspect the input cell by cell.";
+      tape.append(empty);
+      return;
+    }
+    const shown = cells.slice(0, 240);
+    shown.forEach((cell, index) => {
+      const wrap = document.createElement("div");
+      wrap.className = "cell" + (cell.space ? " space" : "");
+      wrap.title = cell.space
+        ? `Cell ${index + 1} · braille space`
+        : `Cell ${index + 1} · ${cell.label} · dots ${cell.dots.length ? cell.dots.join("-") : "none"}`;
+
+      const box = document.createElement("div");
+      box.className = "cell-box";
+      const dots = document.createElement("div");
+      dots.className = "dots";
+      [1, 4, 2, 5, 3, 6].forEach((dotNumber) => {
+        const dot = document.createElement("span");
+        dot.className = "dot" + (cell.dots.includes(dotNumber) ? " on" : "");
+        dots.append(dot);
+      });
+      box.append(dots);
+      const label = document.createElement("span");
+      label.className = "cell-label";
+      label.textContent = cell.space ? "␣" : truncate(cell.label, 4);
+      wrap.append(box, label);
+      tape.append(wrap);
+    });
+    if (cells.length > shown.length) {
+      const more = document.createElement("p");
+      more.className = "tape-empty";
+      more.textContent = `+ ${cells.length - shown.length} more cells`;
+      tape.append(more);
+    }
+  }
+
+  function renderResult(data) {
+    const native = data.native;
+    const output = $("output");
+    output.textContent = native.text || "(the model returned an empty line)";
+    output.classList.toggle("empty", !native.text);
+    output.classList.remove("reveal");
+    void output.offsetWidth;
+    output.classList.add("reveal");
+    state.lastOutput = native.text || "";
+    $("copy").hidden = !native.text;
+
+    $("stat-latency").textContent = `${native.latency_ms} ms`;
+    $("stat-cells").textContent = String(native.cells);
+    $("stat-tokens").textContent = String(native.tokens);
+    $("stat-tpc").textContent = native.tokens_per_cell == null ? "—" : Number(native.tokens_per_cell).toFixed(2);
+    $("engine-tag").textContent = "Native · braille tokens";
+
+    const verdict = $("verdict");
+    const referenceBlock = $("reference-block");
+    const reference = data.reference;
+    if (reference) {
+      verdict.hidden = false;
+      verdict.className = "verdict " + (reference.exact ? "ok" : "diff");
+      verdict.textContent = reference.exact
+        ? `Exact match · held-out item #${reference.id}`
+        : `Differs from reference · item #${reference.id}`;
+      referenceBlock.hidden = false;
+      $("reference-text").textContent = reference.print;
+    } else {
+      verdict.hidden = false;
+      verdict.className = "verdict neutral";
+      verdict.textContent = "No held-out reference for this input";
+      referenceBlock.hidden = true;
+    }
+
+    if (data.encoded) {
+      $("encoded-block").hidden = false;
+      $("encoded-braille").textContent = data.braille;
+    } else {
+      $("encoded-block").hidden = true;
+    }
+
+    const baselineCard = $("baseline-card");
+    if (data.baseline) {
+      const baseline = data.baseline;
+      baselineCard.hidden = false;
+      $("baseline-output").textContent = baseline.text || "(empty output)";
+      $("baseline-meta").textContent =
+        `${baseline.latency_ms} ms · ${baseline.tokens} tokens · ` +
+        `${baseline.tokens_per_cell == null ? "—" : Number(baseline.tokens_per_cell).toFixed(2)} tokens/cell`;
+      const same = baseline.text.trim().toLowerCase() === native.text.trim().toLowerCase();
+      $("baseline-caption").textContent = same
+        ? "This run happened to match the native sentence."
+        : "Fluent English, but it does not follow the braille.";
+      $("baseline-model").textContent = data.engine.baseline_vocab
+        ? `stock tokenizer · ${data.engine.baseline_vocab.toLocaleString()} tokens`
+        : "SmolLM2-135M";
+    } else if (data.baseline_error) {
+      baselineCard.hidden = false;
+      $("baseline-output").textContent = "Control arm unavailable.";
+      $("baseline-meta").textContent = data.baseline_error;
+      $("baseline-caption").textContent = "";
+    } else {
+      baselineCard.hidden = true;
+    }
+
+    renderTape(data.cells);
+  }
+
+  async function translate() {
+    if (state.busy) return;
+    if (!state.meta || state.meta.status !== "ready") {
+      showError("The model is still warming up. The status line will turn green when it is ready.");
+      return;
+    }
+    const text = input.value.trim();
+    if (!text) {
+      showError(state.mode === "braille" ? "Enter some braille or choose an example." : "Type an English sentence or choose an example.");
+      input.focus();
+      return;
+    }
+
+    hideError();
+    setBusy(true);
+    const body = state.mode === "braille"
+      ? { braille: input.value, compare: $("compare").checked }
+      : { print: input.value, compare: $("compare").checked };
+
+    try {
+      const response = await fetch("/api/translate", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(body),
+      });
+      const data = await response.json();
+      if (!response.ok) throw new Error(data.error || `HTTP ${response.status}`);
+      renderResult(data);
+    } catch (error) {
+      showError(error.message || "Translation failed. Check the server console.");
+    } finally {
+      setBusy(false);
+    }
+  }
+
+  async function copyOutput() {
+    if (!state.lastOutput) return;
+    try {
+      await navigator.clipboard.writeText(state.lastOutput);
+      const button = $("copy");
+      const old = button.textContent;
+      button.textContent = "Copied";
+      setTimeout(() => { button.textContent = old; }, 1200);
+    } catch (error) {
+      showError("Clipboard access was blocked by the browser.");
+    }
+  }
+
+  input.addEventListener("input", updateCount);
+  $("tab-braille").addEventListener("click", () => setMode("braille"));
+  $("tab-print").addEventListener("click", () => setMode("print"));
+  $("go").addEventListener("click", translate);
+  $("copy").addEventListener("click", copyOutput);
+  $("compare").addEventListener("change", () => {
+    if (!$("compare").checked) $("baseline-card").hidden = true;
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if ((event.ctrlKey || event.metaKey) && event.key === "Enter") {
+      event.preventDefault();
+      translate();
+    }
+  });
+
+  updateCount();
+  loadMeta();
+})();
+</script>
+</body>
+</html>
