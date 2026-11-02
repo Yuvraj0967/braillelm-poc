@@ -1,0 +1,14 @@
+{
+  "native": {
+    "load_s": 4.32,
+    "batch1_s_per_sentence": 0.686,
+    "batch8_total_s": 1.83,
+    "batch8_s_per_sentence": 0.228
+  },
+  "baseline": {
+    "load_s": 1.74,
+    "batch1_s_per_sentence": 0.953,
+    "batch8_total_s": 3.95,
+    "batch8_s_per_sentence": 0.494
+  }
+}

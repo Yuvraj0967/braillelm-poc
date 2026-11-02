@@ -1,0 +1,480 @@
+{"id": 1, "braille": "⠠⠁⠀⠎⠁⠊⠇⠕⠗⠀⠏⠕⠇⠊⠎⠓⠑⠙⠀⠁⠀⠓⠑⠁⠧⠽⠀⠃⠕⠭⠀⠃⠑⠋⠕⠗⠑⠀⠞⠓⠑⠀⠎⠞⠕⠗⠍⠲", "print": "A sailor polished a heavy box before the storm."}
+{"id": 2, "braille": "⠠⠞⠓⠑⠀⠋⠊⠎⠓⠑⠗⠍⠁⠝⠀⠉⠕⠇⠇⠑⠉⠞⠑⠙⠀⠁⠀⠺⠑⠞⠀⠥⠍⠃⠗⠑⠇⠇⠁⠀⠁⠃⠕⠧⠑⠀⠞⠓⠑⠀⠧⠊⠇⠇⠁⠛⠑⠲", "print": "The fisherman collected a wet umbrella above the village."}
+{"id": 3, "braille": "⠠⠞⠓⠑⠀⠉⠁⠏⠞⠁⠊⠝⠀⠉⠇⠕⠎⠑⠙⠀⠞⠓⠑⠀⠟⠥⠊⠑⠞⠀⠛⠁⠗⠙⠑⠝⠀⠁⠗⠕⠥⠝⠙⠀⠞⠓⠑⠀⠍⠁⠗⠅⠑⠞⠲", "print": "The captain closed the quiet garden around the market."}
+{"id": 4, "braille": "⠠⠁⠀⠙⠁⠝⠉⠑⠗⠀⠗⠑⠉⠕⠗⠙⠑⠙⠀⠁⠀⠏⠁⠏⠑⠗⠀⠍⠁⠏⠀⠊⠝⠀⠞⠓⠑⠀⠍⠕⠗⠝⠊⠝⠛⠲", "print": "A dancer recorded a paper map in the morning."}
+{"id": 5, "braille": "⠠⠁⠀⠎⠁⠊⠇⠕⠗⠀⠎⠅⠑⠞⠉⠓⠑⠙⠀⠁⠀⠎⠊⠇⠧⠑⠗⠀⠉⠕⠊⠝⠀⠊⠝⠎⠊⠙⠑⠀⠞⠓⠑⠀⠍⠥⠎⠑⠥⠍⠲", "print": "A sailor sketched a silver coin inside the museum."}
+{"id": 6, "braille": "⠠⠞⠓⠑⠀⠇⠊⠃⠗⠁⠗⠊⠁⠝⠀⠎⠞⠁⠗⠞⠑⠙⠀⠁⠀⠏⠁⠏⠑⠗⠀⠍⠁⠏⠀⠙⠥⠗⠊⠝⠛⠀⠞⠓⠑⠀⠋⠑⠎⠞⠊⠧⠁⠇⠲", "print": "The librarian started a paper map during the festival."}
+{"id": 7, "braille": "⠠⠞⠓⠑⠀⠝⠥⠗⠎⠑⠀⠙⠑⠎⠉⠗⠊⠃⠑⠙⠀⠞⠓⠑⠀⠟⠥⠊⠑⠞⠀⠛⠁⠗⠙⠑⠝⠀⠁⠋⠞⠑⠗⠀⠞⠓⠑⠀⠗⠁⠊⠝⠲", "print": "The nurse described the quiet garden after the rain."}
+{"id": 8, "braille": "⠠⠁⠀⠍⠥⠎⠊⠉⠊⠁⠝⠀⠏⠗⠑⠏⠁⠗⠑⠙⠀⠞⠓⠑⠀⠑⠍⠏⠞⠽⠀⠃⠁⠎⠅⠑⠞⠀⠊⠝⠀⠞⠓⠑⠀⠍⠕⠗⠝⠊⠝⠛⠲", "print": "A musician prepared the empty basket in the morning."}
+{"id": 9, "braille": "⠠⠞⠓⠑⠀⠇⠊⠃⠗⠁⠗⠊⠁⠝⠀⠛⠁⠞⠓⠑⠗⠑⠙⠀⠁⠀⠓⠑⠁⠧⠽⠀⠃⠕⠭⠀⠃⠑⠝⠑⠁⠞⠓⠀⠞⠓⠑⠀⠃⠗⠊⠙⠛⠑⠲", "print": "The librarian gathered a heavy box beneath the bridge."}
+{"id": 10, "braille": "⠠⠞⠓⠑⠀⠋⠊⠎⠓⠑⠗⠍⠁⠝⠀⠏⠇⠁⠝⠞⠑⠙⠀⠞⠓⠑⠀⠛⠗⠑⠑⠝⠀⠋⠊⠑⠇⠙⠀⠥⠝⠙⠑⠗⠀⠞⠓⠑⠀⠕⠇⠙⠀⠞⠗⠑⠑⠲", "print": "The fisherman planted the green field under the old tree."}
+{"id": 11, "braille": "⠠⠞⠓⠑⠀⠕⠇⠙⠀⠍⠁⠝⠀⠋⠕⠇⠙⠑⠙⠀⠁⠀⠎⠊⠇⠧⠑⠗⠀⠉⠕⠊⠝⠀⠁⠃⠕⠧⠑⠀⠞⠓⠑⠀⠧⠊⠇⠇⠁⠛⠑⠲", "print": "The old man folded a silver coin above the village."}
+{"id": 12, "braille": "⠠⠞⠓⠑⠀⠽⠕⠥⠝⠛⠀⠛⠊⠗⠇⠀⠗⠑⠍⠑⠍⠃⠑⠗⠑⠙⠀⠁⠀⠺⠑⠞⠀⠥⠍⠃⠗⠑⠇⠇⠁⠀⠙⠥⠗⠊⠝⠛⠀⠞⠓⠑⠀⠋⠑⠎⠞⠊⠧⠁⠇⠲", "print": "The young girl remembered a wet umbrella during the festival."}
+{"id": 13, "braille": "⠠⠞⠓⠑⠀⠋⠊⠎⠓⠑⠗⠍⠁⠝⠀⠙⠑⠎⠉⠗⠊⠃⠑⠙⠀⠞⠓⠑⠀⠃⠗⠕⠅⠑⠝⠀⠉⠇⠕⠉⠅⠀⠁⠗⠕⠥⠝⠙⠀⠞⠓⠑⠀⠍⠁⠗⠅⠑⠞⠲", "print": "The fisherman described the broken clock around the market."}
+{"id": 14, "braille": "⠠⠁⠀⠉⠓⠊⠇⠙⠀⠁⠗⠗⠁⠝⠛⠑⠙⠀⠞⠓⠑⠀⠛⠗⠑⠑⠝⠀⠋⠊⠑⠇⠙⠀⠊⠝⠀⠞⠓⠑⠀⠍⠕⠗⠝⠊⠝⠛⠲", "print": "A child arranged the green field in the morning."}
+{"id": 15, "braille": "⠠⠁⠀⠎⠓⠕⠏⠅⠑⠑⠏⠑⠗⠀⠉⠁⠗⠗⠊⠑⠙⠀⠞⠓⠑⠀⠝⠁⠗⠗⠕⠺⠀⠗⠕⠁⠙⠀⠃⠑⠓⠊⠝⠙⠀⠞⠓⠑⠀⠃⠁⠗⠝⠲", "print": "A shopkeeper carried the narrow road behind the barn."}
+{"id": 16, "braille": "⠠⠞⠓⠑⠀⠁⠗⠞⠊⠎⠞⠀⠉⠕⠇⠇⠑⠉⠞⠑⠙⠀⠞⠓⠑⠀⠎⠞⠕⠝⠑⠀⠃⠗⠊⠙⠛⠑⠀⠊⠝⠎⠊⠙⠑⠀⠞⠓⠑⠀⠍⠥⠎⠑⠥⠍⠲", "print": "The artist collected the stone bridge inside the museum."}
+{"id": 17, "braille": "⠠⠞⠓⠑⠀⠉⠁⠏⠞⠁⠊⠝⠀⠉⠕⠥⠝⠞⠑⠙⠀⠎⠑⠧⠑⠗⠁⠇⠀⠕⠇⠙⠀⠃⠕⠕⠅⠎⠀⠁⠗⠕⠥⠝⠙⠀⠞⠓⠑⠀⠍⠁⠗⠅⠑⠞⠲", "print": "The captain counted several old books around the market."}
+{"id": 18, "braille": "⠠⠞⠓⠑⠀⠛⠁⠗⠙⠑⠝⠑⠗⠀⠍⠑⠁⠎⠥⠗⠑⠙⠀⠺⠁⠗⠍⠀⠺⠕⠕⠇⠇⠑⠝⠀⠃⠇⠁⠝⠅⠑⠞⠎⠀⠁⠋⠞⠑⠗⠀⠞⠓⠑⠀⠗⠁⠊⠝⠲", "print": "The gardener measured warm woollen blankets after the rain."}
+{"id": 19, "braille": "⠠⠁⠀⠙⠁⠝⠉⠑⠗⠀⠕⠏⠑⠝⠑⠙⠀⠁⠀⠓⠑⠁⠧⠽⠀⠃⠕⠭⠀⠙⠥⠗⠊⠝⠛⠀⠞⠓⠑⠀⠋⠑⠎⠞⠊⠧⠁⠇⠲", "print": "A dancer opened a heavy box during the festival."}
+{"id": 20, "braille": "⠠⠁⠀⠉⠓⠊⠇⠙⠀⠝⠕⠞⠊⠉⠑⠙⠀⠁⠀⠓⠑⠁⠧⠽⠀⠃⠕⠭⠀⠙⠥⠗⠊⠝⠛⠀⠞⠓⠑⠀⠋⠑⠎⠞⠊⠧⠁⠇⠲", "print": "A child noticed a heavy box during the festival."}
+{"id": 21, "braille": "⠠⠞⠓⠑⠀⠕⠇⠙⠀⠍⠁⠝⠀⠏⠇⠁⠝⠞⠑⠙⠀⠁⠀⠺⠑⠞⠀⠥⠍⠃⠗⠑⠇⠇⠁⠀⠙⠥⠗⠊⠝⠛⠀⠞⠓⠑⠀⠋⠑⠎⠞⠊⠧⠁⠇⠲", "print": "The old man planted a wet umbrella during the festival."}
+{"id": 22, "braille": "⠠⠞⠓⠑⠀⠞⠗⠁⠧⠑⠇⠇⠑⠗⠀⠋⠕⠇⠇⠕⠺⠑⠙⠀⠁⠀⠏⠁⠏⠑⠗⠀⠍⠁⠏⠀⠁⠉⠗⠕⠎⠎⠀⠞⠓⠑⠀⠧⠁⠇⠇⠑⠽⠲", "print": "The traveller followed a paper map across the valley."}
+{"id": 23, "braille": "⠠⠁⠀⠎⠞⠥⠙⠑⠝⠞⠀⠝⠕⠞⠊⠉⠑⠙⠀⠞⠓⠑⠀⠞⠁⠇⠇⠀⠇⠁⠙⠙⠑⠗⠀⠃⠑⠝⠑⠁⠞⠓⠀⠞⠓⠑⠀⠃⠗⠊⠙⠛⠑⠲", "print": "A student noticed the tall ladder beneath the bridge."}
+{"id": 24, "braille": "⠠⠞⠓⠑⠀⠍⠑⠗⠉⠓⠁⠝⠞⠀⠋⠕⠇⠇⠕⠺⠑⠙⠀⠞⠓⠑⠀⠟⠥⠊⠑⠞⠀⠛⠁⠗⠙⠑⠝⠀⠃⠑⠋⠕⠗⠑⠀⠞⠓⠑⠀⠎⠞⠕⠗⠍⠲", "print": "The merchant followed the quiet garden before the storm."}
+{"id": 25, "braille": "⠠⠞⠓⠑⠀⠉⠁⠏⠞⠁⠊⠝⠀⠎⠅⠑⠞⠉⠓⠑⠙⠀⠞⠓⠑⠀⠛⠗⠑⠑⠝⠀⠋⠊⠑⠇⠙⠀⠁⠃⠕⠧⠑⠀⠞⠓⠑⠀⠧⠊⠇⠇⠁⠛⠑⠲", "print": "The captain sketched the green field above the village."}
+{"id": 26, "braille": "⠠⠁⠀⠉⠁⠗⠏⠑⠝⠞⠑⠗⠀⠏⠗⠕⠞⠑⠉⠞⠑⠙⠀⠞⠓⠑⠀⠛⠗⠑⠑⠝⠀⠋⠊⠑⠇⠙⠀⠙⠥⠗⠊⠝⠛⠀⠞⠓⠑⠀⠋⠑⠎⠞⠊⠧⠁⠇⠲", "print": "A carpenter protected the green field during the festival."}
+{"id": 27, "braille": "⠠⠁⠀⠎⠉⠊⠑⠝⠞⠊⠎⠞⠀⠕⠏⠑⠝⠑⠙⠀⠞⠓⠑⠀⠞⠁⠇⠇⠀⠇⠁⠙⠙⠑⠗⠀⠝⠑⠁⠗⠀⠞⠓⠑⠀⠗⠊⠧⠑⠗⠲", "print": "A scientist opened the tall ladder near the river."}
+{"id": 28, "braille": "⠠⠁⠀⠏⠁⠊⠝⠞⠑⠗⠀⠉⠇⠕⠎⠑⠙⠀⠁⠀⠏⠁⠏⠑⠗⠀⠍⠁⠏⠀⠃⠑⠎⠊⠙⠑⠀⠞⠓⠑⠀⠓⠁⠗⠃⠕⠥⠗⠲", "print": "A painter closed a paper map beside the harbour."}
+{"id": 29, "braille": "⠠⠞⠓⠑⠀⠺⠗⠊⠞⠑⠗⠀⠉⠁⠗⠗⠊⠑⠙⠀⠁⠀⠏⠁⠏⠑⠗⠀⠍⠁⠏⠀⠃⠑⠓⠊⠝⠙⠀⠞⠓⠑⠀⠃⠁⠗⠝⠲", "print": "The writer carried a paper map behind the barn."}
+{"id": 30, "braille": "⠠⠁⠀⠍⠥⠎⠊⠉⠊⠁⠝⠀⠙⠊⠎⠉⠕⠧⠑⠗⠑⠙⠀⠞⠓⠑⠀⠑⠍⠏⠞⠽⠀⠃⠁⠎⠅⠑⠞⠀⠝⠑⠁⠗⠀⠞⠓⠑⠀⠗⠊⠧⠑⠗⠲", "print": "A musician discovered the empty basket near the river."}
+{"id": 31, "braille": "⠠⠞⠓⠑⠀⠛⠁⠗⠙⠑⠝⠑⠗⠀⠑⠭⠏⠇⠁⠊⠝⠑⠙⠀⠞⠓⠑⠀⠛⠇⠁⠎⠎⠀⠺⠊⠝⠙⠕⠺⠀⠁⠋⠞⠑⠗⠀⠞⠓⠑⠀⠗⠁⠊⠝⠲", "print": "The gardener explained the glass window after the rain."}
+{"id": 32, "braille": "⠠⠞⠓⠑⠀⠞⠑⠁⠉⠓⠑⠗⠀⠁⠗⠗⠁⠝⠛⠑⠙⠀⠞⠓⠑⠀⠃⠗⠕⠅⠑⠝⠀⠉⠇⠕⠉⠅⠀⠝⠑⠁⠗⠀⠞⠓⠑⠀⠗⠊⠧⠑⠗⠲", "print": "The teacher arranged the broken clock near the river."}
+{"id": 33, "braille": "⠠⠞⠓⠑⠀⠓⠥⠝⠞⠑⠗⠀⠝⠕⠞⠊⠉⠑⠙⠀⠞⠓⠑⠀⠛⠗⠑⠑⠝⠀⠋⠊⠑⠇⠙⠀⠁⠇⠕⠝⠛⠀⠞⠓⠑⠀⠉⠕⠁⠎⠞⠲", "print": "The hunter noticed the green field along the coast."}
+{"id": 34, "braille": "⠠⠍⠽⠀⠝⠑⠊⠛⠓⠃⠕⠥⠗⠀⠍⠑⠁⠎⠥⠗⠑⠙⠀⠞⠓⠑⠀⠎⠞⠕⠝⠑⠀⠃⠗⠊⠙⠛⠑⠀⠁⠗⠕⠥⠝⠙⠀⠞⠓⠑⠀⠍⠁⠗⠅⠑⠞⠲", "print": "My neighbour measured the stone bridge around the market."}
+{"id": 35, "braille": "⠠⠞⠓⠑⠀⠺⠑⠁⠧⠑⠗⠀⠉⠕⠥⠝⠞⠑⠙⠀⠎⠕⠍⠑⠀⠋⠗⠑⠎⠓⠀⠃⠗⠑⠁⠙⠀⠝⠑⠁⠗⠀⠞⠓⠑⠀⠗⠊⠧⠑⠗⠲", "print": "The weaver counted some fresh bread near the river."}
+{"id": 36, "braille": "⠠⠁⠀⠙⠁⠝⠉⠑⠗⠀⠉⠇⠕⠎⠑⠙⠀⠞⠓⠑⠀⠎⠞⠕⠝⠑⠀⠃⠗⠊⠙⠛⠑⠀⠁⠃⠕⠧⠑⠀⠞⠓⠑⠀⠧⠊⠇⠇⠁⠛⠑⠲", "print": "A dancer closed the stone bridge above the village."}
+{"id": 37, "braille": "⠠⠞⠓⠑⠀⠞⠗⠁⠧⠑⠇⠇⠑⠗⠀⠋⠕⠇⠙⠑⠙⠀⠁⠀⠺⠑⠞⠀⠥⠍⠃⠗⠑⠇⠇⠁⠀⠃⠑⠝⠑⠁⠞⠓⠀⠞⠓⠑⠀⠃⠗⠊⠙⠛⠑⠲", "print": "The traveller folded a wet umbrella beneath the bridge."}
+{"id": 38, "braille": "⠠⠁⠀⠎⠓⠕⠏⠅⠑⠑⠏⠑⠗⠀⠋⠊⠝⠊⠎⠓⠑⠙⠀⠁⠀⠓⠑⠁⠧⠽⠀⠃⠕⠭⠀⠃⠑⠋⠕⠗⠑⠀⠞⠓⠑⠀⠎⠞⠕⠗⠍⠲", "print": "A shopkeeper finished a heavy box before the storm."}
+{"id": 39, "braille": "⠠⠁⠀⠎⠉⠊⠑⠝⠞⠊⠎⠞⠀⠏⠇⠁⠝⠞⠑⠙⠀⠞⠓⠑⠀⠝⠁⠗⠗⠕⠺⠀⠗⠕⠁⠙⠀⠃⠑⠝⠑⠁⠞⠓⠀⠞⠓⠑⠀⠃⠗⠊⠙⠛⠑⠲", "print": "A scientist planted the narrow road beneath the bridge."}
+{"id": 40, "braille": "⠠⠁⠀⠎⠞⠥⠙⠑⠝⠞⠀⠑⠭⠁⠍⠊⠝⠑⠙⠀⠁⠀⠓⠑⠁⠧⠽⠀⠃⠕⠭⠀⠃⠑⠎⠊⠙⠑⠀⠞⠓⠑⠀⠓⠁⠗⠃⠕⠥⠗⠲", "print": "A student examined a heavy box beside the harbour."}
+{"id": 41, "braille": "⠠⠁⠀⠉⠁⠗⠏⠑⠝⠞⠑⠗⠀⠏⠁⠊⠝⠞⠑⠙⠀⠞⠓⠑⠀⠞⠁⠇⠇⠀⠇⠁⠙⠙⠑⠗⠀⠃⠑⠝⠑⠁⠞⠓⠀⠞⠓⠑⠀⠃⠗⠊⠙⠛⠑⠲", "print": "A carpenter painted the tall ladder beneath the bridge."}
+{"id": 42, "braille": "⠠⠞⠓⠑⠀⠺⠑⠁⠧⠑⠗⠀⠗⠑⠉⠕⠗⠙⠑⠙⠀⠞⠓⠑⠀⠑⠍⠏⠞⠽⠀⠃⠁⠎⠅⠑⠞⠀⠁⠃⠕⠧⠑⠀⠞⠓⠑⠀⠧⠊⠇⠇⠁⠛⠑⠲", "print": "The weaver recorded the empty basket above the village."}
+{"id": 43, "braille": "⠠⠁⠀⠎⠞⠥⠙⠑⠝⠞⠀⠝⠕⠞⠊⠉⠑⠙⠀⠞⠓⠑⠀⠞⠁⠇⠇⠀⠇⠁⠙⠙⠑⠗⠀⠥⠝⠙⠑⠗⠀⠞⠓⠑⠀⠕⠇⠙⠀⠞⠗⠑⠑⠲", "print": "A student noticed the tall ladder under the old tree."}
+{"id": 44, "braille": "⠠⠞⠓⠑⠀⠁⠗⠞⠊⠎⠞⠀⠏⠗⠕⠞⠑⠉⠞⠑⠙⠀⠍⠁⠝⠽⠀⠺⠕⠕⠙⠑⠝⠀⠉⠓⠁⠊⠗⠎⠀⠃⠑⠝⠑⠁⠞⠓⠀⠞⠓⠑⠀⠃⠗⠊⠙⠛⠑⠲", "print": "The artist protected many wooden chairs beneath the bridge."}
+{"id": 45, "braille": "⠠⠞⠓⠑⠀⠉⠁⠏⠞⠁⠊⠝⠀⠑⠭⠏⠇⠁⠊⠝⠑⠙⠀⠗⠊⠏⠑⠀⠗⠑⠙⠀⠁⠏⠏⠇⠑⠎⠀⠊⠝⠎⠊⠙⠑⠀⠞⠓⠑⠀⠍⠥⠎⠑⠥⠍⠲", "print": "The captain explained ripe red apples inside the museum."}
+{"id": 46, "braille": "⠠⠁⠀⠍⠥⠎⠊⠉⠊⠁⠝⠀⠕⠏⠑⠝⠑⠙⠀⠞⠓⠑⠀⠛⠇⠁⠎⠎⠀⠺⠊⠝⠙⠕⠺⠀⠁⠋⠞⠑⠗⠀⠞⠓⠑⠀⠗⠁⠊⠝⠲", "print": "A musician opened the glass window after the rain."}
+{"id": 47, "braille": "⠠⠞⠓⠑⠀⠽⠕⠥⠝⠛⠀⠛⠊⠗⠇⠀⠎⠞⠥⠙⠊⠑⠙⠀⠁⠀⠓⠑⠁⠧⠽⠀⠃⠕⠭⠀⠃⠑⠋⠕⠗⠑⠀⠞⠓⠑⠀⠎⠞⠕⠗⠍⠲", "print": "The young girl studied a heavy box before the storm."}
+{"id": 48, "braille": "⠠⠁⠀⠎⠉⠊⠑⠝⠞⠊⠎⠞⠀⠍⠑⠁⠎⠥⠗⠑⠙⠀⠁⠀⠎⠊⠇⠧⠑⠗⠀⠉⠕⠊⠝⠀⠃⠑⠓⠊⠝⠙⠀⠞⠓⠑⠀⠃⠁⠗⠝⠲", "print": "A scientist measured a silver coin behind the barn."}
+{"id": 49, "braille": "⠠⠁⠀⠏⠁⠊⠝⠞⠑⠗⠀⠁⠗⠗⠁⠝⠛⠑⠙⠀⠞⠓⠑⠀⠑⠍⠏⠞⠽⠀⠃⠁⠎⠅⠑⠞⠀⠁⠃⠕⠧⠑⠀⠞⠓⠑⠀⠧⠊⠇⠇⠁⠛⠑⠲", "print": "A painter arranged the empty basket above the village."}
+{"id": 50, "braille": "⠠⠞⠓⠑⠀⠋⠊⠎⠓⠑⠗⠍⠁⠝⠀⠉⠕⠇⠇⠑⠉⠞⠑⠙⠀⠁⠀⠺⠑⠞⠀⠥⠍⠃⠗⠑⠇⠇⠁⠀⠃⠑⠎⠊⠙⠑⠀⠞⠓⠑⠀⠓⠁⠗⠃⠕⠥⠗⠲", "print": "The fisherman collected a wet umbrella beside the harbour."}
+{"id": 51, "braille": "⠠⠞⠓⠑⠀⠽⠕⠥⠝⠛⠀⠛⠊⠗⠇⠀⠍⠑⠁⠎⠥⠗⠑⠙⠀⠎⠑⠧⠑⠗⠁⠇⠀⠕⠇⠙⠀⠃⠕⠕⠅⠎⠀⠥⠝⠙⠑⠗⠀⠞⠓⠑⠀⠕⠇⠙⠀⠞⠗⠑⠑⠲", "print": "The young girl measured several old books under the old tree."}
+{"id": 52, "braille": "⠠⠞⠓⠑⠀⠺⠗⠊⠞⠑⠗⠀⠏⠇⠁⠝⠞⠑⠙⠀⠞⠓⠑⠀⠛⠇⠁⠎⠎⠀⠺⠊⠝⠙⠕⠺⠀⠙⠥⠗⠊⠝⠛⠀⠞⠓⠑⠀⠋⠑⠎⠞⠊⠧⠁⠇⠲", "print": "The writer planted the glass window during the festival."}
+{"id": 53, "braille": "⠠⠞⠓⠑⠀⠺⠑⠁⠧⠑⠗⠀⠗⠑⠍⠑⠍⠃⠑⠗⠑⠙⠀⠁⠀⠃⠗⠊⠛⠓⠞⠀⠇⠁⠝⠞⠑⠗⠝⠀⠥⠝⠙⠑⠗⠀⠞⠓⠑⠀⠕⠇⠙⠀⠞⠗⠑⠑⠲", "print": "The weaver remembered a bright lantern under the old tree."}
+{"id": 54, "braille": "⠠⠞⠓⠑⠀⠕⠇⠙⠀⠍⠁⠝⠀⠙⠑⠎⠉⠗⠊⠃⠑⠙⠀⠁⠀⠺⠑⠞⠀⠥⠍⠃⠗⠑⠇⠇⠁⠀⠝⠑⠁⠗⠀⠞⠓⠑⠀⠗⠊⠧⠑⠗⠲", "print": "The old man described a wet umbrella near the river."}
+{"id": 55, "braille": "⠠⠞⠓⠑⠀⠏⠊⠇⠕⠞⠀⠏⠗⠑⠏⠁⠗⠑⠙⠀⠁⠀⠎⠊⠇⠧⠑⠗⠀⠉⠕⠊⠝⠀⠁⠋⠞⠑⠗⠀⠞⠓⠑⠀⠗⠁⠊⠝⠲", "print": "The pilot prepared a silver coin after the rain."}
+{"id": 56, "braille": "⠠⠞⠓⠑⠀⠕⠇⠙⠀⠍⠁⠝⠀⠑⠭⠏⠇⠁⠊⠝⠑⠙⠀⠞⠓⠑⠀⠛⠗⠑⠑⠝⠀⠋⠊⠑⠇⠙⠀⠊⠝⠎⠊⠙⠑⠀⠞⠓⠑⠀⠍⠥⠎⠑⠥⠍⠲", "print": "The old man explained the green field inside the museum."}
+{"id": 57, "braille": "⠠⠞⠓⠑⠀⠁⠗⠞⠊⠎⠞⠀⠉⠁⠗⠗⠊⠑⠙⠀⠍⠁⠝⠽⠀⠺⠕⠕⠙⠑⠝⠀⠉⠓⠁⠊⠗⠎⠀⠙⠥⠗⠊⠝⠛⠀⠞⠓⠑⠀⠋⠑⠎⠞⠊⠧⠁⠇⠲", "print": "The artist carried many wooden chairs during the festival."}
+{"id": 58, "braille": "⠠⠁⠀⠙⠁⠝⠉⠑⠗⠀⠉⠕⠇⠇⠑⠉⠞⠑⠙⠀⠞⠓⠑⠀⠃⠗⠕⠅⠑⠝⠀⠉⠇⠕⠉⠅⠀⠃⠑⠝⠑⠁⠞⠓⠀⠞⠓⠑⠀⠃⠗⠊⠙⠛⠑⠲", "print": "A dancer collected the broken clock beneath the bridge."}
+{"id": 59, "braille": "⠠⠁⠀⠙⠁⠝⠉⠑⠗⠀⠙⠊⠎⠉⠕⠧⠑⠗⠑⠙⠀⠞⠓⠑⠀⠊⠗⠕⠝⠀⠛⠁⠞⠑⠀⠁⠗⠕⠥⠝⠙⠀⠞⠓⠑⠀⠍⠁⠗⠅⠑⠞⠲", "print": "A dancer discovered the iron gate around the market."}
+{"id": 60, "braille": "⠠⠞⠓⠑⠀⠽⠕⠥⠝⠛⠀⠛⠊⠗⠇⠀⠍⠑⠝⠞⠊⠕⠝⠑⠙⠀⠁⠀⠎⠊⠇⠧⠑⠗⠀⠉⠕⠊⠝⠀⠁⠃⠕⠧⠑⠀⠞⠓⠑⠀⠧⠊⠇⠇⠁⠛⠑⠲", "print": "The young girl mentioned a silver coin above the village."}
+{"id": 61, "braille": "⠠⠁⠀⠏⠁⠊⠝⠞⠑⠗⠀⠎⠅⠑⠞⠉⠓⠑⠙⠀⠞⠓⠑⠀⠎⠍⠁⠇⠇⠀⠃⠕⠁⠞⠀⠞⠓⠗⠕⠥⠛⠓⠕⠥⠞⠀⠞⠓⠑⠀⠺⠊⠝⠞⠑⠗⠲", "print": "A painter sketched the small boat throughout the winter."}
+{"id": 62, "braille": "⠠⠁⠀⠉⠁⠗⠏⠑⠝⠞⠑⠗⠀⠏⠕⠇⠊⠎⠓⠑⠙⠀⠎⠑⠧⠑⠗⠁⠇⠀⠕⠇⠙⠀⠃⠕⠕⠅⠎⠀⠊⠝⠀⠞⠓⠑⠀⠍⠕⠗⠝⠊⠝⠛⠲", "print": "A carpenter polished several old books in the morning."}
+{"id": 63, "braille": "⠠⠁⠀⠎⠞⠥⠙⠑⠝⠞⠀⠙⠊⠎⠉⠕⠧⠑⠗⠑⠙⠀⠁⠀⠎⠊⠇⠧⠑⠗⠀⠉⠕⠊⠝⠀⠃⠑⠓⠊⠝⠙⠀⠞⠓⠑⠀⠃⠁⠗⠝⠲", "print": "A student discovered a silver coin behind the barn."}
+{"id": 64, "braille": "⠠⠞⠓⠑⠀⠑⠝⠛⠊⠝⠑⠑⠗⠀⠉⠇⠕⠎⠑⠙⠀⠗⠊⠏⠑⠀⠗⠑⠙⠀⠁⠏⠏⠇⠑⠎⠀⠊⠝⠎⠊⠙⠑⠀⠞⠓⠑⠀⠍⠥⠎⠑⠥⠍⠲", "print": "The engineer closed ripe red apples inside the museum."}
+{"id": 65, "braille": "⠠⠍⠽⠀⠝⠑⠊⠛⠓⠃⠕⠥⠗⠀⠛⠁⠞⠓⠑⠗⠑⠙⠀⠞⠓⠑⠀⠎⠍⠁⠇⠇⠀⠃⠕⠁⠞⠀⠁⠗⠕⠥⠝⠙⠀⠞⠓⠑⠀⠍⠁⠗⠅⠑⠞⠲", "print": "My neighbour gathered the small boat around the market."}
+{"id": 66, "braille": "⠠⠞⠓⠑⠀⠉⠁⠏⠞⠁⠊⠝⠀⠙⠑⠇⠊⠧⠑⠗⠑⠙⠀⠞⠓⠑⠀⠛⠇⠁⠎⠎⠀⠺⠊⠝⠙⠕⠺⠀⠞⠓⠗⠕⠥⠛⠓⠕⠥⠞⠀⠞⠓⠑⠀⠺⠊⠝⠞⠑⠗⠲", "print": "The captain delivered the glass window throughout the winter."}
+{"id": 67, "braille": "⠠⠁⠀⠍⠥⠎⠊⠉⠊⠁⠝⠀⠏⠕⠇⠊⠎⠓⠑⠙⠀⠁⠀⠺⠑⠞⠀⠥⠍⠃⠗⠑⠇⠇⠁⠀⠁⠃⠕⠧⠑⠀⠞⠓⠑⠀⠧⠊⠇⠇⠁⠛⠑⠲", "print": "A musician polished a wet umbrella above the village."}
+{"id": 68, "braille": "⠠⠁⠀⠏⠁⠊⠝⠞⠑⠗⠀⠋⠕⠇⠙⠑⠙⠀⠞⠓⠑⠀⠟⠥⠊⠑⠞⠀⠛⠁⠗⠙⠑⠝⠀⠁⠉⠗⠕⠎⠎⠀⠞⠓⠑⠀⠧⠁⠇⠇⠑⠽⠲", "print": "A painter folded the quiet garden across the valley."}
+{"id": 69, "braille": "⠠⠞⠓⠑⠀⠞⠗⠁⠧⠑⠇⠇⠑⠗⠀⠏⠇⠁⠝⠞⠑⠙⠀⠁⠀⠏⠁⠏⠑⠗⠀⠍⠁⠏⠀⠃⠑⠋⠕⠗⠑⠀⠞⠓⠑⠀⠎⠞⠕⠗⠍⠲", "print": "The traveller planted a paper map before the storm."}
+{"id": 70, "braille": "⠠⠞⠓⠑⠀⠽⠕⠥⠝⠛⠀⠛⠊⠗⠇⠀⠉⠕⠇⠇⠑⠉⠞⠑⠙⠀⠞⠓⠑⠀⠛⠇⠁⠎⠎⠀⠺⠊⠝⠙⠕⠺⠀⠥⠝⠙⠑⠗⠀⠞⠓⠑⠀⠕⠇⠙⠀⠞⠗⠑⠑⠲", "print": "The young girl collected the glass window under the old tree."}
+{"id": 71, "braille": "⠠⠞⠓⠑⠀⠉⠁⠏⠞⠁⠊⠝⠀⠋⠕⠇⠙⠑⠙⠀⠞⠓⠑⠀⠝⠁⠗⠗⠕⠺⠀⠗⠕⠁⠙⠀⠃⠑⠋⠕⠗⠑⠀⠞⠓⠑⠀⠎⠞⠕⠗⠍⠲", "print": "The captain folded the narrow road before the storm."}
+{"id": 72, "braille": "⠠⠍⠽⠀⠝⠑⠊⠛⠓⠃⠕⠥⠗⠀⠉⠁⠗⠗⠊⠑⠙⠀⠞⠓⠑⠀⠃⠗⠕⠅⠑⠝⠀⠉⠇⠕⠉⠅⠀⠙⠥⠗⠊⠝⠛⠀⠞⠓⠑⠀⠋⠑⠎⠞⠊⠧⠁⠇⠲", "print": "My neighbour carried the broken clock during the festival."}
+{"id": 73, "braille": "⠠⠞⠓⠑⠀⠓⠥⠝⠞⠑⠗⠀⠏⠁⠊⠝⠞⠑⠙⠀⠗⠊⠏⠑⠀⠗⠑⠙⠀⠁⠏⠏⠇⠑⠎⠀⠃⠑⠋⠕⠗⠑⠀⠞⠓⠑⠀⠎⠞⠕⠗⠍⠲", "print": "The hunter painted ripe red apples before the storm."}
+{"id": 74, "braille": "⠠⠁⠀⠉⠁⠗⠏⠑⠝⠞⠑⠗⠀⠎⠞⠁⠗⠞⠑⠙⠀⠞⠓⠑⠀⠑⠍⠏⠞⠽⠀⠃⠁⠎⠅⠑⠞⠀⠝⠑⠁⠗⠀⠞⠓⠑⠀⠗⠊⠧⠑⠗⠲", "print": "A carpenter started the empty basket near the river."}
+{"id": 75, "braille": "⠠⠁⠀⠏⠁⠊⠝⠞⠑⠗⠀⠍⠑⠁⠎⠥⠗⠑⠙⠀⠞⠓⠑⠀⠃⠗⠕⠅⠑⠝⠀⠉⠇⠕⠉⠅⠀⠊⠝⠀⠞⠓⠑⠀⠍⠕⠗⠝⠊⠝⠛⠲", "print": "A painter measured the broken clock in the morning."}
+{"id": 76, "braille": "⠠⠞⠓⠑⠀⠞⠁⠊⠇⠕⠗⠀⠙⠑⠎⠉⠗⠊⠃⠑⠙⠀⠍⠁⠝⠽⠀⠺⠕⠕⠙⠑⠝⠀⠉⠓⠁⠊⠗⠎⠀⠊⠝⠎⠊⠙⠑⠀⠞⠓⠑⠀⠍⠥⠎⠑⠥⠍⠲", "print": "The tailor described many wooden chairs inside the museum."}
+{"id": 77, "braille": "⠠⠍⠽⠀⠝⠑⠊⠛⠓⠃⠕⠥⠗⠀⠎⠞⠥⠙⠊⠑⠙⠀⠞⠓⠑⠀⠛⠗⠑⠑⠝⠀⠋⠊⠑⠇⠙⠀⠝⠑⠁⠗⠀⠞⠓⠑⠀⠗⠊⠧⠑⠗⠲", "print": "My neighbour studied the green field near the river."}
+{"id": 78, "braille": "⠠⠞⠓⠑⠀⠁⠗⠞⠊⠎⠞⠀⠑⠭⠏⠇⠁⠊⠝⠑⠙⠀⠞⠓⠑⠀⠎⠍⠁⠇⠇⠀⠃⠕⠁⠞⠀⠙⠥⠗⠊⠝⠛⠀⠞⠓⠑⠀⠋⠑⠎⠞⠊⠧⠁⠇⠲", "print": "The artist explained the small boat during the festival."}
+{"id": 79, "braille": "⠠⠞⠓⠑⠀⠉⠁⠏⠞⠁⠊⠝⠀⠍⠑⠁⠎⠥⠗⠑⠙⠀⠁⠀⠎⠊⠇⠧⠑⠗⠀⠉⠕⠊⠝⠀⠙⠥⠗⠊⠝⠛⠀⠞⠓⠑⠀⠋⠑⠎⠞⠊⠧⠁⠇⠲", "print": "The captain measured a silver coin during the festival."}
+{"id": 80, "braille": "⠠⠁⠀⠎⠁⠊⠇⠕⠗⠀⠍⠑⠝⠞⠊⠕⠝⠑⠙⠀⠎⠕⠍⠑⠀⠋⠗⠑⠎⠓⠀⠃⠗⠑⠁⠙⠀⠊⠝⠎⠊⠙⠑⠀⠞⠓⠑⠀⠍⠥⠎⠑⠥⠍⠲", "print": "A sailor mentioned some fresh bread inside the museum."}
+{"id": 81, "braille": "⠠⠁⠀⠉⠁⠗⠏⠑⠝⠞⠑⠗⠀⠏⠁⠊⠝⠞⠑⠙⠀⠍⠁⠝⠽⠀⠺⠕⠕⠙⠑⠝⠀⠉⠓⠁⠊⠗⠎⠀⠊⠝⠀⠞⠓⠑⠀⠍⠕⠗⠝⠊⠝⠛⠲", "print": "A carpenter painted many wooden chairs in the morning."}
+{"id": 82, "braille": "⠠⠞⠓⠑⠀⠁⠗⠞⠊⠎⠞⠀⠎⠅⠑⠞⠉⠓⠑⠙⠀⠁⠀⠃⠗⠊⠛⠓⠞⠀⠇⠁⠝⠞⠑⠗⠝⠀⠥⠝⠙⠑⠗⠀⠞⠓⠑⠀⠕⠇⠙⠀⠞⠗⠑⠑⠲", "print": "The artist sketched a bright lantern under the old tree."}
+{"id": 83, "braille": "⠠⠞⠓⠑⠀⠓⠥⠝⠞⠑⠗⠀⠋⠊⠝⠊⠎⠓⠑⠙⠀⠞⠓⠑⠀⠎⠞⠕⠝⠑⠀⠃⠗⠊⠙⠛⠑⠀⠃⠑⠝⠑⠁⠞⠓⠀⠞⠓⠑⠀⠃⠗⠊⠙⠛⠑⠲", "print": "The hunter finished the stone bridge beneath the bridge."}
+{"id": 84, "braille": "⠠⠁⠀⠉⠓⠊⠇⠙⠀⠏⠕⠇⠊⠎⠓⠑⠙⠀⠞⠓⠑⠀⠎⠞⠕⠝⠑⠀⠃⠗⠊⠙⠛⠑⠀⠝⠑⠁⠗⠀⠞⠓⠑⠀⠗⠊⠧⠑⠗⠲", "print": "A child polished the stone bridge near the river."}
+{"id": 85, "braille": "⠠⠞⠓⠑⠀⠝⠥⠗⠎⠑⠀⠎⠞⠁⠗⠞⠑⠙⠀⠁⠀⠓⠑⠁⠧⠽⠀⠃⠕⠭⠀⠝⠑⠁⠗⠀⠞⠓⠑⠀⠗⠊⠧⠑⠗⠲", "print": "The nurse started a heavy box near the river."}
+{"id": 86, "braille": "⠠⠞⠓⠑⠀⠁⠗⠞⠊⠎⠞⠀⠏⠕⠇⠊⠎⠓⠑⠙⠀⠎⠕⠍⠑⠀⠋⠗⠑⠎⠓⠀⠃⠗⠑⠁⠙⠀⠁⠋⠞⠑⠗⠀⠞⠓⠑⠀⠗⠁⠊⠝⠲", "print": "The artist polished some fresh bread after the rain."}
+{"id": 87, "braille": "⠠⠁⠀⠎⠞⠥⠙⠑⠝⠞⠀⠉⠇⠕⠎⠑⠙⠀⠗⠊⠏⠑⠀⠗⠑⠙⠀⠁⠏⠏⠇⠑⠎⠀⠁⠇⠕⠝⠛⠀⠞⠓⠑⠀⠉⠕⠁⠎⠞⠲", "print": "A student closed ripe red apples along the coast."}
+{"id": 88, "braille": "⠠⠞⠓⠑⠀⠕⠇⠙⠀⠍⠁⠝⠀⠉⠇⠕⠎⠑⠙⠀⠞⠓⠑⠀⠎⠍⠁⠇⠇⠀⠃⠕⠁⠞⠀⠙⠥⠗⠊⠝⠛⠀⠞⠓⠑⠀⠋⠑⠎⠞⠊⠧⠁⠇⠲", "print": "The old man closed the small boat during the festival."}
+{"id": 89, "braille": "⠠⠞⠓⠑⠀⠞⠗⠁⠧⠑⠇⠇⠑⠗⠀⠗⠑⠍⠑⠍⠃⠑⠗⠑⠙⠀⠁⠀⠓⠑⠁⠧⠽⠀⠃⠕⠭⠀⠁⠃⠕⠧⠑⠀⠞⠓⠑⠀⠧⠊⠇⠇⠁⠛⠑⠲", "print": "The traveller remembered a heavy box above the village."}
+{"id": 90, "braille": "⠠⠞⠓⠑⠀⠕⠇⠙⠀⠍⠁⠝⠀⠙⠑⠇⠊⠧⠑⠗⠑⠙⠀⠁⠀⠎⠊⠇⠧⠑⠗⠀⠉⠕⠊⠝⠀⠊⠝⠎⠊⠙⠑⠀⠞⠓⠑⠀⠍⠥⠎⠑⠥⠍⠲", "print": "The old man delivered a silver coin inside the museum."}
+{"id": 91, "braille": "⠠⠁⠀⠉⠓⠊⠇⠙⠀⠛⠁⠞⠓⠑⠗⠑⠙⠀⠎⠕⠍⠑⠀⠋⠗⠑⠎⠓⠀⠃⠗⠑⠁⠙⠀⠁⠋⠞⠑⠗⠀⠞⠓⠑⠀⠗⠁⠊⠝⠲", "print": "A child gathered some fresh bread after the rain."}
+{"id": 92, "braille": "⠠⠞⠓⠑⠀⠉⠁⠏⠞⠁⠊⠝⠀⠏⠁⠊⠝⠞⠑⠙⠀⠁⠀⠏⠁⠏⠑⠗⠀⠍⠁⠏⠀⠃⠑⠝⠑⠁⠞⠓⠀⠞⠓⠑⠀⠃⠗⠊⠙⠛⠑⠲", "print": "The captain painted a paper map beneath the bridge."}
+{"id": 93, "braille": "⠠⠞⠓⠑⠀⠙⠕⠉⠞⠕⠗⠀⠙⠑⠎⠉⠗⠊⠃⠑⠙⠀⠞⠓⠑⠀⠞⠁⠇⠇⠀⠇⠁⠙⠙⠑⠗⠀⠁⠇⠕⠝⠛⠀⠞⠓⠑⠀⠉⠕⠁⠎⠞⠲", "print": "The doctor described the tall ladder along the coast."}
+{"id": 94, "braille": "⠠⠁⠀⠎⠉⠊⠑⠝⠞⠊⠎⠞⠀⠺⠁⠞⠉⠓⠑⠙⠀⠞⠓⠑⠀⠊⠗⠕⠝⠀⠛⠁⠞⠑⠀⠁⠉⠗⠕⠎⠎⠀⠞⠓⠑⠀⠧⠁⠇⠇⠑⠽⠲", "print": "A scientist watched the iron gate across the valley."}
+{"id": 95, "braille": "⠠⠞⠓⠑⠀⠋⠊⠎⠓⠑⠗⠍⠁⠝⠀⠙⠊⠎⠉⠕⠧⠑⠗⠑⠙⠀⠁⠀⠓⠑⠁⠧⠽⠀⠃⠕⠭⠀⠁⠇⠕⠝⠛⠀⠞⠓⠑⠀⠉⠕⠁⠎⠞⠲", "print": "The fisherman discovered a heavy box along the coast."}
+{"id": 96, "braille": "⠠⠁⠀⠍⠥⠎⠊⠉⠊⠁⠝⠀⠉⠇⠕⠎⠑⠙⠀⠁⠀⠓⠑⠁⠧⠽⠀⠃⠕⠭⠀⠁⠗⠕⠥⠝⠙⠀⠞⠓⠑⠀⠍⠁⠗⠅⠑⠞⠲", "print": "A musician closed a heavy box around the market."}
+{"id": 97, "braille": "⠠⠞⠓⠑⠀⠉⠁⠏⠞⠁⠊⠝⠀⠉⠁⠗⠗⠊⠑⠙⠀⠞⠓⠑⠀⠎⠞⠕⠝⠑⠀⠃⠗⠊⠙⠛⠑⠀⠃⠑⠎⠊⠙⠑⠀⠞⠓⠑⠀⠓⠁⠗⠃⠕⠥⠗⠲", "print": "The captain carried the stone bridge beside the harbour."}
+{"id": 98, "braille": "⠠⠁⠀⠎⠞⠥⠙⠑⠝⠞⠀⠗⠑⠍⠑⠍⠃⠑⠗⠑⠙⠀⠎⠑⠧⠑⠗⠁⠇⠀⠕⠇⠙⠀⠃⠕⠕⠅⠎⠀⠊⠝⠎⠊⠙⠑⠀⠞⠓⠑⠀⠍⠥⠎⠑⠥⠍⠲", "print": "A student remembered several old books inside the museum."}
+{"id": 99, "braille": "⠠⠁⠀⠎⠓⠕⠏⠅⠑⠑⠏⠑⠗⠀⠝⠕⠞⠊⠉⠑⠙⠀⠞⠓⠑⠀⠞⠁⠇⠇⠀⠇⠁⠙⠙⠑⠗⠀⠁⠉⠗⠕⠎⠎⠀⠞⠓⠑⠀⠧⠁⠇⠇⠑⠽⠲", "print": "A shopkeeper noticed the tall ladder across the valley."}
+{"id": 100, "braille": "⠠⠞⠓⠑⠀⠓⠥⠝⠞⠑⠗⠀⠙⠊⠎⠉⠕⠧⠑⠗⠑⠙⠀⠞⠓⠑⠀⠛⠗⠑⠑⠝⠀⠋⠊⠑⠇⠙⠀⠃⠑⠎⠊⠙⠑⠀⠞⠓⠑⠀⠓⠁⠗⠃⠕⠥⠗⠲", "print": "The hunter discovered the green field beside the harbour."}
+{"id": 101, "braille": "⠠⠞⠓⠑⠀⠙⠕⠉⠞⠕⠗⠀⠎⠅⠑⠞⠉⠓⠑⠙⠀⠞⠓⠑⠀⠝⠁⠗⠗⠕⠺⠀⠗⠕⠁⠙⠀⠥⠝⠙⠑⠗⠀⠞⠓⠑⠀⠕⠇⠙⠀⠞⠗⠑⠑⠲", "print": "The doctor sketched the narrow road under the old tree."}
+{"id": 102, "braille": "⠠⠞⠓⠑⠀⠽⠕⠥⠝⠛⠀⠛⠊⠗⠇⠀⠍⠑⠁⠎⠥⠗⠑⠙⠀⠞⠓⠑⠀⠎⠞⠕⠝⠑⠀⠃⠗⠊⠙⠛⠑⠀⠝⠑⠁⠗⠀⠞⠓⠑⠀⠗⠊⠧⠑⠗⠲", "print": "The young girl measured the stone bridge near the river."}
+{"id": 103, "braille": "⠠⠞⠓⠑⠀⠁⠗⠞⠊⠎⠞⠀⠏⠇⠁⠝⠞⠑⠙⠀⠍⠁⠝⠽⠀⠺⠕⠕⠙⠑⠝⠀⠉⠓⠁⠊⠗⠎⠀⠙⠥⠗⠊⠝⠛⠀⠞⠓⠑⠀⠋⠑⠎⠞⠊⠧⠁⠇⠲", "print": "The artist planted many wooden chairs during the festival."}
+{"id": 104, "braille": "⠠⠁⠀⠍⠥⠎⠊⠉⠊⠁⠝⠀⠺⠁⠞⠉⠓⠑⠙⠀⠍⠁⠝⠽⠀⠺⠕⠕⠙⠑⠝⠀⠉⠓⠁⠊⠗⠎⠀⠁⠋⠞⠑⠗⠀⠞⠓⠑⠀⠗⠁⠊⠝⠲", "print": "A musician watched many wooden chairs after the rain."}
+{"id": 105, "braille": "⠠⠞⠓⠑⠀⠝⠥⠗⠎⠑⠀⠛⠁⠞⠓⠑⠗⠑⠙⠀⠞⠓⠑⠀⠛⠇⠁⠎⠎⠀⠺⠊⠝⠙⠕⠺⠀⠃⠑⠝⠑⠁⠞⠓⠀⠞⠓⠑⠀⠃⠗⠊⠙⠛⠑⠲", "print": "The nurse gathered the glass window beneath the bridge."}
+{"id": 106, "braille": "⠠⠁⠀⠎⠓⠕⠏⠅⠑⠑⠏⠑⠗⠀⠏⠗⠑⠏⠁⠗⠑⠙⠀⠁⠀⠺⠑⠞⠀⠥⠍⠃⠗⠑⠇⠇⠁⠀⠃⠑⠝⠑⠁⠞⠓⠀⠞⠓⠑⠀⠃⠗⠊⠙⠛⠑⠲", "print": "A shopkeeper prepared a wet umbrella beneath the bridge."}
+{"id": 107, "braille": "⠠⠞⠓⠑⠀⠞⠗⠁⠧⠑⠇⠇⠑⠗⠀⠋⠕⠇⠇⠕⠺⠑⠙⠀⠎⠕⠍⠑⠀⠋⠗⠑⠎⠓⠀⠃⠗⠑⠁⠙⠀⠃⠑⠓⠊⠝⠙⠀⠞⠓⠑⠀⠃⠁⠗⠝⠲", "print": "The traveller followed some fresh bread behind the barn."}
+{"id": 108, "braille": "⠠⠞⠓⠑⠀⠏⠊⠇⠕⠞⠀⠗⠑⠍⠑⠍⠃⠑⠗⠑⠙⠀⠎⠕⠍⠑⠀⠋⠗⠑⠎⠓⠀⠃⠗⠑⠁⠙⠀⠞⠓⠗⠕⠥⠛⠓⠕⠥⠞⠀⠞⠓⠑⠀⠺⠊⠝⠞⠑⠗⠲", "print": "The pilot remembered some fresh bread throughout the winter."}
+{"id": 109, "braille": "⠠⠍⠽⠀⠝⠑⠊⠛⠓⠃⠕⠥⠗⠀⠏⠕⠇⠊⠎⠓⠑⠙⠀⠞⠓⠑⠀⠊⠗⠕⠝⠀⠛⠁⠞⠑⠀⠞⠓⠗⠕⠥⠛⠓⠕⠥⠞⠀⠞⠓⠑⠀⠺⠊⠝⠞⠑⠗⠲", "print": "My neighbour polished the iron gate throughout the winter."}
+{"id": 110, "braille": "⠠⠞⠓⠑⠀⠺⠗⠊⠞⠑⠗⠀⠑⠭⠏⠇⠁⠊⠝⠑⠙⠀⠞⠓⠑⠀⠊⠗⠕⠝⠀⠛⠁⠞⠑⠀⠁⠋⠞⠑⠗⠀⠞⠓⠑⠀⠗⠁⠊⠝⠲", "print": "The writer explained the iron gate after the rain."}
+{"id": 111, "braille": "⠠⠞⠓⠑⠀⠁⠗⠞⠊⠎⠞⠀⠏⠗⠑⠏⠁⠗⠑⠙⠀⠁⠀⠃⠗⠊⠛⠓⠞⠀⠇⠁⠝⠞⠑⠗⠝⠀⠃⠑⠓⠊⠝⠙⠀⠞⠓⠑⠀⠃⠁⠗⠝⠲", "print": "The artist prepared a bright lantern behind the barn."}
+{"id": 112, "braille": "⠠⠁⠀⠉⠁⠗⠏⠑⠝⠞⠑⠗⠀⠏⠗⠕⠞⠑⠉⠞⠑⠙⠀⠞⠓⠑⠀⠊⠗⠕⠝⠀⠛⠁⠞⠑⠀⠁⠗⠕⠥⠝⠙⠀⠞⠓⠑⠀⠍⠁⠗⠅⠑⠞⠲", "print": "A carpenter protected the iron gate around the market."}
+{"id": 113, "braille": "⠠⠞⠓⠑⠀⠛⠁⠗⠙⠑⠝⠑⠗⠀⠍⠑⠁⠎⠥⠗⠑⠙⠀⠁⠀⠏⠁⠏⠑⠗⠀⠍⠁⠏⠀⠁⠉⠗⠕⠎⠎⠀⠞⠓⠑⠀⠧⠁⠇⠇⠑⠽⠲", "print": "The gardener measured a paper map across the valley."}
+{"id": 114, "braille": "⠠⠞⠓⠑⠀⠋⠊⠎⠓⠑⠗⠍⠁⠝⠀⠙⠑⠎⠉⠗⠊⠃⠑⠙⠀⠞⠓⠑⠀⠊⠗⠕⠝⠀⠛⠁⠞⠑⠀⠃⠑⠝⠑⠁⠞⠓⠀⠞⠓⠑⠀⠃⠗⠊⠙⠛⠑⠲", "print": "The fisherman described the iron gate beneath the bridge."}
+{"id": 115, "braille": "⠠⠞⠓⠑⠀⠝⠥⠗⠎⠑⠀⠋⠊⠝⠊⠎⠓⠑⠙⠀⠁⠀⠎⠊⠇⠧⠑⠗⠀⠉⠕⠊⠝⠀⠞⠓⠗⠕⠥⠛⠓⠕⠥⠞⠀⠞⠓⠑⠀⠺⠊⠝⠞⠑⠗⠲", "print": "The nurse finished a silver coin throughout the winter."}
+{"id": 116, "braille": "⠠⠁⠀⠍⠥⠎⠊⠉⠊⠁⠝⠀⠺⠁⠞⠉⠓⠑⠙⠀⠞⠓⠑⠀⠊⠗⠕⠝⠀⠛⠁⠞⠑⠀⠃⠑⠎⠊⠙⠑⠀⠞⠓⠑⠀⠓⠁⠗⠃⠕⠥⠗⠲", "print": "A musician watched the iron gate beside the harbour."}
+{"id": 117, "braille": "⠠⠞⠓⠑⠀⠑⠝⠛⠊⠝⠑⠑⠗⠀⠙⠊⠎⠉⠕⠧⠑⠗⠑⠙⠀⠞⠓⠑⠀⠝⠁⠗⠗⠕⠺⠀⠗⠕⠁⠙⠀⠃⠑⠓⠊⠝⠙⠀⠞⠓⠑⠀⠃⠁⠗⠝⠲", "print": "The engineer discovered the narrow road behind the barn."}
+{"id": 118, "braille": "⠠⠞⠓⠑⠀⠞⠑⠁⠉⠓⠑⠗⠀⠑⠭⠁⠍⠊⠝⠑⠙⠀⠁⠀⠃⠗⠊⠛⠓⠞⠀⠇⠁⠝⠞⠑⠗⠝⠀⠁⠉⠗⠕⠎⠎⠀⠞⠓⠑⠀⠧⠁⠇⠇⠑⠽⠲", "print": "The teacher examined a bright lantern across the valley."}
+{"id": 119, "braille": "⠠⠞⠓⠑⠀⠋⠊⠎⠓⠑⠗⠍⠁⠝⠀⠗⠑⠉⠕⠗⠙⠑⠙⠀⠞⠓⠑⠀⠛⠗⠑⠑⠝⠀⠋⠊⠑⠇⠙⠀⠝⠑⠁⠗⠀⠞⠓⠑⠀⠗⠊⠧⠑⠗⠲", "print": "The fisherman recorded the green field near the river."}
+{"id": 120, "braille": "⠠⠁⠀⠎⠉⠊⠑⠝⠞⠊⠎⠞⠀⠏⠗⠕⠞⠑⠉⠞⠑⠙⠀⠗⠊⠏⠑⠀⠗⠑⠙⠀⠁⠏⠏⠇⠑⠎⠀⠃⠑⠋⠕⠗⠑⠀⠞⠓⠑⠀⠎⠞⠕⠗⠍⠲", "print": "A scientist protected ripe red apples before the storm."}
+{"id": 121, "braille": "⠠⠁⠀⠉⠁⠗⠏⠑⠝⠞⠑⠗⠀⠗⠑⠉⠕⠗⠙⠑⠙⠀⠞⠓⠑⠀⠝⠁⠗⠗⠕⠺⠀⠗⠕⠁⠙⠀⠁⠇⠕⠝⠛⠀⠞⠓⠑⠀⠉⠕⠁⠎⠞⠲", "print": "A carpenter recorded the narrow road along the coast."}
+{"id": 122, "braille": "⠠⠞⠓⠑⠀⠺⠗⠊⠞⠑⠗⠀⠋⠕⠇⠇⠕⠺⠑⠙⠀⠞⠓⠑⠀⠎⠞⠕⠝⠑⠀⠃⠗⠊⠙⠛⠑⠀⠊⠝⠀⠞⠓⠑⠀⠍⠕⠗⠝⠊⠝⠛⠲", "print": "The writer followed the stone bridge in the morning."}
+{"id": 123, "braille": "⠠⠞⠓⠑⠀⠁⠗⠞⠊⠎⠞⠀⠍⠑⠝⠞⠊⠕⠝⠑⠙⠀⠺⠁⠗⠍⠀⠺⠕⠕⠇⠇⠑⠝⠀⠃⠇⠁⠝⠅⠑⠞⠎⠀⠃⠑⠎⠊⠙⠑⠀⠞⠓⠑⠀⠓⠁⠗⠃⠕⠥⠗⠲", "print": "The artist mentioned warm woollen blankets beside the harbour."}
+{"id": 124, "braille": "⠠⠞⠓⠑⠀⠺⠑⠁⠧⠑⠗⠀⠗⠑⠏⠁⠊⠗⠑⠙⠀⠞⠓⠑⠀⠑⠍⠏⠞⠽⠀⠃⠁⠎⠅⠑⠞⠀⠥⠝⠙⠑⠗⠀⠞⠓⠑⠀⠕⠇⠙⠀⠞⠗⠑⠑⠲", "print": "The weaver repaired the empty basket under the old tree."}
+{"id": 125, "braille": "⠠⠞⠓⠑⠀⠞⠑⠁⠉⠓⠑⠗⠀⠑⠭⠁⠍⠊⠝⠑⠙⠀⠞⠓⠑⠀⠛⠗⠑⠑⠝⠀⠋⠊⠑⠇⠙⠀⠃⠑⠝⠑⠁⠞⠓⠀⠞⠓⠑⠀⠃⠗⠊⠙⠛⠑⠲", "print": "The teacher examined the green field beneath the bridge."}
+{"id": 126, "braille": "⠠⠞⠓⠑⠀⠋⠁⠗⠍⠑⠗⠀⠙⠑⠇⠊⠧⠑⠗⠑⠙⠀⠗⠊⠏⠑⠀⠗⠑⠙⠀⠁⠏⠏⠇⠑⠎⠀⠁⠉⠗⠕⠎⠎⠀⠞⠓⠑⠀⠧⠁⠇⠇⠑⠽⠲", "print": "The farmer delivered ripe red apples across the valley."}
+{"id": 127, "braille": "⠠⠞⠓⠑⠀⠃⠁⠅⠑⠗⠀⠁⠗⠗⠁⠝⠛⠑⠙⠀⠗⠊⠏⠑⠀⠗⠑⠙⠀⠁⠏⠏⠇⠑⠎⠀⠥⠝⠙⠑⠗⠀⠞⠓⠑⠀⠕⠇⠙⠀⠞⠗⠑⠑⠲", "print": "The baker arranged ripe red apples under the old tree."}
+{"id": 128, "braille": "⠠⠞⠓⠑⠀⠉⠁⠏⠞⠁⠊⠝⠀⠙⠑⠇⠊⠧⠑⠗⠑⠙⠀⠎⠑⠧⠑⠗⠁⠇⠀⠕⠇⠙⠀⠃⠕⠕⠅⠎⠀⠝⠑⠁⠗⠀⠞⠓⠑⠀⠗⠊⠧⠑⠗⠲", "print": "The captain delivered several old books near the river."}
+{"id": 129, "braille": "⠠⠞⠓⠑⠀⠺⠑⠁⠧⠑⠗⠀⠋⠕⠇⠇⠕⠺⠑⠙⠀⠗⠊⠏⠑⠀⠗⠑⠙⠀⠁⠏⠏⠇⠑⠎⠀⠊⠝⠎⠊⠙⠑⠀⠞⠓⠑⠀⠍⠥⠎⠑⠥⠍⠲", "print": "The weaver followed ripe red apples inside the museum."}
+{"id": 130, "braille": "⠠⠞⠓⠑⠀⠉⠁⠏⠞⠁⠊⠝⠀⠏⠇⠁⠝⠞⠑⠙⠀⠞⠓⠑⠀⠑⠍⠏⠞⠽⠀⠃⠁⠎⠅⠑⠞⠀⠃⠑⠝⠑⠁⠞⠓⠀⠞⠓⠑⠀⠃⠗⠊⠙⠛⠑⠲", "print": "The captain planted the empty basket beneath the bridge."}
+{"id": 131, "braille": "⠠⠁⠀⠉⠓⠊⠇⠙⠀⠗⠑⠍⠑⠍⠃⠑⠗⠑⠙⠀⠞⠓⠑⠀⠟⠥⠊⠑⠞⠀⠛⠁⠗⠙⠑⠝⠀⠝⠑⠁⠗⠀⠞⠓⠑⠀⠗⠊⠧⠑⠗⠲", "print": "A child remembered the quiet garden near the river."}
+{"id": 132, "braille": "⠠⠞⠓⠑⠀⠞⠁⠊⠇⠕⠗⠀⠛⠁⠞⠓⠑⠗⠑⠙⠀⠞⠓⠑⠀⠎⠞⠕⠝⠑⠀⠃⠗⠊⠙⠛⠑⠀⠁⠉⠗⠕⠎⠎⠀⠞⠓⠑⠀⠧⠁⠇⠇⠑⠽⠲", "print": "The tailor gathered the stone bridge across the valley."}
+{"id": 133, "braille": "⠠⠞⠓⠑⠀⠞⠗⠁⠧⠑⠇⠇⠑⠗⠀⠎⠅⠑⠞⠉⠓⠑⠙⠀⠁⠀⠃⠗⠊⠛⠓⠞⠀⠇⠁⠝⠞⠑⠗⠝⠀⠝⠑⠁⠗⠀⠞⠓⠑⠀⠗⠊⠧⠑⠗⠲", "print": "The traveller sketched a bright lantern near the river."}
+{"id": 134, "braille": "⠠⠞⠓⠑⠀⠞⠁⠊⠇⠕⠗⠀⠙⠑⠇⠊⠧⠑⠗⠑⠙⠀⠍⠁⠝⠽⠀⠺⠕⠕⠙⠑⠝⠀⠉⠓⠁⠊⠗⠎⠀⠥⠝⠙⠑⠗⠀⠞⠓⠑⠀⠕⠇⠙⠀⠞⠗⠑⠑⠲", "print": "The tailor delivered many wooden chairs under the old tree."}
+{"id": 135, "braille": "⠠⠁⠀⠎⠉⠊⠑⠝⠞⠊⠎⠞⠀⠑⠭⠁⠍⠊⠝⠑⠙⠀⠞⠓⠑⠀⠎⠞⠕⠝⠑⠀⠃⠗⠊⠙⠛⠑⠀⠊⠝⠎⠊⠙⠑⠀⠞⠓⠑⠀⠍⠥⠎⠑⠥⠍⠲", "print": "A scientist examined the stone bridge inside the museum."}
+{"id": 136, "braille": "⠠⠞⠓⠑⠀⠞⠁⠊⠇⠕⠗⠀⠎⠞⠁⠗⠞⠑⠙⠀⠎⠑⠧⠑⠗⠁⠇⠀⠕⠇⠙⠀⠃⠕⠕⠅⠎⠀⠊⠝⠀⠞⠓⠑⠀⠍⠕⠗⠝⠊⠝⠛⠲", "print": "The tailor started several old books in the morning."}
+{"id": 137, "braille": "⠠⠞⠓⠑⠀⠞⠁⠊⠇⠕⠗⠀⠗⠑⠉⠕⠗⠙⠑⠙⠀⠺⠁⠗⠍⠀⠺⠕⠕⠇⠇⠑⠝⠀⠃⠇⠁⠝⠅⠑⠞⠎⠀⠃⠑⠋⠕⠗⠑⠀⠞⠓⠑⠀⠎⠞⠕⠗⠍⠲", "print": "The tailor recorded warm woollen blankets before the storm."}
+{"id": 138, "braille": "⠠⠁⠀⠎⠞⠥⠙⠑⠝⠞⠀⠺⠁⠞⠉⠓⠑⠙⠀⠁⠀⠎⠊⠇⠧⠑⠗⠀⠉⠕⠊⠝⠀⠃⠑⠎⠊⠙⠑⠀⠞⠓⠑⠀⠓⠁⠗⠃⠕⠥⠗⠲", "print": "A student watched a silver coin beside the harbour."}
+{"id": 139, "braille": "⠠⠞⠓⠑⠀⠝⠥⠗⠎⠑⠀⠙⠊⠎⠉⠕⠧⠑⠗⠑⠙⠀⠁⠀⠏⠁⠏⠑⠗⠀⠍⠁⠏⠀⠁⠇⠕⠝⠛⠀⠞⠓⠑⠀⠉⠕⠁⠎⠞⠲", "print": "The nurse discovered a paper map along the coast."}
+{"id": 140, "braille": "⠠⠞⠓⠑⠀⠓⠥⠝⠞⠑⠗⠀⠙⠑⠇⠊⠧⠑⠗⠑⠙⠀⠍⠁⠝⠽⠀⠺⠕⠕⠙⠑⠝⠀⠉⠓⠁⠊⠗⠎⠀⠁⠉⠗⠕⠎⠎⠀⠞⠓⠑⠀⠧⠁⠇⠇⠑⠽⠲", "print": "The hunter delivered many wooden chairs across the valley."}
+{"id": 141, "braille": "⠠⠁⠀⠙⠁⠝⠉⠑⠗⠀⠏⠗⠕⠞⠑⠉⠞⠑⠙⠀⠞⠓⠑⠀⠎⠞⠕⠝⠑⠀⠃⠗⠊⠙⠛⠑⠀⠃⠑⠝⠑⠁⠞⠓⠀⠞⠓⠑⠀⠃⠗⠊⠙⠛⠑⠲", "print": "A dancer protected the stone bridge beneath the bridge."}
+{"id": 142, "braille": "⠠⠞⠓⠑⠀⠺⠑⠁⠧⠑⠗⠀⠉⠇⠕⠎⠑⠙⠀⠍⠁⠝⠽⠀⠺⠕⠕⠙⠑⠝⠀⠉⠓⠁⠊⠗⠎⠀⠃⠑⠓⠊⠝⠙⠀⠞⠓⠑⠀⠃⠁⠗⠝⠲", "print": "The weaver closed many wooden chairs behind the barn."}
+{"id": 143, "braille": "⠠⠞⠓⠑⠀⠺⠗⠊⠞⠑⠗⠀⠏⠗⠕⠞⠑⠉⠞⠑⠙⠀⠞⠓⠑⠀⠟⠥⠊⠑⠞⠀⠛⠁⠗⠙⠑⠝⠀⠁⠉⠗⠕⠎⠎⠀⠞⠓⠑⠀⠧⠁⠇⠇⠑⠽⠲", "print": "The writer protected the quiet garden across the valley."}
+{"id": 144, "braille": "⠠⠞⠓⠑⠀⠋⠁⠗⠍⠑⠗⠀⠉⠇⠕⠎⠑⠙⠀⠎⠕⠍⠑⠀⠋⠗⠑⠎⠓⠀⠃⠗⠑⠁⠙⠀⠃⠑⠋⠕⠗⠑⠀⠞⠓⠑⠀⠎⠞⠕⠗⠍⠲", "print": "The farmer closed some fresh bread before the storm."}
+{"id": 145, "braille": "⠠⠞⠓⠑⠀⠞⠗⠁⠧⠑⠇⠇⠑⠗⠀⠏⠕⠇⠊⠎⠓⠑⠙⠀⠞⠓⠑⠀⠊⠗⠕⠝⠀⠛⠁⠞⠑⠀⠁⠋⠞⠑⠗⠀⠞⠓⠑⠀⠗⠁⠊⠝⠲", "print": "The traveller polished the iron gate after the rain."}
+{"id": 146, "braille": "⠠⠞⠓⠑⠀⠉⠁⠏⠞⠁⠊⠝⠀⠏⠗⠑⠏⠁⠗⠑⠙⠀⠁⠀⠎⠊⠇⠧⠑⠗⠀⠉⠕⠊⠝⠀⠃⠑⠝⠑⠁⠞⠓⠀⠞⠓⠑⠀⠃⠗⠊⠙⠛⠑⠲", "print": "The captain prepared a silver coin beneath the bridge."}
+{"id": 147, "braille": "⠠⠞⠓⠑⠀⠺⠑⠁⠧⠑⠗⠀⠑⠭⠏⠇⠁⠊⠝⠑⠙⠀⠞⠓⠑⠀⠃⠗⠕⠅⠑⠝⠀⠉⠇⠕⠉⠅⠀⠃⠑⠝⠑⠁⠞⠓⠀⠞⠓⠑⠀⠃⠗⠊⠙⠛⠑⠲", "print": "The weaver explained the broken clock beneath the bridge."}
+{"id": 148, "braille": "⠠⠁⠀⠎⠓⠕⠏⠅⠑⠑⠏⠑⠗⠀⠛⠁⠞⠓⠑⠗⠑⠙⠀⠁⠀⠓⠑⠁⠧⠽⠀⠃⠕⠭⠀⠁⠃⠕⠧⠑⠀⠞⠓⠑⠀⠧⠊⠇⠇⠁⠛⠑⠲", "print": "A shopkeeper gathered a heavy box above the village."}
+{"id": 149, "braille": "⠠⠞⠓⠑⠀⠏⠊⠇⠕⠞⠀⠍⠑⠝⠞⠊⠕⠝⠑⠙⠀⠎⠑⠧⠑⠗⠁⠇⠀⠕⠇⠙⠀⠃⠕⠕⠅⠎⠀⠥⠝⠙⠑⠗⠀⠞⠓⠑⠀⠕⠇⠙⠀⠞⠗⠑⠑⠲", "print": "The pilot mentioned several old books under the old tree."}
+{"id": 150, "braille": "⠠⠁⠀⠉⠓⠊⠇⠙⠀⠙⠊⠎⠉⠕⠧⠑⠗⠑⠙⠀⠞⠓⠑⠀⠛⠇⠁⠎⠎⠀⠺⠊⠝⠙⠕⠺⠀⠃⠑⠓⠊⠝⠙⠀⠞⠓⠑⠀⠃⠁⠗⠝⠲", "print": "A child discovered the glass window behind the barn."}
+{"id": 151, "braille": "⠠⠞⠓⠑⠀⠝⠥⠗⠎⠑⠀⠑⠭⠏⠇⠁⠊⠝⠑⠙⠀⠞⠓⠑⠀⠝⠁⠗⠗⠕⠺⠀⠗⠕⠁⠙⠀⠃⠑⠎⠊⠙⠑⠀⠞⠓⠑⠀⠓⠁⠗⠃⠕⠥⠗⠲", "print": "The nurse explained the narrow road beside the harbour."}
+{"id": 152, "braille": "⠠⠞⠓⠑⠀⠞⠁⠊⠇⠕⠗⠀⠝⠕⠞⠊⠉⠑⠙⠀⠞⠓⠑⠀⠛⠇⠁⠎⠎⠀⠺⠊⠝⠙⠕⠺⠀⠙⠥⠗⠊⠝⠛⠀⠞⠓⠑⠀⠋⠑⠎⠞⠊⠧⠁⠇⠲", "print": "The tailor noticed the glass window during the festival."}
+{"id": 153, "braille": "⠠⠞⠓⠑⠀⠃⠁⠅⠑⠗⠀⠉⠁⠗⠗⠊⠑⠙⠀⠗⠊⠏⠑⠀⠗⠑⠙⠀⠁⠏⠏⠇⠑⠎⠀⠁⠇⠕⠝⠛⠀⠞⠓⠑⠀⠉⠕⠁⠎⠞⠲", "print": "The baker carried ripe red apples along the coast."}
+{"id": 154, "braille": "⠠⠁⠀⠙⠁⠝⠉⠑⠗⠀⠎⠅⠑⠞⠉⠓⠑⠙⠀⠞⠓⠑⠀⠛⠗⠑⠑⠝⠀⠋⠊⠑⠇⠙⠀⠁⠗⠕⠥⠝⠙⠀⠞⠓⠑⠀⠍⠁⠗⠅⠑⠞⠲", "print": "A dancer sketched the green field around the market."}
+{"id": 155, "braille": "⠠⠁⠀⠉⠁⠗⠏⠑⠝⠞⠑⠗⠀⠗⠑⠏⠁⠊⠗⠑⠙⠀⠞⠓⠑⠀⠛⠗⠑⠑⠝⠀⠋⠊⠑⠇⠙⠀⠝⠑⠁⠗⠀⠞⠓⠑⠀⠗⠊⠧⠑⠗⠲", "print": "A carpenter repaired the green field near the river."}
+{"id": 156, "braille": "⠠⠞⠓⠑⠀⠉⠁⠏⠞⠁⠊⠝⠀⠉⠕⠇⠇⠑⠉⠞⠑⠙⠀⠁⠀⠓⠑⠁⠧⠽⠀⠃⠕⠭⠀⠥⠝⠙⠑⠗⠀⠞⠓⠑⠀⠕⠇⠙⠀⠞⠗⠑⠑⠲", "print": "The captain collected a heavy box under the old tree."}
+{"id": 157, "braille": "⠠⠞⠓⠑⠀⠞⠗⠁⠧⠑⠇⠇⠑⠗⠀⠏⠕⠇⠊⠎⠓⠑⠙⠀⠞⠓⠑⠀⠛⠗⠑⠑⠝⠀⠋⠊⠑⠇⠙⠀⠁⠋⠞⠑⠗⠀⠞⠓⠑⠀⠗⠁⠊⠝⠲", "print": "The traveller polished the green field after the rain."}
+{"id": 158, "braille": "⠠⠁⠀⠎⠓⠕⠏⠅⠑⠑⠏⠑⠗⠀⠋⠕⠇⠇⠕⠺⠑⠙⠀⠞⠓⠑⠀⠝⠁⠗⠗⠕⠺⠀⠗⠕⠁⠙⠀⠃⠑⠝⠑⠁⠞⠓⠀⠞⠓⠑⠀⠃⠗⠊⠙⠛⠑⠲", "print": "A shopkeeper followed the narrow road beneath the bridge."}
+{"id": 159, "braille": "⠠⠞⠓⠑⠀⠙⠕⠉⠞⠕⠗⠀⠙⠑⠇⠊⠧⠑⠗⠑⠙⠀⠞⠓⠑⠀⠛⠗⠑⠑⠝⠀⠋⠊⠑⠇⠙⠀⠊⠝⠎⠊⠙⠑⠀⠞⠓⠑⠀⠍⠥⠎⠑⠥⠍⠲", "print": "The doctor delivered the green field inside the museum."}
+{"id": 160, "braille": "⠠⠞⠓⠑⠀⠉⠁⠏⠞⠁⠊⠝⠀⠎⠅⠑⠞⠉⠓⠑⠙⠀⠁⠀⠺⠑⠞⠀⠥⠍⠃⠗⠑⠇⠇⠁⠀⠥⠝⠙⠑⠗⠀⠞⠓⠑⠀⠕⠇⠙⠀⠞⠗⠑⠑⠲", "print": "The captain sketched a wet umbrella under the old tree."}
+{"id": 161, "braille": "⠠⠞⠓⠑⠀⠑⠝⠛⠊⠝⠑⠑⠗⠀⠋⠊⠝⠊⠎⠓⠑⠙⠀⠁⠀⠃⠗⠊⠛⠓⠞⠀⠇⠁⠝⠞⠑⠗⠝⠀⠁⠉⠗⠕⠎⠎⠀⠞⠓⠑⠀⠧⠁⠇⠇⠑⠽⠲", "print": "The engineer finished a bright lantern across the valley."}
+{"id": 162, "braille": "⠠⠞⠓⠑⠀⠉⠁⠏⠞⠁⠊⠝⠀⠕⠏⠑⠝⠑⠙⠀⠞⠓⠑⠀⠛⠇⠁⠎⠎⠀⠺⠊⠝⠙⠕⠺⠀⠁⠋⠞⠑⠗⠀⠞⠓⠑⠀⠗⠁⠊⠝⠲", "print": "The captain opened the glass window after the rain."}
+{"id": 163, "braille": "⠠⠞⠓⠑⠀⠙⠕⠉⠞⠕⠗⠀⠑⠭⠏⠇⠁⠊⠝⠑⠙⠀⠁⠀⠺⠑⠞⠀⠥⠍⠃⠗⠑⠇⠇⠁⠀⠊⠝⠀⠞⠓⠑⠀⠍⠕⠗⠝⠊⠝⠛⠲", "print": "The doctor explained a wet umbrella in the morning."}
+{"id": 164, "braille": "⠠⠁⠀⠏⠁⠊⠝⠞⠑⠗⠀⠗⠑⠍⠑⠍⠃⠑⠗⠑⠙⠀⠞⠓⠑⠀⠎⠞⠕⠝⠑⠀⠃⠗⠊⠙⠛⠑⠀⠥⠝⠙⠑⠗⠀⠞⠓⠑⠀⠕⠇⠙⠀⠞⠗⠑⠑⠲", "print": "A painter remembered the stone bridge under the old tree."}
+{"id": 165, "braille": "⠠⠞⠓⠑⠀⠝⠥⠗⠎⠑⠀⠏⠇⠁⠝⠞⠑⠙⠀⠞⠓⠑⠀⠝⠁⠗⠗⠕⠺⠀⠗⠕⠁⠙⠀⠊⠝⠀⠞⠓⠑⠀⠍⠕⠗⠝⠊⠝⠛⠲", "print": "The nurse planted the narrow road in the morning."}
+{"id": 166, "braille": "⠠⠁⠀⠉⠓⠊⠇⠙⠀⠎⠞⠥⠙⠊⠑⠙⠀⠞⠓⠑⠀⠛⠇⠁⠎⠎⠀⠺⠊⠝⠙⠕⠺⠀⠥⠝⠙⠑⠗⠀⠞⠓⠑⠀⠕⠇⠙⠀⠞⠗⠑⠑⠲", "print": "A child studied the glass window under the old tree."}
+{"id": 167, "braille": "⠠⠁⠀⠙⠁⠝⠉⠑⠗⠀⠎⠞⠁⠗⠞⠑⠙⠀⠗⠊⠏⠑⠀⠗⠑⠙⠀⠁⠏⠏⠇⠑⠎⠀⠥⠝⠙⠑⠗⠀⠞⠓⠑⠀⠕⠇⠙⠀⠞⠗⠑⠑⠲", "print": "A dancer started ripe red apples under the old tree."}
+{"id": 168, "braille": "⠠⠞⠓⠑⠀⠞⠗⠁⠧⠑⠇⠇⠑⠗⠀⠋⠊⠝⠊⠎⠓⠑⠙⠀⠞⠓⠑⠀⠞⠁⠇⠇⠀⠇⠁⠙⠙⠑⠗⠀⠊⠝⠀⠞⠓⠑⠀⠍⠕⠗⠝⠊⠝⠛⠲", "print": "The traveller finished the tall ladder in the morning."}
+{"id": 169, "braille": "⠠⠞⠓⠑⠀⠞⠗⠁⠧⠑⠇⠇⠑⠗⠀⠋⠕⠇⠇⠕⠺⠑⠙⠀⠞⠓⠑⠀⠝⠁⠗⠗⠕⠺⠀⠗⠕⠁⠙⠀⠃⠑⠋⠕⠗⠑⠀⠞⠓⠑⠀⠎⠞⠕⠗⠍⠲", "print": "The traveller followed the narrow road before the storm."}
+{"id": 170, "braille": "⠠⠞⠓⠑⠀⠁⠗⠞⠊⠎⠞⠀⠗⠑⠉⠕⠗⠙⠑⠙⠀⠗⠊⠏⠑⠀⠗⠑⠙⠀⠁⠏⠏⠇⠑⠎⠀⠃⠑⠝⠑⠁⠞⠓⠀⠞⠓⠑⠀⠃⠗⠊⠙⠛⠑⠲", "print": "The artist recorded ripe red apples beneath the bridge."}
+{"id": 171, "braille": "⠠⠞⠓⠑⠀⠽⠕⠥⠝⠛⠀⠛⠊⠗⠇⠀⠗⠑⠉⠕⠗⠙⠑⠙⠀⠞⠓⠑⠀⠎⠞⠕⠝⠑⠀⠃⠗⠊⠙⠛⠑⠀⠥⠝⠙⠑⠗⠀⠞⠓⠑⠀⠕⠇⠙⠀⠞⠗⠑⠑⠲", "print": "The young girl recorded the stone bridge under the old tree."}
+{"id": 172, "braille": "⠠⠁⠀⠎⠓⠕⠏⠅⠑⠑⠏⠑⠗⠀⠏⠁⠊⠝⠞⠑⠙⠀⠞⠓⠑⠀⠝⠁⠗⠗⠕⠺⠀⠗⠕⠁⠙⠀⠃⠑⠝⠑⠁⠞⠓⠀⠞⠓⠑⠀⠃⠗⠊⠙⠛⠑⠲", "print": "A shopkeeper painted the narrow road beneath the bridge."}
+{"id": 173, "braille": "⠠⠞⠓⠑⠀⠝⠥⠗⠎⠑⠀⠋⠊⠝⠊⠎⠓⠑⠙⠀⠁⠀⠎⠊⠇⠧⠑⠗⠀⠉⠕⠊⠝⠀⠥⠝⠙⠑⠗⠀⠞⠓⠑⠀⠕⠇⠙⠀⠞⠗⠑⠑⠲", "print": "The nurse finished a silver coin under the old tree."}
+{"id": 174, "braille": "⠠⠁⠀⠎⠉⠊⠑⠝⠞⠊⠎⠞⠀⠙⠑⠎⠉⠗⠊⠃⠑⠙⠀⠞⠓⠑⠀⠊⠗⠕⠝⠀⠛⠁⠞⠑⠀⠙⠥⠗⠊⠝⠛⠀⠞⠓⠑⠀⠋⠑⠎⠞⠊⠧⠁⠇⠲", "print": "A scientist described the iron gate during the festival."}
+{"id": 175, "braille": "⠠⠞⠓⠑⠀⠝⠥⠗⠎⠑⠀⠙⠊⠎⠉⠕⠧⠑⠗⠑⠙⠀⠍⠁⠝⠽⠀⠺⠕⠕⠙⠑⠝⠀⠉⠓⠁⠊⠗⠎⠀⠁⠗⠕⠥⠝⠙⠀⠞⠓⠑⠀⠍⠁⠗⠅⠑⠞⠲", "print": "The nurse discovered many wooden chairs around the market."}
+{"id": 176, "braille": "⠠⠞⠓⠑⠀⠽⠕⠥⠝⠛⠀⠛⠊⠗⠇⠀⠉⠇⠕⠎⠑⠙⠀⠁⠀⠎⠊⠇⠧⠑⠗⠀⠉⠕⠊⠝⠀⠁⠇⠕⠝⠛⠀⠞⠓⠑⠀⠉⠕⠁⠎⠞⠲", "print": "The young girl closed a silver coin along the coast."}
+{"id": 177, "braille": "⠠⠍⠽⠀⠝⠑⠊⠛⠓⠃⠕⠥⠗⠀⠏⠇⠁⠝⠞⠑⠙⠀⠞⠓⠑⠀⠃⠗⠕⠅⠑⠝⠀⠉⠇⠕⠉⠅⠀⠃⠑⠎⠊⠙⠑⠀⠞⠓⠑⠀⠓⠁⠗⠃⠕⠥⠗⠲", "print": "My neighbour planted the broken clock beside the harbour."}
+{"id": 178, "braille": "⠠⠁⠀⠎⠞⠥⠙⠑⠝⠞⠀⠍⠑⠁⠎⠥⠗⠑⠙⠀⠗⠊⠏⠑⠀⠗⠑⠙⠀⠁⠏⠏⠇⠑⠎⠀⠁⠇⠕⠝⠛⠀⠞⠓⠑⠀⠉⠕⠁⠎⠞⠲", "print": "A student measured ripe red apples along the coast."}
+{"id": 179, "braille": "⠠⠞⠓⠑⠀⠇⠊⠃⠗⠁⠗⠊⠁⠝⠀⠙⠊⠎⠉⠕⠧⠑⠗⠑⠙⠀⠁⠀⠏⠁⠏⠑⠗⠀⠍⠁⠏⠀⠁⠃⠕⠧⠑⠀⠞⠓⠑⠀⠧⠊⠇⠇⠁⠛⠑⠲", "print": "The librarian discovered a paper map above the village."}
+{"id": 180, "braille": "⠠⠁⠀⠉⠓⠊⠇⠙⠀⠏⠇⠁⠝⠞⠑⠙⠀⠗⠊⠏⠑⠀⠗⠑⠙⠀⠁⠏⠏⠇⠑⠎⠀⠁⠗⠕⠥⠝⠙⠀⠞⠓⠑⠀⠍⠁⠗⠅⠑⠞⠲", "print": "A child planted ripe red apples around the market."}
+{"id": 181, "braille": "⠠⠞⠓⠑⠀⠋⠁⠗⠍⠑⠗⠀⠗⠑⠍⠑⠍⠃⠑⠗⠑⠙⠀⠁⠀⠓⠑⠁⠧⠽⠀⠃⠕⠭⠀⠞⠓⠗⠕⠥⠛⠓⠕⠥⠞⠀⠞⠓⠑⠀⠺⠊⠝⠞⠑⠗⠲", "print": "The farmer remembered a heavy box throughout the winter."}
+{"id": 182, "braille": "⠠⠁⠀⠎⠞⠥⠙⠑⠝⠞⠀⠛⠁⠞⠓⠑⠗⠑⠙⠀⠞⠓⠑⠀⠃⠗⠕⠅⠑⠝⠀⠉⠇⠕⠉⠅⠀⠁⠗⠕⠥⠝⠙⠀⠞⠓⠑⠀⠍⠁⠗⠅⠑⠞⠲", "print": "A student gathered the broken clock around the market."}
+{"id": 183, "braille": "⠠⠞⠓⠑⠀⠑⠝⠛⠊⠝⠑⠑⠗⠀⠙⠊⠎⠉⠕⠧⠑⠗⠑⠙⠀⠗⠊⠏⠑⠀⠗⠑⠙⠀⠁⠏⠏⠇⠑⠎⠀⠁⠋⠞⠑⠗⠀⠞⠓⠑⠀⠗⠁⠊⠝⠲", "print": "The engineer discovered ripe red apples after the rain."}
+{"id": 184, "braille": "⠠⠞⠓⠑⠀⠋⠊⠎⠓⠑⠗⠍⠁⠝⠀⠉⠇⠕⠎⠑⠙⠀⠁⠀⠎⠊⠇⠧⠑⠗⠀⠉⠕⠊⠝⠀⠥⠝⠙⠑⠗⠀⠞⠓⠑⠀⠕⠇⠙⠀⠞⠗⠑⠑⠲", "print": "The fisherman closed a silver coin under the old tree."}
+{"id": 185, "braille": "⠠⠁⠀⠏⠁⠊⠝⠞⠑⠗⠀⠎⠅⠑⠞⠉⠓⠑⠙⠀⠞⠓⠑⠀⠊⠗⠕⠝⠀⠛⠁⠞⠑⠀⠁⠋⠞⠑⠗⠀⠞⠓⠑⠀⠗⠁⠊⠝⠲", "print": "A painter sketched the iron gate after the rain."}
+{"id": 186, "braille": "⠠⠞⠓⠑⠀⠽⠕⠥⠝⠛⠀⠛⠊⠗⠇⠀⠏⠗⠑⠏⠁⠗⠑⠙⠀⠞⠓⠑⠀⠑⠍⠏⠞⠽⠀⠃⠁⠎⠅⠑⠞⠀⠁⠉⠗⠕⠎⠎⠀⠞⠓⠑⠀⠧⠁⠇⠇⠑⠽⠲", "print": "The young girl prepared the empty basket across the valley."}
+{"id": 187, "braille": "⠠⠞⠓⠑⠀⠁⠗⠞⠊⠎⠞⠀⠋⠊⠝⠊⠎⠓⠑⠙⠀⠺⠁⠗⠍⠀⠺⠕⠕⠇⠇⠑⠝⠀⠃⠇⠁⠝⠅⠑⠞⠎⠀⠁⠉⠗⠕⠎⠎⠀⠞⠓⠑⠀⠧⠁⠇⠇⠑⠽⠲", "print": "The artist finished warm woollen blankets across the valley."}
+{"id": 188, "braille": "⠠⠞⠓⠑⠀⠽⠕⠥⠝⠛⠀⠛⠊⠗⠇⠀⠏⠇⠁⠝⠞⠑⠙⠀⠍⠁⠝⠽⠀⠺⠕⠕⠙⠑⠝⠀⠉⠓⠁⠊⠗⠎⠀⠝⠑⠁⠗⠀⠞⠓⠑⠀⠗⠊⠧⠑⠗⠲", "print": "The young girl planted many wooden chairs near the river."}
+{"id": 189, "braille": "⠠⠞⠓⠑⠀⠝⠥⠗⠎⠑⠀⠙⠊⠎⠉⠕⠧⠑⠗⠑⠙⠀⠁⠀⠺⠑⠞⠀⠥⠍⠃⠗⠑⠇⠇⠁⠀⠙⠥⠗⠊⠝⠛⠀⠞⠓⠑⠀⠋⠑⠎⠞⠊⠧⠁⠇⠲", "print": "The nurse discovered a wet umbrella during the festival."}
+{"id": 190, "braille": "⠠⠞⠓⠑⠀⠺⠑⠁⠧⠑⠗⠀⠑⠭⠏⠇⠁⠊⠝⠑⠙⠀⠞⠓⠑⠀⠝⠁⠗⠗⠕⠺⠀⠗⠕⠁⠙⠀⠃⠑⠋⠕⠗⠑⠀⠞⠓⠑⠀⠎⠞⠕⠗⠍⠲", "print": "The weaver explained the narrow road before the storm."}
+{"id": 191, "braille": "⠠⠁⠀⠍⠥⠎⠊⠉⠊⠁⠝⠀⠉⠇⠕⠎⠑⠙⠀⠞⠓⠑⠀⠞⠁⠇⠇⠀⠇⠁⠙⠙⠑⠗⠀⠃⠑⠝⠑⠁⠞⠓⠀⠞⠓⠑⠀⠃⠗⠊⠙⠛⠑⠲", "print": "A musician closed the tall ladder beneath the bridge."}
+{"id": 192, "braille": "⠠⠞⠓⠑⠀⠺⠑⠁⠧⠑⠗⠀⠍⠑⠝⠞⠊⠕⠝⠑⠙⠀⠁⠀⠓⠑⠁⠧⠽⠀⠃⠕⠭⠀⠞⠓⠗⠕⠥⠛⠓⠕⠥⠞⠀⠞⠓⠑⠀⠺⠊⠝⠞⠑⠗⠲", "print": "The weaver mentioned a heavy box throughout the winter."}
+{"id": 193, "braille": "⠠⠞⠓⠑⠀⠞⠁⠊⠇⠕⠗⠀⠍⠑⠝⠞⠊⠕⠝⠑⠙⠀⠞⠓⠑⠀⠛⠇⠁⠎⠎⠀⠺⠊⠝⠙⠕⠺⠀⠁⠇⠕⠝⠛⠀⠞⠓⠑⠀⠉⠕⠁⠎⠞⠲", "print": "The tailor mentioned the glass window along the coast."}
+{"id": 194, "braille": "⠠⠞⠓⠑⠀⠞⠑⠁⠉⠓⠑⠗⠀⠗⠑⠉⠕⠗⠙⠑⠙⠀⠎⠑⠧⠑⠗⠁⠇⠀⠕⠇⠙⠀⠃⠕⠕⠅⠎⠀⠞⠓⠗⠕⠥⠛⠓⠕⠥⠞⠀⠞⠓⠑⠀⠺⠊⠝⠞⠑⠗⠲", "print": "The teacher recorded several old books throughout the winter."}
+{"id": 195, "braille": "⠠⠞⠓⠑⠀⠃⠁⠅⠑⠗⠀⠝⠕⠞⠊⠉⠑⠙⠀⠗⠊⠏⠑⠀⠗⠑⠙⠀⠁⠏⠏⠇⠑⠎⠀⠝⠑⠁⠗⠀⠞⠓⠑⠀⠗⠊⠧⠑⠗⠲", "print": "The baker noticed ripe red apples near the river."}
+{"id": 196, "braille": "⠠⠞⠓⠑⠀⠽⠕⠥⠝⠛⠀⠛⠊⠗⠇⠀⠉⠕⠇⠇⠑⠉⠞⠑⠙⠀⠞⠓⠑⠀⠛⠗⠑⠑⠝⠀⠋⠊⠑⠇⠙⠀⠞⠓⠗⠕⠥⠛⠓⠕⠥⠞⠀⠞⠓⠑⠀⠺⠊⠝⠞⠑⠗⠲", "print": "The young girl collected the green field throughout the winter."}
+{"id": 197, "braille": "⠠⠞⠓⠑⠀⠕⠇⠙⠀⠍⠁⠝⠀⠙⠑⠇⠊⠧⠑⠗⠑⠙⠀⠞⠓⠑⠀⠛⠗⠑⠑⠝⠀⠋⠊⠑⠇⠙⠀⠞⠓⠗⠕⠥⠛⠓⠕⠥⠞⠀⠞⠓⠑⠀⠺⠊⠝⠞⠑⠗⠲", "print": "The old man delivered the green field throughout the winter."}
+{"id": 198, "braille": "⠠⠞⠓⠑⠀⠙⠕⠉⠞⠕⠗⠀⠑⠭⠁⠍⠊⠝⠑⠙⠀⠁⠀⠓⠑⠁⠧⠽⠀⠃⠕⠭⠀⠥⠝⠙⠑⠗⠀⠞⠓⠑⠀⠕⠇⠙⠀⠞⠗⠑⠑⠲", "print": "The doctor examined a heavy box under the old tree."}
+{"id": 199, "braille": "⠠⠁⠀⠎⠁⠊⠇⠕⠗⠀⠉⠕⠥⠝⠞⠑⠙⠀⠞⠓⠑⠀⠟⠥⠊⠑⠞⠀⠛⠁⠗⠙⠑⠝⠀⠁⠋⠞⠑⠗⠀⠞⠓⠑⠀⠗⠁⠊⠝⠲", "print": "A sailor counted the quiet garden after the rain."}
+{"id": 200, "braille": "⠠⠞⠓⠑⠀⠃⠁⠅⠑⠗⠀⠋⠊⠝⠊⠎⠓⠑⠙⠀⠁⠀⠺⠑⠞⠀⠥⠍⠃⠗⠑⠇⠇⠁⠀⠁⠇⠕⠝⠛⠀⠞⠓⠑⠀⠉⠕⠁⠎⠞⠲", "print": "The baker finished a wet umbrella along the coast."}
+{"id": 201, "braille": "⠠⠞⠓⠑⠀⠞⠁⠊⠇⠕⠗⠀⠏⠕⠇⠊⠎⠓⠑⠙⠀⠁⠀⠺⠑⠞⠀⠥⠍⠃⠗⠑⠇⠇⠁⠀⠁⠇⠕⠝⠛⠀⠞⠓⠑⠀⠉⠕⠁⠎⠞⠲", "print": "The tailor polished a wet umbrella along the coast."}
+{"id": 202, "braille": "⠠⠞⠓⠑⠀⠁⠗⠞⠊⠎⠞⠀⠗⠑⠏⠁⠊⠗⠑⠙⠀⠞⠓⠑⠀⠎⠞⠕⠝⠑⠀⠃⠗⠊⠙⠛⠑⠀⠃⠑⠋⠕⠗⠑⠀⠞⠓⠑⠀⠎⠞⠕⠗⠍⠲", "print": "The artist repaired the stone bridge before the storm."}
+{"id": 203, "braille": "⠠⠁⠀⠙⠁⠝⠉⠑⠗⠀⠗⠑⠍⠑⠍⠃⠑⠗⠑⠙⠀⠞⠓⠑⠀⠟⠥⠊⠑⠞⠀⠛⠁⠗⠙⠑⠝⠀⠁⠗⠕⠥⠝⠙⠀⠞⠓⠑⠀⠍⠁⠗⠅⠑⠞⠲", "print": "A dancer remembered the quiet garden around the market."}
+{"id": 204, "braille": "⠠⠞⠓⠑⠀⠇⠊⠃⠗⠁⠗⠊⠁⠝⠀⠗⠑⠏⠁⠊⠗⠑⠙⠀⠗⠊⠏⠑⠀⠗⠑⠙⠀⠁⠏⠏⠇⠑⠎⠀⠊⠝⠎⠊⠙⠑⠀⠞⠓⠑⠀⠍⠥⠎⠑⠥⠍⠲", "print": "The librarian repaired ripe red apples inside the museum."}
+{"id": 205, "braille": "⠠⠞⠓⠑⠀⠞⠁⠊⠇⠕⠗⠀⠏⠁⠊⠝⠞⠑⠙⠀⠞⠓⠑⠀⠃⠗⠕⠅⠑⠝⠀⠉⠇⠕⠉⠅⠀⠥⠝⠙⠑⠗⠀⠞⠓⠑⠀⠕⠇⠙⠀⠞⠗⠑⠑⠲", "print": "The tailor painted the broken clock under the old tree."}
+{"id": 206, "braille": "⠠⠍⠽⠀⠝⠑⠊⠛⠓⠃⠕⠥⠗⠀⠗⠑⠍⠑⠍⠃⠑⠗⠑⠙⠀⠺⠁⠗⠍⠀⠺⠕⠕⠇⠇⠑⠝⠀⠃⠇⠁⠝⠅⠑⠞⠎⠀⠊⠝⠀⠞⠓⠑⠀⠍⠕⠗⠝⠊⠝⠛⠲", "print": "My neighbour remembered warm woollen blankets in the morning."}
+{"id": 207, "braille": "⠠⠞⠓⠑⠀⠺⠑⠁⠧⠑⠗⠀⠉⠕⠇⠇⠑⠉⠞⠑⠙⠀⠞⠓⠑⠀⠎⠞⠕⠝⠑⠀⠃⠗⠊⠙⠛⠑⠀⠃⠑⠋⠕⠗⠑⠀⠞⠓⠑⠀⠎⠞⠕⠗⠍⠲", "print": "The weaver collected the stone bridge before the storm."}
+{"id": 208, "braille": "⠠⠞⠓⠑⠀⠛⠁⠗⠙⠑⠝⠑⠗⠀⠙⠑⠎⠉⠗⠊⠃⠑⠙⠀⠞⠓⠑⠀⠎⠞⠕⠝⠑⠀⠃⠗⠊⠙⠛⠑⠀⠁⠋⠞⠑⠗⠀⠞⠓⠑⠀⠗⠁⠊⠝⠲", "print": "The gardener described the stone bridge after the rain."}
+{"id": 209, "braille": "⠠⠁⠀⠎⠉⠊⠑⠝⠞⠊⠎⠞⠀⠏⠇⠁⠝⠞⠑⠙⠀⠞⠓⠑⠀⠃⠗⠕⠅⠑⠝⠀⠉⠇⠕⠉⠅⠀⠞⠓⠗⠕⠥⠛⠓⠕⠥⠞⠀⠞⠓⠑⠀⠺⠊⠝⠞⠑⠗⠲", "print": "A scientist planted the broken clock throughout the winter."}
+{"id": 210, "braille": "⠠⠁⠀⠏⠁⠊⠝⠞⠑⠗⠀⠗⠑⠉⠕⠗⠙⠑⠙⠀⠞⠓⠑⠀⠃⠗⠕⠅⠑⠝⠀⠉⠇⠕⠉⠅⠀⠁⠉⠗⠕⠎⠎⠀⠞⠓⠑⠀⠧⠁⠇⠇⠑⠽⠲", "print": "A painter recorded the broken clock across the valley."}
+{"id": 211, "braille": "⠠⠞⠓⠑⠀⠃⠁⠅⠑⠗⠀⠉⠕⠇⠇⠑⠉⠞⠑⠙⠀⠞⠓⠑⠀⠟⠥⠊⠑⠞⠀⠛⠁⠗⠙⠑⠝⠀⠞⠓⠗⠕⠥⠛⠓⠕⠥⠞⠀⠞⠓⠑⠀⠺⠊⠝⠞⠑⠗⠲", "print": "The baker collected the quiet garden throughout the winter."}
+{"id": 212, "braille": "⠠⠞⠓⠑⠀⠛⠁⠗⠙⠑⠝⠑⠗⠀⠺⠁⠞⠉⠓⠑⠙⠀⠞⠓⠑⠀⠎⠞⠕⠝⠑⠀⠃⠗⠊⠙⠛⠑⠀⠥⠝⠙⠑⠗⠀⠞⠓⠑⠀⠕⠇⠙⠀⠞⠗⠑⠑⠲", "print": "The gardener watched the stone bridge under the old tree."}
+{"id": 213, "braille": "⠠⠞⠓⠑⠀⠃⠁⠅⠑⠗⠀⠝⠕⠞⠊⠉⠑⠙⠀⠁⠀⠓⠑⠁⠧⠽⠀⠃⠕⠭⠀⠙⠥⠗⠊⠝⠛⠀⠞⠓⠑⠀⠋⠑⠎⠞⠊⠧⠁⠇⠲", "print": "The baker noticed a heavy box during the festival."}
+{"id": 214, "braille": "⠠⠍⠽⠀⠝⠑⠊⠛⠓⠃⠕⠥⠗⠀⠺⠁⠞⠉⠓⠑⠙⠀⠞⠓⠑⠀⠎⠍⠁⠇⠇⠀⠃⠕⠁⠞⠀⠊⠝⠀⠞⠓⠑⠀⠍⠕⠗⠝⠊⠝⠛⠲", "print": "My neighbour watched the small boat in the morning."}
+{"id": 215, "braille": "⠠⠁⠀⠏⠁⠊⠝⠞⠑⠗⠀⠉⠕⠇⠇⠑⠉⠞⠑⠙⠀⠞⠓⠑⠀⠃⠗⠕⠅⠑⠝⠀⠉⠇⠕⠉⠅⠀⠁⠗⠕⠥⠝⠙⠀⠞⠓⠑⠀⠍⠁⠗⠅⠑⠞⠲", "print": "A painter collected the broken clock around the market."}
+{"id": 216, "braille": "⠠⠞⠓⠑⠀⠋⠁⠗⠍⠑⠗⠀⠙⠊⠎⠉⠕⠧⠑⠗⠑⠙⠀⠞⠓⠑⠀⠛⠇⠁⠎⠎⠀⠺⠊⠝⠙⠕⠺⠀⠊⠝⠀⠞⠓⠑⠀⠍⠕⠗⠝⠊⠝⠛⠲", "print": "The farmer discovered the glass window in the morning."}
+{"id": 217, "braille": "⠠⠞⠓⠑⠀⠓⠥⠝⠞⠑⠗⠀⠏⠕⠇⠊⠎⠓⠑⠙⠀⠺⠁⠗⠍⠀⠺⠕⠕⠇⠇⠑⠝⠀⠃⠇⠁⠝⠅⠑⠞⠎⠀⠥⠝⠙⠑⠗⠀⠞⠓⠑⠀⠕⠇⠙⠀⠞⠗⠑⠑⠲", "print": "The hunter polished warm woollen blankets under the old tree."}
+{"id": 218, "braille": "⠠⠁⠀⠍⠥⠎⠊⠉⠊⠁⠝⠀⠍⠑⠝⠞⠊⠕⠝⠑⠙⠀⠞⠓⠑⠀⠎⠍⠁⠇⠇⠀⠃⠕⠁⠞⠀⠁⠃⠕⠧⠑⠀⠞⠓⠑⠀⠧⠊⠇⠇⠁⠛⠑⠲", "print": "A musician mentioned the small boat above the village."}
+{"id": 219, "braille": "⠠⠁⠀⠎⠓⠕⠏⠅⠑⠑⠏⠑⠗⠀⠎⠞⠥⠙⠊⠑⠙⠀⠺⠁⠗⠍⠀⠺⠕⠕⠇⠇⠑⠝⠀⠃⠇⠁⠝⠅⠑⠞⠎⠀⠃⠑⠓⠊⠝⠙⠀⠞⠓⠑⠀⠃⠁⠗⠝⠲", "print": "A shopkeeper studied warm woollen blankets behind the barn."}
+{"id": 220, "braille": "⠠⠁⠀⠉⠁⠗⠏⠑⠝⠞⠑⠗⠀⠙⠑⠇⠊⠧⠑⠗⠑⠙⠀⠞⠓⠑⠀⠑⠍⠏⠞⠽⠀⠃⠁⠎⠅⠑⠞⠀⠃⠑⠎⠊⠙⠑⠀⠞⠓⠑⠀⠓⠁⠗⠃⠕⠥⠗⠲", "print": "A carpenter delivered the empty basket beside the harbour."}
+{"id": 221, "braille": "⠠⠁⠀⠍⠥⠎⠊⠉⠊⠁⠝⠀⠏⠇⠁⠝⠞⠑⠙⠀⠁⠀⠺⠑⠞⠀⠥⠍⠃⠗⠑⠇⠇⠁⠀⠥⠝⠙⠑⠗⠀⠞⠓⠑⠀⠕⠇⠙⠀⠞⠗⠑⠑⠲", "print": "A musician planted a wet umbrella under the old tree."}
+{"id": 222, "braille": "⠠⠞⠓⠑⠀⠕⠇⠙⠀⠍⠁⠝⠀⠏⠕⠇⠊⠎⠓⠑⠙⠀⠞⠓⠑⠀⠟⠥⠊⠑⠞⠀⠛⠁⠗⠙⠑⠝⠀⠃⠑⠎⠊⠙⠑⠀⠞⠓⠑⠀⠓⠁⠗⠃⠕⠥⠗⠲", "print": "The old man polished the quiet garden beside the harbour."}
+{"id": 223, "braille": "⠠⠞⠓⠑⠀⠑⠝⠛⠊⠝⠑⠑⠗⠀⠑⠭⠁⠍⠊⠝⠑⠙⠀⠞⠓⠑⠀⠑⠍⠏⠞⠽⠀⠃⠁⠎⠅⠑⠞⠀⠁⠇⠕⠝⠛⠀⠞⠓⠑⠀⠉⠕⠁⠎⠞⠲", "print": "The engineer examined the empty basket along the coast."}
+{"id": 224, "braille": "⠠⠞⠓⠑⠀⠑⠝⠛⠊⠝⠑⠑⠗⠀⠉⠇⠕⠎⠑⠙⠀⠁⠀⠃⠗⠊⠛⠓⠞⠀⠇⠁⠝⠞⠑⠗⠝⠀⠃⠑⠋⠕⠗⠑⠀⠞⠓⠑⠀⠎⠞⠕⠗⠍⠲", "print": "The engineer closed a bright lantern before the storm."}
+{"id": 225, "braille": "⠠⠞⠓⠑⠀⠞⠗⠁⠧⠑⠇⠇⠑⠗⠀⠉⠇⠕⠎⠑⠙⠀⠞⠓⠑⠀⠊⠗⠕⠝⠀⠛⠁⠞⠑⠀⠊⠝⠎⠊⠙⠑⠀⠞⠓⠑⠀⠍⠥⠎⠑⠥⠍⠲", "print": "The traveller closed the iron gate inside the museum."}
+{"id": 226, "braille": "⠠⠞⠓⠑⠀⠞⠑⠁⠉⠓⠑⠗⠀⠏⠁⠊⠝⠞⠑⠙⠀⠎⠕⠍⠑⠀⠋⠗⠑⠎⠓⠀⠃⠗⠑⠁⠙⠀⠃⠑⠎⠊⠙⠑⠀⠞⠓⠑⠀⠓⠁⠗⠃⠕⠥⠗⠲", "print": "The teacher painted some fresh bread beside the harbour."}
+{"id": 227, "braille": "⠠⠞⠓⠑⠀⠉⠁⠏⠞⠁⠊⠝⠀⠎⠞⠥⠙⠊⠑⠙⠀⠁⠀⠃⠗⠊⠛⠓⠞⠀⠇⠁⠝⠞⠑⠗⠝⠀⠃⠑⠎⠊⠙⠑⠀⠞⠓⠑⠀⠓⠁⠗⠃⠕⠥⠗⠲", "print": "The captain studied a bright lantern beside the harbour."}
+{"id": 228, "braille": "⠠⠁⠀⠙⠁⠝⠉⠑⠗⠀⠎⠞⠥⠙⠊⠑⠙⠀⠞⠓⠑⠀⠑⠍⠏⠞⠽⠀⠃⠁⠎⠅⠑⠞⠀⠁⠋⠞⠑⠗⠀⠞⠓⠑⠀⠗⠁⠊⠝⠲", "print": "A dancer studied the empty basket after the rain."}
+{"id": 229, "braille": "⠠⠞⠓⠑⠀⠞⠁⠊⠇⠕⠗⠀⠉⠕⠥⠝⠞⠑⠙⠀⠎⠕⠍⠑⠀⠋⠗⠑⠎⠓⠀⠃⠗⠑⠁⠙⠀⠊⠝⠎⠊⠙⠑⠀⠞⠓⠑⠀⠍⠥⠎⠑⠥⠍⠲", "print": "The tailor counted some fresh bread inside the museum."}
+{"id": 230, "braille": "⠠⠞⠓⠑⠀⠝⠥⠗⠎⠑⠀⠕⠏⠑⠝⠑⠙⠀⠞⠓⠑⠀⠞⠁⠇⠇⠀⠇⠁⠙⠙⠑⠗⠀⠥⠝⠙⠑⠗⠀⠞⠓⠑⠀⠕⠇⠙⠀⠞⠗⠑⠑⠲", "print": "The nurse opened the tall ladder under the old tree."}
+{"id": 231, "braille": "⠠⠞⠓⠑⠀⠓⠥⠝⠞⠑⠗⠀⠏⠇⠁⠝⠞⠑⠙⠀⠞⠓⠑⠀⠎⠍⠁⠇⠇⠀⠃⠕⠁⠞⠀⠁⠗⠕⠥⠝⠙⠀⠞⠓⠑⠀⠍⠁⠗⠅⠑⠞⠲", "print": "The hunter planted the small boat around the market."}
+{"id": 232, "braille": "⠠⠍⠽⠀⠝⠑⠊⠛⠓⠃⠕⠥⠗⠀⠙⠑⠇⠊⠧⠑⠗⠑⠙⠀⠁⠀⠎⠊⠇⠧⠑⠗⠀⠉⠕⠊⠝⠀⠝⠑⠁⠗⠀⠞⠓⠑⠀⠗⠊⠧⠑⠗⠲", "print": "My neighbour delivered a silver coin near the river."}
+{"id": 233, "braille": "⠠⠞⠓⠑⠀⠍⠑⠗⠉⠓⠁⠝⠞⠀⠉⠕⠇⠇⠑⠉⠞⠑⠙⠀⠞⠓⠑⠀⠛⠇⠁⠎⠎⠀⠺⠊⠝⠙⠕⠺⠀⠝⠑⠁⠗⠀⠞⠓⠑⠀⠗⠊⠧⠑⠗⠲", "print": "The merchant collected the glass window near the river."}
+{"id": 234, "braille": "⠠⠞⠓⠑⠀⠞⠗⠁⠧⠑⠇⠇⠑⠗⠀⠏⠁⠊⠝⠞⠑⠙⠀⠞⠓⠑⠀⠟⠥⠊⠑⠞⠀⠛⠁⠗⠙⠑⠝⠀⠁⠋⠞⠑⠗⠀⠞⠓⠑⠀⠗⠁⠊⠝⠲", "print": "The traveller painted the quiet garden after the rain."}
+{"id": 235, "braille": "⠠⠞⠓⠑⠀⠏⠊⠇⠕⠞⠀⠙⠊⠎⠉⠕⠧⠑⠗⠑⠙⠀⠞⠓⠑⠀⠊⠗⠕⠝⠀⠛⠁⠞⠑⠀⠁⠋⠞⠑⠗⠀⠞⠓⠑⠀⠗⠁⠊⠝⠲", "print": "The pilot discovered the iron gate after the rain."}
+{"id": 236, "braille": "⠠⠁⠀⠎⠓⠕⠏⠅⠑⠑⠏⠑⠗⠀⠗⠑⠏⠁⠊⠗⠑⠙⠀⠞⠓⠑⠀⠛⠇⠁⠎⠎⠀⠺⠊⠝⠙⠕⠺⠀⠥⠝⠙⠑⠗⠀⠞⠓⠑⠀⠕⠇⠙⠀⠞⠗⠑⠑⠲", "print": "A shopkeeper repaired the glass window under the old tree."}
+{"id": 237, "braille": "⠠⠁⠀⠙⠁⠝⠉⠑⠗⠀⠎⠞⠁⠗⠞⠑⠙⠀⠺⠁⠗⠍⠀⠺⠕⠕⠇⠇⠑⠝⠀⠃⠇⠁⠝⠅⠑⠞⠎⠀⠁⠗⠕⠥⠝⠙⠀⠞⠓⠑⠀⠍⠁⠗⠅⠑⠞⠲", "print": "A dancer started warm woollen blankets around the market."}
+{"id": 238, "braille": "⠠⠁⠀⠎⠁⠊⠇⠕⠗⠀⠏⠗⠑⠏⠁⠗⠑⠙⠀⠞⠓⠑⠀⠎⠞⠕⠝⠑⠀⠃⠗⠊⠙⠛⠑⠀⠃⠑⠋⠕⠗⠑⠀⠞⠓⠑⠀⠎⠞⠕⠗⠍⠲", "print": "A sailor prepared the stone bridge before the storm."}
+{"id": 239, "braille": "⠠⠞⠓⠑⠀⠙⠕⠉⠞⠕⠗⠀⠎⠞⠥⠙⠊⠑⠙⠀⠞⠓⠑⠀⠝⠁⠗⠗⠕⠺⠀⠗⠕⠁⠙⠀⠞⠓⠗⠕⠥⠛⠓⠕⠥⠞⠀⠞⠓⠑⠀⠺⠊⠝⠞⠑⠗⠲", "print": "The doctor studied the narrow road throughout the winter."}
+{"id": 240, "braille": "⠠⠞⠓⠑⠀⠙⠕⠉⠞⠕⠗⠀⠉⠕⠇⠇⠑⠉⠞⠑⠙⠀⠞⠓⠑⠀⠊⠗⠕⠝⠀⠛⠁⠞⠑⠀⠞⠓⠗⠕⠥⠛⠓⠕⠥⠞⠀⠞⠓⠑⠀⠺⠊⠝⠞⠑⠗⠲", "print": "The doctor collected the iron gate throughout the winter."}
+{"id": 241, "braille": "⠠⠞⠓⠑⠀⠓⠥⠝⠞⠑⠗⠀⠏⠁⠊⠝⠞⠑⠙⠀⠞⠓⠑⠀⠊⠗⠕⠝⠀⠛⠁⠞⠑⠀⠃⠑⠋⠕⠗⠑⠀⠞⠓⠑⠀⠎⠞⠕⠗⠍⠲", "print": "The hunter painted the iron gate before the storm."}
+{"id": 242, "braille": "⠠⠞⠓⠑⠀⠋⠁⠗⠍⠑⠗⠀⠕⠏⠑⠝⠑⠙⠀⠞⠓⠑⠀⠑⠍⠏⠞⠽⠀⠃⠁⠎⠅⠑⠞⠀⠃⠑⠝⠑⠁⠞⠓⠀⠞⠓⠑⠀⠃⠗⠊⠙⠛⠑⠲", "print": "The farmer opened the empty basket beneath the bridge."}
+{"id": 243, "braille": "⠠⠞⠓⠑⠀⠕⠇⠙⠀⠍⠁⠝⠀⠙⠊⠎⠉⠕⠧⠑⠗⠑⠙⠀⠗⠊⠏⠑⠀⠗⠑⠙⠀⠁⠏⠏⠇⠑⠎⠀⠁⠃⠕⠧⠑⠀⠞⠓⠑⠀⠧⠊⠇⠇⠁⠛⠑⠲", "print": "The old man discovered ripe red apples above the village."}
+{"id": 244, "braille": "⠠⠞⠓⠑⠀⠞⠑⠁⠉⠓⠑⠗⠀⠍⠑⠝⠞⠊⠕⠝⠑⠙⠀⠁⠀⠎⠊⠇⠧⠑⠗⠀⠉⠕⠊⠝⠀⠃⠑⠝⠑⠁⠞⠓⠀⠞⠓⠑⠀⠃⠗⠊⠙⠛⠑⠲", "print": "The teacher mentioned a silver coin beneath the bridge."}
+{"id": 245, "braille": "⠠⠞⠓⠑⠀⠺⠗⠊⠞⠑⠗⠀⠏⠁⠊⠝⠞⠑⠙⠀⠺⠁⠗⠍⠀⠺⠕⠕⠇⠇⠑⠝⠀⠃⠇⠁⠝⠅⠑⠞⠎⠀⠁⠋⠞⠑⠗⠀⠞⠓⠑⠀⠗⠁⠊⠝⠲", "print": "The writer painted warm woollen blankets after the rain."}
+{"id": 246, "braille": "⠠⠁⠀⠏⠁⠊⠝⠞⠑⠗⠀⠏⠇⠁⠝⠞⠑⠙⠀⠞⠓⠑⠀⠃⠗⠕⠅⠑⠝⠀⠉⠇⠕⠉⠅⠀⠊⠝⠎⠊⠙⠑⠀⠞⠓⠑⠀⠍⠥⠎⠑⠥⠍⠲", "print": "A painter planted the broken clock inside the museum."}
+{"id": 247, "braille": "⠠⠞⠓⠑⠀⠁⠗⠞⠊⠎⠞⠀⠉⠕⠥⠝⠞⠑⠙⠀⠎⠕⠍⠑⠀⠋⠗⠑⠎⠓⠀⠃⠗⠑⠁⠙⠀⠝⠑⠁⠗⠀⠞⠓⠑⠀⠗⠊⠧⠑⠗⠲", "print": "The artist counted some fresh bread near the river."}
+{"id": 248, "braille": "⠠⠁⠀⠎⠓⠕⠏⠅⠑⠑⠏⠑⠗⠀⠉⠇⠕⠎⠑⠙⠀⠞⠓⠑⠀⠞⠁⠇⠇⠀⠇⠁⠙⠙⠑⠗⠀⠃⠑⠎⠊⠙⠑⠀⠞⠓⠑⠀⠓⠁⠗⠃⠕⠥⠗⠲", "print": "A shopkeeper closed the tall ladder beside the harbour."}
+{"id": 249, "braille": "⠠⠞⠓⠑⠀⠞⠗⠁⠧⠑⠇⠇⠑⠗⠀⠋⠊⠝⠊⠎⠓⠑⠙⠀⠁⠀⠏⠁⠏⠑⠗⠀⠍⠁⠏⠀⠝⠑⠁⠗⠀⠞⠓⠑⠀⠗⠊⠧⠑⠗⠲", "print": "The traveller finished a paper map near the river."}
+{"id": 250, "braille": "⠠⠞⠓⠑⠀⠃⠁⠅⠑⠗⠀⠎⠞⠁⠗⠞⠑⠙⠀⠞⠓⠑⠀⠞⠁⠇⠇⠀⠇⠁⠙⠙⠑⠗⠀⠃⠑⠎⠊⠙⠑⠀⠞⠓⠑⠀⠓⠁⠗⠃⠕⠥⠗⠲", "print": "The baker started the tall ladder beside the harbour."}
+{"id": 251, "braille": "⠠⠞⠓⠑⠀⠕⠇⠙⠀⠍⠁⠝⠀⠋⠊⠝⠊⠎⠓⠑⠙⠀⠁⠀⠃⠗⠊⠛⠓⠞⠀⠇⠁⠝⠞⠑⠗⠝⠀⠁⠋⠞⠑⠗⠀⠞⠓⠑⠀⠗⠁⠊⠝⠲", "print": "The old man finished a bright lantern after the rain."}
+{"id": 252, "braille": "⠠⠞⠓⠑⠀⠋⠁⠗⠍⠑⠗⠀⠋⠕⠇⠇⠕⠺⠑⠙⠀⠞⠓⠑⠀⠝⠁⠗⠗⠕⠺⠀⠗⠕⠁⠙⠀⠥⠝⠙⠑⠗⠀⠞⠓⠑⠀⠕⠇⠙⠀⠞⠗⠑⠑⠲", "print": "The farmer followed the narrow road under the old tree."}
+{"id": 253, "braille": "⠠⠁⠀⠙⠁⠝⠉⠑⠗⠀⠗⠑⠉⠕⠗⠙⠑⠙⠀⠞⠓⠑⠀⠞⠁⠇⠇⠀⠇⠁⠙⠙⠑⠗⠀⠃⠑⠎⠊⠙⠑⠀⠞⠓⠑⠀⠓⠁⠗⠃⠕⠥⠗⠲", "print": "A dancer recorded the tall ladder beside the harbour."}
+{"id": 254, "braille": "⠠⠞⠓⠑⠀⠁⠗⠞⠊⠎⠞⠀⠙⠑⠇⠊⠧⠑⠗⠑⠙⠀⠞⠓⠑⠀⠛⠗⠑⠑⠝⠀⠋⠊⠑⠇⠙⠀⠁⠋⠞⠑⠗⠀⠞⠓⠑⠀⠗⠁⠊⠝⠲", "print": "The artist delivered the green field after the rain."}
+{"id": 255, "braille": "⠠⠞⠓⠑⠀⠍⠑⠗⠉⠓⠁⠝⠞⠀⠏⠗⠕⠞⠑⠉⠞⠑⠙⠀⠁⠀⠓⠑⠁⠧⠽⠀⠃⠕⠭⠀⠃⠑⠝⠑⠁⠞⠓⠀⠞⠓⠑⠀⠃⠗⠊⠙⠛⠑⠲", "print": "The merchant protected a heavy box beneath the bridge."}
+{"id": 256, "braille": "⠠⠞⠓⠑⠀⠃⠁⠅⠑⠗⠀⠉⠇⠕⠎⠑⠙⠀⠞⠓⠑⠀⠛⠇⠁⠎⠎⠀⠺⠊⠝⠙⠕⠺⠀⠃⠑⠓⠊⠝⠙⠀⠞⠓⠑⠀⠃⠁⠗⠝⠲", "print": "The baker closed the glass window behind the barn."}
+{"id": 257, "braille": "⠠⠁⠀⠉⠁⠗⠏⠑⠝⠞⠑⠗⠀⠏⠕⠇⠊⠎⠓⠑⠙⠀⠞⠓⠑⠀⠝⠁⠗⠗⠕⠺⠀⠗⠕⠁⠙⠀⠊⠝⠀⠞⠓⠑⠀⠍⠕⠗⠝⠊⠝⠛⠲", "print": "A carpenter polished the narrow road in the morning."}
+{"id": 258, "braille": "⠠⠞⠓⠑⠀⠓⠥⠝⠞⠑⠗⠀⠉⠕⠇⠇⠑⠉⠞⠑⠙⠀⠞⠓⠑⠀⠞⠁⠇⠇⠀⠇⠁⠙⠙⠑⠗⠀⠁⠉⠗⠕⠎⠎⠀⠞⠓⠑⠀⠧⠁⠇⠇⠑⠽⠲", "print": "The hunter collected the tall ladder across the valley."}
+{"id": 259, "braille": "⠠⠞⠓⠑⠀⠇⠊⠃⠗⠁⠗⠊⠁⠝⠀⠏⠁⠊⠝⠞⠑⠙⠀⠍⠁⠝⠽⠀⠺⠕⠕⠙⠑⠝⠀⠉⠓⠁⠊⠗⠎⠀⠝⠑⠁⠗⠀⠞⠓⠑⠀⠗⠊⠧⠑⠗⠲", "print": "The librarian painted many wooden chairs near the river."}
+{"id": 260, "braille": "⠠⠞⠓⠑⠀⠝⠥⠗⠎⠑⠀⠍⠑⠝⠞⠊⠕⠝⠑⠙⠀⠺⠁⠗⠍⠀⠺⠕⠕⠇⠇⠑⠝⠀⠃⠇⠁⠝⠅⠑⠞⠎⠀⠙⠥⠗⠊⠝⠛⠀⠞⠓⠑⠀⠋⠑⠎⠞⠊⠧⠁⠇⠲", "print": "The nurse mentioned warm woollen blankets during the festival."}
+{"id": 261, "braille": "⠠⠁⠀⠎⠉⠊⠑⠝⠞⠊⠎⠞⠀⠎⠅⠑⠞⠉⠓⠑⠙⠀⠺⠁⠗⠍⠀⠺⠕⠕⠇⠇⠑⠝⠀⠃⠇⠁⠝⠅⠑⠞⠎⠀⠁⠗⠕⠥⠝⠙⠀⠞⠓⠑⠀⠍⠁⠗⠅⠑⠞⠲", "print": "A scientist sketched warm woollen blankets around the market."}
+{"id": 262, "braille": "⠠⠞⠓⠑⠀⠍⠑⠗⠉⠓⠁⠝⠞⠀⠎⠅⠑⠞⠉⠓⠑⠙⠀⠎⠕⠍⠑⠀⠋⠗⠑⠎⠓⠀⠃⠗⠑⠁⠙⠀⠥⠝⠙⠑⠗⠀⠞⠓⠑⠀⠕⠇⠙⠀⠞⠗⠑⠑⠲", "print": "The merchant sketched some fresh bread under the old tree."}
+{"id": 263, "braille": "⠠⠍⠽⠀⠝⠑⠊⠛⠓⠃⠕⠥⠗⠀⠑⠭⠏⠇⠁⠊⠝⠑⠙⠀⠞⠓⠑⠀⠊⠗⠕⠝⠀⠛⠁⠞⠑⠀⠁⠋⠞⠑⠗⠀⠞⠓⠑⠀⠗⠁⠊⠝⠲", "print": "My neighbour explained the iron gate after the rain."}
+{"id": 264, "braille": "⠠⠞⠓⠑⠀⠉⠁⠏⠞⠁⠊⠝⠀⠎⠅⠑⠞⠉⠓⠑⠙⠀⠞⠓⠑⠀⠛⠗⠑⠑⠝⠀⠋⠊⠑⠇⠙⠀⠁⠋⠞⠑⠗⠀⠞⠓⠑⠀⠗⠁⠊⠝⠲", "print": "The captain sketched the green field after the rain."}
+{"id": 265, "braille": "⠠⠁⠀⠉⠁⠗⠏⠑⠝⠞⠑⠗⠀⠙⠑⠎⠉⠗⠊⠃⠑⠙⠀⠁⠀⠃⠗⠊⠛⠓⠞⠀⠇⠁⠝⠞⠑⠗⠝⠀⠃⠑⠋⠕⠗⠑⠀⠞⠓⠑⠀⠎⠞⠕⠗⠍⠲", "print": "A carpenter described a bright lantern before the storm."}
+{"id": 266, "braille": "⠠⠞⠓⠑⠀⠏⠊⠇⠕⠞⠀⠎⠞⠥⠙⠊⠑⠙⠀⠞⠓⠑⠀⠛⠗⠑⠑⠝⠀⠋⠊⠑⠇⠙⠀⠁⠗⠕⠥⠝⠙⠀⠞⠓⠑⠀⠍⠁⠗⠅⠑⠞⠲", "print": "The pilot studied the green field around the market."}
+{"id": 267, "braille": "⠠⠁⠀⠙⠁⠝⠉⠑⠗⠀⠙⠊⠎⠉⠕⠧⠑⠗⠑⠙⠀⠎⠕⠍⠑⠀⠋⠗⠑⠎⠓⠀⠃⠗⠑⠁⠙⠀⠃⠑⠋⠕⠗⠑⠀⠞⠓⠑⠀⠎⠞⠕⠗⠍⠲", "print": "A dancer discovered some fresh bread before the storm."}
+{"id": 268, "braille": "⠠⠞⠓⠑⠀⠋⠊⠎⠓⠑⠗⠍⠁⠝⠀⠎⠅⠑⠞⠉⠓⠑⠙⠀⠎⠕⠍⠑⠀⠋⠗⠑⠎⠓⠀⠃⠗⠑⠁⠙⠀⠙⠥⠗⠊⠝⠛⠀⠞⠓⠑⠀⠋⠑⠎⠞⠊⠧⠁⠇⠲", "print": "The fisherman sketched some fresh bread during the festival."}
+{"id": 269, "braille": "⠠⠞⠓⠑⠀⠃⠁⠅⠑⠗⠀⠁⠗⠗⠁⠝⠛⠑⠙⠀⠞⠓⠑⠀⠛⠗⠑⠑⠝⠀⠋⠊⠑⠇⠙⠀⠞⠓⠗⠕⠥⠛⠓⠕⠥⠞⠀⠞⠓⠑⠀⠺⠊⠝⠞⠑⠗⠲", "print": "The baker arranged the green field throughout the winter."}
+{"id": 270, "braille": "⠠⠁⠀⠏⠁⠊⠝⠞⠑⠗⠀⠉⠕⠥⠝⠞⠑⠙⠀⠍⠁⠝⠽⠀⠺⠕⠕⠙⠑⠝⠀⠉⠓⠁⠊⠗⠎⠀⠁⠇⠕⠝⠛⠀⠞⠓⠑⠀⠉⠕⠁⠎⠞⠲", "print": "A painter counted many wooden chairs along the coast."}
+{"id": 271, "braille": "⠠⠞⠓⠑⠀⠺⠗⠊⠞⠑⠗⠀⠏⠇⠁⠝⠞⠑⠙⠀⠍⠁⠝⠽⠀⠺⠕⠕⠙⠑⠝⠀⠉⠓⠁⠊⠗⠎⠀⠃⠑⠝⠑⠁⠞⠓⠀⠞⠓⠑⠀⠃⠗⠊⠙⠛⠑⠲", "print": "The writer planted many wooden chairs beneath the bridge."}
+{"id": 272, "braille": "⠠⠞⠓⠑⠀⠑⠝⠛⠊⠝⠑⠑⠗⠀⠝⠕⠞⠊⠉⠑⠙⠀⠁⠀⠓⠑⠁⠧⠽⠀⠃⠕⠭⠀⠃⠑⠓⠊⠝⠙⠀⠞⠓⠑⠀⠃⠁⠗⠝⠲", "print": "The engineer noticed a heavy box behind the barn."}
+{"id": 273, "braille": "⠠⠞⠓⠑⠀⠙⠕⠉⠞⠕⠗⠀⠝⠕⠞⠊⠉⠑⠙⠀⠞⠓⠑⠀⠑⠍⠏⠞⠽⠀⠃⠁⠎⠅⠑⠞⠀⠃⠑⠋⠕⠗⠑⠀⠞⠓⠑⠀⠎⠞⠕⠗⠍⠲", "print": "The doctor noticed the empty basket before the storm."}
+{"id": 274, "braille": "⠠⠞⠓⠑⠀⠉⠁⠏⠞⠁⠊⠝⠀⠗⠑⠍⠑⠍⠃⠑⠗⠑⠙⠀⠞⠓⠑⠀⠝⠁⠗⠗⠕⠺⠀⠗⠕⠁⠙⠀⠙⠥⠗⠊⠝⠛⠀⠞⠓⠑⠀⠋⠑⠎⠞⠊⠧⠁⠇⠲", "print": "The captain remembered the narrow road during the festival."}
+{"id": 275, "braille": "⠠⠞⠓⠑⠀⠍⠑⠗⠉⠓⠁⠝⠞⠀⠛⠁⠞⠓⠑⠗⠑⠙⠀⠁⠀⠺⠑⠞⠀⠥⠍⠃⠗⠑⠇⠇⠁⠀⠁⠃⠕⠧⠑⠀⠞⠓⠑⠀⠧⠊⠇⠇⠁⠛⠑⠲", "print": "The merchant gathered a wet umbrella above the village."}
+{"id": 276, "braille": "⠠⠁⠀⠉⠁⠗⠏⠑⠝⠞⠑⠗⠀⠎⠅⠑⠞⠉⠓⠑⠙⠀⠁⠀⠏⠁⠏⠑⠗⠀⠍⠁⠏⠀⠃⠑⠋⠕⠗⠑⠀⠞⠓⠑⠀⠎⠞⠕⠗⠍⠲", "print": "A carpenter sketched a paper map before the storm."}
+{"id": 277, "braille": "⠠⠁⠀⠙⠁⠝⠉⠑⠗⠀⠺⠁⠞⠉⠓⠑⠙⠀⠍⠁⠝⠽⠀⠺⠕⠕⠙⠑⠝⠀⠉⠓⠁⠊⠗⠎⠀⠁⠇⠕⠝⠛⠀⠞⠓⠑⠀⠉⠕⠁⠎⠞⠲", "print": "A dancer watched many wooden chairs along the coast."}
+{"id": 278, "braille": "⠠⠁⠀⠎⠓⠕⠏⠅⠑⠑⠏⠑⠗⠀⠉⠕⠥⠝⠞⠑⠙⠀⠗⠊⠏⠑⠀⠗⠑⠙⠀⠁⠏⠏⠇⠑⠎⠀⠊⠝⠎⠊⠙⠑⠀⠞⠓⠑⠀⠍⠥⠎⠑⠥⠍⠲", "print": "A shopkeeper counted ripe red apples inside the museum."}
+{"id": 279, "braille": "⠠⠞⠓⠑⠀⠞⠑⠁⠉⠓⠑⠗⠀⠗⠑⠉⠕⠗⠙⠑⠙⠀⠞⠓⠑⠀⠎⠞⠕⠝⠑⠀⠃⠗⠊⠙⠛⠑⠀⠁⠉⠗⠕⠎⠎⠀⠞⠓⠑⠀⠧⠁⠇⠇⠑⠽⠲", "print": "The teacher recorded the stone bridge across the valley."}
+{"id": 280, "braille": "⠠⠞⠓⠑⠀⠃⠁⠅⠑⠗⠀⠑⠭⠁⠍⠊⠝⠑⠙⠀⠞⠓⠑⠀⠞⠁⠇⠇⠀⠇⠁⠙⠙⠑⠗⠀⠃⠑⠎⠊⠙⠑⠀⠞⠓⠑⠀⠓⠁⠗⠃⠕⠥⠗⠲", "print": "The baker examined the tall ladder beside the harbour."}
+{"id": 281, "braille": "⠠⠁⠀⠉⠁⠗⠏⠑⠝⠞⠑⠗⠀⠋⠕⠇⠇⠕⠺⠑⠙⠀⠞⠓⠑⠀⠎⠍⠁⠇⠇⠀⠃⠕⠁⠞⠀⠊⠝⠀⠞⠓⠑⠀⠍⠕⠗⠝⠊⠝⠛⠲", "print": "A carpenter followed the small boat in the morning."}
+{"id": 282, "braille": "⠠⠞⠓⠑⠀⠝⠥⠗⠎⠑⠀⠍⠑⠝⠞⠊⠕⠝⠑⠙⠀⠞⠓⠑⠀⠛⠗⠑⠑⠝⠀⠋⠊⠑⠇⠙⠀⠁⠇⠕⠝⠛⠀⠞⠓⠑⠀⠉⠕⠁⠎⠞⠲", "print": "The nurse mentioned the green field along the coast."}
+{"id": 283, "braille": "⠠⠞⠓⠑⠀⠞⠁⠊⠇⠕⠗⠀⠉⠁⠗⠗⠊⠑⠙⠀⠞⠓⠑⠀⠝⠁⠗⠗⠕⠺⠀⠗⠕⠁⠙⠀⠁⠃⠕⠧⠑⠀⠞⠓⠑⠀⠧⠊⠇⠇⠁⠛⠑⠲", "print": "The tailor carried the narrow road above the village."}
+{"id": 284, "braille": "⠠⠞⠓⠑⠀⠺⠑⠁⠧⠑⠗⠀⠁⠗⠗⠁⠝⠛⠑⠙⠀⠺⠁⠗⠍⠀⠺⠕⠕⠇⠇⠑⠝⠀⠃⠇⠁⠝⠅⠑⠞⠎⠀⠁⠉⠗⠕⠎⠎⠀⠞⠓⠑⠀⠧⠁⠇⠇⠑⠽⠲", "print": "The weaver arranged warm woollen blankets across the valley."}
+{"id": 285, "braille": "⠠⠞⠓⠑⠀⠓⠥⠝⠞⠑⠗⠀⠉⠕⠇⠇⠑⠉⠞⠑⠙⠀⠞⠓⠑⠀⠛⠗⠑⠑⠝⠀⠋⠊⠑⠇⠙⠀⠃⠑⠓⠊⠝⠙⠀⠞⠓⠑⠀⠃⠁⠗⠝⠲", "print": "The hunter collected the green field behind the barn."}
+{"id": 286, "braille": "⠠⠞⠓⠑⠀⠓⠥⠝⠞⠑⠗⠀⠏⠗⠕⠞⠑⠉⠞⠑⠙⠀⠎⠑⠧⠑⠗⠁⠇⠀⠕⠇⠙⠀⠃⠕⠕⠅⠎⠀⠊⠝⠀⠞⠓⠑⠀⠍⠕⠗⠝⠊⠝⠛⠲", "print": "The hunter protected several old books in the morning."}
+{"id": 287, "braille": "⠠⠁⠀⠉⠁⠗⠏⠑⠝⠞⠑⠗⠀⠋⠕⠇⠇⠕⠺⠑⠙⠀⠞⠓⠑⠀⠊⠗⠕⠝⠀⠛⠁⠞⠑⠀⠃⠑⠓⠊⠝⠙⠀⠞⠓⠑⠀⠃⠁⠗⠝⠲", "print": "A carpenter followed the iron gate behind the barn."}
+{"id": 288, "braille": "⠠⠞⠓⠑⠀⠞⠗⠁⠧⠑⠇⠇⠑⠗⠀⠏⠁⠊⠝⠞⠑⠙⠀⠎⠕⠍⠑⠀⠋⠗⠑⠎⠓⠀⠃⠗⠑⠁⠙⠀⠝⠑⠁⠗⠀⠞⠓⠑⠀⠗⠊⠧⠑⠗⠲", "print": "The traveller painted some fresh bread near the river."}
+{"id": 289, "braille": "⠠⠁⠀⠉⠁⠗⠏⠑⠝⠞⠑⠗⠀⠏⠁⠊⠝⠞⠑⠙⠀⠎⠕⠍⠑⠀⠋⠗⠑⠎⠓⠀⠃⠗⠑⠁⠙⠀⠃⠑⠎⠊⠙⠑⠀⠞⠓⠑⠀⠓⠁⠗⠃⠕⠥⠗⠲", "print": "A carpenter painted some fresh bread beside the harbour."}
+{"id": 290, "braille": "⠠⠞⠓⠑⠀⠇⠊⠃⠗⠁⠗⠊⠁⠝⠀⠗⠑⠍⠑⠍⠃⠑⠗⠑⠙⠀⠁⠀⠓⠑⠁⠧⠽⠀⠃⠕⠭⠀⠙⠥⠗⠊⠝⠛⠀⠞⠓⠑⠀⠋⠑⠎⠞⠊⠧⠁⠇⠲", "print": "The librarian remembered a heavy box during the festival."}
+{"id": 291, "braille": "⠠⠍⠽⠀⠝⠑⠊⠛⠓⠃⠕⠥⠗⠀⠋⠊⠝⠊⠎⠓⠑⠙⠀⠞⠓⠑⠀⠃⠗⠕⠅⠑⠝⠀⠉⠇⠕⠉⠅⠀⠥⠝⠙⠑⠗⠀⠞⠓⠑⠀⠕⠇⠙⠀⠞⠗⠑⠑⠲", "print": "My neighbour finished the broken clock under the old tree."}
+{"id": 292, "braille": "⠠⠁⠀⠙⠁⠝⠉⠑⠗⠀⠍⠑⠝⠞⠊⠕⠝⠑⠙⠀⠞⠓⠑⠀⠛⠗⠑⠑⠝⠀⠋⠊⠑⠇⠙⠀⠁⠇⠕⠝⠛⠀⠞⠓⠑⠀⠉⠕⠁⠎⠞⠲", "print": "A dancer mentioned the green field along the coast."}
+{"id": 293, "braille": "⠠⠁⠀⠏⠁⠊⠝⠞⠑⠗⠀⠙⠊⠎⠉⠕⠧⠑⠗⠑⠙⠀⠞⠓⠑⠀⠎⠍⠁⠇⠇⠀⠃⠕⠁⠞⠀⠞⠓⠗⠕⠥⠛⠓⠕⠥⠞⠀⠞⠓⠑⠀⠺⠊⠝⠞⠑⠗⠲", "print": "A painter discovered the small boat throughout the winter."}
+{"id": 294, "braille": "⠠⠞⠓⠑⠀⠙⠕⠉⠞⠕⠗⠀⠗⠑⠉⠕⠗⠙⠑⠙⠀⠁⠀⠃⠗⠊⠛⠓⠞⠀⠇⠁⠝⠞⠑⠗⠝⠀⠞⠓⠗⠕⠥⠛⠓⠕⠥⠞⠀⠞⠓⠑⠀⠺⠊⠝⠞⠑⠗⠲", "print": "The doctor recorded a bright lantern throughout the winter."}
+{"id": 295, "braille": "⠠⠞⠓⠑⠀⠁⠗⠞⠊⠎⠞⠀⠑⠭⠁⠍⠊⠝⠑⠙⠀⠞⠓⠑⠀⠊⠗⠕⠝⠀⠛⠁⠞⠑⠀⠁⠗⠕⠥⠝⠙⠀⠞⠓⠑⠀⠍⠁⠗⠅⠑⠞⠲", "print": "The artist examined the iron gate around the market."}
+{"id": 296, "braille": "⠠⠞⠓⠑⠀⠏⠊⠇⠕⠞⠀⠏⠗⠑⠏⠁⠗⠑⠙⠀⠁⠀⠏⠁⠏⠑⠗⠀⠍⠁⠏⠀⠝⠑⠁⠗⠀⠞⠓⠑⠀⠗⠊⠧⠑⠗⠲", "print": "The pilot prepared a paper map near the river."}
+{"id": 297, "braille": "⠠⠞⠓⠑⠀⠍⠑⠗⠉⠓⠁⠝⠞⠀⠑⠭⠏⠇⠁⠊⠝⠑⠙⠀⠁⠀⠏⠁⠏⠑⠗⠀⠍⠁⠏⠀⠃⠑⠎⠊⠙⠑⠀⠞⠓⠑⠀⠓⠁⠗⠃⠕⠥⠗⠲", "print": "The merchant explained a paper map beside the harbour."}
+{"id": 298, "braille": "⠠⠞⠓⠑⠀⠽⠕⠥⠝⠛⠀⠛⠊⠗⠇⠀⠏⠗⠕⠞⠑⠉⠞⠑⠙⠀⠞⠓⠑⠀⠎⠍⠁⠇⠇⠀⠃⠕⠁⠞⠀⠃⠑⠋⠕⠗⠑⠀⠞⠓⠑⠀⠎⠞⠕⠗⠍⠲", "print": "The young girl protected the small boat before the storm."}
+{"id": 299, "braille": "⠠⠁⠀⠎⠓⠕⠏⠅⠑⠑⠏⠑⠗⠀⠗⠑⠍⠑⠍⠃⠑⠗⠑⠙⠀⠞⠓⠑⠀⠑⠍⠏⠞⠽⠀⠃⠁⠎⠅⠑⠞⠀⠁⠃⠕⠧⠑⠀⠞⠓⠑⠀⠧⠊⠇⠇⠁⠛⠑⠲", "print": "A shopkeeper remembered the empty basket above the village."}
+{"id": 300, "braille": "⠠⠍⠽⠀⠝⠑⠊⠛⠓⠃⠕⠥⠗⠀⠑⠭⠁⠍⠊⠝⠑⠙⠀⠞⠓⠑⠀⠃⠗⠕⠅⠑⠝⠀⠉⠇⠕⠉⠅⠀⠃⠑⠓⠊⠝⠙⠀⠞⠓⠑⠀⠃⠁⠗⠝⠲", "print": "My neighbour examined the broken clock behind the barn."}
+{"id": 301, "braille": "⠠⠁⠀⠎⠉⠊⠑⠝⠞⠊⠎⠞⠀⠗⠑⠏⠁⠊⠗⠑⠙⠀⠁⠀⠃⠗⠊⠛⠓⠞⠀⠇⠁⠝⠞⠑⠗⠝⠀⠃⠑⠋⠕⠗⠑⠀⠞⠓⠑⠀⠎⠞⠕⠗⠍⠲", "print": "A scientist repaired a bright lantern before the storm."}
+{"id": 302, "braille": "⠠⠞⠓⠑⠀⠑⠝⠛⠊⠝⠑⠑⠗⠀⠗⠑⠉⠕⠗⠙⠑⠙⠀⠁⠀⠃⠗⠊⠛⠓⠞⠀⠇⠁⠝⠞⠑⠗⠝⠀⠁⠉⠗⠕⠎⠎⠀⠞⠓⠑⠀⠧⠁⠇⠇⠑⠽⠲", "print": "The engineer recorded a bright lantern across the valley."}
+{"id": 303, "braille": "⠠⠁⠀⠎⠓⠕⠏⠅⠑⠑⠏⠑⠗⠀⠺⠁⠞⠉⠓⠑⠙⠀⠍⠁⠝⠽⠀⠺⠕⠕⠙⠑⠝⠀⠉⠓⠁⠊⠗⠎⠀⠁⠃⠕⠧⠑⠀⠞⠓⠑⠀⠧⠊⠇⠇⠁⠛⠑⠲", "print": "A shopkeeper watched many wooden chairs above the village."}
+{"id": 304, "braille": "⠠⠁⠀⠎⠁⠊⠇⠕⠗⠀⠎⠞⠁⠗⠞⠑⠙⠀⠍⠁⠝⠽⠀⠺⠕⠕⠙⠑⠝⠀⠉⠓⠁⠊⠗⠎⠀⠊⠝⠀⠞⠓⠑⠀⠍⠕⠗⠝⠊⠝⠛⠲", "print": "A sailor started many wooden chairs in the morning."}
+{"id": 305, "braille": "⠠⠞⠓⠑⠀⠺⠑⠁⠧⠑⠗⠀⠍⠑⠝⠞⠊⠕⠝⠑⠙⠀⠞⠓⠑⠀⠎⠍⠁⠇⠇⠀⠃⠕⠁⠞⠀⠁⠃⠕⠧⠑⠀⠞⠓⠑⠀⠧⠊⠇⠇⠁⠛⠑⠲", "print": "The weaver mentioned the small boat above the village."}
+{"id": 306, "braille": "⠠⠞⠓⠑⠀⠁⠗⠞⠊⠎⠞⠀⠺⠁⠞⠉⠓⠑⠙⠀⠞⠓⠑⠀⠞⠁⠇⠇⠀⠇⠁⠙⠙⠑⠗⠀⠁⠉⠗⠕⠎⠎⠀⠞⠓⠑⠀⠧⠁⠇⠇⠑⠽⠲", "print": "The artist watched the tall ladder across the valley."}
+{"id": 307, "braille": "⠠⠁⠀⠎⠞⠥⠙⠑⠝⠞⠀⠏⠗⠕⠞⠑⠉⠞⠑⠙⠀⠎⠕⠍⠑⠀⠋⠗⠑⠎⠓⠀⠃⠗⠑⠁⠙⠀⠃⠑⠎⠊⠙⠑⠀⠞⠓⠑⠀⠓⠁⠗⠃⠕⠥⠗⠲", "print": "A student protected some fresh bread beside the harbour."}
+{"id": 308, "braille": "⠠⠞⠓⠑⠀⠝⠥⠗⠎⠑⠀⠗⠑⠏⠁⠊⠗⠑⠙⠀⠞⠓⠑⠀⠛⠇⠁⠎⠎⠀⠺⠊⠝⠙⠕⠺⠀⠞⠓⠗⠕⠥⠛⠓⠕⠥⠞⠀⠞⠓⠑⠀⠺⠊⠝⠞⠑⠗⠲", "print": "The nurse repaired the glass window throughout the winter."}
+{"id": 309, "braille": "⠠⠁⠀⠉⠓⠊⠇⠙⠀⠉⠁⠗⠗⠊⠑⠙⠀⠞⠓⠑⠀⠎⠞⠕⠝⠑⠀⠃⠗⠊⠙⠛⠑⠀⠁⠋⠞⠑⠗⠀⠞⠓⠑⠀⠗⠁⠊⠝⠲", "print": "A child carried the stone bridge after the rain."}
+{"id": 310, "braille": "⠠⠞⠓⠑⠀⠝⠥⠗⠎⠑⠀⠁⠗⠗⠁⠝⠛⠑⠙⠀⠞⠓⠑⠀⠟⠥⠊⠑⠞⠀⠛⠁⠗⠙⠑⠝⠀⠁⠗⠕⠥⠝⠙⠀⠞⠓⠑⠀⠍⠁⠗⠅⠑⠞⠲", "print": "The nurse arranged the quiet garden around the market."}
+{"id": 311, "braille": "⠠⠁⠀⠎⠓⠕⠏⠅⠑⠑⠏⠑⠗⠀⠙⠑⠎⠉⠗⠊⠃⠑⠙⠀⠍⠁⠝⠽⠀⠺⠕⠕⠙⠑⠝⠀⠉⠓⠁⠊⠗⠎⠀⠊⠝⠀⠞⠓⠑⠀⠍⠕⠗⠝⠊⠝⠛⠲", "print": "A shopkeeper described many wooden chairs in the morning."}
+{"id": 312, "braille": "⠠⠁⠀⠎⠓⠕⠏⠅⠑⠑⠏⠑⠗⠀⠏⠗⠑⠏⠁⠗⠑⠙⠀⠁⠀⠓⠑⠁⠧⠽⠀⠃⠕⠭⠀⠊⠝⠀⠞⠓⠑⠀⠍⠕⠗⠝⠊⠝⠛⠲", "print": "A shopkeeper prepared a heavy box in the morning."}
+{"id": 313, "braille": "⠠⠞⠓⠑⠀⠋⠊⠎⠓⠑⠗⠍⠁⠝⠀⠎⠅⠑⠞⠉⠓⠑⠙⠀⠞⠓⠑⠀⠝⠁⠗⠗⠕⠺⠀⠗⠕⠁⠙⠀⠃⠑⠋⠕⠗⠑⠀⠞⠓⠑⠀⠎⠞⠕⠗⠍⠲", "print": "The fisherman sketched the narrow road before the storm."}
+{"id": 314, "braille": "⠠⠁⠀⠉⠓⠊⠇⠙⠀⠙⠑⠎⠉⠗⠊⠃⠑⠙⠀⠞⠓⠑⠀⠛⠇⠁⠎⠎⠀⠺⠊⠝⠙⠕⠺⠀⠁⠗⠕⠥⠝⠙⠀⠞⠓⠑⠀⠍⠁⠗⠅⠑⠞⠲", "print": "A child described the glass window around the market."}
+{"id": 315, "braille": "⠠⠞⠓⠑⠀⠙⠕⠉⠞⠕⠗⠀⠉⠕⠇⠇⠑⠉⠞⠑⠙⠀⠺⠁⠗⠍⠀⠺⠕⠕⠇⠇⠑⠝⠀⠃⠇⠁⠝⠅⠑⠞⠎⠀⠁⠗⠕⠥⠝⠙⠀⠞⠓⠑⠀⠍⠁⠗⠅⠑⠞⠲", "print": "The doctor collected warm woollen blankets around the market."}
+{"id": 316, "braille": "⠠⠁⠀⠉⠁⠗⠏⠑⠝⠞⠑⠗⠀⠉⠁⠗⠗⠊⠑⠙⠀⠎⠑⠧⠑⠗⠁⠇⠀⠕⠇⠙⠀⠃⠕⠕⠅⠎⠀⠁⠉⠗⠕⠎⠎⠀⠞⠓⠑⠀⠧⠁⠇⠇⠑⠽⠲", "print": "A carpenter carried several old books across the valley."}
+{"id": 317, "braille": "⠠⠞⠓⠑⠀⠓⠥⠝⠞⠑⠗⠀⠗⠑⠉⠕⠗⠙⠑⠙⠀⠎⠑⠧⠑⠗⠁⠇⠀⠕⠇⠙⠀⠃⠕⠕⠅⠎⠀⠊⠝⠀⠞⠓⠑⠀⠍⠕⠗⠝⠊⠝⠛⠲", "print": "The hunter recorded several old books in the morning."}
+{"id": 318, "braille": "⠠⠞⠓⠑⠀⠍⠑⠗⠉⠓⠁⠝⠞⠀⠋⠕⠇⠇⠕⠺⠑⠙⠀⠞⠓⠑⠀⠑⠍⠏⠞⠽⠀⠃⠁⠎⠅⠑⠞⠀⠝⠑⠁⠗⠀⠞⠓⠑⠀⠗⠊⠧⠑⠗⠲", "print": "The merchant followed the empty basket near the river."}
+{"id": 319, "braille": "⠠⠞⠓⠑⠀⠺⠗⠊⠞⠑⠗⠀⠍⠑⠝⠞⠊⠕⠝⠑⠙⠀⠗⠊⠏⠑⠀⠗⠑⠙⠀⠁⠏⠏⠇⠑⠎⠀⠃⠑⠝⠑⠁⠞⠓⠀⠞⠓⠑⠀⠃⠗⠊⠙⠛⠑⠲", "print": "The writer mentioned ripe red apples beneath the bridge."}
+{"id": 320, "braille": "⠠⠞⠓⠑⠀⠞⠁⠊⠇⠕⠗⠀⠙⠑⠇⠊⠧⠑⠗⠑⠙⠀⠞⠓⠑⠀⠑⠍⠏⠞⠽⠀⠃⠁⠎⠅⠑⠞⠀⠃⠑⠋⠕⠗⠑⠀⠞⠓⠑⠀⠎⠞⠕⠗⠍⠲", "print": "The tailor delivered the empty basket before the storm."}
+{"id": 321, "braille": "⠠⠁⠀⠏⠁⠊⠝⠞⠑⠗⠀⠍⠑⠝⠞⠊⠕⠝⠑⠙⠀⠞⠓⠑⠀⠃⠗⠕⠅⠑⠝⠀⠉⠇⠕⠉⠅⠀⠃⠑⠋⠕⠗⠑⠀⠞⠓⠑⠀⠎⠞⠕⠗⠍⠲", "print": "A painter mentioned the broken clock before the storm."}
+{"id": 322, "braille": "⠠⠁⠀⠙⠁⠝⠉⠑⠗⠀⠗⠑⠍⠑⠍⠃⠑⠗⠑⠙⠀⠁⠀⠃⠗⠊⠛⠓⠞⠀⠇⠁⠝⠞⠑⠗⠝⠀⠝⠑⠁⠗⠀⠞⠓⠑⠀⠗⠊⠧⠑⠗⠲", "print": "A dancer remembered a bright lantern near the river."}
+{"id": 323, "braille": "⠠⠞⠓⠑⠀⠁⠗⠞⠊⠎⠞⠀⠎⠞⠁⠗⠞⠑⠙⠀⠁⠀⠏⠁⠏⠑⠗⠀⠍⠁⠏⠀⠙⠥⠗⠊⠝⠛⠀⠞⠓⠑⠀⠋⠑⠎⠞⠊⠧⠁⠇⠲", "print": "The artist started a paper map during the festival."}
+{"id": 324, "braille": "⠠⠞⠓⠑⠀⠁⠗⠞⠊⠎⠞⠀⠺⠁⠞⠉⠓⠑⠙⠀⠺⠁⠗⠍⠀⠺⠕⠕⠇⠇⠑⠝⠀⠃⠇⠁⠝⠅⠑⠞⠎⠀⠊⠝⠎⠊⠙⠑⠀⠞⠓⠑⠀⠍⠥⠎⠑⠥⠍⠲", "print": "The artist watched warm woollen blankets inside the museum."}
+{"id": 325, "braille": "⠠⠞⠓⠑⠀⠙⠕⠉⠞⠕⠗⠀⠝⠕⠞⠊⠉⠑⠙⠀⠞⠓⠑⠀⠛⠗⠑⠑⠝⠀⠋⠊⠑⠇⠙⠀⠁⠇⠕⠝⠛⠀⠞⠓⠑⠀⠉⠕⠁⠎⠞⠲", "print": "The doctor noticed the green field along the coast."}
+{"id": 326, "braille": "⠠⠍⠽⠀⠝⠑⠊⠛⠓⠃⠕⠥⠗⠀⠏⠁⠊⠝⠞⠑⠙⠀⠗⠊⠏⠑⠀⠗⠑⠙⠀⠁⠏⠏⠇⠑⠎⠀⠃⠑⠓⠊⠝⠙⠀⠞⠓⠑⠀⠃⠁⠗⠝⠲", "print": "My neighbour painted ripe red apples behind the barn."}
+{"id": 327, "braille": "⠠⠞⠓⠑⠀⠺⠑⠁⠧⠑⠗⠀⠛⠁⠞⠓⠑⠗⠑⠙⠀⠞⠓⠑⠀⠊⠗⠕⠝⠀⠛⠁⠞⠑⠀⠃⠑⠝⠑⠁⠞⠓⠀⠞⠓⠑⠀⠃⠗⠊⠙⠛⠑⠲", "print": "The weaver gathered the iron gate beneath the bridge."}
+{"id": 328, "braille": "⠠⠁⠀⠍⠥⠎⠊⠉⠊⠁⠝⠀⠗⠑⠉⠕⠗⠙⠑⠙⠀⠞⠓⠑⠀⠑⠍⠏⠞⠽⠀⠃⠁⠎⠅⠑⠞⠀⠁⠗⠕⠥⠝⠙⠀⠞⠓⠑⠀⠍⠁⠗⠅⠑⠞⠲", "print": "A musician recorded the empty basket around the market."}
+{"id": 329, "braille": "⠠⠞⠓⠑⠀⠋⠊⠎⠓⠑⠗⠍⠁⠝⠀⠑⠭⠏⠇⠁⠊⠝⠑⠙⠀⠞⠓⠑⠀⠟⠥⠊⠑⠞⠀⠛⠁⠗⠙⠑⠝⠀⠃⠑⠓⠊⠝⠙⠀⠞⠓⠑⠀⠃⠁⠗⠝⠲", "print": "The fisherman explained the quiet garden behind the barn."}
+{"id": 330, "braille": "⠠⠞⠓⠑⠀⠺⠑⠁⠧⠑⠗⠀⠗⠑⠉⠕⠗⠙⠑⠙⠀⠞⠓⠑⠀⠛⠗⠑⠑⠝⠀⠋⠊⠑⠇⠙⠀⠥⠝⠙⠑⠗⠀⠞⠓⠑⠀⠕⠇⠙⠀⠞⠗⠑⠑⠲", "print": "The weaver recorded the green field under the old tree."}
+{"id": 331, "braille": "⠠⠁⠀⠏⠁⠊⠝⠞⠑⠗⠀⠙⠑⠇⠊⠧⠑⠗⠑⠙⠀⠞⠓⠑⠀⠞⠁⠇⠇⠀⠇⠁⠙⠙⠑⠗⠀⠁⠋⠞⠑⠗⠀⠞⠓⠑⠀⠗⠁⠊⠝⠲", "print": "A painter delivered the tall ladder after the rain."}
+{"id": 332, "braille": "⠠⠍⠽⠀⠝⠑⠊⠛⠓⠃⠕⠥⠗⠀⠏⠁⠊⠝⠞⠑⠙⠀⠞⠓⠑⠀⠎⠍⠁⠇⠇⠀⠃⠕⠁⠞⠀⠃⠑⠎⠊⠙⠑⠀⠞⠓⠑⠀⠓⠁⠗⠃⠕⠥⠗⠲", "print": "My neighbour painted the small boat beside the harbour."}
+{"id": 333, "braille": "⠠⠞⠓⠑⠀⠑⠝⠛⠊⠝⠑⠑⠗⠀⠍⠑⠁⠎⠥⠗⠑⠙⠀⠺⠁⠗⠍⠀⠺⠕⠕⠇⠇⠑⠝⠀⠃⠇⠁⠝⠅⠑⠞⠎⠀⠊⠝⠎⠊⠙⠑⠀⠞⠓⠑⠀⠍⠥⠎⠑⠥⠍⠲", "print": "The engineer measured warm woollen blankets inside the museum."}
+{"id": 334, "braille": "⠠⠞⠓⠑⠀⠛⠁⠗⠙⠑⠝⠑⠗⠀⠎⠞⠥⠙⠊⠑⠙⠀⠞⠓⠑⠀⠛⠗⠑⠑⠝⠀⠋⠊⠑⠇⠙⠀⠁⠇⠕⠝⠛⠀⠞⠓⠑⠀⠉⠕⠁⠎⠞⠲", "print": "The gardener studied the green field along the coast."}
+{"id": 335, "braille": "⠠⠞⠓⠑⠀⠙⠕⠉⠞⠕⠗⠀⠗⠑⠍⠑⠍⠃⠑⠗⠑⠙⠀⠎⠕⠍⠑⠀⠋⠗⠑⠎⠓⠀⠃⠗⠑⠁⠙⠀⠃⠑⠋⠕⠗⠑⠀⠞⠓⠑⠀⠎⠞⠕⠗⠍⠲", "print": "The doctor remembered some fresh bread before the storm."}
+{"id": 336, "braille": "⠠⠞⠓⠑⠀⠉⠁⠏⠞⠁⠊⠝⠀⠉⠇⠕⠎⠑⠙⠀⠎⠑⠧⠑⠗⠁⠇⠀⠕⠇⠙⠀⠃⠕⠕⠅⠎⠀⠃⠑⠋⠕⠗⠑⠀⠞⠓⠑⠀⠎⠞⠕⠗⠍⠲", "print": "The captain closed several old books before the storm."}
+{"id": 337, "braille": "⠠⠞⠓⠑⠀⠛⠁⠗⠙⠑⠝⠑⠗⠀⠑⠭⠁⠍⠊⠝⠑⠙⠀⠞⠓⠑⠀⠝⠁⠗⠗⠕⠺⠀⠗⠕⠁⠙⠀⠁⠋⠞⠑⠗⠀⠞⠓⠑⠀⠗⠁⠊⠝⠲", "print": "The gardener examined the narrow road after the rain."}
+{"id": 338, "braille": "⠠⠞⠓⠑⠀⠇⠊⠃⠗⠁⠗⠊⠁⠝⠀⠏⠁⠊⠝⠞⠑⠙⠀⠞⠓⠑⠀⠞⠁⠇⠇⠀⠇⠁⠙⠙⠑⠗⠀⠁⠇⠕⠝⠛⠀⠞⠓⠑⠀⠉⠕⠁⠎⠞⠲", "print": "The librarian painted the tall ladder along the coast."}
+{"id": 339, "braille": "⠠⠞⠓⠑⠀⠕⠇⠙⠀⠍⠁⠝⠀⠏⠗⠕⠞⠑⠉⠞⠑⠙⠀⠞⠓⠑⠀⠞⠁⠇⠇⠀⠇⠁⠙⠙⠑⠗⠀⠃⠑⠓⠊⠝⠙⠀⠞⠓⠑⠀⠃⠁⠗⠝⠲", "print": "The old man protected the tall ladder behind the barn."}
+{"id": 340, "braille": "⠠⠞⠓⠑⠀⠝⠥⠗⠎⠑⠀⠛⠁⠞⠓⠑⠗⠑⠙⠀⠞⠓⠑⠀⠛⠇⠁⠎⠎⠀⠺⠊⠝⠙⠕⠺⠀⠃⠑⠓⠊⠝⠙⠀⠞⠓⠑⠀⠃⠁⠗⠝⠲", "print": "The nurse gathered the glass window behind the barn."}
+{"id": 341, "braille": "⠠⠁⠀⠏⠁⠊⠝⠞⠑⠗⠀⠏⠕⠇⠊⠎⠓⠑⠙⠀⠞⠓⠑⠀⠟⠥⠊⠑⠞⠀⠛⠁⠗⠙⠑⠝⠀⠁⠃⠕⠧⠑⠀⠞⠓⠑⠀⠧⠊⠇⠇⠁⠛⠑⠲", "print": "A painter polished the quiet garden above the village."}
+{"id": 342, "braille": "⠠⠞⠓⠑⠀⠛⠁⠗⠙⠑⠝⠑⠗⠀⠉⠕⠇⠇⠑⠉⠞⠑⠙⠀⠞⠓⠑⠀⠃⠗⠕⠅⠑⠝⠀⠉⠇⠕⠉⠅⠀⠁⠉⠗⠕⠎⠎⠀⠞⠓⠑⠀⠧⠁⠇⠇⠑⠽⠲", "print": "The gardener collected the broken clock across the valley."}
+{"id": 343, "braille": "⠠⠞⠓⠑⠀⠞⠗⠁⠧⠑⠇⠇⠑⠗⠀⠏⠕⠇⠊⠎⠓⠑⠙⠀⠍⠁⠝⠽⠀⠺⠕⠕⠙⠑⠝⠀⠉⠓⠁⠊⠗⠎⠀⠃⠑⠝⠑⠁⠞⠓⠀⠞⠓⠑⠀⠃⠗⠊⠙⠛⠑⠲", "print": "The traveller polished many wooden chairs beneath the bridge."}
+{"id": 344, "braille": "⠠⠞⠓⠑⠀⠛⠁⠗⠙⠑⠝⠑⠗⠀⠎⠞⠥⠙⠊⠑⠙⠀⠞⠓⠑⠀⠞⠁⠇⠇⠀⠇⠁⠙⠙⠑⠗⠀⠁⠗⠕⠥⠝⠙⠀⠞⠓⠑⠀⠍⠁⠗⠅⠑⠞⠲", "print": "The gardener studied the tall ladder around the market."}
+{"id": 345, "braille": "⠠⠞⠓⠑⠀⠕⠇⠙⠀⠍⠁⠝⠀⠍⠑⠝⠞⠊⠕⠝⠑⠙⠀⠎⠕⠍⠑⠀⠋⠗⠑⠎⠓⠀⠃⠗⠑⠁⠙⠀⠊⠝⠎⠊⠙⠑⠀⠞⠓⠑⠀⠍⠥⠎⠑⠥⠍⠲", "print": "The old man mentioned some fresh bread inside the museum."}
+{"id": 346, "braille": "⠠⠞⠓⠑⠀⠓⠥⠝⠞⠑⠗⠀⠉⠇⠕⠎⠑⠙⠀⠞⠓⠑⠀⠑⠍⠏⠞⠽⠀⠃⠁⠎⠅⠑⠞⠀⠁⠉⠗⠕⠎⠎⠀⠞⠓⠑⠀⠧⠁⠇⠇⠑⠽⠲", "print": "The hunter closed the empty basket across the valley."}
+{"id": 347, "braille": "⠠⠁⠀⠏⠁⠊⠝⠞⠑⠗⠀⠙⠊⠎⠉⠕⠧⠑⠗⠑⠙⠀⠺⠁⠗⠍⠀⠺⠕⠕⠇⠇⠑⠝⠀⠃⠇⠁⠝⠅⠑⠞⠎⠀⠊⠝⠀⠞⠓⠑⠀⠍⠕⠗⠝⠊⠝⠛⠲", "print": "A painter discovered warm woollen blankets in the morning."}
+{"id": 348, "braille": "⠠⠁⠀⠍⠥⠎⠊⠉⠊⠁⠝⠀⠏⠇⠁⠝⠞⠑⠙⠀⠗⠊⠏⠑⠀⠗⠑⠙⠀⠁⠏⠏⠇⠑⠎⠀⠃⠑⠝⠑⠁⠞⠓⠀⠞⠓⠑⠀⠃⠗⠊⠙⠛⠑⠲", "print": "A musician planted ripe red apples beneath the bridge."}
+{"id": 349, "braille": "⠠⠞⠓⠑⠀⠁⠗⠞⠊⠎⠞⠀⠑⠭⠁⠍⠊⠝⠑⠙⠀⠁⠀⠺⠑⠞⠀⠥⠍⠃⠗⠑⠇⠇⠁⠀⠃⠑⠋⠕⠗⠑⠀⠞⠓⠑⠀⠎⠞⠕⠗⠍⠲", "print": "The artist examined a wet umbrella before the storm."}
+{"id": 350, "braille": "⠠⠞⠓⠑⠀⠏⠊⠇⠕⠞⠀⠉⠁⠗⠗⠊⠑⠙⠀⠁⠀⠎⠊⠇⠧⠑⠗⠀⠉⠕⠊⠝⠀⠞⠓⠗⠕⠥⠛⠓⠕⠥⠞⠀⠞⠓⠑⠀⠺⠊⠝⠞⠑⠗⠲", "print": "The pilot carried a silver coin throughout the winter."}
+{"id": 351, "braille": "⠠⠁⠀⠙⠁⠝⠉⠑⠗⠀⠙⠑⠇⠊⠧⠑⠗⠑⠙⠀⠺⠁⠗⠍⠀⠺⠕⠕⠇⠇⠑⠝⠀⠃⠇⠁⠝⠅⠑⠞⠎⠀⠁⠗⠕⠥⠝⠙⠀⠞⠓⠑⠀⠍⠁⠗⠅⠑⠞⠲", "print": "A dancer delivered warm woollen blankets around the market."}
+{"id": 352, "braille": "⠠⠁⠀⠎⠁⠊⠇⠕⠗⠀⠗⠑⠉⠕⠗⠙⠑⠙⠀⠞⠓⠑⠀⠞⠁⠇⠇⠀⠇⠁⠙⠙⠑⠗⠀⠞⠓⠗⠕⠥⠛⠓⠕⠥⠞⠀⠞⠓⠑⠀⠺⠊⠝⠞⠑⠗⠲", "print": "A sailor recorded the tall ladder throughout the winter."}
+{"id": 353, "braille": "⠠⠁⠀⠎⠁⠊⠇⠕⠗⠀⠝⠕⠞⠊⠉⠑⠙⠀⠎⠑⠧⠑⠗⠁⠇⠀⠕⠇⠙⠀⠃⠕⠕⠅⠎⠀⠃⠑⠎⠊⠙⠑⠀⠞⠓⠑⠀⠓⠁⠗⠃⠕⠥⠗⠲", "print": "A sailor noticed several old books beside the harbour."}
+{"id": 354, "braille": "⠠⠁⠀⠉⠓⠊⠇⠙⠀⠕⠏⠑⠝⠑⠙⠀⠁⠀⠺⠑⠞⠀⠥⠍⠃⠗⠑⠇⠇⠁⠀⠁⠇⠕⠝⠛⠀⠞⠓⠑⠀⠉⠕⠁⠎⠞⠲", "print": "A child opened a wet umbrella along the coast."}
+{"id": 355, "braille": "⠠⠞⠓⠑⠀⠍⠑⠗⠉⠓⠁⠝⠞⠀⠕⠏⠑⠝⠑⠙⠀⠞⠓⠑⠀⠞⠁⠇⠇⠀⠇⠁⠙⠙⠑⠗⠀⠃⠑⠎⠊⠙⠑⠀⠞⠓⠑⠀⠓⠁⠗⠃⠕⠥⠗⠲", "print": "The merchant opened the tall ladder beside the harbour."}
+{"id": 356, "braille": "⠠⠁⠀⠉⠁⠗⠏⠑⠝⠞⠑⠗⠀⠙⠑⠇⠊⠧⠑⠗⠑⠙⠀⠞⠓⠑⠀⠎⠞⠕⠝⠑⠀⠃⠗⠊⠙⠛⠑⠀⠥⠝⠙⠑⠗⠀⠞⠓⠑⠀⠕⠇⠙⠀⠞⠗⠑⠑⠲", "print": "A carpenter delivered the stone bridge under the old tree."}
+{"id": 357, "braille": "⠠⠞⠓⠑⠀⠓⠥⠝⠞⠑⠗⠀⠏⠗⠑⠏⠁⠗⠑⠙⠀⠞⠓⠑⠀⠝⠁⠗⠗⠕⠺⠀⠗⠕⠁⠙⠀⠁⠋⠞⠑⠗⠀⠞⠓⠑⠀⠗⠁⠊⠝⠲", "print": "The hunter prepared the narrow road after the rain."}
+{"id": 358, "braille": "⠠⠞⠓⠑⠀⠉⠁⠏⠞⠁⠊⠝⠀⠗⠑⠏⠁⠊⠗⠑⠙⠀⠞⠓⠑⠀⠝⠁⠗⠗⠕⠺⠀⠗⠕⠁⠙⠀⠝⠑⠁⠗⠀⠞⠓⠑⠀⠗⠊⠧⠑⠗⠲", "print": "The captain repaired the narrow road near the river."}
+{"id": 359, "braille": "⠠⠞⠓⠑⠀⠏⠊⠇⠕⠞⠀⠋⠕⠇⠇⠕⠺⠑⠙⠀⠞⠓⠑⠀⠎⠞⠕⠝⠑⠀⠃⠗⠊⠙⠛⠑⠀⠃⠑⠓⠊⠝⠙⠀⠞⠓⠑⠀⠃⠁⠗⠝⠲", "print": "The pilot followed the stone bridge behind the barn."}
+{"id": 360, "braille": "⠠⠞⠓⠑⠀⠏⠊⠇⠕⠞⠀⠉⠕⠥⠝⠞⠑⠙⠀⠞⠓⠑⠀⠟⠥⠊⠑⠞⠀⠛⠁⠗⠙⠑⠝⠀⠥⠝⠙⠑⠗⠀⠞⠓⠑⠀⠕⠇⠙⠀⠞⠗⠑⠑⠲", "print": "The pilot counted the quiet garden under the old tree."}
+{"id": 361, "braille": "⠠⠞⠓⠑⠀⠞⠑⠁⠉⠓⠑⠗⠀⠉⠁⠗⠗⠊⠑⠙⠀⠎⠕⠍⠑⠀⠋⠗⠑⠎⠓⠀⠃⠗⠑⠁⠙⠀⠞⠓⠗⠕⠥⠛⠓⠕⠥⠞⠀⠞⠓⠑⠀⠺⠊⠝⠞⠑⠗⠲", "print": "The teacher carried some fresh bread throughout the winter."}
+{"id": 362, "braille": "⠠⠞⠓⠑⠀⠙⠕⠉⠞⠕⠗⠀⠋⠕⠇⠙⠑⠙⠀⠁⠀⠎⠊⠇⠧⠑⠗⠀⠉⠕⠊⠝⠀⠁⠃⠕⠧⠑⠀⠞⠓⠑⠀⠧⠊⠇⠇⠁⠛⠑⠲", "print": "The doctor folded a silver coin above the village."}
+{"id": 363, "braille": "⠠⠁⠀⠎⠁⠊⠇⠕⠗⠀⠏⠗⠑⠏⠁⠗⠑⠙⠀⠞⠓⠑⠀⠟⠥⠊⠑⠞⠀⠛⠁⠗⠙⠑⠝⠀⠞⠓⠗⠕⠥⠛⠓⠕⠥⠞⠀⠞⠓⠑⠀⠺⠊⠝⠞⠑⠗⠲", "print": "A sailor prepared the quiet garden throughout the winter."}
+{"id": 364, "braille": "⠠⠁⠀⠎⠉⠊⠑⠝⠞⠊⠎⠞⠀⠍⠑⠁⠎⠥⠗⠑⠙⠀⠞⠓⠑⠀⠛⠇⠁⠎⠎⠀⠺⠊⠝⠙⠕⠺⠀⠊⠝⠎⠊⠙⠑⠀⠞⠓⠑⠀⠍⠥⠎⠑⠥⠍⠲", "print": "A scientist measured the glass window inside the museum."}
+{"id": 365, "braille": "⠠⠞⠓⠑⠀⠺⠗⠊⠞⠑⠗⠀⠁⠗⠗⠁⠝⠛⠑⠙⠀⠞⠓⠑⠀⠎⠞⠕⠝⠑⠀⠃⠗⠊⠙⠛⠑⠀⠞⠓⠗⠕⠥⠛⠓⠕⠥⠞⠀⠞⠓⠑⠀⠺⠊⠝⠞⠑⠗⠲", "print": "The writer arranged the stone bridge throughout the winter."}
+{"id": 366, "braille": "⠠⠁⠀⠏⠁⠊⠝⠞⠑⠗⠀⠑⠭⠁⠍⠊⠝⠑⠙⠀⠞⠓⠑⠀⠛⠇⠁⠎⠎⠀⠺⠊⠝⠙⠕⠺⠀⠥⠝⠙⠑⠗⠀⠞⠓⠑⠀⠕⠇⠙⠀⠞⠗⠑⠑⠲", "print": "A painter examined the glass window under the old tree."}
+{"id": 367, "braille": "⠠⠞⠓⠑⠀⠍⠑⠗⠉⠓⠁⠝⠞⠀⠉⠕⠇⠇⠑⠉⠞⠑⠙⠀⠞⠓⠑⠀⠝⠁⠗⠗⠕⠺⠀⠗⠕⠁⠙⠀⠃⠑⠋⠕⠗⠑⠀⠞⠓⠑⠀⠎⠞⠕⠗⠍⠲", "print": "The merchant collected the narrow road before the storm."}
+{"id": 368, "braille": "⠠⠁⠀⠎⠉⠊⠑⠝⠞⠊⠎⠞⠀⠙⠑⠎⠉⠗⠊⠃⠑⠙⠀⠞⠓⠑⠀⠎⠍⠁⠇⠇⠀⠃⠕⠁⠞⠀⠊⠝⠎⠊⠙⠑⠀⠞⠓⠑⠀⠍⠥⠎⠑⠥⠍⠲", "print": "A scientist described the small boat inside the museum."}
+{"id": 369, "braille": "⠠⠁⠀⠎⠞⠥⠙⠑⠝⠞⠀⠝⠕⠞⠊⠉⠑⠙⠀⠍⠁⠝⠽⠀⠺⠕⠕⠙⠑⠝⠀⠉⠓⠁⠊⠗⠎⠀⠁⠉⠗⠕⠎⠎⠀⠞⠓⠑⠀⠧⠁⠇⠇⠑⠽⠲", "print": "A student noticed many wooden chairs across the valley."}
+{"id": 370, "braille": "⠠⠁⠀⠉⠁⠗⠏⠑⠝⠞⠑⠗⠀⠉⠁⠗⠗⠊⠑⠙⠀⠞⠓⠑⠀⠃⠗⠕⠅⠑⠝⠀⠉⠇⠕⠉⠅⠀⠁⠃⠕⠧⠑⠀⠞⠓⠑⠀⠧⠊⠇⠇⠁⠛⠑⠲", "print": "A carpenter carried the broken clock above the village."}
+{"id": 371, "braille": "⠠⠞⠓⠑⠀⠞⠗⠁⠧⠑⠇⠇⠑⠗⠀⠗⠑⠉⠕⠗⠙⠑⠙⠀⠞⠓⠑⠀⠃⠗⠕⠅⠑⠝⠀⠉⠇⠕⠉⠅⠀⠁⠉⠗⠕⠎⠎⠀⠞⠓⠑⠀⠧⠁⠇⠇⠑⠽⠲", "print": "The traveller recorded the broken clock across the valley."}
+{"id": 372, "braille": "⠠⠞⠓⠑⠀⠛⠁⠗⠙⠑⠝⠑⠗⠀⠎⠞⠁⠗⠞⠑⠙⠀⠎⠕⠍⠑⠀⠋⠗⠑⠎⠓⠀⠃⠗⠑⠁⠙⠀⠁⠇⠕⠝⠛⠀⠞⠓⠑⠀⠉⠕⠁⠎⠞⠲", "print": "The gardener started some fresh bread along the coast."}
+{"id": 373, "braille": "⠠⠞⠓⠑⠀⠝⠥⠗⠎⠑⠀⠗⠑⠏⠁⠊⠗⠑⠙⠀⠺⠁⠗⠍⠀⠺⠕⠕⠇⠇⠑⠝⠀⠃⠇⠁⠝⠅⠑⠞⠎⠀⠙⠥⠗⠊⠝⠛⠀⠞⠓⠑⠀⠋⠑⠎⠞⠊⠧⠁⠇⠲", "print": "The nurse repaired warm woollen blankets during the festival."}
+{"id": 374, "braille": "⠠⠞⠓⠑⠀⠋⠊⠎⠓⠑⠗⠍⠁⠝⠀⠉⠕⠥⠝⠞⠑⠙⠀⠗⠊⠏⠑⠀⠗⠑⠙⠀⠁⠏⠏⠇⠑⠎⠀⠁⠗⠕⠥⠝⠙⠀⠞⠓⠑⠀⠍⠁⠗⠅⠑⠞⠲", "print": "The fisherman counted ripe red apples around the market."}
+{"id": 375, "braille": "⠠⠞⠓⠑⠀⠏⠊⠇⠕⠞⠀⠎⠅⠑⠞⠉⠓⠑⠙⠀⠁⠀⠏⠁⠏⠑⠗⠀⠍⠁⠏⠀⠁⠗⠕⠥⠝⠙⠀⠞⠓⠑⠀⠍⠁⠗⠅⠑⠞⠲", "print": "The pilot sketched a paper map around the market."}
+{"id": 376, "braille": "⠠⠞⠓⠑⠀⠞⠗⠁⠧⠑⠇⠇⠑⠗⠀⠏⠗⠑⠏⠁⠗⠑⠙⠀⠞⠓⠑⠀⠟⠥⠊⠑⠞⠀⠛⠁⠗⠙⠑⠝⠀⠁⠇⠕⠝⠛⠀⠞⠓⠑⠀⠉⠕⠁⠎⠞⠲", "print": "The traveller prepared the quiet garden along the coast."}
+{"id": 377, "braille": "⠠⠞⠓⠑⠀⠺⠗⠊⠞⠑⠗⠀⠁⠗⠗⠁⠝⠛⠑⠙⠀⠁⠀⠎⠊⠇⠧⠑⠗⠀⠉⠕⠊⠝⠀⠝⠑⠁⠗⠀⠞⠓⠑⠀⠗⠊⠧⠑⠗⠲", "print": "The writer arranged a silver coin near the river."}
+{"id": 378, "braille": "⠠⠞⠓⠑⠀⠽⠕⠥⠝⠛⠀⠛⠊⠗⠇⠀⠏⠗⠕⠞⠑⠉⠞⠑⠙⠀⠞⠓⠑⠀⠛⠗⠑⠑⠝⠀⠋⠊⠑⠇⠙⠀⠃⠑⠋⠕⠗⠑⠀⠞⠓⠑⠀⠎⠞⠕⠗⠍⠲", "print": "The young girl protected the green field before the storm."}
+{"id": 379, "braille": "⠠⠞⠓⠑⠀⠺⠗⠊⠞⠑⠗⠀⠗⠑⠉⠕⠗⠙⠑⠙⠀⠞⠓⠑⠀⠟⠥⠊⠑⠞⠀⠛⠁⠗⠙⠑⠝⠀⠊⠝⠀⠞⠓⠑⠀⠍⠕⠗⠝⠊⠝⠛⠲", "print": "The writer recorded the quiet garden in the morning."}
+{"id": 380, "braille": "⠠⠁⠀⠙⠁⠝⠉⠑⠗⠀⠗⠑⠏⠁⠊⠗⠑⠙⠀⠁⠀⠎⠊⠇⠧⠑⠗⠀⠉⠕⠊⠝⠀⠃⠑⠋⠕⠗⠑⠀⠞⠓⠑⠀⠎⠞⠕⠗⠍⠲", "print": "A dancer repaired a silver coin before the storm."}
+{"id": 381, "braille": "⠠⠁⠀⠉⠓⠊⠇⠙⠀⠛⠁⠞⠓⠑⠗⠑⠙⠀⠁⠀⠎⠊⠇⠧⠑⠗⠀⠉⠕⠊⠝⠀⠞⠓⠗⠕⠥⠛⠓⠕⠥⠞⠀⠞⠓⠑⠀⠺⠊⠝⠞⠑⠗⠲", "print": "A child gathered a silver coin throughout the winter."}
+{"id": 382, "braille": "⠠⠞⠓⠑⠀⠑⠝⠛⠊⠝⠑⠑⠗⠀⠙⠊⠎⠉⠕⠧⠑⠗⠑⠙⠀⠍⠁⠝⠽⠀⠺⠕⠕⠙⠑⠝⠀⠉⠓⠁⠊⠗⠎⠀⠁⠇⠕⠝⠛⠀⠞⠓⠑⠀⠉⠕⠁⠎⠞⠲", "print": "The engineer discovered many wooden chairs along the coast."}
+{"id": 383, "braille": "⠠⠁⠀⠙⠁⠝⠉⠑⠗⠀⠉⠇⠕⠎⠑⠙⠀⠞⠓⠑⠀⠃⠗⠕⠅⠑⠝⠀⠉⠇⠕⠉⠅⠀⠁⠋⠞⠑⠗⠀⠞⠓⠑⠀⠗⠁⠊⠝⠲", "print": "A dancer closed the broken clock after the rain."}
+{"id": 384, "braille": "⠠⠞⠓⠑⠀⠞⠑⠁⠉⠓⠑⠗⠀⠋⠕⠇⠇⠕⠺⠑⠙⠀⠺⠁⠗⠍⠀⠺⠕⠕⠇⠇⠑⠝⠀⠃⠇⠁⠝⠅⠑⠞⠎⠀⠁⠋⠞⠑⠗⠀⠞⠓⠑⠀⠗⠁⠊⠝⠲", "print": "The teacher followed warm woollen blankets after the rain."}
+{"id": 385, "braille": "⠠⠁⠀⠉⠁⠗⠏⠑⠝⠞⠑⠗⠀⠏⠁⠊⠝⠞⠑⠙⠀⠎⠑⠧⠑⠗⠁⠇⠀⠕⠇⠙⠀⠃⠕⠕⠅⠎⠀⠁⠋⠞⠑⠗⠀⠞⠓⠑⠀⠗⠁⠊⠝⠲", "print": "A carpenter painted several old books after the rain."}
+{"id": 386, "braille": "⠠⠞⠓⠑⠀⠑⠝⠛⠊⠝⠑⠑⠗⠀⠎⠞⠥⠙⠊⠑⠙⠀⠞⠓⠑⠀⠞⠁⠇⠇⠀⠇⠁⠙⠙⠑⠗⠀⠁⠇⠕⠝⠛⠀⠞⠓⠑⠀⠉⠕⠁⠎⠞⠲", "print": "The engineer studied the tall ladder along the coast."}
+{"id": 387, "braille": "⠠⠞⠓⠑⠀⠽⠕⠥⠝⠛⠀⠛⠊⠗⠇⠀⠏⠗⠕⠞⠑⠉⠞⠑⠙⠀⠁⠀⠃⠗⠊⠛⠓⠞⠀⠇⠁⠝⠞⠑⠗⠝⠀⠞⠓⠗⠕⠥⠛⠓⠕⠥⠞⠀⠞⠓⠑⠀⠺⠊⠝⠞⠑⠗⠲", "print": "The young girl protected a bright lantern throughout the winter."}
+{"id": 388, "braille": "⠠⠞⠓⠑⠀⠋⠊⠎⠓⠑⠗⠍⠁⠝⠀⠏⠗⠕⠞⠑⠉⠞⠑⠙⠀⠞⠓⠑⠀⠎⠍⠁⠇⠇⠀⠃⠕⠁⠞⠀⠝⠑⠁⠗⠀⠞⠓⠑⠀⠗⠊⠧⠑⠗⠲", "print": "The fisherman protected the small boat near the river."}
+{"id": 389, "braille": "⠠⠞⠓⠑⠀⠉⠁⠏⠞⠁⠊⠝⠀⠉⠕⠇⠇⠑⠉⠞⠑⠙⠀⠺⠁⠗⠍⠀⠺⠕⠕⠇⠇⠑⠝⠀⠃⠇⠁⠝⠅⠑⠞⠎⠀⠃⠑⠓⠊⠝⠙⠀⠞⠓⠑⠀⠃⠁⠗⠝⠲", "print": "The captain collected warm woollen blankets behind the barn."}
+{"id": 390, "braille": "⠠⠁⠀⠎⠁⠊⠇⠕⠗⠀⠙⠑⠎⠉⠗⠊⠃⠑⠙⠀⠞⠓⠑⠀⠛⠇⠁⠎⠎⠀⠺⠊⠝⠙⠕⠺⠀⠁⠃⠕⠧⠑⠀⠞⠓⠑⠀⠧⠊⠇⠇⠁⠛⠑⠲", "print": "A sailor described the glass window above the village."}
+{"id": 391, "braille": "⠠⠞⠓⠑⠀⠞⠁⠊⠇⠕⠗⠀⠎⠞⠥⠙⠊⠑⠙⠀⠺⠁⠗⠍⠀⠺⠕⠕⠇⠇⠑⠝⠀⠃⠇⠁⠝⠅⠑⠞⠎⠀⠁⠋⠞⠑⠗⠀⠞⠓⠑⠀⠗⠁⠊⠝⠲", "print": "The tailor studied warm woollen blankets after the rain."}
+{"id": 392, "braille": "⠠⠞⠓⠑⠀⠋⠊⠎⠓⠑⠗⠍⠁⠝⠀⠍⠑⠝⠞⠊⠕⠝⠑⠙⠀⠞⠓⠑⠀⠛⠇⠁⠎⠎⠀⠺⠊⠝⠙⠕⠺⠀⠃⠑⠝⠑⠁⠞⠓⠀⠞⠓⠑⠀⠃⠗⠊⠙⠛⠑⠲", "print": "The fisherman mentioned the glass window beneath the bridge."}
+{"id": 393, "braille": "⠠⠁⠀⠍⠥⠎⠊⠉⠊⠁⠝⠀⠏⠁⠊⠝⠞⠑⠙⠀⠁⠀⠏⠁⠏⠑⠗⠀⠍⠁⠏⠀⠃⠑⠝⠑⠁⠞⠓⠀⠞⠓⠑⠀⠃⠗⠊⠙⠛⠑⠲", "print": "A musician painted a paper map beneath the bridge."}
+{"id": 394, "braille": "⠠⠞⠓⠑⠀⠃⠁⠅⠑⠗⠀⠎⠅⠑⠞⠉⠓⠑⠙⠀⠞⠓⠑⠀⠛⠇⠁⠎⠎⠀⠺⠊⠝⠙⠕⠺⠀⠃⠑⠎⠊⠙⠑⠀⠞⠓⠑⠀⠓⠁⠗⠃⠕⠥⠗⠲", "print": "The baker sketched the glass window beside the harbour."}
+{"id": 395, "braille": "⠠⠁⠀⠍⠥⠎⠊⠉⠊⠁⠝⠀⠍⠑⠁⠎⠥⠗⠑⠙⠀⠁⠀⠎⠊⠇⠧⠑⠗⠀⠉⠕⠊⠝⠀⠁⠉⠗⠕⠎⠎⠀⠞⠓⠑⠀⠧⠁⠇⠇⠑⠽⠲", "print": "A musician measured a silver coin across the valley."}
+{"id": 396, "braille": "⠠⠞⠓⠑⠀⠇⠊⠃⠗⠁⠗⠊⠁⠝⠀⠉⠁⠗⠗⠊⠑⠙⠀⠞⠓⠑⠀⠃⠗⠕⠅⠑⠝⠀⠉⠇⠕⠉⠅⠀⠊⠝⠎⠊⠙⠑⠀⠞⠓⠑⠀⠍⠥⠎⠑⠥⠍⠲", "print": "The librarian carried the broken clock inside the museum."}
+{"id": 397, "braille": "⠠⠁⠀⠏⠁⠊⠝⠞⠑⠗⠀⠁⠗⠗⠁⠝⠛⠑⠙⠀⠁⠀⠏⠁⠏⠑⠗⠀⠍⠁⠏⠀⠃⠑⠋⠕⠗⠑⠀⠞⠓⠑⠀⠎⠞⠕⠗⠍⠲", "print": "A painter arranged a paper map before the storm."}
+{"id": 398, "braille": "⠠⠞⠓⠑⠀⠕⠇⠙⠀⠍⠁⠝⠀⠺⠁⠞⠉⠓⠑⠙⠀⠁⠀⠏⠁⠏⠑⠗⠀⠍⠁⠏⠀⠁⠋⠞⠑⠗⠀⠞⠓⠑⠀⠗⠁⠊⠝⠲", "print": "The old man watched a paper map after the rain."}
+{"id": 399, "braille": "⠠⠞⠓⠑⠀⠑⠝⠛⠊⠝⠑⠑⠗⠀⠏⠗⠕⠞⠑⠉⠞⠑⠙⠀⠞⠓⠑⠀⠑⠍⠏⠞⠽⠀⠃⠁⠎⠅⠑⠞⠀⠁⠋⠞⠑⠗⠀⠞⠓⠑⠀⠗⠁⠊⠝⠲", "print": "The engineer protected the empty basket after the rain."}
+{"id": 400, "braille": "⠠⠞⠓⠑⠀⠞⠁⠊⠇⠕⠗⠀⠉⠇⠕⠎⠑⠙⠀⠗⠊⠏⠑⠀⠗⠑⠙⠀⠁⠏⠏⠇⠑⠎⠀⠃⠑⠝⠑⠁⠞⠓⠀⠞⠓⠑⠀⠃⠗⠊⠙⠛⠑⠲", "print": "The tailor closed ripe red apples beneath the bridge."}
+{"id": 401, "braille": "⠠⠁⠀⠎⠉⠊⠑⠝⠞⠊⠎⠞⠀⠙⠑⠇⠊⠧⠑⠗⠑⠙⠀⠁⠀⠃⠗⠊⠛⠓⠞⠀⠇⠁⠝⠞⠑⠗⠝⠀⠃⠑⠋⠕⠗⠑⠀⠞⠓⠑⠀⠎⠞⠕⠗⠍⠲", "print": "A scientist delivered a bright lantern before the storm."}
+{"id": 402, "braille": "⠠⠁⠀⠙⠁⠝⠉⠑⠗⠀⠗⠑⠉⠕⠗⠙⠑⠙⠀⠞⠓⠑⠀⠛⠇⠁⠎⠎⠀⠺⠊⠝⠙⠕⠺⠀⠃⠑⠎⠊⠙⠑⠀⠞⠓⠑⠀⠓⠁⠗⠃⠕⠥⠗⠲", "print": "A dancer recorded the glass window beside the harbour."}
+{"id": 403, "braille": "⠠⠁⠀⠉⠓⠊⠇⠙⠀⠉⠁⠗⠗⠊⠑⠙⠀⠁⠀⠎⠊⠇⠧⠑⠗⠀⠉⠕⠊⠝⠀⠁⠉⠗⠕⠎⠎⠀⠞⠓⠑⠀⠧⠁⠇⠇⠑⠽⠲", "print": "A child carried a silver coin across the valley."}
+{"id": 404, "braille": "⠠⠞⠓⠑⠀⠙⠕⠉⠞⠕⠗⠀⠝⠕⠞⠊⠉⠑⠙⠀⠞⠓⠑⠀⠃⠗⠕⠅⠑⠝⠀⠉⠇⠕⠉⠅⠀⠥⠝⠙⠑⠗⠀⠞⠓⠑⠀⠕⠇⠙⠀⠞⠗⠑⠑⠲", "print": "The doctor noticed the broken clock under the old tree."}
+{"id": 405, "braille": "⠠⠞⠓⠑⠀⠉⠁⠏⠞⠁⠊⠝⠀⠉⠁⠗⠗⠊⠑⠙⠀⠞⠓⠑⠀⠛⠇⠁⠎⠎⠀⠺⠊⠝⠙⠕⠺⠀⠞⠓⠗⠕⠥⠛⠓⠕⠥⠞⠀⠞⠓⠑⠀⠺⠊⠝⠞⠑⠗⠲", "print": "The captain carried the glass window throughout the winter."}
+{"id": 406, "braille": "⠠⠞⠓⠑⠀⠋⠁⠗⠍⠑⠗⠀⠙⠊⠎⠉⠕⠧⠑⠗⠑⠙⠀⠎⠕⠍⠑⠀⠋⠗⠑⠎⠓⠀⠃⠗⠑⠁⠙⠀⠃⠑⠝⠑⠁⠞⠓⠀⠞⠓⠑⠀⠃⠗⠊⠙⠛⠑⠲", "print": "The farmer discovered some fresh bread beneath the bridge."}
+{"id": 407, "braille": "⠠⠞⠓⠑⠀⠞⠁⠊⠇⠕⠗⠀⠉⠁⠗⠗⠊⠑⠙⠀⠞⠓⠑⠀⠛⠗⠑⠑⠝⠀⠋⠊⠑⠇⠙⠀⠃⠑⠓⠊⠝⠙⠀⠞⠓⠑⠀⠃⠁⠗⠝⠲", "print": "The tailor carried the green field behind the barn."}
+{"id": 408, "braille": "⠠⠁⠀⠎⠉⠊⠑⠝⠞⠊⠎⠞⠀⠗⠑⠉⠕⠗⠙⠑⠙⠀⠁⠀⠎⠊⠇⠧⠑⠗⠀⠉⠕⠊⠝⠀⠁⠉⠗⠕⠎⠎⠀⠞⠓⠑⠀⠧⠁⠇⠇⠑⠽⠲", "print": "A scientist recorded a silver coin across the valley."}
+{"id": 409, "braille": "⠠⠞⠓⠑⠀⠞⠁⠊⠇⠕⠗⠀⠗⠑⠏⠁⠊⠗⠑⠙⠀⠞⠓⠑⠀⠛⠗⠑⠑⠝⠀⠋⠊⠑⠇⠙⠀⠊⠝⠀⠞⠓⠑⠀⠍⠕⠗⠝⠊⠝⠛⠲", "print": "The tailor repaired the green field in the morning."}
+{"id": 410, "braille": "⠠⠁⠀⠎⠓⠕⠏⠅⠑⠑⠏⠑⠗⠀⠍⠑⠝⠞⠊⠕⠝⠑⠙⠀⠎⠑⠧⠑⠗⠁⠇⠀⠕⠇⠙⠀⠃⠕⠕⠅⠎⠀⠙⠥⠗⠊⠝⠛⠀⠞⠓⠑⠀⠋⠑⠎⠞⠊⠧⠁⠇⠲", "print": "A shopkeeper mentioned several old books during the festival."}
+{"id": 411, "braille": "⠠⠞⠓⠑⠀⠋⠁⠗⠍⠑⠗⠀⠙⠑⠎⠉⠗⠊⠃⠑⠙⠀⠞⠓⠑⠀⠝⠁⠗⠗⠕⠺⠀⠗⠕⠁⠙⠀⠞⠓⠗⠕⠥⠛⠓⠕⠥⠞⠀⠞⠓⠑⠀⠺⠊⠝⠞⠑⠗⠲", "print": "The farmer described the narrow road throughout the winter."}
+{"id": 412, "braille": "⠠⠞⠓⠑⠀⠏⠊⠇⠕⠞⠀⠎⠞⠥⠙⠊⠑⠙⠀⠞⠓⠑⠀⠎⠍⠁⠇⠇⠀⠃⠕⠁⠞⠀⠃⠑⠎⠊⠙⠑⠀⠞⠓⠑⠀⠓⠁⠗⠃⠕⠥⠗⠲", "print": "The pilot studied the small boat beside the harbour."}
+{"id": 413, "braille": "⠠⠞⠓⠑⠀⠓⠥⠝⠞⠑⠗⠀⠉⠕⠇⠇⠑⠉⠞⠑⠙⠀⠞⠓⠑⠀⠑⠍⠏⠞⠽⠀⠃⠁⠎⠅⠑⠞⠀⠁⠃⠕⠧⠑⠀⠞⠓⠑⠀⠧⠊⠇⠇⠁⠛⠑⠲", "print": "The hunter collected the empty basket above the village."}
+{"id": 414, "braille": "⠠⠁⠀⠍⠥⠎⠊⠉⠊⠁⠝⠀⠎⠞⠁⠗⠞⠑⠙⠀⠞⠓⠑⠀⠎⠞⠕⠝⠑⠀⠃⠗⠊⠙⠛⠑⠀⠙⠥⠗⠊⠝⠛⠀⠞⠓⠑⠀⠋⠑⠎⠞⠊⠧⠁⠇⠲", "print": "A musician started the stone bridge during the festival."}
+{"id": 415, "braille": "⠠⠞⠓⠑⠀⠉⠁⠏⠞⠁⠊⠝⠀⠋⠊⠝⠊⠎⠓⠑⠙⠀⠞⠓⠑⠀⠑⠍⠏⠞⠽⠀⠃⠁⠎⠅⠑⠞⠀⠥⠝⠙⠑⠗⠀⠞⠓⠑⠀⠕⠇⠙⠀⠞⠗⠑⠑⠲", "print": "The captain finished the empty basket under the old tree."}
+{"id": 416, "braille": "⠠⠞⠓⠑⠀⠽⠕⠥⠝⠛⠀⠛⠊⠗⠇⠀⠝⠕⠞⠊⠉⠑⠙⠀⠁⠀⠃⠗⠊⠛⠓⠞⠀⠇⠁⠝⠞⠑⠗⠝⠀⠝⠑⠁⠗⠀⠞⠓⠑⠀⠗⠊⠧⠑⠗⠲", "print": "The young girl noticed a bright lantern near the river."}
+{"id": 417, "braille": "⠠⠞⠓⠑⠀⠙⠕⠉⠞⠕⠗⠀⠍⠑⠁⠎⠥⠗⠑⠙⠀⠍⠁⠝⠽⠀⠺⠕⠕⠙⠑⠝⠀⠉⠓⠁⠊⠗⠎⠀⠊⠝⠀⠞⠓⠑⠀⠍⠕⠗⠝⠊⠝⠛⠲", "print": "The doctor measured many wooden chairs in the morning."}
+{"id": 418, "braille": "⠠⠞⠓⠑⠀⠋⠊⠎⠓⠑⠗⠍⠁⠝⠀⠉⠕⠥⠝⠞⠑⠙⠀⠁⠀⠓⠑⠁⠧⠽⠀⠃⠕⠭⠀⠊⠝⠎⠊⠙⠑⠀⠞⠓⠑⠀⠍⠥⠎⠑⠥⠍⠲", "print": "The fisherman counted a heavy box inside the museum."}
+{"id": 419, "braille": "⠠⠁⠀⠎⠉⠊⠑⠝⠞⠊⠎⠞⠀⠍⠑⠝⠞⠊⠕⠝⠑⠙⠀⠍⠁⠝⠽⠀⠺⠕⠕⠙⠑⠝⠀⠉⠓⠁⠊⠗⠎⠀⠙⠥⠗⠊⠝⠛⠀⠞⠓⠑⠀⠋⠑⠎⠞⠊⠧⠁⠇⠲", "print": "A scientist mentioned many wooden chairs during the festival."}
+{"id": 420, "braille": "⠠⠍⠽⠀⠝⠑⠊⠛⠓⠃⠕⠥⠗⠀⠋⠕⠇⠇⠕⠺⠑⠙⠀⠁⠀⠃⠗⠊⠛⠓⠞⠀⠇⠁⠝⠞⠑⠗⠝⠀⠁⠉⠗⠕⠎⠎⠀⠞⠓⠑⠀⠧⠁⠇⠇⠑⠽⠲", "print": "My neighbour followed a bright lantern across the valley."}
+{"id": 421, "braille": "⠠⠞⠓⠑⠀⠞⠗⠁⠧⠑⠇⠇⠑⠗⠀⠉⠇⠕⠎⠑⠙⠀⠁⠀⠃⠗⠊⠛⠓⠞⠀⠇⠁⠝⠞⠑⠗⠝⠀⠊⠝⠎⠊⠙⠑⠀⠞⠓⠑⠀⠍⠥⠎⠑⠥⠍⠲", "print": "The traveller closed a bright lantern inside the museum."}
+{"id": 422, "braille": "⠠⠞⠓⠑⠀⠃⠁⠅⠑⠗⠀⠏⠗⠑⠏⠁⠗⠑⠙⠀⠗⠊⠏⠑⠀⠗⠑⠙⠀⠁⠏⠏⠇⠑⠎⠀⠝⠑⠁⠗⠀⠞⠓⠑⠀⠗⠊⠧⠑⠗⠲", "print": "The baker prepared ripe red apples near the river."}
+{"id": 423, "braille": "⠠⠁⠀⠎⠉⠊⠑⠝⠞⠊⠎⠞⠀⠏⠕⠇⠊⠎⠓⠑⠙⠀⠞⠓⠑⠀⠎⠞⠕⠝⠑⠀⠃⠗⠊⠙⠛⠑⠀⠃⠑⠎⠊⠙⠑⠀⠞⠓⠑⠀⠓⠁⠗⠃⠕⠥⠗⠲", "print": "A scientist polished the stone bridge beside the harbour."}
+{"id": 424, "braille": "⠠⠁⠀⠏⠁⠊⠝⠞⠑⠗⠀⠛⠁⠞⠓⠑⠗⠑⠙⠀⠞⠓⠑⠀⠝⠁⠗⠗⠕⠺⠀⠗⠕⠁⠙⠀⠞⠓⠗⠕⠥⠛⠓⠕⠥⠞⠀⠞⠓⠑⠀⠺⠊⠝⠞⠑⠗⠲", "print": "A painter gathered the narrow road throughout the winter."}
+{"id": 425, "braille": "⠠⠍⠽⠀⠝⠑⠊⠛⠓⠃⠕⠥⠗⠀⠎⠅⠑⠞⠉⠓⠑⠙⠀⠁⠀⠺⠑⠞⠀⠥⠍⠃⠗⠑⠇⠇⠁⠀⠥⠝⠙⠑⠗⠀⠞⠓⠑⠀⠕⠇⠙⠀⠞⠗⠑⠑⠲", "print": "My neighbour sketched a wet umbrella under the old tree."}
+{"id": 426, "braille": "⠠⠍⠽⠀⠝⠑⠊⠛⠓⠃⠕⠥⠗⠀⠙⠊⠎⠉⠕⠧⠑⠗⠑⠙⠀⠍⠁⠝⠽⠀⠺⠕⠕⠙⠑⠝⠀⠉⠓⠁⠊⠗⠎⠀⠁⠗⠕⠥⠝⠙⠀⠞⠓⠑⠀⠍⠁⠗⠅⠑⠞⠲", "print": "My neighbour discovered many wooden chairs around the market."}
+{"id": 427, "braille": "⠠⠞⠓⠑⠀⠍⠑⠗⠉⠓⠁⠝⠞⠀⠙⠊⠎⠉⠕⠧⠑⠗⠑⠙⠀⠍⠁⠝⠽⠀⠺⠕⠕⠙⠑⠝⠀⠉⠓⠁⠊⠗⠎⠀⠁⠉⠗⠕⠎⠎⠀⠞⠓⠑⠀⠧⠁⠇⠇⠑⠽⠲", "print": "The merchant discovered many wooden chairs across the valley."}
+{"id": 428, "braille": "⠠⠁⠀⠙⠁⠝⠉⠑⠗⠀⠉⠕⠥⠝⠞⠑⠙⠀⠞⠓⠑⠀⠝⠁⠗⠗⠕⠺⠀⠗⠕⠁⠙⠀⠊⠝⠀⠞⠓⠑⠀⠍⠕⠗⠝⠊⠝⠛⠲", "print": "A dancer counted the narrow road in the morning."}
+{"id": 429, "braille": "⠠⠁⠀⠉⠓⠊⠇⠙⠀⠗⠑⠏⠁⠊⠗⠑⠙⠀⠞⠓⠑⠀⠞⠁⠇⠇⠀⠇⠁⠙⠙⠑⠗⠀⠁⠇⠕⠝⠛⠀⠞⠓⠑⠀⠉⠕⠁⠎⠞⠲", "print": "A child repaired the tall ladder along the coast."}
+{"id": 430, "braille": "⠠⠞⠓⠑⠀⠕⠇⠙⠀⠍⠁⠝⠀⠏⠕⠇⠊⠎⠓⠑⠙⠀⠞⠓⠑⠀⠛⠗⠑⠑⠝⠀⠋⠊⠑⠇⠙⠀⠙⠥⠗⠊⠝⠛⠀⠞⠓⠑⠀⠋⠑⠎⠞⠊⠧⠁⠇⠲", "print": "The old man polished the green field during the festival."}
+{"id": 431, "braille": "⠠⠞⠓⠑⠀⠁⠗⠞⠊⠎⠞⠀⠏⠁⠊⠝⠞⠑⠙⠀⠗⠊⠏⠑⠀⠗⠑⠙⠀⠁⠏⠏⠇⠑⠎⠀⠃⠑⠎⠊⠙⠑⠀⠞⠓⠑⠀⠓⠁⠗⠃⠕⠥⠗⠲", "print": "The artist painted ripe red apples beside the harbour."}
+{"id": 432, "braille": "⠠⠞⠓⠑⠀⠕⠇⠙⠀⠍⠁⠝⠀⠙⠑⠇⠊⠧⠑⠗⠑⠙⠀⠞⠓⠑⠀⠟⠥⠊⠑⠞⠀⠛⠁⠗⠙⠑⠝⠀⠝⠑⠁⠗⠀⠞⠓⠑⠀⠗⠊⠧⠑⠗⠲", "print": "The old man delivered the quiet garden near the river."}
+{"id": 433, "braille": "⠠⠁⠀⠉⠁⠗⠏⠑⠝⠞⠑⠗⠀⠉⠁⠗⠗⠊⠑⠙⠀⠎⠕⠍⠑⠀⠋⠗⠑⠎⠓⠀⠃⠗⠑⠁⠙⠀⠃⠑⠋⠕⠗⠑⠀⠞⠓⠑⠀⠎⠞⠕⠗⠍⠲", "print": "A carpenter carried some fresh bread before the storm."}
+{"id": 434, "braille": "⠠⠁⠀⠎⠞⠥⠙⠑⠝⠞⠀⠋⠕⠇⠇⠕⠺⠑⠙⠀⠞⠓⠑⠀⠎⠍⠁⠇⠇⠀⠃⠕⠁⠞⠀⠃⠑⠝⠑⠁⠞⠓⠀⠞⠓⠑⠀⠃⠗⠊⠙⠛⠑⠲", "print": "A student followed the small boat beneath the bridge."}
+{"id": 435, "braille": "⠠⠞⠓⠑⠀⠙⠕⠉⠞⠕⠗⠀⠑⠭⠁⠍⠊⠝⠑⠙⠀⠍⠁⠝⠽⠀⠺⠕⠕⠙⠑⠝⠀⠉⠓⠁⠊⠗⠎⠀⠁⠉⠗⠕⠎⠎⠀⠞⠓⠑⠀⠧⠁⠇⠇⠑⠽⠲", "print": "The doctor examined many wooden chairs across the valley."}
+{"id": 436, "braille": "⠠⠞⠓⠑⠀⠏⠊⠇⠕⠞⠀⠏⠗⠑⠏⠁⠗⠑⠙⠀⠁⠀⠃⠗⠊⠛⠓⠞⠀⠇⠁⠝⠞⠑⠗⠝⠀⠃⠑⠋⠕⠗⠑⠀⠞⠓⠑⠀⠎⠞⠕⠗⠍⠲", "print": "The pilot prepared a bright lantern before the storm."}
+{"id": 437, "braille": "⠠⠍⠽⠀⠝⠑⠊⠛⠓⠃⠕⠥⠗⠀⠋⠕⠇⠇⠕⠺⠑⠙⠀⠁⠀⠏⠁⠏⠑⠗⠀⠍⠁⠏⠀⠙⠥⠗⠊⠝⠛⠀⠞⠓⠑⠀⠋⠑⠎⠞⠊⠧⠁⠇⠲", "print": "My neighbour followed a paper map during the festival."}
+{"id": 438, "braille": "⠠⠁⠀⠍⠥⠎⠊⠉⠊⠁⠝⠀⠏⠕⠇⠊⠎⠓⠑⠙⠀⠞⠓⠑⠀⠎⠍⠁⠇⠇⠀⠃⠕⠁⠞⠀⠝⠑⠁⠗⠀⠞⠓⠑⠀⠗⠊⠧⠑⠗⠲", "print": "A musician polished the small boat near the river."}
+{"id": 439, "braille": "⠠⠞⠓⠑⠀⠞⠗⠁⠧⠑⠇⠇⠑⠗⠀⠋⠕⠇⠇⠕⠺⠑⠙⠀⠞⠓⠑⠀⠎⠍⠁⠇⠇⠀⠃⠕⠁⠞⠀⠊⠝⠀⠞⠓⠑⠀⠍⠕⠗⠝⠊⠝⠛⠲", "print": "The traveller followed the small boat in the morning."}
+{"id": 440, "braille": "⠠⠞⠓⠑⠀⠉⠁⠏⠞⠁⠊⠝⠀⠎⠅⠑⠞⠉⠓⠑⠙⠀⠞⠓⠑⠀⠟⠥⠊⠑⠞⠀⠛⠁⠗⠙⠑⠝⠀⠃⠑⠓⠊⠝⠙⠀⠞⠓⠑⠀⠃⠁⠗⠝⠲", "print": "The captain sketched the quiet garden behind the barn."}
+{"id": 441, "braille": "⠠⠁⠀⠉⠁⠗⠏⠑⠝⠞⠑⠗⠀⠺⠁⠞⠉⠓⠑⠙⠀⠁⠀⠃⠗⠊⠛⠓⠞⠀⠇⠁⠝⠞⠑⠗⠝⠀⠁⠇⠕⠝⠛⠀⠞⠓⠑⠀⠉⠕⠁⠎⠞⠲", "print": "A carpenter watched a bright lantern along the coast."}
+{"id": 442, "braille": "⠠⠞⠓⠑⠀⠏⠊⠇⠕⠞⠀⠙⠑⠎⠉⠗⠊⠃⠑⠙⠀⠁⠀⠺⠑⠞⠀⠥⠍⠃⠗⠑⠇⠇⠁⠀⠥⠝⠙⠑⠗⠀⠞⠓⠑⠀⠕⠇⠙⠀⠞⠗⠑⠑⠲", "print": "The pilot described a wet umbrella under the old tree."}
+{"id": 443, "braille": "⠠⠁⠀⠎⠁⠊⠇⠕⠗⠀⠙⠊⠎⠉⠕⠧⠑⠗⠑⠙⠀⠎⠑⠧⠑⠗⠁⠇⠀⠕⠇⠙⠀⠃⠕⠕⠅⠎⠀⠊⠝⠀⠞⠓⠑⠀⠍⠕⠗⠝⠊⠝⠛⠲", "print": "A sailor discovered several old books in the morning."}
+{"id": 444, "braille": "⠠⠞⠓⠑⠀⠺⠗⠊⠞⠑⠗⠀⠋⠕⠇⠙⠑⠙⠀⠞⠓⠑⠀⠛⠇⠁⠎⠎⠀⠺⠊⠝⠙⠕⠺⠀⠊⠝⠀⠞⠓⠑⠀⠍⠕⠗⠝⠊⠝⠛⠲", "print": "The writer folded the glass window in the morning."}
+{"id": 445, "braille": "⠠⠞⠓⠑⠀⠞⠑⠁⠉⠓⠑⠗⠀⠙⠑⠇⠊⠧⠑⠗⠑⠙⠀⠍⠁⠝⠽⠀⠺⠕⠕⠙⠑⠝⠀⠉⠓⠁⠊⠗⠎⠀⠃⠑⠝⠑⠁⠞⠓⠀⠞⠓⠑⠀⠃⠗⠊⠙⠛⠑⠲", "print": "The teacher delivered many wooden chairs beneath the bridge."}
+{"id": 446, "braille": "⠠⠞⠓⠑⠀⠺⠗⠊⠞⠑⠗⠀⠉⠁⠗⠗⠊⠑⠙⠀⠞⠓⠑⠀⠑⠍⠏⠞⠽⠀⠃⠁⠎⠅⠑⠞⠀⠊⠝⠀⠞⠓⠑⠀⠍⠕⠗⠝⠊⠝⠛⠲", "print": "The writer carried the empty basket in the morning."}
+{"id": 447, "braille": "⠠⠞⠓⠑⠀⠞⠁⠊⠇⠕⠗⠀⠏⠗⠕⠞⠑⠉⠞⠑⠙⠀⠞⠓⠑⠀⠟⠥⠊⠑⠞⠀⠛⠁⠗⠙⠑⠝⠀⠊⠝⠀⠞⠓⠑⠀⠍⠕⠗⠝⠊⠝⠛⠲", "print": "The tailor protected the quiet garden in the morning."}
+{"id": 448, "braille": "⠠⠞⠓⠑⠀⠛⠁⠗⠙⠑⠝⠑⠗⠀⠉⠁⠗⠗⠊⠑⠙⠀⠞⠓⠑⠀⠑⠍⠏⠞⠽⠀⠃⠁⠎⠅⠑⠞⠀⠁⠋⠞⠑⠗⠀⠞⠓⠑⠀⠗⠁⠊⠝⠲", "print": "The gardener carried the empty basket after the rain."}
+{"id": 449, "braille": "⠠⠞⠓⠑⠀⠋⠁⠗⠍⠑⠗⠀⠍⠑⠁⠎⠥⠗⠑⠙⠀⠞⠓⠑⠀⠟⠥⠊⠑⠞⠀⠛⠁⠗⠙⠑⠝⠀⠁⠋⠞⠑⠗⠀⠞⠓⠑⠀⠗⠁⠊⠝⠲", "print": "The farmer measured the quiet garden after the rain."}
+{"id": 450, "braille": "⠠⠞⠓⠑⠀⠋⠁⠗⠍⠑⠗⠀⠗⠑⠍⠑⠍⠃⠑⠗⠑⠙⠀⠁⠀⠺⠑⠞⠀⠥⠍⠃⠗⠑⠇⠇⠁⠀⠥⠝⠙⠑⠗⠀⠞⠓⠑⠀⠕⠇⠙⠀⠞⠗⠑⠑⠲", "print": "The farmer remembered a wet umbrella under the old tree."}
+{"id": 451, "braille": "⠠⠁⠀⠍⠥⠎⠊⠉⠊⠁⠝⠀⠙⠑⠎⠉⠗⠊⠃⠑⠙⠀⠍⠁⠝⠽⠀⠺⠕⠕⠙⠑⠝⠀⠉⠓⠁⠊⠗⠎⠀⠁⠋⠞⠑⠗⠀⠞⠓⠑⠀⠗⠁⠊⠝⠲", "print": "A musician described many wooden chairs after the rain."}
+{"id": 452, "braille": "⠠⠞⠓⠑⠀⠞⠁⠊⠇⠕⠗⠀⠝⠕⠞⠊⠉⠑⠙⠀⠁⠀⠏⠁⠏⠑⠗⠀⠍⠁⠏⠀⠃⠑⠋⠕⠗⠑⠀⠞⠓⠑⠀⠎⠞⠕⠗⠍⠲", "print": "The tailor noticed a paper map before the storm."}
+{"id": 453, "braille": "⠠⠞⠓⠑⠀⠝⠥⠗⠎⠑⠀⠏⠕⠇⠊⠎⠓⠑⠙⠀⠗⠊⠏⠑⠀⠗⠑⠙⠀⠁⠏⠏⠇⠑⠎⠀⠃⠑⠝⠑⠁⠞⠓⠀⠞⠓⠑⠀⠃⠗⠊⠙⠛⠑⠲", "print": "The nurse polished ripe red apples beneath the bridge."}
+{"id": 454, "braille": "⠠⠞⠓⠑⠀⠑⠝⠛⠊⠝⠑⠑⠗⠀⠉⠇⠕⠎⠑⠙⠀⠁⠀⠺⠑⠞⠀⠥⠍⠃⠗⠑⠇⠇⠁⠀⠝⠑⠁⠗⠀⠞⠓⠑⠀⠗⠊⠧⠑⠗⠲", "print": "The engineer closed a wet umbrella near the river."}
+{"id": 455, "braille": "⠠⠁⠀⠙⠁⠝⠉⠑⠗⠀⠝⠕⠞⠊⠉⠑⠙⠀⠞⠓⠑⠀⠛⠗⠑⠑⠝⠀⠋⠊⠑⠇⠙⠀⠃⠑⠝⠑⠁⠞⠓⠀⠞⠓⠑⠀⠃⠗⠊⠙⠛⠑⠲", "print": "A dancer noticed the green field beneath the bridge."}
+{"id": 456, "braille": "⠠⠞⠓⠑⠀⠕⠇⠙⠀⠍⠁⠝⠀⠏⠇⠁⠝⠞⠑⠙⠀⠞⠓⠑⠀⠛⠗⠑⠑⠝⠀⠋⠊⠑⠇⠙⠀⠁⠋⠞⠑⠗⠀⠞⠓⠑⠀⠗⠁⠊⠝⠲", "print": "The old man planted the green field after the rain."}
+{"id": 457, "braille": "⠠⠞⠓⠑⠀⠋⠊⠎⠓⠑⠗⠍⠁⠝⠀⠋⠕⠇⠇⠕⠺⠑⠙⠀⠞⠓⠑⠀⠛⠗⠑⠑⠝⠀⠋⠊⠑⠇⠙⠀⠊⠝⠀⠞⠓⠑⠀⠍⠕⠗⠝⠊⠝⠛⠲", "print": "The fisherman followed the green field in the morning."}
+{"id": 458, "braille": "⠠⠞⠓⠑⠀⠓⠥⠝⠞⠑⠗⠀⠍⠑⠁⠎⠥⠗⠑⠙⠀⠞⠓⠑⠀⠛⠗⠑⠑⠝⠀⠋⠊⠑⠇⠙⠀⠝⠑⠁⠗⠀⠞⠓⠑⠀⠗⠊⠧⠑⠗⠲", "print": "The hunter measured the green field near the river."}
+{"id": 459, "braille": "⠠⠁⠀⠉⠓⠊⠇⠙⠀⠏⠗⠑⠏⠁⠗⠑⠙⠀⠎⠕⠍⠑⠀⠋⠗⠑⠎⠓⠀⠃⠗⠑⠁⠙⠀⠁⠉⠗⠕⠎⠎⠀⠞⠓⠑⠀⠧⠁⠇⠇⠑⠽⠲", "print": "A child prepared some fresh bread across the valley."}
+{"id": 460, "braille": "⠠⠞⠓⠑⠀⠁⠗⠞⠊⠎⠞⠀⠝⠕⠞⠊⠉⠑⠙⠀⠗⠊⠏⠑⠀⠗⠑⠙⠀⠁⠏⠏⠇⠑⠎⠀⠊⠝⠎⠊⠙⠑⠀⠞⠓⠑⠀⠍⠥⠎⠑⠥⠍⠲", "print": "The artist noticed ripe red apples inside the museum."}
+{"id": 461, "braille": "⠠⠞⠓⠑⠀⠞⠁⠊⠇⠕⠗⠀⠉⠕⠇⠇⠑⠉⠞⠑⠙⠀⠞⠓⠑⠀⠊⠗⠕⠝⠀⠛⠁⠞⠑⠀⠃⠑⠝⠑⠁⠞⠓⠀⠞⠓⠑⠀⠃⠗⠊⠙⠛⠑⠲", "print": "The tailor collected the iron gate beneath the bridge."}
+{"id": 462, "braille": "⠠⠞⠓⠑⠀⠓⠥⠝⠞⠑⠗⠀⠑⠭⠏⠇⠁⠊⠝⠑⠙⠀⠞⠓⠑⠀⠞⠁⠇⠇⠀⠇⠁⠙⠙⠑⠗⠀⠁⠋⠞⠑⠗⠀⠞⠓⠑⠀⠗⠁⠊⠝⠲", "print": "The hunter explained the tall ladder after the rain."}
+{"id": 463, "braille": "⠠⠁⠀⠉⠓⠊⠇⠙⠀⠎⠅⠑⠞⠉⠓⠑⠙⠀⠞⠓⠑⠀⠟⠥⠊⠑⠞⠀⠛⠁⠗⠙⠑⠝⠀⠃⠑⠋⠕⠗⠑⠀⠞⠓⠑⠀⠎⠞⠕⠗⠍⠲", "print": "A child sketched the quiet garden before the storm."}
+{"id": 464, "braille": "⠠⠁⠀⠎⠞⠥⠙⠑⠝⠞⠀⠍⠑⠝⠞⠊⠕⠝⠑⠙⠀⠞⠓⠑⠀⠞⠁⠇⠇⠀⠇⠁⠙⠙⠑⠗⠀⠙⠥⠗⠊⠝⠛⠀⠞⠓⠑⠀⠋⠑⠎⠞⠊⠧⠁⠇⠲", "print": "A student mentioned the tall ladder during the festival."}
+{"id": 465, "braille": "⠠⠞⠓⠑⠀⠋⠁⠗⠍⠑⠗⠀⠏⠇⠁⠝⠞⠑⠙⠀⠗⠊⠏⠑⠀⠗⠑⠙⠀⠁⠏⠏⠇⠑⠎⠀⠥⠝⠙⠑⠗⠀⠞⠓⠑⠀⠕⠇⠙⠀⠞⠗⠑⠑⠲", "print": "The farmer planted ripe red apples under the old tree."}
+{"id": 466, "braille": "⠠⠞⠓⠑⠀⠛⠁⠗⠙⠑⠝⠑⠗⠀⠉⠁⠗⠗⠊⠑⠙⠀⠞⠓⠑⠀⠝⠁⠗⠗⠕⠺⠀⠗⠕⠁⠙⠀⠁⠋⠞⠑⠗⠀⠞⠓⠑⠀⠗⠁⠊⠝⠲", "print": "The gardener carried the narrow road after the rain."}
+{"id": 467, "braille": "⠠⠁⠀⠎⠁⠊⠇⠕⠗⠀⠏⠗⠑⠏⠁⠗⠑⠙⠀⠁⠀⠺⠑⠞⠀⠥⠍⠃⠗⠑⠇⠇⠁⠀⠁⠉⠗⠕⠎⠎⠀⠞⠓⠑⠀⠧⠁⠇⠇⠑⠽⠲", "print": "A sailor prepared a wet umbrella across the valley."}
+{"id": 468, "braille": "⠠⠞⠓⠑⠀⠋⠁⠗⠍⠑⠗⠀⠑⠭⠏⠇⠁⠊⠝⠑⠙⠀⠞⠓⠑⠀⠃⠗⠕⠅⠑⠝⠀⠉⠇⠕⠉⠅⠀⠙⠥⠗⠊⠝⠛⠀⠞⠓⠑⠀⠋⠑⠎⠞⠊⠧⠁⠇⠲", "print": "The farmer explained the broken clock during the festival."}
+{"id": 469, "braille": "⠠⠞⠓⠑⠀⠝⠥⠗⠎⠑⠀⠉⠇⠕⠎⠑⠙⠀⠺⠁⠗⠍⠀⠺⠕⠕⠇⠇⠑⠝⠀⠃⠇⠁⠝⠅⠑⠞⠎⠀⠁⠋⠞⠑⠗⠀⠞⠓⠑⠀⠗⠁⠊⠝⠲", "print": "The nurse closed warm woollen blankets after the rain."}
+{"id": 470, "braille": "⠠⠞⠓⠑⠀⠺⠗⠊⠞⠑⠗⠀⠁⠗⠗⠁⠝⠛⠑⠙⠀⠞⠓⠑⠀⠝⠁⠗⠗⠕⠺⠀⠗⠕⠁⠙⠀⠃⠑⠋⠕⠗⠑⠀⠞⠓⠑⠀⠎⠞⠕⠗⠍⠲", "print": "The writer arranged the narrow road before the storm."}
+{"id": 471, "braille": "⠠⠁⠀⠍⠥⠎⠊⠉⠊⠁⠝⠀⠑⠭⠁⠍⠊⠝⠑⠙⠀⠞⠓⠑⠀⠊⠗⠕⠝⠀⠛⠁⠞⠑⠀⠞⠓⠗⠕⠥⠛⠓⠕⠥⠞⠀⠞⠓⠑⠀⠺⠊⠝⠞⠑⠗⠲", "print": "A musician examined the iron gate throughout the winter."}
+{"id": 472, "braille": "⠠⠁⠀⠍⠥⠎⠊⠉⠊⠁⠝⠀⠏⠕⠇⠊⠎⠓⠑⠙⠀⠁⠀⠃⠗⠊⠛⠓⠞⠀⠇⠁⠝⠞⠑⠗⠝⠀⠃⠑⠋⠕⠗⠑⠀⠞⠓⠑⠀⠎⠞⠕⠗⠍⠲", "print": "A musician polished a bright lantern before the storm."}
+{"id": 473, "braille": "⠠⠞⠓⠑⠀⠞⠁⠊⠇⠕⠗⠀⠉⠕⠇⠇⠑⠉⠞⠑⠙⠀⠎⠕⠍⠑⠀⠋⠗⠑⠎⠓⠀⠃⠗⠑⠁⠙⠀⠁⠇⠕⠝⠛⠀⠞⠓⠑⠀⠉⠕⠁⠎⠞⠲", "print": "The tailor collected some fresh bread along the coast."}
+{"id": 474, "braille": "⠠⠞⠓⠑⠀⠞⠁⠊⠇⠕⠗⠀⠙⠊⠎⠉⠕⠧⠑⠗⠑⠙⠀⠞⠓⠑⠀⠝⠁⠗⠗⠕⠺⠀⠗⠕⠁⠙⠀⠃⠑⠋⠕⠗⠑⠀⠞⠓⠑⠀⠎⠞⠕⠗⠍⠲", "print": "The tailor discovered the narrow road before the storm."}
+{"id": 475, "braille": "⠠⠞⠓⠑⠀⠍⠑⠗⠉⠓⠁⠝⠞⠀⠺⠁⠞⠉⠓⠑⠙⠀⠁⠀⠎⠊⠇⠧⠑⠗⠀⠉⠕⠊⠝⠀⠙⠥⠗⠊⠝⠛⠀⠞⠓⠑⠀⠋⠑⠎⠞⠊⠧⠁⠇⠲", "print": "The merchant watched a silver coin during the festival."}
+{"id": 476, "braille": "⠠⠞⠓⠑⠀⠙⠕⠉⠞⠕⠗⠀⠑⠭⠏⠇⠁⠊⠝⠑⠙⠀⠎⠕⠍⠑⠀⠋⠗⠑⠎⠓⠀⠃⠗⠑⠁⠙⠀⠁⠋⠞⠑⠗⠀⠞⠓⠑⠀⠗⠁⠊⠝⠲", "print": "The doctor explained some fresh bread after the rain."}
+{"id": 477, "braille": "⠠⠞⠓⠑⠀⠞⠗⠁⠧⠑⠇⠇⠑⠗⠀⠉⠕⠇⠇⠑⠉⠞⠑⠙⠀⠁⠀⠎⠊⠇⠧⠑⠗⠀⠉⠕⠊⠝⠀⠞⠓⠗⠕⠥⠛⠓⠕⠥⠞⠀⠞⠓⠑⠀⠺⠊⠝⠞⠑⠗⠲", "print": "The traveller collected a silver coin throughout the winter."}
+{"id": 478, "braille": "⠠⠞⠓⠑⠀⠺⠑⠁⠧⠑⠗⠀⠋⠕⠇⠙⠑⠙⠀⠎⠑⠧⠑⠗⠁⠇⠀⠕⠇⠙⠀⠃⠕⠕⠅⠎⠀⠞⠓⠗⠕⠥⠛⠓⠕⠥⠞⠀⠞⠓⠑⠀⠺⠊⠝⠞⠑⠗⠲", "print": "The weaver folded several old books throughout the winter."}
+{"id": 479, "braille": "⠠⠞⠓⠑⠀⠛⠁⠗⠙⠑⠝⠑⠗⠀⠎⠅⠑⠞⠉⠓⠑⠙⠀⠞⠓⠑⠀⠊⠗⠕⠝⠀⠛⠁⠞⠑⠀⠞⠓⠗⠕⠥⠛⠓⠕⠥⠞⠀⠞⠓⠑⠀⠺⠊⠝⠞⠑⠗⠲", "print": "The gardener sketched the iron gate throughout the winter."}
+{"id": 480, "braille": "⠠⠞⠓⠑⠀⠺⠑⠁⠧⠑⠗⠀⠏⠁⠊⠝⠞⠑⠙⠀⠁⠀⠺⠑⠞⠀⠥⠍⠃⠗⠑⠇⠇⠁⠀⠃⠑⠝⠑⠁⠞⠓⠀⠞⠓⠑⠀⠃⠗⠊⠙⠛⠑⠲", "print": "The weaver painted a wet umbrella beneath the bridge."}

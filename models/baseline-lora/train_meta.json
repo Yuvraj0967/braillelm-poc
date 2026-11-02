@@ -1,0 +1,11 @@
+{
+  "mode": "baseline",
+  "base_model": "HuggingFaceTB/SmolLM2-135M",
+  "device": "cpu",
+  "epochs": 1,
+  "epochs_done": 1,
+  "lr": 0.001,
+  "batch": 4,
+  "grad_accum": 1,
+  "max_len": 192
+}

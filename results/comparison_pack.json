@@ -1,0 +1,2599 @@
+{
+  "rows": [
+    {
+      "id": 1,
+      "print": "The gardener started a wet umbrella before the storm.",
+      "b": 3,
+      "c": 1,
+      "cer_b": 0.491,
+      "baseline": "The fisherman prepared the stone bridge before the storm.",
+      "control": "The fisherman prepared the empty basket before the storm."
+    },
+    {
+      "id": 2,
+      "print": "A dancer watched a bright lantern along the coast.",
+      "b": 1,
+      "c": 3,
+      "cer_b": 0.8,
+      "baseline": "The fisherman closed the stone bridge before the storm.",
+      "control": "A painter recorded a heavy box before the storm."
+    },
+    {
+      "id": 3,
+      "print": "The librarian recorded a wet umbrella near the river.",
+      "b": 4,
+      "c": 1,
+      "cer_b": 0.679,
+      "baseline": "The captain opened the glass window before the storm.",
+      "control": "The fisherman prepared the empty basket before the storm."
+    },
+    {
+      "id": 4,
+      "print": "A student watched the empty basket beside the harbour.",
+      "b": 8,
+      "c": 4,
+      "cer_b": 0.796,
+      "baseline": "The fisherman carried a silver coin during the festival.",
+      "control": "A painter recorded the empty basket before the storm."
+    },
+    {
+      "id": 5,
+      "print": "The captain examined the iron gate near the river.",
+      "b": 1,
+      "c": 1,
+      "cer_b": 0.62,
+      "baseline": "The fisherman closed the stone bridge before the storm.",
+      "control": "The fisherman prepared the empty basket before the storm."
+    },
+    {
+      "id": 6,
+      "print": "The tailor counted the iron gate before the storm.",
+      "b": 1,
+      "c": 1,
+      "cer_b": 0.4,
+      "baseline": "The fisherman closed the stone bridge before the storm.",
+      "control": "The fisherman prepared the empty basket before the storm."
+    },
+    {
+      "id": 7,
+      "print": "The pilot examined a heavy box above the village.",
+      "b": 6,
+      "c": 1,
+      "cer_b": 0.735,
+      "baseline": "The fisherman closed the glass window before the storm.",
+      "control": "The fisherman prepared the empty basket before the storm."
+    },
+    {
+      "id": 8,
+      "print": "The merchant arranged the stone bridge under the old tree.",
+      "b": 2,
+      "c": 1,
+      "cer_b": 0.638,
+      "baseline": "The captain recorded a silver coin in the morning.",
+      "control": "The fisherman prepared the empty basket before the storm."
+    },
+    {
+      "id": 9,
+      "print": "The teacher finished ripe red apples under the old tree.",
+      "b": 2,
+      "c": 2,
+      "cer_b": 0.661,
+      "baseline": "The captain recorded a silver coin in the morning.",
+      "control": "The fisherman carried the empty basket before the storm."
+    },
+    {
+      "id": 10,
+      "print": "The librarian discovered the tall ladder above the village.",
+      "b": 2,
+      "c": 5,
+      "cer_b": 0.627,
+      "baseline": "The captain recorded a silver coin in the morning.",
+      "control": "The fisherman carried the iron gate before the storm."
+    },
+    {
+      "id": 11,
+      "print": "A painter studied some fresh bread above the village.",
+      "b": 1,
+      "c": 3,
+      "cer_b": 0.717,
+      "baseline": "The fisherman closed the stone bridge before the storm.",
+      "control": "A painter recorded a heavy box before the storm."
+    },
+    {
+      "id": 12,
+      "print": "The artist measured warm woollen blankets after the rain.",
+      "b": 2,
+      "c": 1,
+      "cer_b": 0.596,
+      "baseline": "The captain recorded a silver coin in the morning.",
+      "control": "The fisherman prepared the empty basket before the storm."
+    },
+    {
+      "id": 13,
+      "print": "The artist started the broken clock along the coast.",
+      "b": 1,
+      "c": 1,
+      "cer_b": 0.635,
+      "baseline": "The fisherman closed the stone bridge before the storm.",
+      "control": "The fisherman prepared the empty basket before the storm."
+    },
+    {
+      "id": 14,
+      "print": "My neighbour mentioned the green field in the morning.",
+      "b": 3,
+      "c": 10,
+      "cer_b": 0.741,
+      "baseline": "The fisherman prepared the stone bridge before the storm.",
+      "control": "A painter recorded the green field before the storm."
+    },
+    {
+      "id": 15,
+      "print": "My neighbour explained some fresh bread near the river.",
+      "b": 3,
+      "c": 2,
+      "cer_b": 0.691,
+      "baseline": "The fisherman prepared the stone bridge before the storm.",
+      "control": "The fisherman carried the empty basket before the storm."
+    },
+    {
+      "id": 16,
+      "print": "The merchant discovered ripe red apples along the coast.",
+      "b": 1,
+      "c": 1,
+      "cer_b": 0.679,
+      "baseline": "The fisherman closed the stone bridge before the storm.",
+      "control": "The fisherman prepared the empty basket before the storm."
+    },
+    {
+      "id": 17,
+      "print": "The traveller recorded ripe red apples throughout the winter.",
+      "b": 4,
+      "c": 6,
+      "cer_b": 0.672,
+      "baseline": "The captain opened the glass window before the storm.",
+      "control": "The fisherman prepared the iron gate before the storm."
+    },
+    {
+      "id": 18,
+      "print": "The traveller discovered the iron gate near the river.",
+      "b": 3,
+      "c": 1,
+      "cer_b": 0.593,
+      "baseline": "The fisherman prepared the stone bridge before the storm.",
+      "control": "The fisherman prepared the empty basket before the storm."
+    },
+    {
+      "id": 19,
+      "print": "A painter arranged the small boat inside the museum.",
+      "b": 1,
+      "c": 3,
+      "cer_b": 0.635,
+      "baseline": "The fisherman closed the stone bridge before the storm.",
+      "control": "A painter recorded a heavy box before the storm."
+    },
+    {
+      "id": 20,
+      "print": "The pilot collected a wet umbrella after the rain.",
+      "b": 1,
+      "c": 1,
+      "cer_b": 0.72,
+      "baseline": "The fisherman closed the stone bridge before the storm.",
+      "control": "The fisherman prepared the empty basket before the storm."
+    },
+    {
+      "id": 21,
+      "print": "The librarian planted warm woollen blankets along the coast.",
+      "b": 2,
+      "c": 2,
+      "cer_b": 0.617,
+      "baseline": "The captain recorded a silver coin in the morning.",
+      "control": "The fisherman carried the empty basket before the storm."
+    },
+    {
+      "id": 22,
+      "print": "The doctor counted many wooden chairs across the valley.",
+      "b": 5,
+      "c": 2,
+      "cer_b": 0.589,
+      "baseline": "The tailor closed the stone bridge before the storm.",
+      "control": "The fisherman carried the empty basket before the storm."
+    },
+    {
+      "id": 23,
+      "print": "A student followed the iron gate beneath the bridge.",
+      "b": 1,
+      "c": 11,
+      "cer_b": 0.635,
+      "baseline": "The fisherman closed the stone bridge before the storm.",
+      "control": "A painter prepared a bright lantern under the old tree."
+    },
+    {
+      "id": 24,
+      "print": "A dancer discovered the stone bridge in the morning.",
+      "b": 1,
+      "c": 3,
+      "cer_b": 0.519,
+      "baseline": "The fisherman closed the stone bridge before the storm.",
+      "control": "A painter recorded a heavy box before the storm."
+    },
+    {
+      "id": 25,
+      "print": "The farmer mentioned some fresh bread along the coast.",
+      "b": 3,
+      "c": 2,
+      "cer_b": 0.63,
+      "baseline": "The fisherman prepared the stone bridge before the storm.",
+      "control": "The fisherman carried the empty basket before the storm."
+    },
+    {
+      "id": 26,
+      "print": "The doctor arranged several old books along the coast.",
+      "b": 3,
+      "c": 1,
+      "cer_b": 0.685,
+      "baseline": "The fisherman prepared the stone bridge before the storm.",
+      "control": "The fisherman prepared the empty basket before the storm."
+    },
+    {
+      "id": 27,
+      "print": "The hunter arranged many wooden chairs during the festival.",
+      "b": 2,
+      "c": 7,
+      "cer_b": 0.593,
+      "baseline": "The captain recorded a silver coin in the morning.",
+      "control": "The fisherman prepared the stone bridge under the old tree."
+    },
+    {
+      "id": 28,
+      "print": "A scientist planted several old books near the river.",
+      "b": 3,
+      "c": 3,
+      "cer_b": 0.755,
+      "baseline": "The fisherman prepared the stone bridge before the storm.",
+      "control": "A painter recorded a heavy box before the storm."
+    },
+    {
+      "id": 29,
+      "print": "The tailor started the quiet garden during the festival.",
+      "b": 5,
+      "c": 1,
+      "cer_b": 0.482,
+      "baseline": "The tailor closed the stone bridge before the storm.",
+      "control": "The fisherman prepared the empty basket before the storm."
+    },
+    {
+      "id": 30,
+      "print": "A shopkeeper polished the empty basket near the river.",
+      "b": 3,
+      "c": 12,
+      "cer_b": 0.667,
+      "baseline": "The fisherman prepared the stone bridge before the storm.",
+      "control": "A painter recorded a silver coin before the storm."
+    },
+    {
+      "id": 31,
+      "print": "The nurse measured the quiet garden near the river.",
+      "b": 4,
+      "c": 1,
+      "cer_b": 0.608,
+      "baseline": "The captain opened the glass window before the storm.",
+      "control": "The fisherman prepared the empty basket before the storm."
+    },
+    {
+      "id": 32,
+      "print": "The teacher repaired some fresh bread near the river.",
+      "b": 4,
+      "c": 1,
+      "cer_b": 0.642,
+      "baseline": "The captain opened the glass window before the storm.",
+      "control": "The fisherman prepared the empty basket before the storm."
+    },
+    {
+      "id": 33,
+      "print": "A scientist remembered the small boat behind the barn.",
+      "b": 1,
+      "c": 3,
+      "cer_b": 0.63,
+      "baseline": "The fisherman closed the stone bridge before the storm.",
+      "control": "A painter recorded a heavy box before the storm."
+    },
+    {
+      "id": 34,
+      "print": "The doctor finished the green field near the river.",
+      "b": 4,
+      "c": 1,
+      "cer_b": 0.588,
+      "baseline": "The captain opened the glass window before the storm.",
+      "control": "The fisherman prepared the empty basket before the storm."
+    },
+    {
+      "id": 35,
+      "print": "A dancer noticed several old books across the valley.",
+      "b": 3,
+      "c": 3,
+      "cer_b": 0.774,
+      "baseline": "The fisherman prepared the stone bridge before the storm.",
+      "control": "A painter recorded a heavy box before the storm."
+    },
+    {
+      "id": 36,
+      "print": "The writer polished some fresh bread inside the museum.",
+      "b": 7,
+      "c": 2,
+      "cer_b": 0.636,
+      "baseline": "The captain prepared a silver coin in the morning.",
+      "control": "The fisherman carried the empty basket before the storm."
+    },
+    {
+      "id": 37,
+      "print": "The captain followed the tall ladder in the morning.",
+      "b": 1,
+      "c": 1,
+      "cer_b": 0.635,
+      "baseline": "The fisherman closed the stone bridge before the storm.",
+      "control": "The fisherman prepared the empty basket before the storm."
+    },
+    {
+      "id": 38,
+      "print": "The gardener arranged some fresh bread inside the museum.",
+      "b": 2,
+      "c": 2,
+      "cer_b": 0.632,
+      "baseline": "The captain recorded a silver coin in the morning.",
+      "control": "The fisherman carried the empty basket before the storm."
+    },
+    {
+      "id": 39,
+      "print": "The writer protected the stone bridge throughout the winter.",
+      "b": 2,
+      "c": 6,
+      "cer_b": 0.65,
+      "baseline": "The captain recorded a silver coin in the morning.",
+      "control": "The fisherman prepared the iron gate before the storm."
+    },
+    {
+      "id": 40,
+      "print": "A painter finished a silver coin after the rain.",
+      "b": 1,
+      "c": 9,
+      "cer_b": 0.771,
+      "baseline": "The fisherman closed the stone bridge before the storm.",
+      "control": "A painter carried a heavy box before the storm."
+    },
+    {
+      "id": 41,
+      "print": "A dancer started the iron gate inside the museum.",
+      "b": 6,
+      "c": 3,
+      "cer_b": 0.735,
+      "baseline": "The fisherman closed the glass window before the storm.",
+      "control": "A painter recorded a heavy box before the storm."
+    },
+    {
+      "id": 42,
+      "print": "The hunter opened ripe red apples above the village.",
+      "b": 1,
+      "c": 1,
+      "cer_b": 0.692,
+      "baseline": "The fisherman closed the stone bridge before the storm.",
+      "control": "The fisherman prepared the empty basket before the storm."
+    },
+    {
+      "id": 43,
+      "print": "The traveller measured the empty basket above the village.",
+      "b": 2,
+      "c": 1,
+      "cer_b": 0.69,
+      "baseline": "The captain recorded a silver coin in the morning.",
+      "control": "The fisherman prepared the empty basket before the storm."
+    },
+    {
+      "id": 44,
+      "print": "A sailor carried some fresh bread before the storm.",
+      "b": 1,
+      "c": 8,
+      "cer_b": 0.529,
+      "baseline": "The fisherman closed the stone bridge before the storm.",
+      "control": "A painter prepared a wet umbrella before the storm."
+    },
+    {
+      "id": 45,
+      "print": "A painter followed some fresh bread near the river.",
+      "b": 1,
+      "c": 8,
+      "cer_b": 0.667,
+      "baseline": "The fisherman closed the stone bridge before the storm.",
+      "control": "A painter prepared a wet umbrella before the storm."
+    },
+    {
+      "id": 46,
+      "print": "The fisherman finished the tall ladder across the valley.",
+      "b": 2,
+      "c": 2,
+      "cer_b": 0.684,
+      "baseline": "The captain recorded a silver coin in the morning.",
+      "control": "The fisherman carried the empty basket before the storm."
+    },
+    {
+      "id": 47,
+      "print": "The merchant repaired the glass window before the storm.",
+      "b": 5,
+      "c": 2,
+      "cer_b": 0.411,
+      "baseline": "The tailor closed the stone bridge before the storm.",
+      "control": "The fisherman carried the empty basket before the storm."
+    },
+    {
+      "id": 48,
+      "print": "A child explained several old books during the festival.",
+      "b": 1,
+      "c": 13,
+      "cer_b": 0.75,
+      "baseline": "The fisherman closed the stone bridge before the storm.",
+      "control": "A musician prepared a bright lantern before the storm."
+    },
+    {
+      "id": 49,
+      "print": "The librarian started the broken clock before the storm.",
+      "b": 2,
+      "c": 1,
+      "cer_b": 0.607,
+      "baseline": "The captain recorded a silver coin in the morning.",
+      "control": "The fisherman prepared the empty basket before the storm."
+    },
+    {
+      "id": 50,
+      "print": "The engineer polished a wet umbrella under the old tree.",
+      "b": 1,
+      "c": 1,
+      "cer_b": 0.661,
+      "baseline": "The fisherman closed the stone bridge before the storm.",
+      "control": "The fisherman prepared the empty basket before the storm."
+    },
+    {
+      "id": 51,
+      "print": "The librarian arranged the glass window in the morning.",
+      "b": 7,
+      "c": 2,
+      "cer_b": 0.436,
+      "baseline": "The captain prepared a silver coin in the morning.",
+      "control": "The fisherman carried the empty basket before the storm."
+    },
+    {
+      "id": 52,
+      "print": "The merchant counted the empty basket near the river.",
+      "b": 4,
+      "c": 1,
+      "cer_b": 0.585,
+      "baseline": "The captain opened the glass window before the storm.",
+      "control": "The fisherman prepared the empty basket before the storm."
+    },
+    {
+      "id": 53,
+      "print": "The young girl remembered a wet umbrella across the valley.",
+      "b": 2,
+      "c": 7,
+      "cer_b": 0.678,
+      "baseline": "The captain recorded a silver coin in the morning.",
+      "control": "The fisherman prepared the stone bridge under the old tree."
+    },
+    {
+      "id": 54,
+      "print": "The hunter mentioned the glass window beneath the bridge.",
+      "b": 2,
+      "c": 2,
+      "cer_b": 0.632,
+      "baseline": "The captain recorded a silver coin in the morning.",
+      "control": "The fisherman carried the empty basket before the storm."
+    },
+    {
+      "id": 55,
+      "print": "The tailor repaired several old books throughout the winter.",
+      "b": 2,
+      "c": 1,
+      "cer_b": 0.667,
+      "baseline": "The captain recorded a silver coin in the morning.",
+      "control": "The fisherman prepared the empty basket before the storm."
+    },
+    {
+      "id": 56,
+      "print": "The tailor closed the stone bridge along the coast.",
+      "b": 4,
+      "c": 1,
+      "cer_b": 0.588,
+      "baseline": "The captain opened the glass window before the storm.",
+      "control": "The fisherman prepared the empty basket before the storm."
+    },
+    {
+      "id": 57,
+      "print": "A dancer watched the small boat across the valley.",
+      "b": 1,
+      "c": 3,
+      "cer_b": 0.68,
+      "baseline": "The fisherman closed the stone bridge before the storm.",
+      "control": "A painter recorded a heavy box before the storm."
+    },
+    {
+      "id": 58,
+      "print": "The merchant followed the narrow road beside the harbour.",
+      "b": 2,
+      "c": 1,
+      "cer_b": 0.632,
+      "baseline": "The captain recorded a silver coin in the morning.",
+      "control": "The fisherman prepared the empty basket before the storm."
+    },
+    {
+      "id": 59,
+      "print": "A dancer folded the glass window behind the barn.",
+      "b": 6,
+      "c": 3,
+      "cer_b": 0.449,
+      "baseline": "The fisherman closed the glass window before the storm.",
+      "control": "A painter recorded a heavy box before the storm."
+    },
+    {
+      "id": 60,
+      "print": "The librarian noticed the quiet garden throughout the winter.",
+      "b": 2,
+      "c": 5,
+      "cer_b": 0.656,
+      "baseline": "The captain recorded a silver coin in the morning.",
+      "control": "The fisherman carried the iron gate before the storm."
+    },
+    {
+      "id": 61,
+      "print": "The traveller examined ripe red apples near the river.",
+      "b": 3,
+      "c": 1,
+      "cer_b": 0.685,
+      "baseline": "The fisherman prepared the stone bridge before the storm.",
+      "control": "The fisherman prepared the empty basket before the storm."
+    },
+    {
+      "id": 62,
+      "print": "The farmer discovered several old books around the market.",
+      "b": 2,
+      "c": 1,
+      "cer_b": 0.621,
+      "baseline": "The captain recorded a silver coin in the morning.",
+      "control": "The fisherman prepared the empty basket before the storm."
+    },
+    {
+      "id": 63,
+      "print": "The captain opened a paper map above the village.",
+      "b": 6,
+      "c": 1,
+      "cer_b": 0.755,
+      "baseline": "The fisherman closed the glass window before the storm.",
+      "control": "The fisherman prepared the empty basket before the storm."
+    },
+    {
+      "id": 64,
+      "print": "A sailor described many wooden chairs along the coast.",
+      "b": 1,
+      "c": 3,
+      "cer_b": 0.722,
+      "baseline": "The fisherman closed the stone bridge before the storm.",
+      "control": "A painter recorded a heavy box before the storm."
+    },
+    {
+      "id": 65,
+      "print": "The artist repaired ripe red apples above the village.",
+      "b": 3,
+      "c": 2,
+      "cer_b": 0.667,
+      "baseline": "The fisherman prepared the stone bridge before the storm.",
+      "control": "The fisherman carried the empty basket before the storm."
+    },
+    {
+      "id": 66,
+      "print": "The gardener counted the narrow road across the valley.",
+      "b": 7,
+      "c": 2,
+      "cer_b": 0.691,
+      "baseline": "The captain prepared a silver coin in the morning.",
+      "control": "The fisherman carried the empty basket before the storm."
+    },
+    {
+      "id": 67,
+      "print": "A shopkeeper protected the stone bridge above the village.",
+      "b": 2,
+      "c": 4,
+      "cer_b": 0.724,
+      "baseline": "The captain recorded a silver coin in the morning.",
+      "control": "A painter recorded the empty basket before the storm."
+    },
+    {
+      "id": 68,
+      "print": "The teacher described the narrow road inside the museum.",
+      "b": 1,
+      "c": 2,
+      "cer_b": 0.571,
+      "baseline": "The fisherman closed the stone bridge before the storm.",
+      "control": "The fisherman carried the empty basket before the storm."
+    },
+    {
+      "id": 69,
+      "print": "The traveller arranged a heavy box in the morning.",
+      "b": 1,
+      "c": 1,
+      "cer_b": 0.78,
+      "baseline": "The fisherman closed the stone bridge before the storm.",
+      "control": "The fisherman prepared the empty basket before the storm."
+    },
+    {
+      "id": 70,
+      "print": "The captain studied the green field near the river.",
+      "b": 4,
+      "c": 1,
+      "cer_b": 0.451,
+      "baseline": "The captain opened the glass window before the storm.",
+      "control": "The fisherman prepared the empty basket before the storm."
+    },
+    {
+      "id": 71,
+      "print": "A student started the empty basket beneath the bridge.",
+      "b": 9,
+      "c": 4,
+      "cer_b": 0.667,
+      "baseline": "The fisherman carried the stone bridge before the storm.",
+      "control": "A painter recorded the empty basket before the storm."
+    },
+    {
+      "id": 72,
+      "print": "The traveller delivered the broken clock inside the museum.",
+      "b": 2,
+      "c": 1,
+      "cer_b": 0.593,
+      "baseline": "The captain recorded a silver coin in the morning.",
+      "control": "The fisherman prepared the empty basket before the storm."
+    },
+    {
+      "id": 73,
+      "print": "The pilot studied a bright lantern along the coast.",
+      "b": 4,
+      "c": 1,
+      "cer_b": 0.706,
+      "baseline": "The captain opened the glass window before the storm.",
+      "control": "The fisherman prepared the empty basket before the storm."
+    },
+    {
+      "id": 74,
+      "print": "The pilot repaired the quiet garden along the coast.",
+      "b": 1,
+      "c": 1,
+      "cer_b": 0.635,
+      "baseline": "The fisherman closed the stone bridge before the storm.",
+      "control": "The fisherman prepared the empty basket before the storm."
+    },
+    {
+      "id": 75,
+      "print": "A carpenter watched some fresh bread during the festival.",
+      "b": 2,
+      "c": 4,
+      "cer_b": 0.702,
+      "baseline": "The captain recorded a silver coin in the morning.",
+      "control": "A painter recorded the empty basket before the storm."
+    },
+    {
+      "id": 76,
+      "print": "A musician protected the tall ladder during the festival.",
+      "b": 2,
+      "c": 4,
+      "cer_b": 0.667,
+      "baseline": "The captain recorded a silver coin in the morning.",
+      "control": "A painter recorded the empty basket before the storm."
+    },
+    {
+      "id": 77,
+      "print": "The traveller opened the empty basket around the market.",
+      "b": 5,
+      "c": 2,
+      "cer_b": 0.554,
+      "baseline": "The tailor closed the stone bridge before the storm.",
+      "control": "The fisherman carried the empty basket before the storm."
+    },
+    {
+      "id": 78,
+      "print": "The librarian carried a wet umbrella inside the museum.",
+      "b": 7,
+      "c": 2,
+      "cer_b": 0.6,
+      "baseline": "The captain prepared a silver coin in the morning.",
+      "control": "The fisherman carried the empty basket before the storm."
+    },
+    {
+      "id": 79,
+      "print": "A musician repaired the small boat behind the barn.",
+      "b": 1,
+      "c": 8,
+      "cer_b": 0.627,
+      "baseline": "The fisherman closed the stone bridge before the storm.",
+      "control": "A painter prepared a wet umbrella before the storm."
+    },
+    {
+      "id": 80,
+      "print": "The baker followed the quiet garden along the coast.",
+      "b": 1,
+      "c": 1,
+      "cer_b": 0.577,
+      "baseline": "The fisherman closed the stone bridge before the storm.",
+      "control": "The fisherman prepared the empty basket before the storm."
+    },
+    {
+      "id": 81,
+      "print": "The doctor examined the small boat above the village.",
+      "b": 3,
+      "c": 1,
+      "cer_b": 0.642,
+      "baseline": "The fisherman prepared the stone bridge before the storm.",
+      "control": "The fisherman prepared the empty basket before the storm."
+    },
+    {
+      "id": 82,
+      "print": "A painter folded a heavy box along the coast.",
+      "b": 1,
+      "c": 14,
+      "cer_b": 0.822,
+      "baseline": "The fisherman closed the stone bridge before the storm.",
+      "control": "A painter carried a bright lantern before the storm."
+    },
+    {
+      "id": 83,
+      "print": "The farmer remembered the small boat during the festival.",
+      "b": 2,
+      "c": 2,
+      "cer_b": 0.596,
+      "baseline": "The captain recorded a silver coin in the morning.",
+      "control": "The fisherman carried the empty basket before the storm."
+    },
+    {
+      "id": 84,
+      "print": "The merchant carried the glass window around the market.",
+      "b": 5,
+      "c": 2,
+      "cer_b": 0.607,
+      "baseline": "The tailor closed the stone bridge before the storm.",
+      "control": "The fisherman carried the empty basket before the storm."
+    },
+    {
+      "id": 85,
+      "print": "The doctor sketched the stone bridge near the river.",
+      "b": 1,
+      "c": 1,
+      "cer_b": 0.423,
+      "baseline": "The fisherman closed the stone bridge before the storm.",
+      "control": "The fisherman prepared the empty basket before the storm."
+    },
+    {
+      "id": 86,
+      "print": "The fisherman measured some fresh bread along the coast.",
+      "b": 5,
+      "c": 2,
+      "cer_b": 0.625,
+      "baseline": "The tailor closed the stone bridge before the storm.",
+      "control": "The fisherman carried the empty basket before the storm."
+    },
+    {
+      "id": 87,
+      "print": "The gardener discovered a wet umbrella behind the barn.",
+      "b": 3,
+      "c": 2,
+      "cer_b": 0.655,
+      "baseline": "The fisherman prepared the stone bridge before the storm.",
+      "control": "The fisherman carried the empty basket before the storm."
+    },
+    {
+      "id": 88,
+      "print": "A scientist noticed a heavy box behind the barn.",
+      "b": 1,
+      "c": 9,
+      "cer_b": 0.792,
+      "baseline": "The fisherman closed the stone bridge before the storm.",
+      "control": "A painter carried a heavy box before the storm."
+    },
+    {
+      "id": 89,
+      "print": "The fisherman opened the stone bridge throughout the winter.",
+      "b": 2,
+      "c": 6,
+      "cer_b": 0.683,
+      "baseline": "The captain recorded a silver coin in the morning.",
+      "control": "The fisherman prepared the iron gate before the storm."
+    },
+    {
+      "id": 90,
+      "print": "The baker described the broken clock behind the barn.",
+      "b": 4,
+      "c": 1,
+      "cer_b": 0.604,
+      "baseline": "The captain opened the glass window before the storm.",
+      "control": "The fisherman prepared the empty basket before the storm."
+    },
+    {
+      "id": 91,
+      "print": "The weaver followed the small boat across the valley.",
+      "b": 4,
+      "c": 1,
+      "cer_b": 0.623,
+      "baseline": "The captain opened the glass window before the storm.",
+      "control": "The fisherman prepared the empty basket before the storm."
+    },
+    {
+      "id": 92,
+      "print": "The old man recorded a bright lantern during the festival.",
+      "b": 2,
+      "c": 7,
+      "cer_b": 0.5,
+      "baseline": "The captain recorded a silver coin in the morning.",
+      "control": "The fisherman prepared the stone bridge under the old tree."
+    },
+    {
+      "id": 93,
+      "print": "The captain recorded the quiet garden across the valley.",
+      "b": 5,
+      "c": 2,
+      "cer_b": 0.536,
+      "baseline": "The tailor closed the stone bridge before the storm.",
+      "control": "The fisherman carried the empty basket before the storm."
+    },
+    {
+      "id": 94,
+      "print": "The young girl started several old books during the festival.",
+      "b": 2,
+      "c": 6,
+      "cer_b": 0.639,
+      "baseline": "The captain recorded a silver coin in the morning.",
+      "control": "The fisherman prepared the iron gate before the storm."
+    },
+    {
+      "id": 95,
+      "print": "The merchant examined warm woollen blankets beside the harbour.",
+      "b": 5,
+      "c": 5,
+      "cer_b": 0.603,
+      "baseline": "The tailor closed the stone bridge before the storm.",
+      "control": "The fisherman carried the iron gate before the storm."
+    },
+    {
+      "id": 96,
+      "print": "A sailor measured the stone bridge before the storm.",
+      "b": 1,
+      "c": 3,
+      "cer_b": 0.308,
+      "baseline": "The fisherman closed the stone bridge before the storm.",
+      "control": "A painter recorded a heavy box before the storm."
+    },
+    {
+      "id": 97,
+      "print": "The doctor opened the small boat along the coast.",
+      "b": 6,
+      "c": 1,
+      "cer_b": 0.653,
+      "baseline": "The fisherman closed the glass window before the storm.",
+      "control": "The fisherman prepared the empty basket before the storm."
+    },
+    {
+      "id": 98,
+      "print": "The gardener examined several old books beside the harbour.",
+      "b": 2,
+      "c": 1,
+      "cer_b": 0.627,
+      "baseline": "The captain recorded a silver coin in the morning.",
+      "control": "The fisherman prepared the empty basket before the storm."
+    },
+    {
+      "id": 99,
+      "print": "The artist closed a wet umbrella in the morning.",
+      "b": 1,
+      "c": 2,
+      "cer_b": 0.708,
+      "baseline": "The fisherman closed the stone bridge before the storm.",
+      "control": "The fisherman carried the empty basket before the storm."
+    },
+    {
+      "id": 100,
+      "print": "The farmer arranged ripe red apples in the morning.",
+      "b": 4,
+      "c": 1,
+      "cer_b": 0.725,
+      "baseline": "The captain opened the glass window before the storm.",
+      "control": "The fisherman prepared the empty basket before the storm."
+    },
+    {
+      "id": 101,
+      "print": "The tailor sketched many wooden chairs above the village.",
+      "b": 2,
+      "c": 1,
+      "cer_b": 0.632,
+      "baseline": "The captain recorded a silver coin in the morning.",
+      "control": "The fisherman prepared the empty basket before the storm."
+    },
+    {
+      "id": 102,
+      "print": "The hunter studied several old books after the rain.",
+      "b": 1,
+      "c": 1,
+      "cer_b": 0.692,
+      "baseline": "The fisherman closed the stone bridge before the storm.",
+      "control": "The fisherman prepared the empty basket before the storm."
+    },
+    {
+      "id": 103,
+      "print": "The merchant mentioned a heavy box inside the museum.",
+      "b": 4,
+      "c": 2,
+      "cer_b": 0.642,
+      "baseline": "The captain opened the glass window before the storm.",
+      "control": "The fisherman carried the empty basket before the storm."
+    },
+    {
+      "id": 104,
+      "print": "The weaver painted a paper map inside the museum.",
+      "b": 6,
+      "c": 1,
+      "cer_b": 0.735,
+      "baseline": "The fisherman closed the glass window before the storm.",
+      "control": "The fisherman prepared the empty basket before the storm."
+    },
+    {
+      "id": 105,
+      "print": "The teacher painted a paper map behind the barn.",
+      "b": 6,
+      "c": 2,
+      "cer_b": 0.708,
+      "baseline": "The fisherman closed the glass window before the storm.",
+      "control": "The fisherman carried the empty basket before the storm."
+    },
+    {
+      "id": 106,
+      "print": "The librarian prepared a wet umbrella throughout the winter.",
+      "b": 2,
+      "c": 5,
+      "cer_b": 0.6,
+      "baseline": "The captain recorded a silver coin in the morning.",
+      "control": "The fisherman carried the iron gate before the storm."
+    },
+    {
+      "id": 107,
+      "print": "The farmer noticed many wooden chairs near the river.",
+      "b": 4,
+      "c": 2,
+      "cer_b": 0.66,
+      "baseline": "The captain opened the glass window before the storm.",
+      "control": "The fisherman carried the empty basket before the storm."
+    },
+    {
+      "id": 108,
+      "print": "The engineer studied some fresh bread behind the barn.",
+      "b": 3,
+      "c": 2,
+      "cer_b": 0.63,
+      "baseline": "The fisherman prepared the stone bridge before the storm.",
+      "control": "The fisherman carried the empty basket before the storm."
+    },
+    {
+      "id": 109,
+      "print": "The nurse prepared the glass window after the rain.",
+      "b": 1,
+      "c": 2,
+      "cer_b": 0.647,
+      "baseline": "The fisherman closed the stone bridge before the storm.",
+      "control": "The fisherman carried the empty basket before the storm."
+    },
+    {
+      "id": 110,
+      "print": "A scientist examined the tall ladder beneath the bridge.",
+      "b": 1,
+      "c": 15,
+      "cer_b": 0.661,
+      "baseline": "The fisherman closed the stone bridge before the storm.",
+      "control": "A musician prepared a bright lantern under the old tree."
+    },
+    {
+      "id": 111,
+      "print": "The weaver repaired the narrow road under the old tree.",
+      "b": 5,
+      "c": 2,
+      "cer_b": 0.618,
+      "baseline": "The tailor closed the stone bridge before the storm.",
+      "control": "The fisherman carried the empty basket before the storm."
+    },
+    {
+      "id": 112,
+      "print": "The librarian collected a heavy box before the storm.",
+      "b": 4,
+      "c": 2,
+      "cer_b": 0.434,
+      "baseline": "The captain opened the glass window before the storm.",
+      "control": "The fisherman carried the empty basket before the storm."
+    },
+    {
+      "id": 113,
+      "print": "The weaver opened the quiet garden under the old tree.",
+      "b": 1,
+      "c": 2,
+      "cer_b": 0.611,
+      "baseline": "The fisherman closed the stone bridge before the storm.",
+      "control": "The fisherman carried the empty basket before the storm."
+    },
+    {
+      "id": 114,
+      "print": "My neighbour painted a bright lantern inside the museum.",
+      "b": 3,
+      "c": 2,
+      "cer_b": 0.75,
+      "baseline": "The fisherman prepared the stone bridge before the storm.",
+      "control": "The fisherman carried the empty basket before the storm."
+    },
+    {
+      "id": 115,
+      "print": "A sailor counted the empty basket beneath the bridge.",
+      "b": 1,
+      "c": 4,
+      "cer_b": 0.679,
+      "baseline": "The fisherman closed the stone bridge before the storm.",
+      "control": "A painter recorded the empty basket before the storm."
+    },
+    {
+      "id": 116,
+      "print": "The fisherman gathered the green field in the morning.",
+      "b": 3,
+      "c": 1,
+      "cer_b": 0.5,
+      "baseline": "The fisherman prepared the stone bridge before the storm.",
+      "control": "The fisherman prepared the empty basket before the storm."
+    },
+    {
+      "id": 117,
+      "print": "A dancer watched the empty basket in the morning.",
+      "b": 1,
+      "c": 3,
+      "cer_b": 0.735,
+      "baseline": "The fisherman closed the stone bridge before the storm.",
+      "control": "A painter recorded a heavy box before the storm."
+    },
+    {
+      "id": 118,
+      "print": "The captain gathered some fresh bread after the rain.",
+      "b": 3,
+      "c": 1,
+      "cer_b": 0.66,
+      "baseline": "The fisherman prepared the stone bridge before the storm.",
+      "control": "The fisherman prepared the empty basket before the storm."
+    },
+    {
+      "id": 119,
+      "print": "The gardener started a bright lantern inside the museum.",
+      "b": 7,
+      "c": 1,
+      "cer_b": 0.571,
+      "baseline": "The captain prepared a silver coin in the morning.",
+      "control": "The fisherman prepared the empty basket before the storm."
+    },
+    {
+      "id": 120,
+      "print": "A carpenter noticed the small boat around the market.",
+      "b": 3,
+      "c": 3,
+      "cer_b": 0.717,
+      "baseline": "The fisherman prepared the stone bridge before the storm.",
+      "control": "A painter recorded a heavy box before the storm."
+    }
+  ],
+  "baseline_prototypes": [
+    {
+      "rank": 1,
+      "count": 36,
+      "text": "The fisherman closed the stone bridge before the storm."
+    },
+    {
+      "rank": 2,
+      "count": 28,
+      "text": "The captain recorded a silver coin in the morning."
+    },
+    {
+      "rank": 3,
+      "count": 18,
+      "text": "The fisherman prepared the stone bridge before the storm."
+    },
+    {
+      "rank": 4,
+      "count": 15,
+      "text": "The captain opened the glass window before the storm."
+    },
+    {
+      "rank": 5,
+      "count": 9,
+      "text": "The tailor closed the stone bridge before the storm."
+    },
+    {
+      "rank": 6,
+      "count": 7,
+      "text": "The fisherman closed the glass window before the storm."
+    },
+    {
+      "rank": 7,
+      "count": 5,
+      "text": "The captain prepared a silver coin in the morning."
+    },
+    {
+      "rank": 8,
+      "count": 1,
+      "text": "The fisherman carried a silver coin during the festival."
+    },
+    {
+      "rank": 9,
+      "count": 1,
+      "text": "The fisherman carried the stone bridge before the storm."
+    }
+  ],
+  "control_prototypes": [
+    {
+      "rank": 1,
+      "count": 47,
+      "text": "The fisherman prepared the empty basket before the storm."
+    },
+    {
+      "rank": 2,
+      "count": 31,
+      "text": "The fisherman carried the empty basket before the storm."
+    },
+    {
+      "rank": 3,
+      "count": 14,
+      "text": "A painter recorded a heavy box before the storm."
+    },
+    {
+      "rank": 4,
+      "count": 6,
+      "text": "A painter recorded the empty basket before the storm."
+    },
+    {
+      "rank": 5,
+      "count": 4,
+      "text": "The fisherman carried the iron gate before the storm."
+    },
+    {
+      "rank": 6,
+      "count": 4,
+      "text": "The fisherman prepared the iron gate before the storm."
+    },
+    {
+      "rank": 7,
+      "count": 3,
+      "text": "The fisherman prepared the stone bridge under the old tree."
+    },
+    {
+      "rank": 8,
+      "count": 3,
+      "text": "A painter prepared a wet umbrella before the storm."
+    },
+    {
+      "rank": 9,
+      "count": 2,
+      "text": "A painter carried a heavy box before the storm."
+    },
+    {
+      "rank": 10,
+      "count": 1,
+      "text": "A painter recorded the green field before the storm."
+    },
+    {
+      "rank": 11,
+      "count": 1,
+      "text": "A painter prepared a bright lantern under the old tree."
+    },
+    {
+      "rank": 12,
+      "count": 1,
+      "text": "A painter recorded a silver coin before the storm."
+    },
+    {
+      "rank": 13,
+      "count": 1,
+      "text": "A musician prepared a bright lantern before the storm."
+    },
+    {
+      "rank": 14,
+      "count": 1,
+      "text": "A painter carried a bright lantern before the storm."
+    },
+    {
+      "rank": 15,
+      "count": 1,
+      "text": "A musician prepared a bright lantern under the old tree."
+    }
+  ],
+  "vocab": [
+    {
+      "w": "a",
+      "n": 322
+    },
+    {
+      "w": "above",
+      "n": 33
+    },
+    {
+      "w": "across",
+      "n": 40
+    },
+    {
+      "w": "after",
+      "n": 48
+    },
+    {
+      "w": "along",
+      "n": 42
+    },
+    {
+      "w": "apples",
+      "n": 35
+    },
+    {
+      "w": "around",
+      "n": 32
+    },
+    {
+      "w": "arranged",
+      "n": 19
+    },
+    {
+      "w": "artist",
+      "n": 25
+    },
+    {
+      "w": "baker",
+      "n": 14
+    },
+    {
+      "w": "barn",
+      "n": 31
+    },
+    {
+      "w": "basket",
+      "n": 31
+    },
+    {
+      "w": "before",
+      "n": 48
+    },
+    {
+      "w": "behind",
+      "n": 31
+    },
+    {
+      "w": "beneath",
+      "n": 44
+    },
+    {
+      "w": "beside",
+      "n": 33
+    },
+    {
+      "w": "blankets",
+      "n": 25
+    },
+    {
+      "w": "boat",
+      "n": 27
+    },
+    {
+      "w": "books",
+      "n": 26
+    },
+    {
+      "w": "box",
+      "n": 28
+    },
+    {
+      "w": "bread",
+      "n": 37
+    },
+    {
+      "w": "bridge",
+      "n": 77
+    },
+    {
+      "w": "bright",
+      "n": 27
+    },
+    {
+      "w": "broken",
+      "n": 27
+    },
+    {
+      "w": "captain",
+      "n": 30
+    },
+    {
+      "w": "carpenter",
+      "n": 23
+    },
+    {
+      "w": "carried",
+      "n": 23
+    },
+    {
+      "w": "chairs",
+      "n": 33
+    },
+    {
+      "w": "child",
+      "n": 17
+    },
+    {
+      "w": "clock",
+      "n": 27
+    },
+    {
+      "w": "closed",
+      "n": 25
+    },
+    {
+      "w": "coast",
+      "n": 42
+    },
+    {
+      "w": "coin",
+      "n": 27
+    },
+    {
+      "w": "collected",
+      "n": 24
+    },
+    {
+      "w": "counted",
+      "n": 16
+    },
+    {
+      "w": "dancer",
+      "n": 29
+    },
+    {
+      "w": "delivered",
+      "n": 19
+    },
+    {
+      "w": "described",
+      "n": 19
+    },
+    {
+      "w": "discovered",
+      "n": 30
+    },
+    {
+      "w": "doctor",
+      "n": 23
+    },
+    {
+      "w": "during",
+      "n": 39
+    },
+    {
+      "w": "empty",
+      "n": 31
+    },
+    {
+      "w": "engineer",
+      "n": 15
+    },
+    {
+      "w": "examined",
+      "n": 21
+    },
+    {
+      "w": "explained",
+      "n": 17
+    },
+    {
+      "w": "farmer",
+      "n": 17
+    },
+    {
+      "w": "festival",
+      "n": 39
+    },
+    {
+      "w": "field",
+      "n": 38
+    },
+    {
+      "w": "finished",
+      "n": 16
+    },
+    {
+      "w": "fisherman",
+      "n": 20
+    },
+    {
+      "w": "folded",
+      "n": 9
+    },
+    {
+      "w": "followed",
+      "n": 24
+    },
+    {
+      "w": "fresh",
+      "n": 37
+    },
+    {
+      "w": "garden",
+      "n": 30
+    },
+    {
+      "w": "gardener",
+      "n": 19
+    },
+    {
+      "w": "gate",
+      "n": 26
+    },
+    {
+      "w": "gathered",
+      "n": 14
+    },
+    {
+      "w": "girl",
+      "n": 17
+    },
+    {
+      "w": "glass",
+      "n": 32
+    },
+    {
+      "w": "green",
+      "n": 38
+    },
+    {
+      "w": "harbour",
+      "n": 33
+    },
+    {
+      "w": "heavy",
+      "n": 28
+    },
+    {
+      "w": "hunter",
+      "n": 21
+    },
+    {
+      "w": "in",
+      "n": 41
+    },
+    {
+      "w": "inside",
+      "n": 37
+    },
+    {
+      "w": "iron",
+      "n": 26
+    },
+    {
+      "w": "ladder",
+      "n": 30
+    },
+    {
+      "w": "lantern",
+      "n": 27
+    },
+    {
+      "w": "librarian",
+      "n": 17
+    },
+    {
+      "w": "man",
+      "n": 17
+    },
+    {
+      "w": "many",
+      "n": 33
+    },
+    {
+      "w": "map",
+      "n": 24
+    },
+    {
+      "w": "market",
+      "n": 32
+    },
+    {
+      "w": "measured",
+      "n": 20
+    },
+    {
+      "w": "mentioned",
+      "n": 23
+    },
+    {
+      "w": "merchant",
+      "n": 19
+    },
+    {
+      "w": "morning",
+      "n": 41
+    },
+    {
+      "w": "museum",
+      "n": 37
+    },
+    {
+      "w": "musician",
+      "n": 21
+    },
+    {
+      "w": "my",
+      "n": 21
+    },
+    {
+      "w": "narrow",
+      "n": 32
+    },
+    {
+      "w": "near",
+      "n": 50
+    },
+    {
+      "w": "neighbour",
+      "n": 21
+    },
+    {
+      "w": "noticed",
+      "n": 23
+    },
+    {
+      "w": "nurse",
+      "n": 21
+    },
+    {
+      "w": "old",
+      "n": 87
+    },
+    {
+      "w": "opened",
+      "n": 14
+    },
+    {
+      "w": "painted",
+      "n": 23
+    },
+    {
+      "w": "painter",
+      "n": 24
+    },
+    {
+      "w": "paper",
+      "n": 24
+    },
+    {
+      "w": "pilot",
+      "n": 17
+    },
+    {
+      "w": "planted",
+      "n": 21
+    },
+    {
+      "w": "polished",
+      "n": 22
+    },
+    {
+      "w": "prepared",
+      "n": 18
+    },
+    {
+      "w": "protected",
+      "n": 19
+    },
+    {
+      "w": "quiet",
+      "n": 30
+    },
+    {
+      "w": "rain",
+      "n": 48
+    },
+    {
+      "w": "recorded",
+      "n": 25
+    },
+    {
+      "w": "red",
+      "n": 35
+    },
+    {
+      "w": "remembered",
+      "n": 19
+    },
+    {
+      "w": "repaired",
+      "n": 19
+    },
+    {
+      "w": "ripe",
+      "n": 35
+    },
+    {
+      "w": "river",
+      "n": 50
+    },
+    {
+      "w": "road",
+      "n": 32
+    },
+    {
+      "w": "sailor",
+      "n": 16
+    },
+    {
+      "w": "scientist",
+      "n": 20
+    },
+    {
+      "w": "several",
+      "n": 26
+    },
+    {
+      "w": "shopkeeper",
+      "n": 18
+    },
+    {
+      "w": "silver",
+      "n": 27
+    },
+    {
+      "w": "sketched",
+      "n": 23
+    },
+    {
+      "w": "small",
+      "n": 27
+    },
+    {
+      "w": "some",
+      "n": 37
+    },
+    {
+      "w": "started",
+      "n": 19
+    },
+    {
+      "w": "stone",
+      "n": 33
+    },
+    {
+      "w": "storm",
+      "n": 48
+    },
+    {
+      "w": "student",
+      "n": 16
+    },
+    {
+      "w": "studied",
+      "n": 18
+    },
+    {
+      "w": "tailor",
+      "n": 26
+    },
+    {
+      "w": "tall",
+      "n": 30
+    },
+    {
+      "w": "teacher",
+      "n": 14
+    },
+    {
+      "w": "the",
+      "n": 1301
+    },
+    {
+      "w": "throughout",
+      "n": 38
+    },
+    {
+      "w": "traveller",
+      "n": 27
+    },
+    {
+      "w": "tree",
+      "n": 44
+    },
+    {
+      "w": "umbrella",
+      "n": 32
+    },
+    {
+      "w": "under",
+      "n": 44
+    },
+    {
+      "w": "valley",
+      "n": 40
+    },
+    {
+      "w": "village",
+      "n": 33
+    },
+    {
+      "w": "warm",
+      "n": 25
+    },
+    {
+      "w": "watched",
+      "n": 18
+    },
+    {
+      "w": "weaver",
+      "n": 20
+    },
+    {
+      "w": "wet",
+      "n": 32
+    },
+    {
+      "w": "window",
+      "n": 32
+    },
+    {
+      "w": "winter",
+      "n": 38
+    },
+    {
+      "w": "wooden",
+      "n": 33
+    },
+    {
+      "w": "woollen",
+      "n": 25
+    },
+    {
+      "w": "writer",
+      "n": 16
+    },
+    {
+      "w": "young",
+      "n": 17
+    }
+  ],
+  "scores": {
+    "native": {
+      "n": 120,
+      "exact": 120,
+      "cer_mean": 0.0,
+      "cer_median": 0.0,
+      "cer_min": 0.0,
+      "cer_max": 0.0,
+      "distinct_outputs": 120,
+      "entropy_bits": 6.907,
+      "largest_cluster": 1,
+      "vocab_emitted": 138,
+      "vocab_reference": 138,
+      "words_missing": 0,
+      "starts_the": 87,
+      "slot_accuracy": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "slot_n": 112,
+      "prototypes": [
+        {
+          "rank": 1,
+          "count": 1,
+          "text": "The gardener started a wet umbrella before the storm."
+        },
+        {
+          "rank": 2,
+          "count": 1,
+          "text": "A dancer watched a bright lantern along the coast."
+        },
+        {
+          "rank": 3,
+          "count": 1,
+          "text": "The librarian recorded a wet umbrella near the river."
+        },
+        {
+          "rank": 4,
+          "count": 1,
+          "text": "A student watched the empty basket beside the harbour."
+        },
+        {
+          "rank": 5,
+          "count": 1,
+          "text": "The captain examined the iron gate near the river."
+        },
+        {
+          "rank": 6,
+          "count": 1,
+          "text": "The tailor counted the iron gate before the storm."
+        },
+        {
+          "rank": 7,
+          "count": 1,
+          "text": "The pilot examined a heavy box above the village."
+        },
+        {
+          "rank": 8,
+          "count": 1,
+          "text": "The merchant arranged the stone bridge under the old tree."
+        },
+        {
+          "rank": 9,
+          "count": 1,
+          "text": "The teacher finished ripe red apples under the old tree."
+        },
+        {
+          "rank": 10,
+          "count": 1,
+          "text": "The librarian discovered the tall ladder above the village."
+        },
+        {
+          "rank": 11,
+          "count": 1,
+          "text": "A painter studied some fresh bread above the village."
+        },
+        {
+          "rank": 12,
+          "count": 1,
+          "text": "The artist measured warm woollen blankets after the rain."
+        },
+        {
+          "rank": 13,
+          "count": 1,
+          "text": "The artist started the broken clock along the coast."
+        },
+        {
+          "rank": 14,
+          "count": 1,
+          "text": "My neighbour mentioned the green field in the morning."
+        },
+        {
+          "rank": 15,
+          "count": 1,
+          "text": "My neighbour explained some fresh bread near the river."
+        },
+        {
+          "rank": 16,
+          "count": 1,
+          "text": "The merchant discovered ripe red apples along the coast."
+        },
+        {
+          "rank": 17,
+          "count": 1,
+          "text": "The traveller recorded ripe red apples throughout the winter."
+        },
+        {
+          "rank": 18,
+          "count": 1,
+          "text": "The traveller discovered the iron gate near the river."
+        },
+        {
+          "rank": 19,
+          "count": 1,
+          "text": "A painter arranged the small boat inside the museum."
+        },
+        {
+          "rank": 20,
+          "count": 1,
+          "text": "The pilot collected a wet umbrella after the rain."
+        },
+        {
+          "rank": 21,
+          "count": 1,
+          "text": "The librarian planted warm woollen blankets along the coast."
+        },
+        {
+          "rank": 22,
+          "count": 1,
+          "text": "The doctor counted many wooden chairs across the valley."
+        },
+        {
+          "rank": 23,
+          "count": 1,
+          "text": "A student followed the iron gate beneath the bridge."
+        },
+        {
+          "rank": 24,
+          "count": 1,
+          "text": "A dancer discovered the stone bridge in the morning."
+        },
+        {
+          "rank": 25,
+          "count": 1,
+          "text": "The farmer mentioned some fresh bread along the coast."
+        },
+        {
+          "rank": 26,
+          "count": 1,
+          "text": "The doctor arranged several old books along the coast."
+        },
+        {
+          "rank": 27,
+          "count": 1,
+          "text": "The hunter arranged many wooden chairs during the festival."
+        },
+        {
+          "rank": 28,
+          "count": 1,
+          "text": "A scientist planted several old books near the river."
+        },
+        {
+          "rank": 29,
+          "count": 1,
+          "text": "The tailor started the quiet garden during the festival."
+        },
+        {
+          "rank": 30,
+          "count": 1,
+          "text": "A shopkeeper polished the empty basket near the river."
+        },
+        {
+          "rank": 31,
+          "count": 1,
+          "text": "The nurse measured the quiet garden near the river."
+        },
+        {
+          "rank": 32,
+          "count": 1,
+          "text": "The teacher repaired some fresh bread near the river."
+        },
+        {
+          "rank": 33,
+          "count": 1,
+          "text": "A scientist remembered the small boat behind the barn."
+        },
+        {
+          "rank": 34,
+          "count": 1,
+          "text": "The doctor finished the green field near the river."
+        },
+        {
+          "rank": 35,
+          "count": 1,
+          "text": "A dancer noticed several old books across the valley."
+        },
+        {
+          "rank": 36,
+          "count": 1,
+          "text": "The writer polished some fresh bread inside the museum."
+        },
+        {
+          "rank": 37,
+          "count": 1,
+          "text": "The captain followed the tall ladder in the morning."
+        },
+        {
+          "rank": 38,
+          "count": 1,
+          "text": "The gardener arranged some fresh bread inside the museum."
+        },
+        {
+          "rank": 39,
+          "count": 1,
+          "text": "The writer protected the stone bridge throughout the winter."
+        },
+        {
+          "rank": 40,
+          "count": 1,
+          "text": "A painter finished a silver coin after the rain."
+        },
+        {
+          "rank": 41,
+          "count": 1,
+          "text": "A dancer started the iron gate inside the museum."
+        },
+        {
+          "rank": 42,
+          "count": 1,
+          "text": "The hunter opened ripe red apples above the village."
+        },
+        {
+          "rank": 43,
+          "count": 1,
+          "text": "The traveller measured the empty basket above the village."
+        },
+        {
+          "rank": 44,
+          "count": 1,
+          "text": "A sailor carried some fresh bread before the storm."
+        },
+        {
+          "rank": 45,
+          "count": 1,
+          "text": "A painter followed some fresh bread near the river."
+        },
+        {
+          "rank": 46,
+          "count": 1,
+          "text": "The fisherman finished the tall ladder across the valley."
+        },
+        {
+          "rank": 47,
+          "count": 1,
+          "text": "The merchant repaired the glass window before the storm."
+        },
+        {
+          "rank": 48,
+          "count": 1,
+          "text": "A child explained several old books during the festival."
+        },
+        {
+          "rank": 49,
+          "count": 1,
+          "text": "The librarian started the broken clock before the storm."
+        },
+        {
+          "rank": 50,
+          "count": 1,
+          "text": "The engineer polished a wet umbrella under the old tree."
+        },
+        {
+          "rank": 51,
+          "count": 1,
+          "text": "The librarian arranged the glass window in the morning."
+        },
+        {
+          "rank": 52,
+          "count": 1,
+          "text": "The merchant counted the empty basket near the river."
+        },
+        {
+          "rank": 53,
+          "count": 1,
+          "text": "The young girl remembered a wet umbrella across the valley."
+        },
+        {
+          "rank": 54,
+          "count": 1,
+          "text": "The hunter mentioned the glass window beneath the bridge."
+        },
+        {
+          "rank": 55,
+          "count": 1,
+          "text": "The tailor repaired several old books throughout the winter."
+        },
+        {
+          "rank": 56,
+          "count": 1,
+          "text": "The tailor closed the stone bridge along the coast."
+        },
+        {
+          "rank": 57,
+          "count": 1,
+          "text": "A dancer watched the small boat across the valley."
+        },
+        {
+          "rank": 58,
+          "count": 1,
+          "text": "The merchant followed the narrow road beside the harbour."
+        },
+        {
+          "rank": 59,
+          "count": 1,
+          "text": "A dancer folded the glass window behind the barn."
+        },
+        {
+          "rank": 60,
+          "count": 1,
+          "text": "The librarian noticed the quiet garden throughout the winter."
+        },
+        {
+          "rank": 61,
+          "count": 1,
+          "text": "The traveller examined ripe red apples near the river."
+        },
+        {
+          "rank": 62,
+          "count": 1,
+          "text": "The farmer discovered several old books around the market."
+        },
+        {
+          "rank": 63,
+          "count": 1,
+          "text": "The captain opened a paper map above the village."
+        },
+        {
+          "rank": 64,
+          "count": 1,
+          "text": "A sailor described many wooden chairs along the coast."
+        },
+        {
+          "rank": 65,
+          "count": 1,
+          "text": "The artist repaired ripe red apples above the village."
+        },
+        {
+          "rank": 66,
+          "count": 1,
+          "text": "The gardener counted the narrow road across the valley."
+        },
+        {
+          "rank": 67,
+          "count": 1,
+          "text": "A shopkeeper protected the stone bridge above the village."
+        },
+        {
+          "rank": 68,
+          "count": 1,
+          "text": "The teacher described the narrow road inside the museum."
+        },
+        {
+          "rank": 69,
+          "count": 1,
+          "text": "The traveller arranged a heavy box in the morning."
+        },
+        {
+          "rank": 70,
+          "count": 1,
+          "text": "The captain studied the green field near the river."
+        },
+        {
+          "rank": 71,
+          "count": 1,
+          "text": "A student started the empty basket beneath the bridge."
+        },
+        {
+          "rank": 72,
+          "count": 1,
+          "text": "The traveller delivered the broken clock inside the museum."
+        },
+        {
+          "rank": 73,
+          "count": 1,
+          "text": "The pilot studied a bright lantern along the coast."
+        },
+        {
+          "rank": 74,
+          "count": 1,
+          "text": "The pilot repaired the quiet garden along the coast."
+        },
+        {
+          "rank": 75,
+          "count": 1,
+          "text": "A carpenter watched some fresh bread during the festival."
+        },
+        {
+          "rank": 76,
+          "count": 1,
+          "text": "A musician protected the tall ladder during the festival."
+        },
+        {
+          "rank": 77,
+          "count": 1,
+          "text": "The traveller opened the empty basket around the market."
+        },
+        {
+          "rank": 78,
+          "count": 1,
+          "text": "The librarian carried a wet umbrella inside the museum."
+        },
+        {
+          "rank": 79,
+          "count": 1,
+          "text": "A musician repaired the small boat behind the barn."
+        },
+        {
+          "rank": 80,
+          "count": 1,
+          "text": "The baker followed the quiet garden along the coast."
+        },
+        {
+          "rank": 81,
+          "count": 1,
+          "text": "The doctor examined the small boat above the village."
+        },
+        {
+          "rank": 82,
+          "count": 1,
+          "text": "A painter folded a heavy box along the coast."
+        },
+        {
+          "rank": 83,
+          "count": 1,
+          "text": "The farmer remembered the small boat during the festival."
+        },
+        {
+          "rank": 84,
+          "count": 1,
+          "text": "The merchant carried the glass window around the market."
+        },
+        {
+          "rank": 85,
+          "count": 1,
+          "text": "The doctor sketched the stone bridge near the river."
+        },
+        {
+          "rank": 86,
+          "count": 1,
+          "text": "The fisherman measured some fresh bread along the coast."
+        },
+        {
+          "rank": 87,
+          "count": 1,
+          "text": "The gardener discovered a wet umbrella behind the barn."
+        },
+        {
+          "rank": 88,
+          "count": 1,
+          "text": "A scientist noticed a heavy box behind the barn."
+        },
+        {
+          "rank": 89,
+          "count": 1,
+          "text": "The fisherman opened the stone bridge throughout the winter."
+        },
+        {
+          "rank": 90,
+          "count": 1,
+          "text": "The baker described the broken clock behind the barn."
+        },
+        {
+          "rank": 91,
+          "count": 1,
+          "text": "The weaver followed the small boat across the valley."
+        },
+        {
+          "rank": 92,
+          "count": 1,
+          "text": "The old man recorded a bright lantern during the festival."
+        },
+        {
+          "rank": 93,
+          "count": 1,
+          "text": "The captain recorded the quiet garden across the valley."
+        },
+        {
+          "rank": 94,
+          "count": 1,
+          "text": "The young girl started several old books during the festival."
+        },
+        {
+          "rank": 95,
+          "count": 1,
+          "text": "The merchant examined warm woollen blankets beside the harbour."
+        },
+        {
+          "rank": 96,
+          "count": 1,
+          "text": "A sailor measured the stone bridge before the storm."
+        },
+        {
+          "rank": 97,
+          "count": 1,
+          "text": "The doctor opened the small boat along the coast."
+        },
+        {
+          "rank": 98,
+          "count": 1,
+          "text": "The gardener examined several old books beside the harbour."
+        },
+        {
+          "rank": 99,
+          "count": 1,
+          "text": "The artist closed a wet umbrella in the morning."
+        },
+        {
+          "rank": 100,
+          "count": 1,
+          "text": "The farmer arranged ripe red apples in the morning."
+        },
+        {
+          "rank": 101,
+          "count": 1,
+          "text": "The tailor sketched many wooden chairs above the village."
+        },
+        {
+          "rank": 102,
+          "count": 1,
+          "text": "The hunter studied several old books after the rain."
+        },
+        {
+          "rank": 103,
+          "count": 1,
+          "text": "The merchant mentioned a heavy box inside the museum."
+        },
+        {
+          "rank": 104,
+          "count": 1,
+          "text": "The weaver painted a paper map inside the museum."
+        },
+        {
+          "rank": 105,
+          "count": 1,
+          "text": "The teacher painted a paper map behind the barn."
+        },
+        {
+          "rank": 106,
+          "count": 1,
+          "text": "The librarian prepared a wet umbrella throughout the winter."
+        },
+        {
+          "rank": 107,
+          "count": 1,
+          "text": "The farmer noticed many wooden chairs near the river."
+        },
+        {
+          "rank": 108,
+          "count": 1,
+          "text": "The engineer studied some fresh bread behind the barn."
+        },
+        {
+          "rank": 109,
+          "count": 1,
+          "text": "The nurse prepared the glass window after the rain."
+        },
+        {
+          "rank": 110,
+          "count": 1,
+          "text": "A scientist examined the tall ladder beneath the bridge."
+        },
+        {
+          "rank": 111,
+          "count": 1,
+          "text": "The weaver repaired the narrow road under the old tree."
+        },
+        {
+          "rank": 112,
+          "count": 1,
+          "text": "The librarian collected a heavy box before the storm."
+        },
+        {
+          "rank": 113,
+          "count": 1,
+          "text": "The weaver opened the quiet garden under the old tree."
+        },
+        {
+          "rank": 114,
+          "count": 1,
+          "text": "My neighbour painted a bright lantern inside the museum."
+        },
+        {
+          "rank": 115,
+          "count": 1,
+          "text": "A sailor counted the empty basket beneath the bridge."
+        },
+        {
+          "rank": 116,
+          "count": 1,
+          "text": "The fisherman gathered the green field in the morning."
+        },
+        {
+          "rank": 117,
+          "count": 1,
+          "text": "A dancer watched the empty basket in the morning."
+        },
+        {
+          "rank": 118,
+          "count": 1,
+          "text": "The captain gathered some fresh bread after the rain."
+        },
+        {
+          "rank": 119,
+          "count": 1,
+          "text": "The gardener started a bright lantern inside the museum."
+        },
+        {
+          "rank": 120,
+          "count": 1,
+          "text": "A carpenter noticed the small boat around the market."
+        }
+      ],
+      "sacrebleu": 100.0,
+      "bleu_precisions": [
+        100.0,
+        100.0,
+        100.0,
+        100.0
+      ],
+      "bleu_bp": 1.0,
+      "latency_b1_s": 0.686,
+      "latency_b8_s": 0.228
+    },
+    "baseline": {
+      "n": 120,
+      "exact": 0,
+      "cer_mean": 0.6378,
+      "cer_median": 0.6404,
+      "cer_min": 0.3077,
+      "cer_max": 0.8222,
+      "distinct_outputs": 9,
+      "entropy_bits": 2.622,
+      "largest_cluster": 36,
+      "vocab_emitted": 22,
+      "vocab_reference": 138,
+      "words_missing": 116,
+      "starts_the": 120,
+      "slot_accuracy": [
+        0.7054,
+        0.0268,
+        0.0089,
+        0.3929,
+        0.0357,
+        0.0357,
+        0.0625,
+        1.0,
+        0.0625
+      ],
+      "slot_n": 112,
+      "prototypes": [
+        {
+          "rank": 1,
+          "count": 36,
+          "text": "The fisherman closed the stone bridge before the storm."
+        },
+        {
+          "rank": 2,
+          "count": 28,
+          "text": "The captain recorded a silver coin in the morning."
+        },
+        {
+          "rank": 3,
+          "count": 18,
+          "text": "The fisherman prepared the stone bridge before the storm."
+        },
+        {
+          "rank": 4,
+          "count": 15,
+          "text": "The captain opened the glass window before the storm."
+        },
+        {
+          "rank": 5,
+          "count": 9,
+          "text": "The tailor closed the stone bridge before the storm."
+        },
+        {
+          "rank": 6,
+          "count": 7,
+          "text": "The fisherman closed the glass window before the storm."
+        },
+        {
+          "rank": 7,
+          "count": 5,
+          "text": "The captain prepared a silver coin in the morning."
+        },
+        {
+          "rank": 8,
+          "count": 1,
+          "text": "The fisherman carried a silver coin during the festival."
+        },
+        {
+          "rank": 9,
+          "count": 1,
+          "text": "The fisherman carried the stone bridge before the storm."
+        }
+      ],
+      "sacrebleu": 4.0,
+      "bleu_precisions": [
+        33.83,
+        3.15,
+        2.08,
+        1.19
+      ],
+      "bleu_bp": 0.993,
+      "latency_b1_s": 0.953,
+      "latency_b8_s": 0.494
+    },
+    "control": {
+      "n": 120,
+      "exact": 0,
+      "cer_mean": 0.602,
+      "cer_median": 0.6131,
+      "cer_min": 0.3774,
+      "cer_max": 0.7917,
+      "distinct_outputs": 15,
+      "entropy_bits": 2.649,
+      "largest_cluster": 47,
+      "vocab_emitted": 29,
+      "vocab_reference": 138,
+      "words_missing": 109,
+      "starts_the": 89,
+      "slot_accuracy": [
+        0.9732,
+        0.0804,
+        0.0179,
+        0.4286,
+        0.0714,
+        0.0714,
+        0.0625,
+        1.0,
+        0.0625
+      ],
+      "slot_n": 112,
+      "prototypes": [
+        {
+          "rank": 1,
+          "count": 47,
+          "text": "The fisherman prepared the empty basket before the storm."
+        },
+        {
+          "rank": 2,
+          "count": 31,
+          "text": "The fisherman carried the empty basket before the storm."
+        },
+        {
+          "rank": 3,
+          "count": 14,
+          "text": "A painter recorded a heavy box before the storm."
+        },
+        {
+          "rank": 4,
+          "count": 6,
+          "text": "A painter recorded the empty basket before the storm."
+        },
+        {
+          "rank": 5,
+          "count": 4,
+          "text": "The fisherman carried the iron gate before the storm."
+        },
+        {
+          "rank": 6,
+          "count": 4,
+          "text": "The fisherman prepared the iron gate before the storm."
+        },
+        {
+          "rank": 7,
+          "count": 3,
+          "text": "The fisherman prepared the stone bridge under the old tree."
+        },
+        {
+          "rank": 8,
+          "count": 3,
+          "text": "A painter prepared a wet umbrella before the storm."
+        },
+        {
+          "rank": 9,
+          "count": 2,
+          "text": "A painter carried a heavy box before the storm."
+        },
+        {
+          "rank": 10,
+          "count": 1,
+          "text": "A painter recorded the green field before the storm."
+        },
+        {
+          "rank": 11,
+          "count": 1,
+          "text": "A painter prepared a bright lantern under the old tree."
+        },
+        {
+          "rank": 12,
+          "count": 1,
+          "text": "A painter recorded a silver coin before the storm."
+        },
+        {
+          "rank": 13,
+          "count": 1,
+          "text": "A musician prepared a bright lantern before the storm."
+        },
+        {
+          "rank": 14,
+          "count": 1,
+          "text": "A painter carried a bright lantern before the storm."
+        },
+        {
+          "rank": 15,
+          "count": 1,
+          "text": "A musician prepared a bright lantern under the old tree."
+        }
+      ],
+      "sacrebleu": 4.17,
+      "bleu_precisions": [
+        37.34,
+        4.33,
+        2.28,
+        0.83
+      ],
+      "bleu_bp": 0.998
+    }
+  }
+}

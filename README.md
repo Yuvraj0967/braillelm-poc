@@ -27,7 +27,8 @@ inspect end to end.
 - [What the metrics mean](#what-the-metrics-mean)
 - [Outputs](#outputs)
 - [Verification and known fixes](#verification-and-known-fixes)
-- [Status and results](#status-and-results)
+- [Results from the reference run](#results-from-the-reference-run)
+- [Project artifacts](#project-artifacts)
 - [Limitations and non-goals](#limitations-and-non-goals)
 - [Troubleshooting](#troubleshooting)
 
@@ -264,11 +265,17 @@ loop, orchestration sequence and design trade-offs are in
 ├── sentences.txt           600-sentence input corpus
 ├── requirements.txt        Python dependencies
 ├── ARCHITECTURE.md         components, data flow, model and experiment design
+├── docs/                   report PDF/HTML and the results write-up
+├── benchmark/              120 held-out items, prompts, references, scorer
+├── results/                predictions, comparison pack, timings
+├── models/                 baseline LoRA adapter and native model instructions
 └── README.md
 ```
 
 Generated at runtime and intentionally not committed: `data/`,
 `braille_tokens.json`, `out_*/`, `experiment_results.json`, `__pycache__/`.
+The 652 MB native checkpoint is a release asset, not a git object; see
+[`models/README.md`](models/README.md).
 
 ---
 
@@ -313,7 +320,8 @@ This runs: data prep → braille tokenizer → baseline train/eval → native
 train/eval → a small comparison table. It uses 3 epochs by default and writes
 `out_baseline/` and `out_native/`.
 
-On a CPU laptop this is not instant; see [Status and results](#status-and-results).
+On a CPU laptop this is not instant; see
+[Results from the reference run](#results-from-the-reference-run).
 
 ### Wiring check (no model download)
 
@@ -545,22 +553,33 @@ answer is always kept.
 
 ---
 
-## Status and results
+## Results from the reference run
 
-This repository is the **harness**, not a leaderboard. Numbers depend on the
-model, grade, split, seed count and hardware.
+The repository includes the completed **120-item** evaluation from the report:
+600 synthetic sentences split 480 train / 120 test at random, SmolLM2-135M,
+Grade 1, one epoch on CPU.
 
-- The data pipeline, tokenizer, BKFT init, training step, LoRA wiring and
-  evaluation path are verified end to end on this machine.
-- The full three-arm × three-seed matrix is compute-bound on CPU and is meant
-  to be run on the target machine. The runner prints the table and writes
-  `experiment_results.json`.
-- An earlier 120-item random-split development run of the native arm reproduced
-  every reference exactly (120/120, CER 0.000, sacreBLEU 100). Treat that as a
-  pipeline sanity check, **not** a benchmark result: the split was random, the
-  corpus is small, and exact reproduction can reflect memorisation.
+| Arm | Exact | CER | BLEU | Distinct outputs | Vocab emitted | Actor slot |
+|---|---:|---:|---:|---:|---:|---:|
+| **Native (braille tokens + BKFT)** | **120 / 120** | **0.0%** | **100.0** | 120 / 120 | 138 / 138 | **100%** |
+| Baseline (raw braille) | 0 / 120 | 63.8% | 4.0 | 9 / 120 | 22 / 138 | 2.7% |
+| Baseline, 256-token control | 0 / 120 | 60.2% | 4.2 | 15 / 120 | 29 / 138 | 8.0% |
 
-When you run the experiment, read the two control lines the runner prints:
+What it shows: the native arm reproduces every held-out sentence, with all 120
+outputs distinct and all 138 words covered. The baseline emits only 9 distinct
+sentences for 120 different inputs, uses 22 words, and gets the actor right
+2.7% of the time — fluent output that ignores the braille. The longer-sequence
+control does not fix it.
+
+What it does **not** show: this is a closed 138-word distribution with a random
+split, so every test word also occurs in training. It is a strong
+pipeline/learnability result, not open-domain braille translation. The
+word-disjoint split is the harder generalisation test; run it yourself with the
+command above. Full protocol, caveats and confidence intervals:
+[`docs/RESULTS.md`](docs/RESULTS.md).
+
+When you run the three-arm experiment, read the two control lines the runner
+prints:
 
 ```text
 tokenizer value  (native-bkft vs baseline), sacreBLEU
@@ -572,6 +591,25 @@ If the tokenizer helps, native-bkft should beat baseline on accuracy **and**
 need fewer tokens per cell. If BKFT helps, native-bkft should beat
 native-random. If it does not, the honest conclusion is that the initialisation
 is not carrying the result and the tokenizer alone is doing the work.
+
+---
+
+## Project artifacts
+
+| Artifact | Location | What it is |
+|---|---|---|
+| Full report | [`docs/BrailleLM_Report.pdf`](docs/BrailleLM_Report.pdf) | 26 pages: protocol, model/data cards, vocabulary, all 120 rows, comparison kit |
+| Report (HTML) | [`docs/BrailleLM_Report.html`](docs/BrailleLM_Report.html) | The same report as a standalone page |
+| Results write-up | [`docs/RESULTS.md`](docs/RESULTS.md) | The 120-item numbers, interpretation and caveats |
+| Benchmark kit | [`benchmark/`](benchmark/) | 120 braille inputs, references, prompts, few-shot examples, scorer |
+| Raw results | [`results/`](results/) | Predictions for all three arms, comparison pack, timing measurements |
+| Baseline adapter | [`models/baseline-lora/`](models/baseline-lora/) | 1.8 MB LoRA adapter, tracked in git |
+| Native checkpoint | [`models/README.md`](models/README.md) | 652 MB merged model, published as a release asset |
+| Architecture | [`ARCHITECTURE.md`](ARCHITECTURE.md) | Components, data flow, model adaptation, orchestration |
+
+The comparison kit is the fair way to put another LLM against these numbers:
+it fixes the prompt, the 120 items, the scoring code and the zero-shot
+conditions. See [`benchmark/README.md`](benchmark/README.md).
 
 ---
 

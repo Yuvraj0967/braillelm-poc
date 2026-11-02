@@ -1,0 +1,23 @@
+Braille: ⠠⠁⠀⠎⠁⠊⠇⠕⠗⠀⠏⠕⠇⠊⠎⠓⠑⠙⠀⠁⠀⠓⠑⠁⠧⠽⠀⠃⠕⠭⠀⠃⠑⠋⠕⠗⠑⠀⠞⠓⠑⠀⠎⠞⠕⠗⠍⠲
+English: A sailor polished a heavy box before the storm.
+
+Braille: ⠠⠞⠓⠑⠀⠞⠗⠁⠧⠑⠇⠇⠑⠗⠀⠏⠇⠁⠝⠞⠑⠙⠀⠁⠀⠏⠁⠏⠑⠗⠀⠍⠁⠏⠀⠃⠑⠋⠕⠗⠑⠀⠞⠓⠑⠀⠎⠞⠕⠗⠍⠲
+English: The traveller planted a paper map before the storm.
+
+Braille: ⠠⠞⠓⠑⠀⠞⠁⠊⠇⠕⠗⠀⠗⠑⠉⠕⠗⠙⠑⠙⠀⠺⠁⠗⠍⠀⠺⠕⠕⠇⠇⠑⠝⠀⠃⠇⠁⠝⠅⠑⠞⠎⠀⠃⠑⠋⠕⠗⠑⠀⠞⠓⠑⠀⠎⠞⠕⠗⠍⠲
+English: The tailor recorded warm woollen blankets before the storm.
+
+Braille: ⠠⠞⠓⠑⠀⠞⠁⠊⠇⠕⠗⠀⠏⠁⠊⠝⠞⠑⠙⠀⠞⠓⠑⠀⠃⠗⠕⠅⠑⠝⠀⠉⠇⠕⠉⠅⠀⠥⠝⠙⠑⠗⠀⠞⠓⠑⠀⠕⠇⠙⠀⠞⠗⠑⠑⠲
+English: The tailor painted the broken clock under the old tree.
+
+Braille: ⠠⠞⠓⠑⠀⠙⠕⠉⠞⠕⠗⠀⠝⠕⠞⠊⠉⠑⠙⠀⠞⠓⠑⠀⠑⠍⠏⠞⠽⠀⠃⠁⠎⠅⠑⠞⠀⠃⠑⠋⠕⠗⠑⠀⠞⠓⠑⠀⠎⠞⠕⠗⠍⠲
+English: The doctor noticed the empty basket before the storm.
+
+Braille: ⠠⠁⠀⠏⠁⠊⠝⠞⠑⠗⠀⠏⠕⠇⠊⠎⠓⠑⠙⠀⠞⠓⠑⠀⠟⠥⠊⠑⠞⠀⠛⠁⠗⠙⠑⠝⠀⠁⠃⠕⠧⠑⠀⠞⠓⠑⠀⠧⠊⠇⠇⠁⠛⠑⠲
+English: A painter polished the quiet garden above the village.
+
+Braille: ⠠⠞⠓⠑⠀⠞⠁⠊⠇⠕⠗⠀⠗⠑⠏⠁⠊⠗⠑⠙⠀⠞⠓⠑⠀⠛⠗⠑⠑⠝⠀⠋⠊⠑⠇⠙⠀⠊⠝⠀⠞⠓⠑⠀⠍⠕⠗⠝⠊⠝⠛⠲
+English: The tailor repaired the green field in the morning.
+
+Braille: ⠠⠞⠓⠑⠀⠞⠗⠁⠧⠑⠇⠇⠑⠗⠀⠉⠕⠇⠇⠑⠉⠞⠑⠙⠀⠁⠀⠎⠊⠇⠧⠑⠗⠀⠉⠕⠊⠝⠀⠞⠓⠗⠕⠥⠛⠓⠕⠥⠞⠀⠞⠓⠑⠀⠺⠊⠝⠞⠑⠗⠲
+English: The traveller collected a silver coin throughout the winter.

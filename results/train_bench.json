@@ -1,0 +1,26 @@
+{
+  "native": {
+    "mode": "native",
+    "max_len": 128,
+    "load_s": 2.6,
+    "step_s": [
+      1.78,
+      2.1
+    ],
+    "mean_step_s": 1.94,
+    "steps_per_epoch": 120,
+    "est_epoch_min": 3.9
+  },
+  "baseline": {
+    "mode": "baseline",
+    "max_len": 192,
+    "load_s": 1.6,
+    "step_s": [
+      4.24,
+      4.08
+    ],
+    "mean_step_s": 4.16,
+    "steps_per_epoch": 120,
+    "est_epoch_min": 8.3
+  }
+}

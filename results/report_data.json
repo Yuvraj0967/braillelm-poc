@@ -1,0 +1,287 @@
+{
+  "corpus": {
+    "train": 480,
+    "test": 120,
+    "total": 600,
+    "unique_sentences": 600,
+    "train_test_braille_overlap": 0,
+    "unique_words": 138,
+    "total_words": 5478,
+    "word_frequencies_top": [
+      [
+        "the",
+        1301
+      ],
+      [
+        "a",
+        322
+      ],
+      [
+        "old",
+        87
+      ],
+      [
+        "bridge",
+        77
+      ],
+      [
+        "near",
+        50
+      ],
+      [
+        "river",
+        50
+      ],
+      [
+        "before",
+        48
+      ],
+      [
+        "storm",
+        48
+      ],
+      [
+        "after",
+        48
+      ],
+      [
+        "rain",
+        48
+      ]
+    ],
+    "length_histogram": {
+      "9": 525,
+      "10": 72,
+      "11": 3
+    },
+    "templates": {
+      "X X X X X X X X X": 525,
+      "X X X X X X X X X X": 72,
+      "X X X X X X X X X X X": 3
+    },
+    "characters_used": [
+      " ",
+      "."
+    ],
+    "chars_per_sentence_mean": 54.27,
+    "braille_cells_mean": 55.27
+  },
+  "tokenizer": {
+    "base_vocab": 49152,
+    "native_vocab": 49329,
+    "added_tokens": 177,
+    "base": {
+      "name": "baseline",
+      "cells_per_sentence_mean": 55.09,
+      "braille_tokens_mean": 165.28,
+      "braille_tokens_min": 138,
+      "braille_tokens_max": 192,
+      "tokens_per_cell": 3.0,
+      "prompt_prefix_tokens": 15,
+      "rows_exceeding_128": 120,
+      "rows_exceeding_192": 52
+    },
+    "native": {
+      "name": "native",
+      "cells_per_sentence_mean": 55.09,
+      "braille_tokens_mean": 29.41,
+      "braille_tokens_min": 23,
+      "braille_tokens_max": 37,
+      "tokens_per_cell": 0.535,
+      "prompt_prefix_tokens": 15,
+      "rows_exceeding_128": 0,
+      "rows_exceeding_192": 0
+    }
+  },
+  "training": {
+    "native": {
+      "mode": "native",
+      "base_model": "HuggingFaceTB/SmolLM2-135M",
+      "device": "cpu",
+      "epochs": 1,
+      "epochs_done": 1,
+      "lr": 0.001,
+      "batch": 4,
+      "grad_accum": 1,
+      "max_len": 128
+    },
+    "baseline": {
+      "mode": "baseline",
+      "base_model": "HuggingFaceTB/SmolLM2-135M",
+      "device": "cpu",
+      "epochs": 1,
+      "epochs_done": 1,
+      "lr": 0.001,
+      "batch": 4,
+      "grad_accum": 1,
+      "max_len": 192
+    },
+    "train_examples": 480,
+    "steps_per_epoch_native": 120,
+    "steps_per_epoch_baseline": 120,
+    "native_trainable": 57287808,
+    "native_total": 191904768,
+    "native_trainable_pct": 29.85,
+    "baseline_trainable": 460800,
+    "baseline_total": 134975808,
+    "baseline_trainable_pct": 0.3414
+  },
+  "baseline_output_freq": [
+    [
+      "The fisherman closed the stone bridge before the storm.",
+      36
+    ],
+    [
+      "The captain recorded a silver coin in the morning.",
+      28
+    ],
+    [
+      "The fisherman prepared the stone bridge before the storm.",
+      18
+    ],
+    [
+      "The captain opened the glass window before the storm.",
+      15
+    ],
+    [
+      "The tailor closed the stone bridge before the storm.",
+      9
+    ],
+    [
+      "The fisherman closed the glass window before the storm.",
+      7
+    ],
+    [
+      "The captain prepared a silver coin in the morning.",
+      5
+    ],
+    [
+      "The fisherman carried a silver coin during the festival.",
+      1
+    ],
+    [
+      "The fisherman carried the stone bridge before the storm.",
+      1
+    ]
+  ],
+  "scores": {
+    "baseline": {
+      "name": "baseline",
+      "n": 120,
+      "exact": 0,
+      "cer_mean": 0.6378,
+      "cer_median": 0.6404,
+      "cer_max": 0.8222,
+      "cer_min": 0.3077,
+      "sacrebleu": 4.0,
+      "distinct_outputs": 9,
+      "unique_output_ratio": 0.075,
+      "position_accuracy": [
+        {
+          "slot": 1,
+          "acc": 0.725
+        },
+        {
+          "slot": 2,
+          "acc": 0.025
+        },
+        {
+          "slot": 3,
+          "acc": 0.008
+        },
+        {
+          "slot": 4,
+          "acc": 0.383
+        },
+        {
+          "slot": 5,
+          "acc": 0.033
+        },
+        {
+          "slot": 6,
+          "acc": 0.033
+        },
+        {
+          "slot": 7,
+          "acc": 0.058
+        },
+        {
+          "slot": 8,
+          "acc": 0.975
+        },
+        {
+          "slot": 9,
+          "acc": 0.058
+        },
+        {
+          "slot": 10,
+          "acc": null
+        }
+      ],
+      "row_word_acc_mean": 0.254,
+      "row_word_acc_median": 0.222,
+      "best_row_word_acc": 0.667
+    },
+    "native": {
+      "name": "native",
+      "n": 120,
+      "exact": 120,
+      "cer_mean": 0.0,
+      "cer_median": 0.0,
+      "cer_max": 0.0,
+      "cer_min": 0.0,
+      "sacrebleu": 100.0,
+      "distinct_outputs": 120,
+      "unique_output_ratio": 1.0,
+      "position_accuracy": [
+        {
+          "slot": 1,
+          "acc": 1.0
+        },
+        {
+          "slot": 2,
+          "acc": 1.0
+        },
+        {
+          "slot": 3,
+          "acc": 1.0
+        },
+        {
+          "slot": 4,
+          "acc": 1.0
+        },
+        {
+          "slot": 5,
+          "acc": 1.0
+        },
+        {
+          "slot": 6,
+          "acc": 1.0
+        },
+        {
+          "slot": 7,
+          "acc": 1.0
+        },
+        {
+          "slot": 8,
+          "acc": 1.0
+        },
+        {
+          "slot": 9,
+          "acc": 1.0
+        },
+        {
+          "slot": 10,
+          "acc": 1.0
+        }
+      ],
+      "row_word_acc_mean": 1.0,
+      "row_word_acc_median": 1.0,
+      "best_row_word_acc": 1.0
+    }
+  },
+  "files": {
+    "native_merged_bytes": 652152320,
+    "adapter_bytes": 1858776
+  }
+}

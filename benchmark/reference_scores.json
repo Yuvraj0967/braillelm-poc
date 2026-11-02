@@ -1,0 +1,837 @@
+{
+  "native": {
+    "n": 120,
+    "exact": 120,
+    "cer_mean": 0.0,
+    "cer_median": 0.0,
+    "cer_min": 0.0,
+    "cer_max": 0.0,
+    "distinct_outputs": 120,
+    "entropy_bits": 6.907,
+    "largest_cluster": 1,
+    "vocab_emitted": 138,
+    "vocab_reference": 138,
+    "words_missing": 0,
+    "starts_the": 87,
+    "slot_accuracy": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "slot_n": 112,
+    "prototypes": [
+      {
+        "rank": 1,
+        "count": 1,
+        "text": "The gardener started a wet umbrella before the storm."
+      },
+      {
+        "rank": 2,
+        "count": 1,
+        "text": "A dancer watched a bright lantern along the coast."
+      },
+      {
+        "rank": 3,
+        "count": 1,
+        "text": "The librarian recorded a wet umbrella near the river."
+      },
+      {
+        "rank": 4,
+        "count": 1,
+        "text": "A student watched the empty basket beside the harbour."
+      },
+      {
+        "rank": 5,
+        "count": 1,
+        "text": "The captain examined the iron gate near the river."
+      },
+      {
+        "rank": 6,
+        "count": 1,
+        "text": "The tailor counted the iron gate before the storm."
+      },
+      {
+        "rank": 7,
+        "count": 1,
+        "text": "The pilot examined a heavy box above the village."
+      },
+      {
+        "rank": 8,
+        "count": 1,
+        "text": "The merchant arranged the stone bridge under the old tree."
+      },
+      {
+        "rank": 9,
+        "count": 1,
+        "text": "The teacher finished ripe red apples under the old tree."
+      },
+      {
+        "rank": 10,
+        "count": 1,
+        "text": "The librarian discovered the tall ladder above the village."
+      },
+      {
+        "rank": 11,
+        "count": 1,
+        "text": "A painter studied some fresh bread above the village."
+      },
+      {
+        "rank": 12,
+        "count": 1,
+        "text": "The artist measured warm woollen blankets after the rain."
+      },
+      {
+        "rank": 13,
+        "count": 1,
+        "text": "The artist started the broken clock along the coast."
+      },
+      {
+        "rank": 14,
+        "count": 1,
+        "text": "My neighbour mentioned the green field in the morning."
+      },
+      {
+        "rank": 15,
+        "count": 1,
+        "text": "My neighbour explained some fresh bread near the river."
+      },
+      {
+        "rank": 16,
+        "count": 1,
+        "text": "The merchant discovered ripe red apples along the coast."
+      },
+      {
+        "rank": 17,
+        "count": 1,
+        "text": "The traveller recorded ripe red apples throughout the winter."
+      },
+      {
+        "rank": 18,
+        "count": 1,
+        "text": "The traveller discovered the iron gate near the river."
+      },
+      {
+        "rank": 19,
+        "count": 1,
+        "text": "A painter arranged the small boat inside the museum."
+      },
+      {
+        "rank": 20,
+        "count": 1,
+        "text": "The pilot collected a wet umbrella after the rain."
+      },
+      {
+        "rank": 21,
+        "count": 1,
+        "text": "The librarian planted warm woollen blankets along the coast."
+      },
+      {
+        "rank": 22,
+        "count": 1,
+        "text": "The doctor counted many wooden chairs across the valley."
+      },
+      {
+        "rank": 23,
+        "count": 1,
+        "text": "A student followed the iron gate beneath the bridge."
+      },
+      {
+        "rank": 24,
+        "count": 1,
+        "text": "A dancer discovered the stone bridge in the morning."
+      },
+      {
+        "rank": 25,
+        "count": 1,
+        "text": "The farmer mentioned some fresh bread along the coast."
+      },
+      {
+        "rank": 26,
+        "count": 1,
+        "text": "The doctor arranged several old books along the coast."
+      },
+      {
+        "rank": 27,
+        "count": 1,
+        "text": "The hunter arranged many wooden chairs during the festival."
+      },
+      {
+        "rank": 28,
+        "count": 1,
+        "text": "A scientist planted several old books near the river."
+      },
+      {
+        "rank": 29,
+        "count": 1,
+        "text": "The tailor started the quiet garden during the festival."
+      },
+      {
+        "rank": 30,
+        "count": 1,
+        "text": "A shopkeeper polished the empty basket near the river."
+      },
+      {
+        "rank": 31,
+        "count": 1,
+        "text": "The nurse measured the quiet garden near the river."
+      },
+      {
+        "rank": 32,
+        "count": 1,
+        "text": "The teacher repaired some fresh bread near the river."
+      },
+      {
+        "rank": 33,
+        "count": 1,
+        "text": "A scientist remembered the small boat behind the barn."
+      },
+      {
+        "rank": 34,
+        "count": 1,
+        "text": "The doctor finished the green field near the river."
+      },
+      {
+        "rank": 35,
+        "count": 1,
+        "text": "A dancer noticed several old books across the valley."
+      },
+      {
+        "rank": 36,
+        "count": 1,
+        "text": "The writer polished some fresh bread inside the museum."
+      },
+      {
+        "rank": 37,
+        "count": 1,
+        "text": "The captain followed the tall ladder in the morning."
+      },
+      {
+        "rank": 38,
+        "count": 1,
+        "text": "The gardener arranged some fresh bread inside the museum."
+      },
+      {
+        "rank": 39,
+        "count": 1,
+        "text": "The writer protected the stone bridge throughout the winter."
+      },
+      {
+        "rank": 40,
+        "count": 1,
+        "text": "A painter finished a silver coin after the rain."
+      },
+      {
+        "rank": 41,
+        "count": 1,
+        "text": "A dancer started the iron gate inside the museum."
+      },
+      {
+        "rank": 42,
+        "count": 1,
+        "text": "The hunter opened ripe red apples above the village."
+      },
+      {
+        "rank": 43,
+        "count": 1,
+        "text": "The traveller measured the empty basket above the village."
+      },
+      {
+        "rank": 44,
+        "count": 1,
+        "text": "A sailor carried some fresh bread before the storm."
+      },
+      {
+        "rank": 45,
+        "count": 1,
+        "text": "A painter followed some fresh bread near the river."
+      },
+      {
+        "rank": 46,
+        "count": 1,
+        "text": "The fisherman finished the tall ladder across the valley."
+      },
+      {
+        "rank": 47,
+        "count": 1,
+        "text": "The merchant repaired the glass window before the storm."
+      },
+      {
+        "rank": 48,
+        "count": 1,
+        "text": "A child explained several old books during the festival."
+      },
+      {
+        "rank": 49,
+        "count": 1,
+        "text": "The librarian started the broken clock before the storm."
+      },
+      {
+        "rank": 50,
+        "count": 1,
+        "text": "The engineer polished a wet umbrella under the old tree."
+      },
+      {
+        "rank": 51,
+        "count": 1,
+        "text": "The librarian arranged the glass window in the morning."
+      },
+      {
+        "rank": 52,
+        "count": 1,
+        "text": "The merchant counted the empty basket near the river."
+      },
+      {
+        "rank": 53,
+        "count": 1,
+        "text": "The young girl remembered a wet umbrella across the valley."
+      },
+      {
+        "rank": 54,
+        "count": 1,
+        "text": "The hunter mentioned the glass window beneath the bridge."
+      },
+      {
+        "rank": 55,
+        "count": 1,
+        "text": "The tailor repaired several old books throughout the winter."
+      },
+      {
+        "rank": 56,
+        "count": 1,
+        "text": "The tailor closed the stone bridge along the coast."
+      },
+      {
+        "rank": 57,
+        "count": 1,
+        "text": "A dancer watched the small boat across the valley."
+      },
+      {
+        "rank": 58,
+        "count": 1,
+        "text": "The merchant followed the narrow road beside the harbour."
+      },
+      {
+        "rank": 59,
+        "count": 1,
+        "text": "A dancer folded the glass window behind the barn."
+      },
+      {
+        "rank": 60,
+        "count": 1,
+        "text": "The librarian noticed the quiet garden throughout the winter."
+      },
+      {
+        "rank": 61,
+        "count": 1,
+        "text": "The traveller examined ripe red apples near the river."
+      },
+      {
+        "rank": 62,
+        "count": 1,
+        "text": "The farmer discovered several old books around the market."
+      },
+      {
+        "rank": 63,
+        "count": 1,
+        "text": "The captain opened a paper map above the village."
+      },
+      {
+        "rank": 64,
+        "count": 1,
+        "text": "A sailor described many wooden chairs along the coast."
+      },
+      {
+        "rank": 65,
+        "count": 1,
+        "text": "The artist repaired ripe red apples above the village."
+      },
+      {
+        "rank": 66,
+        "count": 1,
+        "text": "The gardener counted the narrow road across the valley."
+      },
+      {
+        "rank": 67,
+        "count": 1,
+        "text": "A shopkeeper protected the stone bridge above the village."
+      },
+      {
+        "rank": 68,
+        "count": 1,
+        "text": "The teacher described the narrow road inside the museum."
+      },
+      {
+        "rank": 69,
+        "count": 1,
+        "text": "The traveller arranged a heavy box in the morning."
+      },
+      {
+        "rank": 70,
+        "count": 1,
+        "text": "The captain studied the green field near the river."
+      },
+      {
+        "rank": 71,
+        "count": 1,
+        "text": "A student started the empty basket beneath the bridge."
+      },
+      {
+        "rank": 72,
+        "count": 1,
+        "text": "The traveller delivered the broken clock inside the museum."
+      },
+      {
+        "rank": 73,
+        "count": 1,
+        "text": "The pilot studied a bright lantern along the coast."
+      },
+      {
+        "rank": 74,
+        "count": 1,
+        "text": "The pilot repaired the quiet garden along the coast."
+      },
+      {
+        "rank": 75,
+        "count": 1,
+        "text": "A carpenter watched some fresh bread during the festival."
+      },
+      {
+        "rank": 76,
+        "count": 1,
+        "text": "A musician protected the tall ladder during the festival."
+      },
+      {
+        "rank": 77,
+        "count": 1,
+        "text": "The traveller opened the empty basket around the market."
+      },
+      {
+        "rank": 78,
+        "count": 1,
+        "text": "The librarian carried a wet umbrella inside the museum."
+      },
+      {
+        "rank": 79,
+        "count": 1,
+        "text": "A musician repaired the small boat behind the barn."
+      },
+      {
+        "rank": 80,
+        "count": 1,
+        "text": "The baker followed the quiet garden along the coast."
+      },
+      {
+        "rank": 81,
+        "count": 1,
+        "text": "The doctor examined the small boat above the village."
+      },
+      {
+        "rank": 82,
+        "count": 1,
+        "text": "A painter folded a heavy box along the coast."
+      },
+      {
+        "rank": 83,
+        "count": 1,
+        "text": "The farmer remembered the small boat during the festival."
+      },
+      {
+        "rank": 84,
+        "count": 1,
+        "text": "The merchant carried the glass window around the market."
+      },
+      {
+        "rank": 85,
+        "count": 1,
+        "text": "The doctor sketched the stone bridge near the river."
+      },
+      {
+        "rank": 86,
+        "count": 1,
+        "text": "The fisherman measured some fresh bread along the coast."
+      },
+      {
+        "rank": 87,
+        "count": 1,
+        "text": "The gardener discovered a wet umbrella behind the barn."
+      },
+      {
+        "rank": 88,
+        "count": 1,
+        "text": "A scientist noticed a heavy box behind the barn."
+      },
+      {
+        "rank": 89,
+        "count": 1,
+        "text": "The fisherman opened the stone bridge throughout the winter."
+      },
+      {
+        "rank": 90,
+        "count": 1,
+        "text": "The baker described the broken clock behind the barn."
+      },
+      {
+        "rank": 91,
+        "count": 1,
+        "text": "The weaver followed the small boat across the valley."
+      },
+      {
+        "rank": 92,
+        "count": 1,
+        "text": "The old man recorded a bright lantern during the festival."
+      },
+      {
+        "rank": 93,
+        "count": 1,
+        "text": "The captain recorded the quiet garden across the valley."
+      },
+      {
+        "rank": 94,
+        "count": 1,
+        "text": "The young girl started several old books during the festival."
+      },
+      {
+        "rank": 95,
+        "count": 1,
+        "text": "The merchant examined warm woollen blankets beside the harbour."
+      },
+      {
+        "rank": 96,
+        "count": 1,
+        "text": "A sailor measured the stone bridge before the storm."
+      },
+      {
+        "rank": 97,
+        "count": 1,
+        "text": "The doctor opened the small boat along the coast."
+      },
+      {
+        "rank": 98,
+        "count": 1,
+        "text": "The gardener examined several old books beside the harbour."
+      },
+      {
+        "rank": 99,
+        "count": 1,
+        "text": "The artist closed a wet umbrella in the morning."
+      },
+      {
+        "rank": 100,
+        "count": 1,
+        "text": "The farmer arranged ripe red apples in the morning."
+      },
+      {
+        "rank": 101,
+        "count": 1,
+        "text": "The tailor sketched many wooden chairs above the village."
+      },
+      {
+        "rank": 102,
+        "count": 1,
+        "text": "The hunter studied several old books after the rain."
+      },
+      {
+        "rank": 103,
+        "count": 1,
+        "text": "The merchant mentioned a heavy box inside the museum."
+      },
+      {
+        "rank": 104,
+        "count": 1,
+        "text": "The weaver painted a paper map inside the museum."
+      },
+      {
+        "rank": 105,
+        "count": 1,
+        "text": "The teacher painted a paper map behind the barn."
+      },
+      {
+        "rank": 106,
+        "count": 1,
+        "text": "The librarian prepared a wet umbrella throughout the winter."
+      },
+      {
+        "rank": 107,
+        "count": 1,
+        "text": "The farmer noticed many wooden chairs near the river."
+      },
+      {
+        "rank": 108,
+        "count": 1,
+        "text": "The engineer studied some fresh bread behind the barn."
+      },
+      {
+        "rank": 109,
+        "count": 1,
+        "text": "The nurse prepared the glass window after the rain."
+      },
+      {
+        "rank": 110,
+        "count": 1,
+        "text": "A scientist examined the tall ladder beneath the bridge."
+      },
+      {
+        "rank": 111,
+        "count": 1,
+        "text": "The weaver repaired the narrow road under the old tree."
+      },
+      {
+        "rank": 112,
+        "count": 1,
+        "text": "The librarian collected a heavy box before the storm."
+      },
+      {
+        "rank": 113,
+        "count": 1,
+        "text": "The weaver opened the quiet garden under the old tree."
+      },
+      {
+        "rank": 114,
+        "count": 1,
+        "text": "My neighbour painted a bright lantern inside the museum."
+      },
+      {
+        "rank": 115,
+        "count": 1,
+        "text": "A sailor counted the empty basket beneath the bridge."
+      },
+      {
+        "rank": 116,
+        "count": 1,
+        "text": "The fisherman gathered the green field in the morning."
+      },
+      {
+        "rank": 117,
+        "count": 1,
+        "text": "A dancer watched the empty basket in the morning."
+      },
+      {
+        "rank": 118,
+        "count": 1,
+        "text": "The captain gathered some fresh bread after the rain."
+      },
+      {
+        "rank": 119,
+        "count": 1,
+        "text": "The gardener started a bright lantern inside the museum."
+      },
+      {
+        "rank": 120,
+        "count": 1,
+        "text": "A carpenter noticed the small boat around the market."
+      }
+    ],
+    "sacrebleu": 100.0,
+    "bleu_precisions": [
+      100.0,
+      100.0,
+      100.0,
+      100.0
+    ],
+    "bleu_bp": 1.0,
+    "latency_b1_s": 0.686,
+    "latency_b8_s": 0.228
+  },
+  "baseline": {
+    "n": 120,
+    "exact": 0,
+    "cer_mean": 0.6378,
+    "cer_median": 0.6404,
+    "cer_min": 0.3077,
+    "cer_max": 0.8222,
+    "distinct_outputs": 9,
+    "entropy_bits": 2.622,
+    "largest_cluster": 36,
+    "vocab_emitted": 22,
+    "vocab_reference": 138,
+    "words_missing": 116,
+    "starts_the": 120,
+    "slot_accuracy": [
+      0.7054,
+      0.0268,
+      0.0089,
+      0.3929,
+      0.0357,
+      0.0357,
+      0.0625,
+      1.0,
+      0.0625
+    ],
+    "slot_n": 112,
+    "prototypes": [
+      {
+        "rank": 1,
+        "count": 36,
+        "text": "The fisherman closed the stone bridge before the storm."
+      },
+      {
+        "rank": 2,
+        "count": 28,
+        "text": "The captain recorded a silver coin in the morning."
+      },
+      {
+        "rank": 3,
+        "count": 18,
+        "text": "The fisherman prepared the stone bridge before the storm."
+      },
+      {
+        "rank": 4,
+        "count": 15,
+        "text": "The captain opened the glass window before the storm."
+      },
+      {
+        "rank": 5,
+        "count": 9,
+        "text": "The tailor closed the stone bridge before the storm."
+      },
+      {
+        "rank": 6,
+        "count": 7,
+        "text": "The fisherman closed the glass window before the storm."
+      },
+      {
+        "rank": 7,
+        "count": 5,
+        "text": "The captain prepared a silver coin in the morning."
+      },
+      {
+        "rank": 8,
+        "count": 1,
+        "text": "The fisherman carried a silver coin during the festival."
+      },
+      {
+        "rank": 9,
+        "count": 1,
+        "text": "The fisherman carried the stone bridge before the storm."
+      }
+    ],
+    "sacrebleu": 4.0,
+    "bleu_precisions": [
+      33.83,
+      3.15,
+      2.08,
+      1.19
+    ],
+    "bleu_bp": 0.993,
+    "latency_b1_s": 0.953,
+    "latency_b8_s": 0.494
+  },
+  "control": {
+    "n": 120,
+    "exact": 0,
+    "cer_mean": 0.602,
+    "cer_median": 0.6131,
+    "cer_min": 0.3774,
+    "cer_max": 0.7917,
+    "distinct_outputs": 15,
+    "entropy_bits": 2.649,
+    "largest_cluster": 47,
+    "vocab_emitted": 29,
+    "vocab_reference": 138,
+    "words_missing": 109,
+    "starts_the": 89,
+    "slot_accuracy": [
+      0.9732,
+      0.0804,
+      0.0179,
+      0.4286,
+      0.0714,
+      0.0714,
+      0.0625,
+      1.0,
+      0.0625
+    ],
+    "slot_n": 112,
+    "prototypes": [
+      {
+        "rank": 1,
+        "count": 47,
+        "text": "The fisherman prepared the empty basket before the storm."
+      },
+      {
+        "rank": 2,
+        "count": 31,
+        "text": "The fisherman carried the empty basket before the storm."
+      },
+      {
+        "rank": 3,
+        "count": 14,
+        "text": "A painter recorded a heavy box before the storm."
+      },
+      {
+        "rank": 4,
+        "count": 6,
+        "text": "A painter recorded the empty basket before the storm."
+      },
+      {
+        "rank": 5,
+        "count": 4,
+        "text": "The fisherman carried the iron gate before the storm."
+      },
+      {
+        "rank": 6,
+        "count": 4,
+        "text": "The fisherman prepared the iron gate before the storm."
+      },
+      {
+        "rank": 7,
+        "count": 3,
+        "text": "The fisherman prepared the stone bridge under the old tree."
+      },
+      {
+        "rank": 8,
+        "count": 3,
+        "text": "A painter prepared a wet umbrella before the storm."
+      },
+      {
+        "rank": 9,
+        "count": 2,
+        "text": "A painter carried a heavy box before the storm."
+      },
+      {
+        "rank": 10,
+        "count": 1,
+        "text": "A painter recorded the green field before the storm."
+      },
+      {
+        "rank": 11,
+        "count": 1,
+        "text": "A painter prepared a bright lantern under the old tree."
+      },
+      {
+        "rank": 12,
+        "count": 1,
+        "text": "A painter recorded a silver coin before the storm."
+      },
+      {
+        "rank": 13,
+        "count": 1,
+        "text": "A musician prepared a bright lantern before the storm."
+      },
+      {
+        "rank": 14,
+        "count": 1,
+        "text": "A painter carried a bright lantern before the storm."
+      },
+      {
+        "rank": 15,
+        "count": 1,
+        "text": "A musician prepared a bright lantern under the old tree."
+      }
+    ],
+    "sacrebleu": 4.17,
+    "bleu_precisions": [
+      37.34,
+      4.33,
+      2.28,
+      0.83
+    ],
+    "bleu_bp": 0.998
+  }
+}
