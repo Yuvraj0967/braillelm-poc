@@ -19,6 +19,7 @@ inspect end to end.
 - [Why braille needs its own tokenizer](#why-braille-needs-its-own-tokenizer)
 - [The three arms (and the controls)](#the-three-arms-and-the-controls)
 - [How the pipeline works](#how-the-pipeline-works)
+- [Architecture](#architecture)
 - [Repository layout](#repository-layout)
 - [Quickstart](#quickstart)
 - [Running the experiments](#running-the-experiments)
@@ -46,8 +47,9 @@ This project tests a different arrangement:
 1. **A braille-native vocabulary.** Start from the 64 cells and learn BPE merges
    over the *braille* side of the training data. Frequent cell sequences
    (contractions, common words) collapse into a single token. On the bundled
-   600-sentence corpus this adds 177 tokens to the base vocabulary (64 cells
-   plus merges), taking SmolLM2-135M from 800 to 977 tokens.
+   600-sentence corpus the token list has 177 entries — 27 base cells seen in
+   training plus 150 merges — which grows SmolLM2-135M's vocabulary from
+   **49,152 to 49,329**.
 2. **BKFT initialisation.** A newly added braille token is not left at a random
    embedding. Its cells are expanded to the print string they represent, and the
    new embedding is set to the **mean of the base model's embeddings for that
@@ -191,10 +193,12 @@ English:
 ```
 
 The target is `" " + English + eos`. Prompt tokens are masked with `-100`, so
-loss is computed on the answer only. Because small models tie input and output
-embeddings, `embed_tokens` and `lm_head` are included in LoRA
-`modules_to_save` — otherwise the added braille rows would not be trained
-properly.
+loss is computed on the answer only. Because SmolLM2 ties input and output
+embeddings, the added rows live in a single embedding matrix. Those rows are
+**frozen by default** so the initialisation stays measurable. If you pass
+`--train_embeddings`, `embed_tokens` and `lm_head` are added to LoRA
+`modules_to_save` so the new rows can train (and the tied weight is saved
+correctly).
 
 One subtlety that caused a real bug: long braille prompts can push the English
 answer past `max_len`. If the answer is truncated away, the label row is all
@@ -207,6 +211,40 @@ left** and always keeps the answer.
 LoRA adapter, and generates greedily (`do_sample=False`, 64 new tokens max).
 Only the first generated line is treated as the hypothesis. It then computes the
 metrics below on `data/test.jsonl`.
+
+---
+
+## Architecture
+
+BrailleLM is a file-based pipeline with three layers. Each stage reads files
+from disk and writes files to disk, so any stage can be rerun in isolation.
+
+| Layer | Components | Responsibility |
+|---|---|---|
+| Representation and data | `braille_ueb.py`, `prep_data.py` | convert print↔braille, enforce the round-trip invariant, split the pairs |
+| Model adaptation | `braille_tokenizer.py`, `train.py` | learn the braille vocabulary, expand the model, initialise the new rows, train LoRA adapters |
+| Measurement | `eval.py`, `run_experiment.py`, `run_all.py` | generate, score, aggregate across arms and seeds |
+
+The model path in one line:
+
+```text
+SmolLM2-135M (30 layers, 576 hidden, tied embeddings, 49,152 vocab)
+  → +177 braille tokens (49,329)
+  → new rows random-init or BKFT-init
+  → LoRA r=8 on q_proj / v_proj, base weights frozen
+  → prompt tokens masked, loss on the English answer only
+```
+
+The data path in one line:
+
+```text
+sentences → UEB braille → round-trip filter → split → JSONL
+         → BPE over braille cells → token list → train → eval → aggregate
+```
+
+The detailed component map, data schemas, tensor layout, BKFT formula, training
+loop, orchestration sequence and design trade-offs are in
+[ARCHITECTURE.md](ARCHITECTURE.md).
 
 ---
 
@@ -225,6 +263,7 @@ metrics below on `data/test.jsonl`.
 ├── test_wiring.py          model-level checks with a tiny local model, no download
 ├── sentences.txt           600-sentence input corpus
 ├── requirements.txt        Python dependencies
+├── ARCHITECTURE.md         components, data flow, model and experiment design
 └── README.md
 ```
 
@@ -485,7 +524,8 @@ to break, without downloading a model:
 - add braille tokens → resize → BKFT initialisation;
 - a spot-check that a known token's embedding equals the mean of the print
   tokens (reported as `max|diff|`, ideally `0.00e+00`);
-- LoRA with `embed_tokens` / `lm_head` in `modules_to_save`;
+- LoRA with `embed_tokens` / `lm_head` in `modules_to_save` (the
+  `--train_embeddings` path);
 - one real forward/backward/step with a finite loss;
 - greedy generation.
 
