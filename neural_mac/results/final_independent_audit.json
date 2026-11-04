@@ -1,0 +1,68 @@
+{
+  "test_sha256": "74726e62a8e31ca396fd2b02a61230368c0f15d5963360a0deb91c85a3b48c91",
+  "predictions_sha256": "d861c5f8227c0beb97501781985a4dcefd890f7e99aec4e45c63a2e8368966dc",
+  "checkpoint": "work/neural_native/qwen_bkft_continue4000/step4000",
+  "beam_width": 4,
+  "all_399": {
+    "n": 399,
+    "strict_exact_count": 216,
+    "strict_exact_rate": 0.5414,
+    "strict_exact_wilson_95": [
+      0.4923,
+      0.5896
+    ],
+    "normalized_exact_count": 217,
+    "mean_cer": 0.0231,
+    "sacrebleu": 89.16
+  },
+  "plain_first_200": {
+    "n": 200,
+    "strict_exact_count": 115,
+    "strict_exact_rate": 0.575,
+    "strict_exact_wilson_95": [
+      0.5057,
+      0.6415
+    ],
+    "normalized_exact_count": 115,
+    "mean_cer": 0.0237,
+    "sacrebleu": 88.75
+  },
+  "extended_last_199": {
+    "n": 199,
+    "strict_exact_count": 101,
+    "strict_exact_rate": 0.5075,
+    "strict_exact_wilson_95": [
+      0.4386,
+      0.5762
+    ],
+    "normalized_exact_count": 102,
+    "mean_cer": 0.0225,
+    "sacrebleu": 89.48
+  },
+  "contains_training_unseen_word": {
+    "n": 263,
+    "strict_exact_count": 116,
+    "strict_exact_rate": 0.4411,
+    "strict_exact_wilson_95": [
+      0.3823,
+      0.5015
+    ],
+    "normalized_exact_count": 117,
+    "mean_cer": 0.0272,
+    "sacrebleu": 86.8
+  },
+  "all_words_in_training_vocabulary": {
+    "n": 136,
+    "strict_exact_count": 100,
+    "strict_exact_rate": 0.7353,
+    "strict_exact_wilson_95": [
+      0.6554,
+      0.8022
+    ],
+    "normalized_exact_count": 100,
+    "mean_cer": 0.0152,
+    "sacrebleu": 94.15
+  },
+  "labels_match_test_file_in_order": true,
+  "saved_metrics_recomputed": true
+}

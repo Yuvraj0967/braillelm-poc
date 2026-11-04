@@ -1,0 +1,10 @@
+[train] arm=native-bkft device=mps dtype=torch.float32 seed=42
+[train] added 177 tokens (bkft init, frozen embeddings); vocab 151665 -> 151842
+/Users/atharvaanand/Documents/Codex/2026-11-03/go-x20/work/braillelm_venv/lib/python3.12/site-packages/peft/tuners/tuners_utils.py:1447: UserWarning: You have requested `ensure_weight_tying`, but no tied modules are added in either `modules_to_save` or `target_modules`
+  warnings.warn(
+trainable params: 699,264 || all params: 494,647,808 || trainable%: 0.1414
+[train] epoch 1/1 step 10 loss 2.924 elapsed 3.2s
+[train] epoch 1/1 step 20 loss 2.303 elapsed 5.9s
+/Users/atharvaanand/Documents/Codex/2026-11-03/go-x20/work/braillelm_venv/lib/python3.12/site-packages/peft/utils/save_and_load.py:327: UserWarning: Setting `save_embedding_layers` to `True` as the embedding layer has been resized during finetuning.
+  warnings.warn(
+[train] saved to qwen_smoke_batch2/  (final val loss 2.1458260011672974)

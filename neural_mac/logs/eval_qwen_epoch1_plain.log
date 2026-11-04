@@ -1,0 +1,14 @@
+/Users/atharvaanand/Documents/Codex/2026-11-03/go-x20/work/braillelm_venv/lib/python3.12/site-packages/peft/tuners/tuners_utils.py:1447: UserWarning: You have requested `ensure_weight_tying`, but no tied modules are added in either `modules_to_save` or `target_modules`
+  warnings.warn(
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+[eval] {"ckpt": "qwen_bkft_scaled_epoch1/epoch1", "arm": "native-bkft", "seed": 42, "test_file": "data/test.jsonl", "n": 200, "sacrebleu": 86.66, "cer": 0.026, "exact_match": 0.445, "normalized_exact_match": 0.445, "tokens_per_cell": 0.731}
+[eval] sample:
+   ref: The battle extended well into the night.
+   hyp: The battle extended well into the night.
+
+   ref: Du subsequently based himself in Sichuan for most of the next five years.
+   hyp: Du subsequently based himself in Sichuan for most of the next five years.
+
+   ref: The congregation initially worshipped in a converted house on West Eighth Street.
+   hyp: The congregation initially worshipped in a converted house on West Eighth Street.
+

@@ -1,0 +1,13 @@
+{
+  "ckpt": "qwen_bkft_continue4000/step4000",
+  "arm": "continued-native",
+  "seed": 44,
+  "num_beams": 4,
+  "test_file": "data/test.jsonl",
+  "n": 200,
+  "sacrebleu": 90.02,
+  "cer": 0.0178,
+  "exact_match": 0.545,
+  "normalized_exact_match": 0.55,
+  "tokens_per_cell": 0.731
+}

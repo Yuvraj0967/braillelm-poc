@@ -1,0 +1,12 @@
+{
+  "ckpt": "qwen_bkft_continue4000/step4000",
+  "arm": "continued-native",
+  "seed": 44,
+  "test_file": "data/test.jsonl",
+  "n": 200,
+  "sacrebleu": 88.25,
+  "cer": 0.0212,
+  "exact_match": 0.475,
+  "normalized_exact_match": 0.48,
+  "tokens_per_cell": 0.731
+}

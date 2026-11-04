@@ -1,0 +1,76 @@
+{
+  "project": "BrailleLM neural Mac replication and improvement",
+  "source_repo": "https://github.com/Yuvraj0967/braillelm-poc",
+  "source_commit": "352fd4af6aeb808a2e97adf17781a78c866c8a9c",
+  "host": "Apple M3 Pro, 19 GB unified memory",
+  "training_device": "MPS, float32",
+  "dataset": {
+    "wikitext": "Salesforce/wikitext wikitext-2-raw-v1",
+    "braille_generator": "liblouis 3.39.0 en-ueb-g1.ctb unicode.dis",
+    "initial_train_rows": 2451,
+    "validation_rows": 99,
+    "pilot_plain_rows": 200,
+    "scaled_train_rows": 15886,
+    "final_plain_rows": 200,
+    "final_extended_rows": 199,
+    "final_test_use": "evaluate after model selection; no fitting or hyperparameter choice from final labels"
+  },
+  "initial_comparison": {
+    "arms": [
+      "baseline",
+      "native-random",
+      "native-bkft",
+      "continued-published-native"
+    ],
+    "epochs": "continued-published and fresh BKFT: 3; baseline and native-random: early stopped after 2 because validation loss rose",
+    "batch": 2,
+    "gradient_accumulation": 8,
+    "optimizer": "AdamW",
+    "learning_rate": 0.0001,
+    "lora_rank": 8,
+    "train_embeddings": true,
+    "max_len_native": 256,
+    "max_len_baseline": 512,
+    "max_len_reason": "all baseline sequences fit; native sequences fit within 256",
+    "seed": 42,
+    "baseline_selected_epoch": 1,
+    "random_selected_epoch": 1
+  },
+  "sha256": {
+    "data/train.jsonl": "a432c136f0e620efe99e6426a7595bdfd13cab0127b583ccf484ee82e8ea419d",
+    "data/validation.jsonl": "370032e05ea27e7821f8da9dc953b6586419cf3f496870fe8bb7bf360c1bccfe",
+    "data/test.jsonl": "d5075c1a549e3688359424ee8ae0cd2c2da1ba1f00d8865af591c9c78f5146db",
+    "data/extended_test.jsonl": "a590726959e872be3e6bd4b7508567001ba8ba16ea937d3d247c7f326df5c61c",
+    "data/final_plain_test.jsonl": "51022273f23ef8d3a17b84542e972348a5af6d6032e83695140ed47485af3273",
+    "data/final_extended_test.jsonl": "928c4e292ad6676adf6538cd84a08d6ef0165a24d46e0b3b0fb212d4d8746e75",
+    "data_all/train.jsonl": "041651d8e760d7c8da1aff0b4a693c03b04f55c5e31aaa091de28598f7cad765",
+    "native_tokens_exact.json": "31ca1883938ce94ea78abd600fcce166ac17ffd97207fe8a474959f1f09de127",
+    "data/final_all_test.jsonl": "74726e62a8e31ca396fd2b02a61230368c0f15d5963360a0deb91c85a3b48c91",
+    "data_aug/train.jsonl": "f1284de2d2a81d7e15ed63bba03e952af5960d11d6d0a14128fcefac628787b7"
+  },
+  "base_model_revision": "93efa2f097d58c2a74874c7e644dbc9b0cee75a2",
+  "smollm2_scaled_epoch1": {
+    "train_rows": 15886,
+    "steps": 7943,
+    "validation_loss": 0.8928,
+    "pilot_exact": 17,
+    "pilot_n": 200,
+    "pilot_bleu": 61.21,
+    "pilot_cer": 0.1614,
+    "elapsed_seconds": 928.9
+  },
+  "smollm2_epoch2_step2000": {
+    "validation_loss": 0.998,
+    "pilot_exact": 20,
+    "pilot_n": 200,
+    "pilot_bleu": 58.29,
+    "pilot_cer": 0.1944
+  },
+  "smollm2_aug_step4000": {
+    "validation_loss": 1.019,
+    "pilot_exact": 19,
+    "pilot_n": 200,
+    "pilot_bleu": 60.84,
+    "pilot_cer": 0.1801
+  }
+}

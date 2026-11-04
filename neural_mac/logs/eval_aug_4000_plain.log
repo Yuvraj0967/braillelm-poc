@@ -1,0 +1,14 @@
+The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+/Users/atharvaanand/Documents/Codex/2026-11-03/go-x20/work/braillelm_venv/lib/python3.12/site-packages/peft/tuners/tuners_utils.py:1463: UserWarning: Model has `tie_word_embeddings=True` and a tied layer is part of the adapter, but `ensure_weight_tying` is not set to True. This can lead to complications, for example when merging the adapter or converting your model to formats other than safetensors. Check the discussion here: https://github.com/huggingface/peft/issues/2777
+  warnings.warn(msg)
+[eval] {"ckpt": "bkft_aug_4000/step4000", "arm": "continued-native", "seed": 45, "test_file": "data/test.jsonl", "n": 200, "sacrebleu": 60.84, "cer": 0.1801, "exact_match": 0.095, "normalized_exact_match": 0.095, "tokens_per_cell": 0.733}
+[eval] sample:
+   ref: The battle extended well into the night.
+   hyp: The battle extended well into the night.
+
+   ref: Du subsequently based himself in Sichuan for most of the next five years.
+   hyp: Du subsequently based himself in Sichuan for most of the next five years.
+
+   ref: The congregation initially worshipped in a converted house on West Eighth Street.
+   hyp: The congregation initially worshipped in a converted house on West Eighteenth Street.
+

@@ -1,0 +1,12 @@
+{
+  "ckpt": "qwen_bkft_scaled_epoch2/step4000",
+  "arm": "continued-native",
+  "seed": 43,
+  "test_file": "data/test.jsonl",
+  "n": 200,
+  "sacrebleu": 87.24,
+  "cer": 0.0265,
+  "exact_match": 0.47,
+  "normalized_exact_match": 0.47,
+  "tokens_per_cell": 0.731
+}
