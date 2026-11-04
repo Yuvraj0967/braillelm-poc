@@ -6,7 +6,7 @@ normal git repository and is published as a release asset.
 
 ## Native merged checkpoint
 
-**Download:** [braillelm-native-smollm2-135m.tar](https://github.com/Yuvraj0967/braillelm-poc/releases/latest/download/braillelm-native-smollm2-135m.tar) (~652 MB)
+**Download:** [braillelm-native-smollm2-135m.tar](https://github.com/Yuvraj0967/braillelm-poc/releases/download/v0.1.0-model/braillelm-native-smollm2-135m.tar) (~652 MB)
 
 Contents:
 

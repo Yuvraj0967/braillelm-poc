@@ -138,6 +138,19 @@ def main():
     ap.add_argument("--cpu", action="store_true")
     ap.add_argument("--bf16", action="store_true")
     ap.add_argument("--seed", type=int, default=0)
+    ap.add_argument("--train_new_tokens_only", action="store_true",
+                    help="train ONLY the new braille embedding rows (peft "
+                         "trainable_token_indices). Preferred over "
+                         "--train_embeddings: same freedom, ~0.4%% of the "
+                         "trainable params, cannot damage base English.")
+    ap.add_argument("--lr_end", type=float, default=None,
+                    help="if set, decay the LR linearly from --lr to this value")
+    ap.add_argument("--max_steps", type=int, default=0,
+                    help="stop after this many optimizer steps (0 = run all epochs)")
+    ap.add_argument("--save_every", type=int, default=0,
+                    help="save a resumable checkpoint every N optimizer steps (0 = off)")
+    ap.add_argument("--resume_adapter", default=None,
+                    help="path to an adapter saved earlier; continues training from it")
     args = ap.parse_args()
     arm = args.mode if args.mode == "baseline" else f"native-{args.init}"
     out = args.out or f"out_{arm}_seed{args.seed}"
@@ -171,14 +184,42 @@ def main():
             random_init(model, tok, added, base_vocab)
         if args.train_embeddings:
             modules_to_save = ["embed_tokens", "lm_head"]
+        emb_mode = ("new-rows-only" if args.train_new_tokens_only
+                    else "trainable" if args.train_embeddings else "frozen")
         print(f"[train] added {n_added} tokens ({args.init} init, "
-              f"{'trainable' if args.train_embeddings else 'frozen'} embeddings); "
-              f"vocab {base_vocab} -> {len(tok)}")
+              f"{emb_mode} embeddings); vocab {base_vocab} -> {len(tok)}")
 
-    lora = LoraConfig(r=args.lora_rank, lora_alpha=2*args.lora_rank, lora_dropout=0.05,
-                      target_modules=["q_proj", "v_proj"], task_type="CAUSAL_LM",
-                      modules_to_save=modules_to_save)
-    model = get_peft_model(model, lora)
+    # Train only the new braille rows when asked. peft gained
+    # trainable_token_indices / ensure_weight_tying in 0.15; fall back to
+    # modules_to_save on older versions so this stays runnable everywhere.
+    trainable_tokens = None
+    if args.train_new_tokens_only and args.mode == "native":
+        trainable_tokens = list(range(base_vocab, len(tok)))
+        modules_to_save = None          # mutually exclusive with the above
+
+    lora_kw = dict(r=args.lora_rank, lora_alpha=2*args.lora_rank, lora_dropout=0.05,
+                   target_modules=["q_proj", "v_proj"], task_type="CAUSAL_LM",
+                   modules_to_save=modules_to_save)
+    if trainable_tokens is not None:
+        try:
+            lora = LoraConfig(**lora_kw, trainable_token_indices=trainable_tokens,
+                              ensure_weight_tying=True)
+            print(f"[train] training {len(trainable_tokens)} new token rows only")
+        except TypeError:
+            print("[train] peft too old for trainable_token_indices; "
+                  "falling back to modules_to_save (full embedding matrix)")
+            lora_kw["modules_to_save"] = ["embed_tokens", "lm_head"]
+            lora = LoraConfig(**lora_kw)
+            trainable_tokens = None
+    else:
+        lora = LoraConfig(**lora_kw)
+
+    if args.resume_adapter:
+        from peft import PeftModel
+        model = PeftModel.from_pretrained(model, args.resume_adapter, is_trainable=True)
+        print(f"[train] resumed adapter from {args.resume_adapter}")
+    else:
+        model = get_peft_model(model, lora)
     model.to(device)
     model.print_trainable_parameters()
 
@@ -204,7 +245,34 @@ def main():
     curve = []
     n_epochs = max(1, int(round(args.epochs)))
     steps = 0
+
+    # Linear LR decay, so the model settles into the minimum instead of
+    # stepping over it. Matches the staged schedule used for the 0.5B run.
+    opt_steps_total = max(1, (len(data) // max(1, args.batch * args.grad_accum)) * n_epochs)
+    if args.max_steps:
+        opt_steps_total = min(opt_steps_total, args.max_steps)
+    opt_steps = 0
+
+    def set_lr():
+        if args.lr_end is None:
+            return args.lr
+        frac = min(1.0, opt_steps / opt_steps_total)
+        lr_now = args.lr + (args.lr_end - args.lr) * frac
+        for g in opt.param_groups:
+            g["lr"] = lr_now
+        return lr_now
+
+    def save_ckpt(tag):
+        p = f"{out}/{tag}"
+        os.makedirs(p, exist_ok=True)
+        model.save_pretrained(p)
+        tok.save_pretrained(p)
+        print(f"[train] checkpoint -> {p}")
+
+    stop = False
     for ep in range(n_epochs):
+        if stop:
+            break
         random.Random(args.seed + ep).shuffle(data)
         for i in range(0, len(data), args.batch):
             batch = collate(data[i:i+args.batch], tok.pad_token_id)
@@ -212,7 +280,15 @@ def main():
             loss = model(**batch).loss / args.grad_accum
             loss.backward()
             if ((i // args.batch) + 1) % args.grad_accum == 0:
+                set_lr()
                 opt.step(); opt.zero_grad()
+                opt_steps += 1
+                if args.save_every and opt_steps % args.save_every == 0:
+                    save_ckpt(f"step{opt_steps}")
+                if args.max_steps and opt_steps >= args.max_steps:
+                    print(f"[train] hit --max_steps {args.max_steps}; stopping")
+                    stop = True
+                    break
             steps += 1
             tl = loss.item() * args.grad_accum
             if steps % args.eval_every == 0:
@@ -237,6 +313,11 @@ def main():
     meta = {"arm": arm, "mode": args.mode, "init": args.init if args.mode == "native" else None,
             "train_embeddings": bool(args.train_embeddings), "base_model": args.model,
             "device": device, "seed": args.seed, "steps": steps,
+            "opt_steps": opt_steps, "lr": args.lr, "lr_end": args.lr_end,
+            "max_len": args.max_len,
+            "train_new_tokens_only": bool(trainable_tokens),
+            "n_trainable_token_rows": len(trainable_tokens) if trainable_tokens else 0,
+            "resumed_from": args.resume_adapter,
             "final_val_loss": round(final_val, 4) if final_val is not None else None,
             "n_train": len(train_rows), "n_val": len(val_rows), **init_info}
     json.dump(meta, open(f"{out}/train_meta.json", "w"), indent=2)

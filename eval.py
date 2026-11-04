@@ -51,6 +51,8 @@ def main():
     ap.add_argument("--max_new", type=int, default=64)
     ap.add_argument("--cpu", action="store_true")
     ap.add_argument("--limit", type=int, default=0, help="eval only first N (0 = all)")
+    ap.add_argument("--beams", type=int, default=1,
+                    help="beam width; 1 = greedy. 4 was worth ~7 points on the 0.5B run.")
     args = ap.parse_args()
 
     device = "cpu" if args.cpu or not torch.cuda.is_available() else "cuda"
@@ -80,7 +82,9 @@ def main():
         ids = tok(prompt, return_tensors="pt").to(device)
         with torch.no_grad():
             gen = model.generate(**ids, max_new_tokens=args.max_new,
-                                 do_sample=False, pad_token_id=tok.pad_token_id)
+                                 do_sample=False, num_beams=args.beams,
+                                 early_stopping=(args.beams > 1),
+                                 pad_token_id=tok.pad_token_id)
         out = tok.decode(gen[0][ids["input_ids"].shape[1]:], skip_special_tokens=True).strip()
         hyp = out.split("\n")[0].strip()
         refs.append(ref); hyps.append(hyp)
@@ -104,6 +108,7 @@ def main():
         "arm": meta.get("arm", meta.get("mode")),
         "seed": meta.get("seed"),
         "n": len(rows),
+        "beams": args.beams,
         "sacrebleu": round(bleu, 2) if bleu is not None else None,
         "cer": round(sum(cers)/len(cers), 4),
         "exact_match": round(exact/len(rows), 4),
