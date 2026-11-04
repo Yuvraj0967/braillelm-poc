@@ -1,0 +1,22 @@
+/Users/atharvaanand/Documents/Codex/2026-11-03/go-x20/work/braillelm_venv/lib/python3.12/site-packages/peft/tuners/tuners_utils.py:1447: UserWarning: You have requested `ensure_weight_tying`, but no tied modules are added in either `modules_to_save` or `target_modules`
+  warnings.warn(
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+[eval] 25/199 elapsed 27.2s
+[eval] 50/199 elapsed 54.9s
+[eval] 75/199 elapsed 84.2s
+[eval] 100/199 elapsed 112.6s
+[eval] 125/199 elapsed 139.9s
+[eval] 150/199 elapsed 165.6s
+[eval] 175/199 elapsed 192.7s
+[eval] 199/199 elapsed 221.2s
+[eval] {"ckpt": "qwen_bkft_continue4000/step4000", "arm": "continued-native", "seed": 44, "num_beams": 4, "test_file": "data/extended_test.jsonl", "n": 199, "sacrebleu": 89.27, "cer": 0.0253, "exact_match": 0.4673, "normalized_exact_match": 0.4774, "tokens_per_cell": 0.759}
+[eval] sample:
+   ref: The weakness of the breech-loader was the obvious problem of sealing the breech.
+   hyp: The weakness of the breech-loader was the obvious problem of sealing the breech.
+
+   ref: Bintulu is located near the mouth of the Kemena River, in the coastal region of central Sarawak.
+   hyp: Bintul is located near the mouth of the Keeman River, in the coastal region of central Sarawak.
+
+   ref: After his return to London, with the commission work still stopped, he and Rebecca embarked on a tour of Europe.
+   hyp: After his return to London, with the commission work still stopped, he and Rebeca embarked on a tour of Europe.
+

@@ -1,0 +1,9 @@
+[train] arm=continued-native device=mps dtype=torch.float32 seed=43
+The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+[train] added 0 tokens (bkft init, trainable embeddings); vocab 49329 -> 49329
+/Users/atharvaanand/Documents/Codex/2026-11-03/go-x20/work/braillelm_venv/lib/python3.12/site-packages/peft/tuners/tuners_utils.py:1463: UserWarning: Model has `tie_word_embeddings=True` and a tied layer is part of the adapter, but `ensure_weight_tying` is not set to True. This can lead to complications, for example when merging the adapter or converting your model to formats other than safetensors. Check the discussion here: https://github.com/huggingface/peft/issues/2777
+  warnings.warn(msg)
+trainable params: 57,287,808 || all params: 191,904,768 || trainable%: 29.8522
+/Users/atharvaanand/Documents/Codex/2026-11-03/go-x20/work/braillelm_venv/lib/python3.12/site-packages/peft/utils/save_and_load.py:327: UserWarning: Setting `save_embedding_layers` to `True` as the embedding layer has been resized during finetuning.
+  warnings.warn(
+[train] saved to resume_smoke/  (final val loss 1.6559096276760101)

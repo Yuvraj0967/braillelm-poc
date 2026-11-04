@@ -1,0 +1,13 @@
+/Users/atharvaanand/Documents/Codex/2026-11-03/go-x20/work/braillelm_venv/lib/python3.12/site-packages/peft/tuners/tuners_utils.py:1463: UserWarning: Model has `tie_word_embeddings=True` and a tied layer is part of the adapter, but `ensure_weight_tying` is not set to True. This can lead to complications, for example when merging the adapter or converting your model to formats other than safetensors. Check the discussion here: https://github.com/huggingface/peft/issues/2777
+  warnings.warn(msg)
+[eval] {"ckpt": "baseline_3ep/epoch1", "arm": "baseline", "seed": 42, "test_file": "data/test.jsonl", "n": 200, "sacrebleu": 0.31, "cer": 0.7258, "exact_match": 0.0, "normalized_exact_match": 0.0, "tokens_per_cell": 3.0}
+[eval] sample:
+   ref: The battle extended well into the night.
+   hyp: The old man was a carpenter.
+
+   ref: Du subsequently based himself in Sichuan for most of the next five years.
+   hyp: The two-year-old girl was found dead in the river.
+
+   ref: The congregation initially worshipped in a converted house on West Eighth Street.
+   hyp: The two-year-old girl was found dead in the river.
+

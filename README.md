@@ -1,5 +1,15 @@
 # BrailleLM — a braille → print proof of concept
 
+**Neural Mac capstone run (4 November 2026):** See the
+[`neural_mac/` experiment package](neural_mac/README.md) for the Qwen2.5-0.5B
+adapter, executed results notebook, reproducible code, dataset provenance,
+training traces, predictions, and presentation guide. The selected checkpoint
+scored **216/399 (54.1%) strict exact** on a locked final set with four-beam
+decoding. It scored **109/200 (54.5%)** on a plain development pilot and
+**93/199 (46.7%)** on an extended development pilot.
+The checkpoint is available from the linked GitHub release. These are
+converter-generated Grade 1 braille results, not human-entered braille scores.
+
 BrailleLM is a small, reproducible experiment that asks one question:
 
 > If a language model is given a **braille-aware tokenizer** and its new braille

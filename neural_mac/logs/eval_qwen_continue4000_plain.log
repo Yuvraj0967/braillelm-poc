@@ -1,0 +1,22 @@
+/Users/atharvaanand/Documents/Codex/2026-11-03/go-x20/work/braillelm_venv/lib/python3.12/site-packages/peft/tuners/tuners_utils.py:1447: UserWarning: You have requested `ensure_weight_tying`, but no tied modules are added in either `modules_to_save` or `target_modules`
+  warnings.warn(
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+[eval] 25/200 elapsed 17.9s
+[eval] 50/200 elapsed 36.0s
+[eval] 75/200 elapsed 54.4s
+[eval] 100/200 elapsed 71.8s
+[eval] 125/200 elapsed 89.3s
+[eval] 150/200 elapsed 106.8s
+[eval] 175/200 elapsed 123.7s
+[eval] 200/200 elapsed 141.3s
+[eval] {"ckpt": "qwen_bkft_continue4000/step4000", "arm": "continued-native", "seed": 44, "test_file": "data/test.jsonl", "n": 200, "sacrebleu": 88.25, "cer": 0.0212, "exact_match": 0.475, "normalized_exact_match": 0.48, "tokens_per_cell": 0.731}
+[eval] sample:
+   ref: The battle extended well into the night.
+   hyp: The battle extended well into the night.
+
+   ref: Du subsequently based himself in Sichuan for most of the next five years.
+   hyp: Du subsequently based himself in Sichuan for most of the next five years.
+
+   ref: The congregation initially worshipped in a converted house on West Eighth Street.
+   hyp: The congregation initially worshipped in a converted house on West Eighth Street.
+

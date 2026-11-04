@@ -1,0 +1,28 @@
+[train] arm=baseline device=mps dtype=torch.float32 seed=42
+/Users/atharvaanand/Documents/Codex/2026-11-03/go-x20/work/braillelm_venv/lib/python3.12/site-packages/peft/tuners/tuners_utils.py:1463: UserWarning: Model has `tie_word_embeddings=True` and a tied layer is part of the adapter, but `ensure_weight_tying` is not set to True. This can lead to complications, for example when merging the adapter or converting your model to formats other than safetensors. Check the discussion here: https://github.com/huggingface/peft/issues/2777
+  warnings.warn(msg)
+trainable params: 57,083,904 || all params: 191,598,912 || trainable%: 29.7934
+[train] epoch 1/3 step 10 loss 3.909 elapsed 3.4s
+[train] epoch 1/3 step 20 loss 5.071 elapsed 5.5s
+[train] epoch 1/3 step 30 loss 4.590 elapsed 7.6s
+[train] epoch 1/3 step 40 loss 4.650 elapsed 10.1s
+[train] epoch 1/3 step 50 loss 4.475 elapsed 12.1s
+[train] epoch 1/3 step 60 loss 3.764 elapsed 14.4s
+[train] epoch 1/3 step 70 loss 4.933 elapsed 16.4s
+[train] epoch 1/3 step 80 loss 5.012 elapsed 18.6s
+[train] epoch 1/3 step 90 loss 5.014 elapsed 20.7s
+[train] epoch 1/3 step 100 loss 4.564 elapsed 22.9s
+[train] epoch 1/3 step 110 loss 4.673 elapsed 25.0s
+[train] epoch 1/3 step 120 loss 5.565 elapsed 27.1s
+[train] epoch 1/3 step 130 loss 5.354 elapsed 29.2s
+[train] epoch 1/3 step 140 loss 4.260 elapsed 31.3s
+[train] epoch 1/3 step 150 loss 4.314 elapsed 33.4s
+[train] epoch 1/3 step 160 loss 3.945 elapsed 35.6s
+[train] epoch 1/3 step 170 loss 5.429 elapsed 37.8s
+[train] epoch 1/3 step 180 loss 5.085 elapsed 39.9s
+[train] epoch 1/3 step 190 loss 4.206 elapsed 42.0s
+[train] step 200 train 4.034 val 4.284 elapsed 47.9s
+[train] epoch 1/3 step 210 loss 4.266 elapsed 50.2s
+[train] epoch 1/3 step 220 loss 3.688 elapsed 52.3s
+/opt/homebrew/Cellar/python@3.12/3.12.9/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/resource_tracker.py:255: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '

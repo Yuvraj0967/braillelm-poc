@@ -1,0 +1,13 @@
+{
+  "ckpt": "work/neural_native/qwen_bkft_continue4000/step4000",
+  "arm": "continued-native",
+  "seed": 44,
+  "num_beams": 4,
+  "test_file": "work/publish_neural_capstone/neural_mac/data/final_test.jsonl",
+  "n": 399,
+  "sacrebleu": 89.16,
+  "cer": 0.0231,
+  "exact_match": 0.5414,
+  "normalized_exact_match": 0.5439,
+  "tokens_per_cell": 0.748
+}

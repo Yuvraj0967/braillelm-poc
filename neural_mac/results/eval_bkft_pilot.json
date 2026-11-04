@@ -1,0 +1,12 @@
+{
+  "ckpt": "bkft_3ep/epoch3",
+  "arm": "native-bkft",
+  "seed": 42,
+  "test_file": "data/test.jsonl",
+  "n": 200,
+  "sacrebleu": 30.08,
+  "cer": 0.3751,
+  "exact_match": 0.01,
+  "normalized_exact_match": 0.01,
+  "tokens_per_cell": 0.733
+}

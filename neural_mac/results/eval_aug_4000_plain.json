@@ -1,0 +1,12 @@
+{
+  "ckpt": "bkft_aug_4000/step4000",
+  "arm": "continued-native",
+  "seed": 45,
+  "test_file": "data/test.jsonl",
+  "n": 200,
+  "sacrebleu": 60.84,
+  "cer": 0.1801,
+  "exact_match": 0.095,
+  "normalized_exact_match": 0.095,
+  "tokens_per_cell": 0.733
+}

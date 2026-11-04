@@ -1,0 +1,11 @@
+[eval] {"ckpt": "run_3ep/epoch3", "arm": "continued-native", "seed": 42, "test_file": "data/test.jsonl", "n": 200, "sacrebleu": 28.41, "cer": 0.4515, "exact_match": 0.01, "normalized_exact_match": 0.01, "tokens_per_cell": 0.733}
+[eval] sample:
+   ref: The battle extended well into the night.
+   hyp: The battery expanded well into the next valley.
+
+   ref: Du subsequently based himself in Sichuan for most of the next five years.
+   hyp: Du sister Isabelle Bassed himself in Susu city for most of the five years.
+
+   ref: The congregation initially worshipped in a converted house on West Eighth Street.
+   hyp: The congregation initially began prayer in a converted house on West Campus.
+

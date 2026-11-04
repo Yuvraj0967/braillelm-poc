@@ -1,0 +1,12 @@
+{
+  "ckpt": "random_3ep/epoch1",
+  "arm": "native-random",
+  "seed": 42,
+  "test_file": "data/test.jsonl",
+  "n": 200,
+  "sacrebleu": 0.39,
+  "cer": 0.7255,
+  "exact_match": 0.0,
+  "normalized_exact_match": 0.0,
+  "tokens_per_cell": 0.733
+}
