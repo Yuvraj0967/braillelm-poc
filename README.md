@@ -10,11 +10,14 @@ sentence is right, character for character):
 | Input | Grade 1 | Grade 2 |
 |---|---|---|
 | Clean braille | **398 / 399** (lookup table: 399) | **398 / 399** (liblouis: 399) |
-| 2% of cells damaged | **346 / 399** (lookup table: 111) | **312 / 399** (liblouis: 137) |
-| 5% of cells damaged | **258 / 399** (lookup table: 23) | **240 / 399** (liblouis: 40) |
+| 2% of cells damaged | **349 / 399** (lookup table: 111) | **330 / 399** (liblouis: 137) |
+| 5% of cells damaged | **276 / 399** (lookup table: 23) | **271 / 399** (liblouis: 40) |
 
 On clean braille the model matches rule-based readers; on damaged braille it
-is far ahead of them. Model: 14.4M parameters, 58 MB ONNX file, CPU inference.
+is far ahead of them. On 400 unusual inputs (all capitals, made-up words,
+shortened words, one to three word fragments) it reads 400 in Grade 1 and 399
+in Grade 2, where liblouis back-translation reads 310.
+Model: 14.4M parameters, 58 MB ONNX file, CPU inference.
 
 Details, limits and how these were measured: [docs/MODEL_CARD.md](docs/MODEL_CARD.md).
 The earlier LLM-based proof of concept is preserved unchanged in [`legacy/`](legacy/README.md).

@@ -1,13 +1,13 @@
 {
   "checkpoint": {
     "params": 14444736,
-    "step": 18000,
+    "step": 41000,
     "dev_exact_clean": 1.0,
-    "dev_exact_noise3": 0.7671,
-    "dev_exact_clean_repair_mode": 0.9859,
+    "dev_exact_noise3": 0.7932,
+    "dev_exact_clean_repair_mode": 0.99,
     "dev_g2_exact_clean": 1.0,
-    "dev_g2_exact_noise3": 0.7189,
-    "dev_g2_exact_clean_repair_mode": 0.9699
+    "dev_g2_exact_noise3": 0.739,
+    "dev_g2_exact_clean_repair_mode": 0.9618
   },
   "model": {
     "d": 384,
@@ -29,19 +29,19 @@
             0.9859,
             0.9996
           ],
-          "cer": 7e-05,
+          "cer": 3e-05,
           "sacrebleu": 99.96
         },
         "neural_repair_mode": {
-          "exact": 394,
+          "exact": 396,
           "n": 399,
-          "exact_rate": 0.9875,
+          "exact_rate": 0.9925,
           "wilson95": [
-            0.971,
-            0.9946
+            0.9781,
+            0.9974
           ],
-          "cer": 0.00023,
-          "sacrebleu": 99.73
+          "cer": 0.00012,
+          "sacrebleu": 99.86
         },
         "rule_decoder": {
           "exact": 399,
@@ -55,42 +55,42 @@
           "sacrebleu": 100.0
         },
         "has_unseen_word": {
-          "exact": 61,
-          "n": 61,
+          "exact": 56,
+          "n": 56,
           "exact_rate": 1.0,
           "wilson95": [
-            0.9408,
+            0.9358,
             1.0
           ],
           "cer": 0.0,
           "sacrebleu": 100.0
         },
         "all_words_seen": {
-          "exact": 337,
-          "n": 338,
-          "exact_rate": 0.997,
+          "exact": 342,
+          "n": 343,
+          "exact_rate": 0.9971,
           "wilson95": [
-            0.9834,
+            0.9837,
             0.9995
           ],
-          "cer": 8e-05,
+          "cer": 4e-05,
           "sacrebleu": 99.95
         }
       },
       "baseline": "lookup table",
-      "ms_per_sentence": 1.9,
+      "ms_per_sentence": 1.87,
       "cells": 33438,
       "dot_errors_0.02": {
         "neural": {
-          "exact": 346,
+          "exact": 349,
           "n": 399,
-          "exact_rate": 0.8672,
+          "exact_rate": 0.8747,
           "wilson95": [
-            0.8303,
-            0.897
+            0.8386,
+            0.9036
           ],
-          "cer": 0.00205,
-          "sacrebleu": 97.38
+          "cer": 0.00204,
+          "sacrebleu": 97.61
         },
         "neural_faithful_mode": {
           "exact": 139,
@@ -100,8 +100,8 @@
             0.3033,
             0.3964
           ],
-          "cer": 0.01611,
-          "sacrebleu": 80.87
+          "cer": 0.01411,
+          "sacrebleu": 81.6
         },
         "inputs_actually_changed": 288,
         "rule_decoder": {
@@ -118,15 +118,15 @@
       },
       "dot_errors_0.05": {
         "neural": {
-          "exact": 258,
+          "exact": 276,
           "n": 399,
-          "exact_rate": 0.6466,
+          "exact_rate": 0.6917,
           "wilson95": [
-            0.5985,
-            0.6919
+            0.6448,
+            0.735
           ],
-          "cer": 0.00653,
-          "sacrebleu": 92.82
+          "cer": 0.0056,
+          "sacrebleu": 93.8
         },
         "neural_faithful_mode": {
           "exact": 32,
@@ -136,8 +136,8 @@
             0.0574,
             0.111
           ],
-          "cer": 0.03866,
-          "sacrebleu": 58.77
+          "cer": 0.03453,
+          "sacrebleu": 61.07
         },
         "inputs_actually_changed": 376,
         "rule_decoder": {
@@ -167,15 +167,15 @@
           "sacrebleu": 99.96
         },
         "neural_repair_mode": {
-          "exact": 382,
+          "exact": 390,
           "n": 399,
-          "exact_rate": 0.9574,
+          "exact_rate": 0.9774,
           "wilson95": [
-            0.9328,
-            0.9732
+            0.9577,
+            0.9881
           ],
-          "cer": 0.001,
-          "sacrebleu": 99.15
+          "cer": 0.00041,
+          "sacrebleu": 99.58
         },
         "rule_decoder": {
           "exact": 399,
@@ -189,22 +189,22 @@
           "sacrebleu": 100.0
         },
         "has_unseen_word": {
-          "exact": 61,
-          "n": 61,
+          "exact": 56,
+          "n": 56,
           "exact_rate": 1.0,
           "wilson95": [
-            0.9408,
+            0.9358,
             1.0
           ],
           "cer": 0.0,
           "sacrebleu": 100.0
         },
         "all_words_seen": {
-          "exact": 337,
-          "n": 338,
-          "exact_rate": 0.997,
+          "exact": 342,
+          "n": 343,
+          "exact_rate": 0.9971,
           "wilson95": [
-            0.9834,
+            0.9837,
             0.9995
           ],
           "cer": 4e-05,
@@ -212,30 +212,30 @@
         }
       },
       "baseline": "liblouis back-translation",
-      "ms_per_sentence": 0.94,
+      "ms_per_sentence": 0.91,
       "cells": 26566,
       "dot_errors_0.02": {
         "neural": {
-          "exact": 312,
+          "exact": 330,
           "n": 399,
-          "exact_rate": 0.782,
+          "exact_rate": 0.8271,
           "wilson95": [
-            0.7389,
-            0.8197
+            0.7869,
+            0.861
           ],
-          "cer": 0.005,
-          "sacrebleu": 95.72
+          "cer": 0.00356,
+          "sacrebleu": 96.76
         },
         "neural_faithful_mode": {
-          "exact": 158,
+          "exact": 152,
           "n": 399,
-          "exact_rate": 0.396,
+          "exact_rate": 0.381,
           "wilson95": [
-            0.3492,
-            0.4448
+            0.3347,
+            0.4295
           ],
-          "cer": 0.01955,
-          "sacrebleu": 84.85
+          "cer": 0.02,
+          "sacrebleu": 84.41
         },
         "inputs_actually_changed": 262,
         "rule_decoder": {
@@ -252,26 +252,26 @@
       },
       "dot_errors_0.05": {
         "neural": {
-          "exact": 240,
+          "exact": 271,
           "n": 399,
-          "exact_rate": 0.6015,
+          "exact_rate": 0.6792,
           "wilson95": [
-            0.5527,
-            0.6484
+            0.6319,
+            0.7231
           ],
-          "cer": 0.0108,
-          "sacrebleu": 90.91
+          "cer": 0.00791,
+          "sacrebleu": 93.34
         },
         "neural_faithful_mode": {
-          "exact": 47,
+          "exact": 50,
           "n": 399,
-          "exact_rate": 0.1178,
+          "exact_rate": 0.1253,
           "wilson95": [
-            0.0897,
-            0.1531
+            0.0964,
+            0.1614
           ],
-          "cer": 0.04858,
-          "sacrebleu": 65.75
+          "cer": 0.0489,
+          "sacrebleu": 65.5
         },
         "inputs_actually_changed": 359,
         "rule_decoder": {
@@ -303,15 +303,15 @@
           "sacrebleu": 100.0
         },
         "neural_repair_mode": {
-          "exact": 196,
+          "exact": 197,
           "n": 200,
-          "exact_rate": 0.98,
+          "exact_rate": 0.985,
           "wilson95": [
-            0.9497,
-            0.9922
+            0.9568,
+            0.9949
           ],
-          "cer": 0.00036,
-          "sacrebleu": 99.61
+          "cer": 0.00029,
+          "sacrebleu": 99.71
         },
         "rule_decoder": {
           "exact": 200,
@@ -325,22 +325,22 @@
           "sacrebleu": 100.0
         },
         "has_unseen_word": {
-          "exact": 27,
-          "n": 27,
+          "exact": 25,
+          "n": 25,
           "exact_rate": 1.0,
           "wilson95": [
-            0.8754,
+            0.8668,
             1.0
           ],
           "cer": 0.0,
           "sacrebleu": 100.0
         },
         "all_words_seen": {
-          "exact": 173,
-          "n": 173,
+          "exact": 175,
+          "n": 175,
           "exact_rate": 1.0,
           "wilson95": [
-            0.9783,
+            0.9785,
             1.0
           ],
           "cer": 0.0,
@@ -348,30 +348,30 @@
         }
       },
       "baseline": "lookup table",
-      "ms_per_sentence": 1.18,
+      "ms_per_sentence": 1.12,
       "cells": 16176,
       "dot_errors_0.02": {
         "neural": {
-          "exact": 165,
+          "exact": 175,
           "n": 200,
-          "exact_rate": 0.825,
+          "exact_rate": 0.875,
           "wilson95": [
-            0.7664,
-            0.8714
+            0.822,
+            0.9139
           ],
-          "cer": 0.00298,
-          "sacrebleu": 96.65
+          "cer": 0.00234,
+          "sacrebleu": 97.63
         },
         "neural_faithful_mode": {
-          "exact": 63,
+          "exact": 72,
           "n": 200,
-          "exact_rate": 0.315,
+          "exact_rate": 0.36,
           "wilson95": [
-            0.2546,
-            0.3824
+            0.2967,
+            0.4286
           ],
-          "cer": 0.01644,
-          "sacrebleu": 79.8
+          "cer": 0.01407,
+          "sacrebleu": 81.33
         },
         "inputs_actually_changed": 147,
         "rule_decoder": {
@@ -388,26 +388,26 @@
       },
       "dot_errors_0.05": {
         "neural": {
-          "exact": 143,
+          "exact": 154,
           "n": 200,
-          "exact_rate": 0.715,
+          "exact_rate": 0.77,
           "wilson95": [
-            0.6488,
-            0.7731
+            0.7069,
+            0.8229
           ],
-          "cer": 0.0056,
-          "sacrebleu": 93.93
+          "cer": 0.0049,
+          "sacrebleu": 94.95
         },
         "neural_faithful_mode": {
-          "exact": 15,
+          "exact": 19,
           "n": 200,
-          "exact_rate": 0.075,
+          "exact_rate": 0.095,
           "wilson95": [
-            0.046,
-            0.12
+            0.0617,
+            0.1436
           ],
-          "cer": 0.04004,
-          "sacrebleu": 56.85
+          "cer": 0.03412,
+          "sacrebleu": 59.31
         },
         "inputs_actually_changed": 189,
         "rule_decoder": {
@@ -437,15 +437,15 @@
           "sacrebleu": 100.0
         },
         "neural_repair_mode": {
-          "exact": 194,
+          "exact": 193,
           "n": 200,
-          "exact_rate": 0.97,
+          "exact_rate": 0.965,
           "wilson95": [
-            0.9361,
-            0.9862
+            0.9295,
+            0.9829
           ],
-          "cer": 0.00086,
-          "sacrebleu": 99.47
+          "cer": 0.00103,
+          "sacrebleu": 99.4
         },
         "rule_decoder": {
           "exact": 200,
@@ -459,22 +459,22 @@
           "sacrebleu": 100.0
         },
         "has_unseen_word": {
-          "exact": 27,
-          "n": 27,
+          "exact": 25,
+          "n": 25,
           "exact_rate": 1.0,
           "wilson95": [
-            0.8754,
+            0.8668,
             1.0
           ],
           "cer": 0.0,
           "sacrebleu": 100.0
         },
         "all_words_seen": {
-          "exact": 173,
-          "n": 173,
+          "exact": 175,
+          "n": 175,
           "exact_rate": 1.0,
           "wilson95": [
-            0.9783,
+            0.9785,
             1.0
           ],
           "cer": 0.0,
@@ -482,30 +482,30 @@
         }
       },
       "baseline": "liblouis back-translation",
-      "ms_per_sentence": 0.97,
+      "ms_per_sentence": 0.92,
       "cells": 12778,
       "dot_errors_0.02": {
         "neural": {
-          "exact": 168,
+          "exact": 169,
           "n": 200,
-          "exact_rate": 0.84,
+          "exact_rate": 0.845,
           "wilson95": [
-            0.7829,
-            0.8843
+            0.7884,
+            0.8886
           ],
-          "cer": 0.00413,
-          "sacrebleu": 96.56
+          "cer": 0.00427,
+          "sacrebleu": 97.02
         },
         "neural_faithful_mode": {
-          "exact": 87,
+          "exact": 90,
           "n": 200,
-          "exact_rate": 0.435,
+          "exact_rate": 0.45,
           "wilson95": [
-            0.3682,
-            0.5043
+            0.3826,
+            0.5192
           ],
-          "cer": 0.01824,
-          "sacrebleu": 85.3
+          "cer": 0.01785,
+          "sacrebleu": 85.24
         },
         "inputs_actually_changed": 124,
         "rule_decoder": {
@@ -522,26 +522,26 @@
       },
       "dot_errors_0.05": {
         "neural": {
-          "exact": 128,
+          "exact": 139,
           "n": 200,
-          "exact_rate": 0.64,
+          "exact_rate": 0.695,
           "wilson95": [
-            0.5714,
-            0.7033
+            0.628,
+            0.7546
           ],
-          "cer": 0.01089,
-          "sacrebleu": 91.84
+          "cer": 0.00951,
+          "sacrebleu": 93.2
         },
         "neural_faithful_mode": {
-          "exact": 26,
+          "exact": 25,
           "n": 200,
-          "exact_rate": 0.13,
+          "exact_rate": 0.125,
           "wilson95": [
-            0.0903,
-            0.1837
+            0.0861,
+            0.178
           ],
-          "cer": 0.04661,
-          "sacrebleu": 67.32
+          "cer": 0.04799,
+          "sacrebleu": 66.36
         },
         "inputs_actually_changed": 181,
         "rule_decoder": {
@@ -580,8 +580,8 @@
             0.9641,
             0.9972
           ],
-          "cer": 9e-05,
-          "sacrebleu": 99.8
+          "cer": 0.00014,
+          "sacrebleu": 99.73
         },
         "rule_decoder": {
           "exact": 199,
@@ -595,22 +595,22 @@
           "sacrebleu": 100.0
         },
         "has_unseen_word": {
-          "exact": 43,
-          "n": 43,
+          "exact": 36,
+          "n": 36,
           "exact_rate": 1.0,
           "wilson95": [
-            0.918,
+            0.9036,
             1.0
           ],
           "cer": 0.0,
           "sacrebleu": 100.0
         },
         "all_words_seen": {
-          "exact": 156,
-          "n": 156,
+          "exact": 163,
+          "n": 163,
           "exact_rate": 1.0,
           "wilson95": [
-            0.976,
+            0.977,
             1.0
           ],
           "cer": 0.0,
@@ -618,30 +618,30 @@
         }
       },
       "baseline": "lookup table",
-      "ms_per_sentence": 1.43,
+      "ms_per_sentence": 1.32,
       "cells": 18660,
       "dot_errors_0.02": {
         "neural": {
-          "exact": 152,
+          "exact": 160,
           "n": 199,
-          "exact_rate": 0.7638,
+          "exact_rate": 0.804,
           "wilson95": [
-            0.7002,
-            0.8175
+            0.7433,
+            0.8532
           ],
-          "cer": 0.00318,
-          "sacrebleu": 96.15
+          "cer": 0.00245,
+          "sacrebleu": 97.01
         },
         "neural_faithful_mode": {
-          "exact": 48,
+          "exact": 58,
           "n": 199,
-          "exact_rate": 0.2412,
+          "exact_rate": 0.2915,
           "wilson95": [
-            0.187,
-            0.3052
+            0.2327,
+            0.3581
           ],
-          "cer": 0.01717,
-          "sacrebleu": 80.35
+          "cer": 0.01432,
+          "sacrebleu": 82.42
         },
         "inputs_actually_changed": 157,
         "rule_decoder": {
@@ -658,26 +658,26 @@
       },
       "dot_errors_0.05": {
         "neural": {
-          "exact": 126,
+          "exact": 137,
           "n": 199,
-          "exact_rate": 0.6332,
+          "exact_rate": 0.6884,
           "wilson95": [
-            0.5643,
-            0.697
+            0.621,
+            0.7487
           ],
-          "cer": 0.00574,
-          "sacrebleu": 93.25
+          "cer": 0.00483,
+          "sacrebleu": 94.46
         },
         "neural_faithful_mode": {
-          "exact": 8,
+          "exact": 13,
           "n": 199,
-          "exact_rate": 0.0402,
+          "exact_rate": 0.0653,
           "wilson95": [
-            0.0205,
-            0.0773
+            0.0386,
+            0.1085
           ],
-          "cer": 0.04057,
-          "sacrebleu": 59.27
+          "cer": 0.03377,
+          "sacrebleu": 62.81
         },
         "inputs_actually_changed": 194,
         "rule_decoder": {
@@ -707,15 +707,15 @@
           "sacrebleu": 100.0
         },
         "neural_repair_mode": {
-          "exact": 192,
+          "exact": 188,
           "n": 199,
-          "exact_rate": 0.9648,
+          "exact_rate": 0.9447,
           "wilson95": [
-            0.9292,
-            0.9829
+            0.9037,
+            0.9689
           ],
-          "cer": 0.00044,
-          "sacrebleu": 99.41
+          "cer": 0.00073,
+          "sacrebleu": 99.09
         },
         "rule_decoder": {
           "exact": 198,
@@ -729,22 +729,22 @@
           "sacrebleu": 99.92
         },
         "has_unseen_word": {
-          "exact": 43,
-          "n": 43,
+          "exact": 36,
+          "n": 36,
           "exact_rate": 1.0,
           "wilson95": [
-            0.918,
+            0.9036,
             1.0
           ],
           "cer": 0.0,
           "sacrebleu": 100.0
         },
         "all_words_seen": {
-          "exact": 156,
-          "n": 156,
+          "exact": 163,
+          "n": 163,
           "exact_rate": 1.0,
           "wilson95": [
-            0.976,
+            0.977,
             1.0
           ],
           "cer": 0.0,
@@ -752,30 +752,30 @@
         }
       },
       "baseline": "liblouis back-translation",
-      "ms_per_sentence": 1.11,
+      "ms_per_sentence": 1.04,
       "cells": 14798,
       "dot_errors_0.02": {
         "neural": {
-          "exact": 157,
+          "exact": 153,
           "n": 199,
-          "exact_rate": 0.7889,
+          "exact_rate": 0.7688,
           "wilson95": [
-            0.7271,
-            0.8399
+            0.7055,
+            0.822
           ],
-          "cer": 0.00472,
-          "sacrebleu": 96.1
+          "cer": 0.00447,
+          "sacrebleu": 96.06
         },
         "neural_faithful_mode": {
-          "exact": 70,
+          "exact": 67,
           "n": 199,
-          "exact_rate": 0.3518,
+          "exact_rate": 0.3367,
           "wilson95": [
-            0.2888,
-            0.4203
+            0.2747,
+            0.4049
           ],
-          "cer": 0.0222,
-          "sacrebleu": 84.94
+          "cer": 0.02314,
+          "sacrebleu": 84.06
         },
         "inputs_actually_changed": 137,
         "rule_decoder": {
@@ -792,26 +792,26 @@
       },
       "dot_errors_0.05": {
         "neural": {
-          "exact": 105,
+          "exact": 107,
           "n": 199,
-          "exact_rate": 0.5276,
+          "exact_rate": 0.5377,
           "wilson95": [
-            0.4584,
-            0.5958
+            0.4684,
+            0.6056
           ],
-          "cer": 0.01284,
-          "sacrebleu": 90.31
+          "cer": 0.01193,
+          "sacrebleu": 91.22
         },
         "neural_faithful_mode": {
-          "exact": 14,
+          "exact": 13,
           "n": 199,
-          "exact_rate": 0.0704,
+          "exact_rate": 0.0653,
           "wilson95": [
-            0.0424,
-            0.1146
+            0.0386,
+            0.1085
           ],
-          "cer": 0.04944,
-          "sacrebleu": 67.05
+          "cer": 0.05042,
+          "sacrebleu": 66.75
         },
         "inputs_actually_changed": 188,
         "rule_decoder": {
@@ -843,15 +843,15 @@
           "sacrebleu": 100.0
         },
         "neural_repair_mode": {
-          "exact": 394,
+          "exact": 393,
           "n": 400,
-          "exact_rate": 0.985,
+          "exact_rate": 0.9825,
           "wilson95": [
-            0.9677,
-            0.9931
+            0.9643,
+            0.9915
           ],
-          "cer": 0.00016,
-          "sacrebleu": 99.74
+          "cer": 0.00021,
+          "sacrebleu": 99.7
         },
         "rule_decoder": {
           "exact": 400,
@@ -865,22 +865,22 @@
           "sacrebleu": 100.0
         },
         "has_unseen_word": {
-          "exact": 52,
-          "n": 52,
+          "exact": 47,
+          "n": 47,
           "exact_rate": 1.0,
           "wilson95": [
-            0.9312,
+            0.9244,
             1.0
           ],
           "cer": 0.0,
           "sacrebleu": 100.0
         },
         "all_words_seen": {
-          "exact": 348,
-          "n": 348,
+          "exact": 353,
+          "n": 353,
           "exact_rate": 1.0,
           "wilson95": [
-            0.9891,
+            0.9892,
             1.0
           ],
           "cer": 0.0,
@@ -888,30 +888,30 @@
         }
       },
       "baseline": "lookup table",
-      "ms_per_sentence": 1.35,
+      "ms_per_sentence": 1.24,
       "cells": 36105,
       "dot_errors_0.02": {
         "neural": {
-          "exact": 330,
+          "exact": 342,
           "n": 400,
-          "exact_rate": 0.825,
+          "exact_rate": 0.855,
           "wilson95": [
-            0.7847,
-            0.8591
+            0.8171,
+            0.8861
           ],
-          "cer": 0.00273,
-          "sacrebleu": 97.09
+          "cer": 0.0022,
+          "sacrebleu": 97.55
         },
         "neural_faithful_mode": {
-          "exact": 119,
+          "exact": 127,
           "n": 400,
-          "exact_rate": 0.2975,
+          "exact_rate": 0.3175,
           "wilson95": [
-            0.2548,
-            0.3441
+            0.2738,
+            0.3647
           ],
-          "cer": 0.01845,
-          "sacrebleu": 81.11
+          "cer": 0.01472,
+          "sacrebleu": 82.74
         },
         "inputs_actually_changed": 301,
         "rule_decoder": {
@@ -928,26 +928,26 @@
       },
       "dot_errors_0.05": {
         "neural": {
-          "exact": 259,
+          "exact": 260,
           "n": 400,
-          "exact_rate": 0.6475,
+          "exact_rate": 0.65,
           "wilson95": [
-            0.5995,
-            0.6927
+            0.602,
+            0.6951
           ],
-          "cer": 0.00601,
-          "sacrebleu": 93.18
+          "cer": 0.00552,
+          "sacrebleu": 93.51
         },
         "neural_faithful_mode": {
-          "exact": 21,
+          "exact": 28,
           "n": 400,
-          "exact_rate": 0.0525,
+          "exact_rate": 0.07,
           "wilson95": [
-            0.0346,
-            0.0789
+            0.0489,
+            0.0993
           ],
-          "cer": 0.04398,
-          "sacrebleu": 59.23
+          "cer": 0.0362,
+          "sacrebleu": 62.26
         },
         "inputs_actually_changed": 384,
         "rule_decoder": {
@@ -977,15 +977,15 @@
           "sacrebleu": 100.0
         },
         "neural_repair_mode": {
-          "exact": 384,
+          "exact": 388,
           "n": 400,
-          "exact_rate": 0.96,
+          "exact_rate": 0.97,
           "wilson95": [
-            0.936,
-            0.9752
+            0.9483,
+            0.9828
           ],
-          "cer": 0.00052,
-          "sacrebleu": 99.46
+          "cer": 0.00063,
+          "sacrebleu": 99.55
         },
         "rule_decoder": {
           "exact": 398,
@@ -999,22 +999,22 @@
           "sacrebleu": 99.94
         },
         "has_unseen_word": {
-          "exact": 52,
-          "n": 52,
+          "exact": 47,
+          "n": 47,
           "exact_rate": 1.0,
           "wilson95": [
-            0.9312,
+            0.9244,
             1.0
           ],
           "cer": 0.0,
           "sacrebleu": 100.0
         },
         "all_words_seen": {
-          "exact": 348,
-          "n": 348,
+          "exact": 353,
+          "n": 353,
           "exact_rate": 1.0,
           "wilson95": [
-            0.9891,
+            0.9892,
             1.0
           ],
           "cer": 0.0,
@@ -1022,30 +1022,30 @@
         }
       },
       "baseline": "liblouis back-translation",
-      "ms_per_sentence": 1.11,
+      "ms_per_sentence": 1.02,
       "cells": 29625,
       "dot_errors_0.02": {
         "neural": {
-          "exact": 326,
+          "exact": 324,
           "n": 400,
-          "exact_rate": 0.815,
+          "exact_rate": 0.81,
           "wilson95": [
-            0.774,
-            0.85
+            0.7687,
+            0.8454
           ],
-          "cer": 0.00382,
-          "sacrebleu": 96.78
+          "cer": 0.00389,
+          "sacrebleu": 96.79
         },
         "neural_faithful_mode": {
-          "exact": 150,
+          "exact": 148,
           "n": 400,
-          "exact_rate": 0.375,
+          "exact_rate": 0.37,
           "wilson95": [
-            0.329,
-            0.4234
+            0.3241,
+            0.4183
           ],
-          "cer": 0.02198,
-          "sacrebleu": 84.97
+          "cer": 0.02171,
+          "sacrebleu": 85.05
         },
         "inputs_actually_changed": 273,
         "rule_decoder": {
@@ -1062,26 +1062,26 @@
       },
       "dot_errors_0.05": {
         "neural": {
-          "exact": 242,
+          "exact": 253,
           "n": 400,
-          "exact_rate": 0.605,
+          "exact_rate": 0.6325,
           "wilson95": [
-            0.5563,
-            0.6517
+            0.5842,
+            0.6783
           ],
-          "cer": 0.00894,
-          "sacrebleu": 92.28
+          "cer": 0.00862,
+          "sacrebleu": 92.73
         },
         "neural_faithful_mode": {
-          "exact": 39,
+          "exact": 40,
           "n": 400,
-          "exact_rate": 0.0975,
+          "exact_rate": 0.1,
           "wilson95": [
-            0.0721,
-            0.1305
+            0.0743,
+            0.1333
           ],
-          "cer": 0.05097,
-          "sacrebleu": 66.33
+          "cer": 0.05014,
+          "sacrebleu": 66.61
         },
         "inputs_actually_changed": 373,
         "rule_decoder": {
@@ -1113,15 +1113,15 @@
           "sacrebleu": 100.0
         },
         "neural_repair_mode": {
-          "exact": 282,
+          "exact": 285,
           "n": 290,
-          "exact_rate": 0.9724,
+          "exact_rate": 0.9828,
           "wilson95": [
-            0.9465,
-            0.986
+            0.9603,
+            0.9926
           ],
-          "cer": 0.00042,
-          "sacrebleu": 99.56
+          "cer": 0.0002,
+          "sacrebleu": 99.81
         },
         "rule_decoder": {
           "exact": 290,
@@ -1135,22 +1135,22 @@
           "sacrebleu": 100.0
         },
         "has_unseen_word": {
-          "exact": 43,
-          "n": 43,
+          "exact": 36,
+          "n": 36,
           "exact_rate": 1.0,
           "wilson95": [
-            0.918,
+            0.9036,
             1.0
           ],
           "cer": 0.0,
           "sacrebleu": 100.0
         },
         "all_words_seen": {
-          "exact": 247,
-          "n": 247,
+          "exact": 254,
+          "n": 254,
           "exact_rate": 1.0,
           "wilson95": [
-            0.9847,
+            0.9851,
             1.0
           ],
           "cer": 0.0,
@@ -1158,30 +1158,30 @@
         }
       },
       "baseline": "lookup table",
-      "ms_per_sentence": 1.39,
+      "ms_per_sentence": 1.22,
       "cells": 26598,
       "dot_errors_0.02": {
         "neural": {
-          "exact": 237,
+          "exact": 240,
           "n": 290,
-          "exact_rate": 0.8172,
+          "exact_rate": 0.8276,
           "wilson95": [
-            0.7687,
-            0.8575
+            0.7799,
+            0.8667
           ],
-          "cer": 0.00269,
-          "sacrebleu": 96.94
+          "cer": 0.0023,
+          "sacrebleu": 97.32
         },
         "neural_faithful_mode": {
-          "exact": 86,
+          "exact": 97,
           "n": 290,
-          "exact_rate": 0.2966,
+          "exact_rate": 0.3345,
           "wilson95": [
-            0.2469,
-            0.3515
+            0.2827,
+            0.3906
           ],
-          "cer": 0.01766,
-          "sacrebleu": 80.37
+          "cer": 0.01408,
+          "sacrebleu": 82.23
         },
         "inputs_actually_changed": 217,
         "rule_decoder": {
@@ -1198,26 +1198,26 @@
       },
       "dot_errors_0.05": {
         "neural": {
-          "exact": 180,
+          "exact": 183,
           "n": 290,
-          "exact_rate": 0.6207,
+          "exact_rate": 0.631,
           "wilson95": [
-            0.5636,
-            0.6746
+            0.5741,
+            0.6845
           ],
-          "cer": 0.00664,
-          "sacrebleu": 92.66
+          "cer": 0.00573,
+          "sacrebleu": 93.42
         },
         "neural_faithful_mode": {
-          "exact": 14,
+          "exact": 16,
           "n": 290,
-          "exact_rate": 0.0483,
+          "exact_rate": 0.0552,
           "wilson95": [
-            0.029,
-            0.0794
+            0.0342,
+            0.0877
           ],
-          "cer": 0.04124,
-          "sacrebleu": 57.94
+          "cer": 0.03446,
+          "sacrebleu": 60.91
         },
         "inputs_actually_changed": 278,
         "rule_decoder": {
@@ -1236,26 +1236,26 @@
     "g2": {
       "clean": {
         "neural": {
-          "exact": 289,
+          "exact": 288,
           "n": 290,
-          "exact_rate": 0.9966,
+          "exact_rate": 0.9931,
           "wilson95": [
-            0.9807,
-            0.9994
+            0.9752,
+            0.9981
           ],
-          "cer": 6e-05,
-          "sacrebleu": 99.95
+          "cer": 9e-05,
+          "sacrebleu": 99.9
         },
         "neural_repair_mode": {
-          "exact": 280,
+          "exact": 276,
           "n": 290,
-          "exact_rate": 0.9655,
+          "exact_rate": 0.9517,
           "wilson95": [
-            0.9377,
-            0.9812
+            0.9206,
+            0.971
           ],
-          "cer": 0.00054,
-          "sacrebleu": 99.47
+          "cer": 0.00098,
+          "sacrebleu": 99.29
         },
         "rule_decoder": {
           "exact": 288,
@@ -1269,52 +1269,52 @@
           "sacrebleu": 99.92
         },
         "has_unseen_word": {
-          "exact": 42,
-          "n": 43,
-          "exact_rate": 0.9767,
+          "exact": 35,
+          "n": 36,
+          "exact_rate": 0.9722,
           "wilson95": [
-            0.8794,
-            0.9959
+            0.8583,
+            0.9951
           ],
-          "cer": 0.0004,
-          "sacrebleu": 99.64
+          "cer": 0.0005,
+          "sacrebleu": 99.66
         },
         "all_words_seen": {
-          "exact": 247,
-          "n": 247,
-          "exact_rate": 1.0,
+          "exact": 253,
+          "n": 254,
+          "exact_rate": 0.9961,
           "wilson95": [
-            0.9847,
-            1.0
+            0.978,
+            0.9993
           ],
-          "cer": 0.0,
-          "sacrebleu": 100.0
+          "cer": 3e-05,
+          "sacrebleu": 99.94
         }
       },
       "baseline": "liblouis back-translation",
-      "ms_per_sentence": 1.13,
+      "ms_per_sentence": 1.02,
       "cells": 21572,
       "dot_errors_0.02": {
         "neural": {
-          "exact": 228,
+          "exact": 230,
           "n": 290,
-          "exact_rate": 0.7862,
+          "exact_rate": 0.7931,
           "wilson95": [
-            0.7354,
-            0.8295
+            0.7428,
+            0.8357
           ],
-          "cer": 0.00364,
-          "sacrebleu": 96.5
+          "cer": 0.00439,
+          "sacrebleu": 96.53
         },
         "neural_faithful_mode": {
-          "exact": 103,
+          "exact": 100,
           "n": 290,
-          "exact_rate": 0.3552,
+          "exact_rate": 0.3448,
           "wilson95": [
-            0.3023,
-            0.4118
+            0.2925,
+            0.4012
           ],
-          "cer": 0.02159,
+          "cer": 0.02119,
           "sacrebleu": 83.62
         },
         "inputs_actually_changed": 196,
@@ -1332,15 +1332,15 @@
       },
       "dot_errors_0.05": {
         "neural": {
-          "exact": 157,
+          "exact": 170,
           "n": 290,
-          "exact_rate": 0.5414,
+          "exact_rate": 0.5862,
           "wilson95": [
-            0.4839,
-            0.5978
+            0.5288,
+            0.6414
           ],
-          "cer": 0.01095,
-          "sacrebleu": 91.13
+          "cer": 0.01028,
+          "sacrebleu": 92.08
         },
         "neural_faithful_mode": {
           "exact": 30,
@@ -1350,8 +1350,8 @@
             0.0734,
             0.1438
           ],
-          "cer": 0.05042,
-          "sacrebleu": 65.26
+          "cer": 0.05001,
+          "sacrebleu": 65.3
         },
         "inputs_actually_changed": 266,
         "rule_decoder": {
@@ -1364,6 +1364,546 @@
           ],
           "cer": 0.06242,
           "sacrebleu": 61.36
+        }
+      }
+    }
+  },
+  "unusual_test": {
+    "g1": {
+      "clean": {
+        "neural": {
+          "exact": 400,
+          "n": 400,
+          "exact_rate": 1.0,
+          "wilson95": [
+            0.9905,
+            1.0
+          ],
+          "cer": 0.0,
+          "sacrebleu": 100.0
+        },
+        "neural_repair_mode": {
+          "exact": 381,
+          "n": 400,
+          "exact_rate": 0.9525,
+          "wilson95": [
+            0.927,
+            0.9694
+          ],
+          "cer": 0.00082,
+          "sacrebleu": 98.95
+        },
+        "rule_decoder": {
+          "exact": 400,
+          "n": 400,
+          "exact_rate": 1.0,
+          "wilson95": [
+            0.9905,
+            1.0
+          ],
+          "cer": 0.0,
+          "sacrebleu": 100.0
+        },
+        "has_unseen_word": {
+          "exact": 83,
+          "n": 83,
+          "exact_rate": 1.0,
+          "wilson95": [
+            0.9558,
+            1.0
+          ],
+          "cer": 0.0,
+          "sacrebleu": 100.0
+        },
+        "all_words_seen": {
+          "exact": 317,
+          "n": 317,
+          "exact_rate": 1.0,
+          "wilson95": [
+            0.988,
+            1.0
+          ],
+          "cer": 0.0,
+          "sacrebleu": 100.0
+        }
+      },
+      "baseline": "lookup table",
+      "ms_per_sentence": 1.08,
+      "cells": 29674,
+      "dot_errors_0.02": {
+        "neural": {
+          "exact": 331,
+          "n": 400,
+          "exact_rate": 0.8275,
+          "wilson95": [
+            0.7874,
+            0.8614
+          ],
+          "cer": 0.00352,
+          "sacrebleu": 96.15
+        },
+        "neural_faithful_mode": {
+          "exact": 188,
+          "n": 400,
+          "exact_rate": 0.47,
+          "wilson95": [
+            0.4216,
+            0.519
+          ],
+          "cer": 0.0149,
+          "sacrebleu": 81.26
+        },
+        "inputs_actually_changed": 256,
+        "rule_decoder": {
+          "exact": 144,
+          "n": 400,
+          "exact_rate": 0.36,
+          "wilson95": [
+            0.3145,
+            0.4082
+          ],
+          "cer": 0.02692,
+          "sacrebleu": 74.46
+        }
+      },
+      "dot_errors_0.05": {
+        "neural": {
+          "exact": 278,
+          "n": 400,
+          "exact_rate": 0.695,
+          "wilson95": [
+            0.6482,
+            0.7381
+          ],
+          "cer": 0.00771,
+          "sacrebleu": 91.86
+        },
+        "neural_faithful_mode": {
+          "exact": 84,
+          "n": 400,
+          "exact_rate": 0.21,
+          "wilson95": [
+            0.1729,
+            0.2526
+          ],
+          "cer": 0.03547,
+          "sacrebleu": 60.24
+        },
+        "inputs_actually_changed": 335,
+        "rule_decoder": {
+          "exact": 65,
+          "n": 400,
+          "exact_rate": 0.1625,
+          "wilson95": [
+            0.1296,
+            0.2018
+          ],
+          "cer": 0.062,
+          "sacrebleu": 48.95
+        }
+      }
+    },
+    "g2": {
+      "clean": {
+        "neural": {
+          "exact": 399,
+          "n": 400,
+          "exact_rate": 0.9975,
+          "wilson95": [
+            0.986,
+            0.9996
+          ],
+          "cer": 0.0025,
+          "sacrebleu": 99.99
+        },
+        "neural_repair_mode": {
+          "exact": 378,
+          "n": 400,
+          "exact_rate": 0.945,
+          "wilson95": [
+            0.9181,
+            0.9634
+          ],
+          "cer": 0.00547,
+          "sacrebleu": 99.03
+        },
+        "rule_decoder": {
+          "exact": 310,
+          "n": 400,
+          "exact_rate": 0.775,
+          "wilson95": [
+            0.7316,
+            0.8132
+          ],
+          "cer": 0.16366,
+          "sacrebleu": 76.16
+        },
+        "has_unseen_word": {
+          "exact": 83,
+          "n": 83,
+          "exact_rate": 1.0,
+          "wilson95": [
+            0.9558,
+            1.0
+          ],
+          "cer": 0.0,
+          "sacrebleu": 100.0
+        },
+        "all_words_seen": {
+          "exact": 316,
+          "n": 317,
+          "exact_rate": 0.9968,
+          "wilson95": [
+            0.9823,
+            0.9994
+          ],
+          "cer": 0.00315,
+          "sacrebleu": 99.99
+        }
+      },
+      "baseline": "liblouis back-translation",
+      "ms_per_sentence": 0.81,
+      "cells": 22618,
+      "dot_errors_0.02": {
+        "neural": {
+          "exact": 304,
+          "n": 400,
+          "exact_rate": 0.76,
+          "wilson95": [
+            0.7158,
+            0.7993
+          ],
+          "cer": 0.01194,
+          "sacrebleu": 94.94
+        },
+        "neural_faithful_mode": {
+          "exact": 190,
+          "n": 400,
+          "exact_rate": 0.475,
+          "wilson95": [
+            0.4265,
+            0.5239
+          ],
+          "cer": 0.02381,
+          "sacrebleu": 83.17
+        },
+        "inputs_actually_changed": 227,
+        "rule_decoder": {
+          "exact": 142,
+          "n": 400,
+          "exact_rate": 0.355,
+          "wilson95": [
+            0.3097,
+            0.4031
+          ],
+          "cer": 0.19045,
+          "sacrebleu": 60.97
+        }
+      },
+      "dot_errors_0.05": {
+        "neural": {
+          "exact": 264,
+          "n": 400,
+          "exact_rate": 0.66,
+          "wilson95": [
+            0.6123,
+            0.7047
+          ],
+          "cer": 0.01632,
+          "sacrebleu": 91.04
+        },
+        "neural_faithful_mode": {
+          "exact": 102,
+          "n": 400,
+          "exact_rate": 0.255,
+          "wilson95": [
+            0.2148,
+            0.2999
+          ],
+          "cer": 0.05123,
+          "sacrebleu": 66.47
+        },
+        "inputs_actually_changed": 310,
+        "rule_decoder": {
+          "exact": 80,
+          "n": 400,
+          "exact_rate": 0.2,
+          "wilson95": [
+            0.1637,
+            0.242
+          ],
+          "cer": 0.2199,
+          "sacrebleu": 45.08
+        }
+      }
+    }
+  },
+  "everyday_test": {
+    "g1": {
+      "clean": {
+        "neural": {
+          "exact": 40,
+          "n": 40,
+          "exact_rate": 1.0,
+          "wilson95": [
+            0.9124,
+            1.0
+          ],
+          "cer": 0.0,
+          "sacrebleu": 100.0
+        },
+        "neural_repair_mode": {
+          "exact": 32,
+          "n": 40,
+          "exact_rate": 0.8,
+          "wilson95": [
+            0.6524,
+            0.895
+          ],
+          "cer": 0.00798,
+          "sacrebleu": 93.69
+        },
+        "rule_decoder": {
+          "exact": 40,
+          "n": 40,
+          "exact_rate": 1.0,
+          "wilson95": [
+            0.9124,
+            1.0
+          ],
+          "cer": 0.0,
+          "sacrebleu": 100.0
+        },
+        "has_unseen_word": {
+          "exact": 3,
+          "n": 3,
+          "exact_rate": 1.0,
+          "wilson95": [
+            0.4385,
+            1.0
+          ],
+          "cer": 0.0,
+          "sacrebleu": 100.0
+        },
+        "all_words_seen": {
+          "exact": 37,
+          "n": 37,
+          "exact_rate": 1.0,
+          "wilson95": [
+            0.9059,
+            1.0
+          ],
+          "cer": 0.0,
+          "sacrebleu": 100.0
+        }
+      },
+      "baseline": "lookup table",
+      "ms_per_sentence": 0.57,
+      "cells": 1433,
+      "dot_errors_0.02": {
+        "neural": {
+          "exact": 26,
+          "n": 40,
+          "exact_rate": 0.65,
+          "wilson95": [
+            0.4951,
+            0.7787
+          ],
+          "cer": 0.01395,
+          "sacrebleu": 88.46
+        },
+        "neural_faithful_mode": {
+          "exact": 27,
+          "n": 40,
+          "exact_rate": 0.675,
+          "wilson95": [
+            0.5202,
+            0.7992
+          ],
+          "cer": 0.01441,
+          "sacrebleu": 86.17
+        },
+        "inputs_actually_changed": 19,
+        "rule_decoder": {
+          "exact": 21,
+          "n": 40,
+          "exact_rate": 0.525,
+          "wilson95": [
+            0.375,
+            0.6706
+          ],
+          "cer": 0.02596,
+          "sacrebleu": 80.22
+        }
+      },
+      "dot_errors_0.05": {
+        "neural": {
+          "exact": 17,
+          "n": 40,
+          "exact_rate": 0.425,
+          "wilson95": [
+            0.2851,
+            0.5781
+          ],
+          "cer": 0.02622,
+          "sacrebleu": 79.15
+        },
+        "neural_faithful_mode": {
+          "exact": 15,
+          "n": 40,
+          "exact_rate": 0.375,
+          "wilson95": [
+            0.2422,
+            0.5297
+          ],
+          "cer": 0.03504,
+          "sacrebleu": 67.75
+        },
+        "inputs_actually_changed": 30,
+        "rule_decoder": {
+          "exact": 10,
+          "n": 40,
+          "exact_rate": 0.25,
+          "wilson95": [
+            0.1419,
+            0.4019
+          ],
+          "cer": 0.05226,
+          "sacrebleu": 60.44
+        }
+      }
+    },
+    "g2": {
+      "clean": {
+        "neural": {
+          "exact": 39,
+          "n": 40,
+          "exact_rate": 0.975,
+          "wilson95": [
+            0.8712,
+            0.9956
+          ],
+          "cer": 0.00083,
+          "sacrebleu": 98.92
+        },
+        "neural_repair_mode": {
+          "exact": 33,
+          "n": 40,
+          "exact_rate": 0.825,
+          "wilson95": [
+            0.6805,
+            0.9125
+          ],
+          "cer": 0.0144,
+          "sacrebleu": 94.0
+        },
+        "rule_decoder": {
+          "exact": 39,
+          "n": 40,
+          "exact_rate": 0.975,
+          "wilson95": [
+            0.8712,
+            0.9956
+          ],
+          "cer": 0.01929,
+          "sacrebleu": 97.56
+        },
+        "has_unseen_word": {
+          "exact": 3,
+          "n": 3,
+          "exact_rate": 1.0,
+          "wilson95": [
+            0.4385,
+            1.0
+          ],
+          "cer": 0.0,
+          "sacrebleu": 100.0
+        },
+        "all_words_seen": {
+          "exact": 36,
+          "n": 37,
+          "exact_rate": 0.973,
+          "wilson95": [
+            0.8618,
+            0.9952
+          ],
+          "cer": 0.0009,
+          "sacrebleu": 98.88
+        }
+      },
+      "baseline": "liblouis back-translation",
+      "ms_per_sentence": 0.55,
+      "cells": 1198,
+      "dot_errors_0.02": {
+        "neural": {
+          "exact": 29,
+          "n": 40,
+          "exact_rate": 0.725,
+          "wilson95": [
+            0.5716,
+            0.8389
+          ],
+          "cer": 0.01732,
+          "sacrebleu": 90.3
+        },
+        "neural_faithful_mode": {
+          "exact": 23,
+          "n": 40,
+          "exact_rate": 0.575,
+          "wilson95": [
+            0.4219,
+            0.7149
+          ],
+          "cer": 0.02102,
+          "sacrebleu": 83.98
+        },
+        "inputs_actually_changed": 17,
+        "rule_decoder": {
+          "exact": 22,
+          "n": 40,
+          "exact_rate": 0.55,
+          "wilson95": [
+            0.3983,
+            0.6929
+          ],
+          "cer": 0.0449,
+          "sacrebleu": 81.56
+        }
+      },
+      "dot_errors_0.05": {
+        "neural": {
+          "exact": 17,
+          "n": 40,
+          "exact_rate": 0.425,
+          "wilson95": [
+            0.2851,
+            0.5781
+          ],
+          "cer": 0.03425,
+          "sacrebleu": 80.07
+        },
+        "neural_faithful_mode": {
+          "exact": 14,
+          "n": 40,
+          "exact_rate": 0.35,
+          "wilson95": [
+            0.2213,
+            0.5049
+          ],
+          "cer": 0.05485,
+          "sacrebleu": 71.21
+        },
+        "inputs_actually_changed": 27,
+        "rule_decoder": {
+          "exact": 12,
+          "n": 40,
+          "exact_rate": 0.3,
+          "wilson95": [
+            0.1807,
+            0.4543
+          ],
+          "cer": 0.08676,
+          "sacrebleu": 66.76
         }
       }
     }

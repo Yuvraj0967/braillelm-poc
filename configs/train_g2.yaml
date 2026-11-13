@@ -9,7 +9,7 @@ frames: 8           # CTC frames per cell; a Grade 2 cell can stand for a whole 
 p_g2: 0.6           # share of rows shown as Grade 2 (the rest are Grade 1)
 p_noisy: 0.6        # share of rows trained in repair mode
 max_noise: 0.08
-steps: 20000
+steps: 48000
 warmup: 1000
 lr: 0.0006
 cell_budget: 24000
