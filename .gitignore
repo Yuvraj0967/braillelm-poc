@@ -1,6 +1,7 @@
 # Generated data and training runs (rebuild with `make data` / `make train`)
 data/*
 !data/README.md
+!data/test_sets/
 runs/
 out_*/
 out/

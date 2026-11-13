@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>BrailleLM v2 demo</title>
+<title>BrailleLM demo</title>
 <style>
 :root{
   --bg:#f6f4ef; --card:#fffdf8; --ink:#1d1b16; --muted:#6b665a; --line:#ddd7c8;
@@ -71,8 +71,13 @@ th:first-child,td:first-child{text-align:left}
 </head>
 <body>
 <main>
-  <h1>BrailleLM v2</h1>
-  <p class="lede">A neural reader for Unified English Braille (Grade 1). It reads one braille cell at a time, so rare words and names are spelled faithfully. A second mode uses sentence context to repair cells with missing or extra dots.</p>
+  <h1>BrailleLM</h1>
+  <p class="lede" id="lede">A neural reader for Unified English Braille. It reads one braille cell at a time, so rare words and names are spelled faithfully. A second mode uses sentence context to repair cells with missing or extra dots.</p>
+
+  <div class="tabs" role="tablist" id="gradeTabs" aria-label="Braille grade" hidden>
+    <button role="tab" id="gG1" aria-selected="true">Grade 1 · uncontracted</button>
+    <button role="tab" id="gG2" aria-selected="false">Grade 2 · contracted</button>
+  </div>
 
   <section class="stats" id="stats" aria-label="Measured results"></section>
 
@@ -99,25 +104,25 @@ th:first-child,td:first-child{text-align:left}
   <section class="card" id="result" hidden aria-live="polite">
     <h2>Reading</h2>
     <div class="out">
-      <div class="read" id="fBox"><div class="who"><span>BrailleLM v2 · faithful mode (trusts every dot) <span id="nBadge"></span></span><span id="nMeta"></span></div><div class="txt" id="nTxt"></div></div>
-      <div class="read" id="pBox"><div class="who"><span>BrailleLM v2 · repair mode (uses context to fix damaged cells) <span id="pBadge"></span></span></div><div class="txt" id="pTxt"></div></div>
-      <div class="read small"><div class="who"><span>Rule decoder (lookup table, no context) <span id="rBadge"></span></span></div><div class="txt" id="rTxt"></div></div>
+      <div class="read" id="fBox"><div class="who"><span>BrailleLM · faithful mode (trusts every dot) <span id="nBadge"></span></span><span id="nMeta"></span></div><div class="txt" id="nTxt"></div></div>
+      <div class="read" id="pBox"><div class="who"><span>BrailleLM · repair mode (uses context to fix damaged cells) <span id="pBadge"></span></span></div><div class="txt" id="pTxt"></div></div>
+      <div class="read small"><div class="who"><span><span id="rName">Rule decoder (lookup table, no context)</span> <span id="rBadge"></span></span></div><div class="txt" id="rTxt"></div></div>
       <div class="read small" id="refBox" hidden><div class="who"><span>Reference</span></div><div class="txt" id="refTxt"></div></div>
     </div>
     <h2 style="margin-top:18px">Cells the model read <span id="dmgNote" style="text-transform:none;letter-spacing:0"></span></h2>
     <div class="tape" id="tape"></div>
-    <p class="note" style="margin-top:10px">Hover or focus a character in either v2 reading to see the cell it was read from. Red marks differ from the reference; a dotted underline marks low confidence.</p>
+    <p class="note" style="margin-top:10px">Hover or focus a character in either model reading to see the cell it was read from. Red marks differ from the reference; a dotted underline marks low confidence.</p>
   </section>
 
   <section class="card" id="noiseCard" hidden>
-    <h2>Measured on the locked unseen test set</h2>
+    <h2 id="tableTitle">Measured on the locked unseen test set</h2>
     <div class="scroll"><table id="noiseTable"></table></div>
     <p class="note" style="margin-top:10px" id="scope"></p>
   </section>
 </main>
 <script>
 const $ = id => document.getElementById(id);
-let mode = "braille", seed = 1, current = null;
+let mode = "braille", seed = 1, current = null, grade = "g1", META = {};
 
 function pct(x){ return (100*x).toFixed(1) + "%"; }
 function el(tag, cls, text){ const e = document.createElement(tag); if(cls) e.className = cls; if(text != null) e.textContent = text; return e; }
@@ -186,8 +191,8 @@ function badge(target, exact){
 
 async function run(){
   $("err").hidden = true;
-  const body = { noise: +$("noise").value / 100, seed };
-  if (current) { body.braille = current.braille; body.reference = current.print; }
+  const body = { noise: +$("noise").value / 100, seed, grade };
+  if (current) { body.braille = current.braille; body.reference = current.print; body.baseline = current.baseline || null; }
   else if (mode === "english") body.print = $("eng").value;
   else body.braille = $("brl").value;
   $("go").disabled = true;
@@ -204,7 +209,8 @@ function show(d){
   $("result").hidden = false;
   paint($("nTxt"), d.faithful.text, d.reference, d.faithful.chars);
   paint($("pTxt"), d.repair.text, d.reference, d.repair.chars);
-  paint($("rTxt"), d.rule.text, d.reference, null);
+  $("rName").textContent = d.rule.name || "Rule-based reading";
+  paint($("rTxt"), d.rule.text == null ? "" : d.rule.text, d.rule.text == null ? null : d.reference, null);
   badge($("nBadge"), d.faithful_exact); badge($("pBadge"), d.repair_exact); badge($("rBadge"), d.rule_exact);
   $("fBox").classList.toggle("primary", !d.damaged); $("pBox").classList.toggle("primary", !!d.damaged);
   $("nMeta").textContent = d.faithful.cells + " cells in " + d.faithful.ms + " ms";
@@ -232,36 +238,65 @@ function stat(big, label, main){
   return s;
 }
 
-async function init(){
-  const meta = await (await fetch("/api/meta")).json();
-  const m = meta.metrics || {}, st = $("stats");
-  if (m.final) {
-    st.appendChild(stat(pct(m.final.v2_rate), `strict exact on ${m.final.n} unseen sentences (${m.final.v2_exact}/${m.final.n})`, true));
-    const u = m.final.unseen_vs_v2_training;
-    if (u) st.appendChild(stat(pct(u.rate), `on the ${u.n} sentences containing a word absent from training (${u.exact}/${u.n})`));
-    if (m.params) st.appendChild(stat((m.params/1e6).toFixed(1) + "M", `parameters · ${m.ms_per_sentence} ms per sentence on CPU`));
+const GRADE_NAME = { g1: "Grade 1", g2: "Grade 2" };
+
+function render(){
+  const m = META.metrics || {}, g = (m.grades || {})[grade], st = $("stats");
+  st.textContent = "";
+  if (g) {
+    st.appendChild(stat(pct(g.rate), `${GRADE_NAME[grade]}: sentences exactly right, out of ${g.n} unseen (${g.exact}/${g.n})`, true));
+    if (g.baseline_exact != null) st.appendChild(stat(pct(g.baseline_exact / g.n), `${g.baseline_name} on the same sentences (${g.baseline_exact}/${g.n})`));
+    const d = g.noise.find(r => r.sentences_damaged != null);
+    if (d && d.rule != null) st.appendChild(stat(pct(d.neural), `when ${d.label.split(' ')[0]} of cells are damaged, repair mode (${g.baseline_name}: ${pct(d.rule)})`));
+    if (m.params) st.appendChild(stat((m.params/1e6).toFixed(1) + "M", `parameters · ${g.ms_per_sentence} ms per sentence`));
   }
-  if (m.noise && m.noise.length) {
-    $("noiseCard").hidden = false;
-    const t = $("noiseTable");
-    const head = el("tr"); ["Input condition", "v2 mode", "v2 sentences exact", "Rule decoder exact", "v2 character error", "Rule character error"].forEach(h => head.appendChild(el("th", null, h)));
+  const t = $("noiseTable"); t.textContent = "";
+  $("noiseCard").hidden = !(g && g.noise && g.noise.length);
+  if (g && g.noise) {
+    $("tableTitle").textContent = `${GRADE_NAME[grade]}: measured on the locked unseen test set`;
+    const base = g.baseline_name.charAt(0).toUpperCase() + g.baseline_name.slice(1);
+    const head = el("tr"); ["Input condition", "Model mode", "Model sentences exact", base + " exact", "Model character error", base + " character error"].forEach(h => head.appendChild(el("th", null, h)));
     t.appendChild(head);
-    m.noise.forEach(r => {
+    const show = v => v == null ? "n/a" : pct(v);
+    g.noise.forEach(r => {
       const tr = el("tr");
-      [r.label, r.mode, pct(r.neural), pct(r.rule), pct(r.neural_cer), pct(r.rule_cer)].forEach(v => tr.appendChild(el("td", null, v)));
+      [r.label, r.mode, `${pct(r.neural)} (${r.neural_exact}/${r.n})`, r.rule == null ? "n/a" : `${pct(r.rule)} (${r.rule_exact}/${r.n})`, show(r.neural_cer), show(r.rule_cer)].forEach(v => tr.appendChild(el("td", null, v)));
       t.appendChild(tr);
     });
-    $("scope").textContent = m.scope || "";
+    $("scope").textContent = g.scope || "";
   }
-  const chips = $("chips");
-  (meta.samples || []).forEach((s, i) => {
+  const chips = $("chips"); chips.textContent = "";
+  (META.samples || []).filter(s => (s.grade || "g1") === grade).forEach((s, i) => {
     const b = el("button", "ghost", s.label || ("Sentence " + (i + 1)));
     b.onclick = () => { setMode("braille"); $("brl").value = s.braille; current = s; seed = 1; run(); };
     chips.appendChild(b);
   });
+  $("eng").placeholder = grade === "g1"
+    ? "Type English. It is converted to Grade 1 braille, and the model reads the braille back."
+    : (META.english_to_g2 ? "Type English. liblouis converts it to Grade 2 braille, and the model reads the braille back."
+                          : "English to Grade 2 needs liblouis on this machine. Paste Grade 2 braille or pick a test sentence.");
+  $("brl").placeholder = `Paste Unicode braille (${GRADE_NAME[grade]}) here`;
+}
+
+function setGrade(g){
+  grade = g; current = null;
+  $("gG1").setAttribute("aria-selected", g === "g1");
+  $("gG2").setAttribute("aria-selected", g === "g2");
+  $("brl").value = ""; $("result").hidden = true; $("err").hidden = true;
+  render();
+}
+$("gG1").onclick = () => setGrade("g1");
+$("gG2").onclick = () => setGrade("g2");
+
+async function init(){
+  META = await (await fetch("/api/meta")).json();
+  const grades = META.grades || ["g1"];
+  $("gradeTabs").hidden = grades.length < 2;
+  $("lede").textContent = "A neural reader for Unified English Braille" + (grades.length > 1 ? ", Grade 1 and Grade 2 in one model" : " (Grade 1)") + ". It reads one braille cell at a time, so rare words and names are spelled faithfully. A second mode uses sentence context to repair cells with missing or extra dots.";
   $("brl").addEventListener("input", () => current = null);
   const q = new URLSearchParams(location.search);
-  if (q.get("sample") && meta.samples[+q.get("sample") - 1]) chips.children[+q.get("sample") - 1].click();
+  setGrade(grades.includes(q.get("grade")) ? q.get("grade") : grades[0]);
+  if (q.get("sample") && $("chips").children[+q.get("sample") - 1]) $("chips").children[+q.get("sample") - 1].click();
 }
 init();
 </script>

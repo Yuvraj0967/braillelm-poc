@@ -1,58 +1,66 @@
 [
  {
+  "grade": "g1",
   "label": "Butler next faced …",
   "braille": "⠠⠃⠥⠞⠇⠑⠗⠀⠝⠑⠭⠞⠀⠋⠁⠉⠑⠙⠀⠕⠋⠋⠀⠺⠊⠞⠓⠀⠞⠓⠊⠗⠞⠑⠑⠝⠞⠓⠀⠎⠑⠑⠙⠑⠙⠀⠠⠍⠥⠗⠗⠁⠽⠀⠠⠎⠞⠁⠞⠑⠲",
   "print": "Butler next faced off with thirteenth seeded Murray State.",
-  "v1": "Butler next faced off with thirteenseeded Murray State.",
+  "baseline": null,
   "row": 1
  },
  {
-  "label": "Acylamine transfer has …",
-  "braille": "⠠⠁⠉⠽⠇⠁⠍⠊⠝⠑⠀⠞⠗⠁⠝⠎⠋⠑⠗⠀⠓⠁⠎⠀⠏⠗⠊⠍⠁⠗⠊⠇⠽⠀⠃⠑⠑⠝⠀⠏⠑⠗⠋⠕⠗⠍⠑⠙⠀⠥⠎⠊⠝⠛⠀⠁⠍⠊⠝⠑⠎⠀⠁⠝⠙⠀⠓⠽⠙⠗⠁⠵⠊⠝⠑⠎⠀⠁⠎⠀⠝⠥⠉⠇⠑⠕⠏⠓⠊⠇⠑⠎⠲",
-  "print": "Acylamine transfer has primarily been performed using amines and hydrazines as nucleophiles.",
-  "v1": "Acylaminine transfer has primarily been performed usingamines and hydrazines as nucleophiles.",
-  "row": 12
+  "grade": "g1",
+  "label": "It was found …",
+  "braille": "⠠⠊⠞⠀⠺⠁⠎⠀⠋⠕⠥⠝⠙⠀⠇⠽⠊⠝⠛⠀⠕⠝⠀⠊⠞⠎⠀⠎⠊⠙⠑⠀⠞⠕⠀⠞⠓⠑⠀⠎⠕⠥⠞⠓⠀⠕⠋⠀⠁⠀⠍⠕⠝⠥⠍⠑⠝⠞⠁⠇⠀⠞⠓⠗⠕⠝⠑⠲",
+  "print": "It was found lying on its side to the south of a monumental throne.",
+  "baseline": null,
+  "row": 48
  },
  {
-  "label": "Show went on …",
-  "braille": "⠠⠎⠓⠕⠺⠀⠺⠑⠝⠞⠀⠕⠝⠀⠞⠕⠀⠏⠊⠝⠀⠠⠇⠑⠎⠝⠁⠗⠀⠁⠝⠙⠀⠺⠊⠝⠀⠞⠓⠑⠀⠞⠊⠞⠇⠑⠲",
-  "print": "Show went on to pin Lesnar and win the title.",
-  "v1": "Show went on to pin Leran and won the title.",
-  "row": 13
+  "grade": "g1",
+  "label": "The Maynilad Water …",
+  "braille": "⠠⠞⠓⠑⠀⠠⠍⠁⠽⠝⠊⠇⠁⠙⠀⠠⠺⠁⠞⠑⠗⠀⠠⠎⠑⠗⠧⠊⠉⠑⠎⠀⠞⠕⠕⠅⠀⠕⠧⠑⠗⠀⠞⠓⠑⠀⠺⠑⠎⠞⠀⠵⠕⠝⠑⠀⠕⠋⠀⠺⠓⠊⠉⠓⠀⠠⠍⠁⠝⠊⠇⠁⠀⠊⠎⠀⠁⠀⠏⠁⠗⠞⠲",
+  "print": "The Maynilad Water Services took over the west zone of which Manila is a part.",
+  "baseline": null,
+  "row": 87
  },
  {
-  "label": "This phenomenon is …",
-  "braille": "⠠⠞⠓⠊⠎⠀⠏⠓⠑⠝⠕⠍⠑⠝⠕⠝⠀⠊⠎⠀⠙⠑⠍⠕⠝⠎⠞⠗⠁⠞⠑⠙⠀⠃⠽⠀⠕⠃⠎⠑⠗⠧⠑⠙⠀⠎⠑⠇⠑⠉⠞⠊⠧⠊⠞⠊⠑⠎⠀⠊⠝⠀⠞⠓⠑⠀⠗⠑⠁⠗⠗⠁⠝⠛⠑⠍⠑⠝⠞⠎⠀⠃⠑⠇⠕⠺⠲",
-  "print": "This phenomenon is demonstrated by observed selectivities in the rearrangements below.",
-  "v1": "This phenomenon is demonstrated by observed selections in the rearrangements below.",
-  "row": 14
+  "grade": "g1",
+  "label": "Upon his death …",
+  "braille": "⠠⠥⠏⠕⠝⠀⠓⠊⠎⠀⠙⠑⠁⠞⠓⠀⠓⠑⠀⠺⠁⠎⠀⠎⠥⠉⠉⠑⠑⠙⠑⠙⠀⠁⠝⠙⠀⠙⠑⠊⠋⠊⠑⠙⠀⠃⠽⠀⠠⠞⠗⠁⠚⠁⠝⠲",
+  "print": "Upon his death he was succeeded and deified by Trajan.",
+  "baseline": null,
+  "row": 131
  },
  {
-  "label": "Two short straps …",
-  "braille": "⠠⠞⠺⠕⠀⠎⠓⠕⠗⠞⠀⠎⠞⠗⠁⠏⠎⠀⠙⠑⠎⠉⠑⠝⠙⠀⠋⠗⠕⠍⠀⠞⠓⠑⠀⠓⠑⠁⠙⠙⠗⠑⠎⠎⠀⠊⠝⠀⠋⠗⠕⠝⠞⠀⠕⠋⠀⠞⠓⠑⠀⠑⠁⠗⠎⠲",
-  "print": "Two short straps descend from the headdress in front of the ears.",
-  "v1": "Two short straps descend from the leaders in front of the ears.",
-  "row": 19
+  "grade": "g1",
+  "label": "Buffel is currently …",
+  "braille": "⠠⠃⠥⠋⠋⠑⠇⠀⠊⠎⠀⠉⠥⠗⠗⠑⠝⠞⠇⠽⠀⠥⠝⠙⠑⠗⠀⠙⠊⠎⠏⠇⠁⠽⠀⠊⠝⠀⠞⠓⠑⠀⠠⠍⠁⠗⠊⠞⠊⠍⠑⠀⠠⠍⠥⠎⠑⠥⠍⠀⠠⠗⠕⠞⠞⠑⠗⠙⠁⠍⠲",
+  "print": "Buffel is currently under display in the Maritime Museum Rotterdam.",
+  "baseline": null,
+  "row": 175
  },
  {
-  "label": "Unused names are …",
-  "braille": "⠠⠥⠝⠥⠎⠑⠙⠀⠝⠁⠍⠑⠎⠀⠁⠗⠑⠀⠍⠁⠗⠅⠑⠙⠀⠊⠝⠀⠛⠗⠁⠽⠲",
-  "print": "Unused names are marked in gray.",
-  "v1": "Unused names are marked in grey.",
-  "row": 22
+  "grade": "g1",
+  "label": "Attalea is a …",
+  "braille": "⠠⠁⠞⠞⠁⠇⠑⠁⠀⠊⠎⠀⠁⠀⠇⠁⠗⠛⠑⠀⠛⠑⠝⠥⠎⠀⠕⠋⠀⠏⠁⠇⠍⠎⠀⠝⠁⠞⠊⠧⠑⠀⠞⠕⠀⠠⠍⠑⠭⠊⠉⠕⠂⠀⠞⠓⠑⠀⠠⠉⠁⠗⠊⠃⠃⠑⠁⠝⠂⠀⠠⠉⠑⠝⠞⠗⠁⠇⠀⠁⠝⠙⠀⠠⠎⠕⠥⠞⠓⠀⠠⠁⠍⠑⠗⠊⠉⠁⠲",
+  "print": "Attalea is a large genus of palms native to Mexico, the Caribbean, Central and South America.",
+  "baseline": null,
+  "row": 227
  },
  {
-  "label": "It was the …",
-  "braille": "⠠⠊⠞⠀⠺⠁⠎⠀⠞⠓⠑⠀⠎⠑⠉⠕⠝⠙⠀⠍⠕⠎⠞⠀⠙⠑⠧⠁⠎⠞⠁⠞⠑⠙⠀⠉⠊⠞⠽⠀⠊⠝⠀⠞⠓⠑⠀⠺⠕⠗⠇⠙⠀⠁⠋⠞⠑⠗⠀⠠⠺⠁⠗⠎⠁⠺⠀⠙⠥⠗⠊⠝⠛⠀⠞⠓⠑⠀⠠⠎⠑⠉⠕⠝⠙⠀⠠⠺⠕⠗⠇⠙⠀⠠⠺⠁⠗⠲",
-  "print": "It was the second most devastated city in the world after Warsaw during the Second World War.",
-  "v1": "It was the second most devastated city in the world after Warsaw during the Second World War.",
-  "row": 2
+  "grade": "g1",
+  "label": "There are three …",
+  "braille": "⠠⠞⠓⠑⠗⠑⠀⠁⠗⠑⠀⠞⠓⠗⠑⠑⠀⠍⠊⠇⠇⠎⠀⠊⠝⠀⠠⠃⠊⠝⠞⠥⠇⠥⠀⠞⠓⠁⠞⠀⠏⠗⠕⠉⠑⠎⠎⠀⠺⠕⠕⠙⠤⠺⠁⠎⠞⠑⠀⠏⠗⠕⠙⠥⠉⠞⠎⠲",
+  "print": "There are three mills in Bintulu that process wood-waste products.",
+  "baseline": null,
+  "row": 277
  },
  {
-  "label": "Both the central …",
-  "braille": "⠠⠃⠕⠞⠓⠀⠞⠓⠑⠀⠉⠑⠝⠞⠗⠁⠇⠀⠙⠑⠝⠎⠑⠀⠕⠧⠑⠗⠉⠁⠎⠞⠀⠁⠝⠙⠀⠑⠍⠃⠑⠙⠙⠑⠙⠀⠑⠽⠑⠀⠏⠁⠞⠞⠑⠗⠝⠀⠥⠎⠑⠀⠞⠓⠑⠀⠎⠊⠵⠑⠀⠕⠋⠀⠞⠓⠑⠀⠠⠠⠉⠙⠕⠲",
-  "print": "Both the central dense overcast and embedded eye pattern use the size of the CDO.",
-  "v1": "Both the central dense overcast and embedded eye pattern use the size of the CDO.",
-  "row": 3
+  "grade": "g1",
+  "label": "Lester Burnham is …",
+  "braille": "⠠⠇⠑⠎⠞⠑⠗⠀⠠⠃⠥⠗⠝⠓⠁⠍⠀⠊⠎⠀⠁⠀⠍⠊⠙⠙⠇⠑⠤⠁⠛⠑⠙⠀⠁⠙⠧⠑⠗⠞⠊⠎⠊⠝⠛⠀⠑⠭⠑⠉⠥⠞⠊⠧⠑⠀⠁⠝⠙⠀⠍⠁⠛⠁⠵⠊⠝⠑⠀⠺⠗⠊⠞⠑⠗⠀⠺⠓⠕⠀⠙⠑⠎⠏⠊⠎⠑⠎⠀⠓⠊⠎⠀⠚⠕⠃⠲",
+  "print": "Lester Burnham is a middle-aged advertising executive and magazine writer who despises his job.",
+  "baseline": null,
+  "row": 333
  }
 ]

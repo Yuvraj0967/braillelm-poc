@@ -41,6 +41,7 @@ class TranslateRequest(BaseModel):
     braille: str = Field(..., description="Unicode braille cells (U+2800 to U+283F); spaces are allowed")
     mode: Literal["faithful", "repair"] = Field(
         "faithful", description="faithful trusts every dot; repair may fix damaged cells")
+    grade: Literal["g1", "g2"] = Field("g1", description="g1 is uncontracted braille, g2 is contracted")
 
 
 class Char(BaseModel):
@@ -55,6 +56,7 @@ class TranslateResponse(BaseModel):
     cells: int
     ms: float
     mode: str
+    grade: str
     model_version: str
 
 
@@ -62,6 +64,8 @@ class DemoRequest(BaseModel):
     braille: Optional[str] = None
     print_: Optional[str] = Field(None, alias="print")
     reference: Optional[str] = None
+    baseline: Optional[str] = None
+    grade: Literal["g1", "g2"] = "g1"
     noise: float = 0.0
     seed: int = 1
 
@@ -76,7 +80,8 @@ def _card():
 @app.get("/health")
 def health():
     engine()
-    return {"status": "ok", "version": __version__, "model_step": _card().get("training", {}).get("step")}
+    return {"status": "ok", "version": __version__, "grades": list(engine().reader.grades),
+            "model_file": _card().get("file"), "model_step": _card().get("training", {}).get("step")}
 
 
 @app.post("/v1/translate", response_model=TranslateResponse)
@@ -84,14 +89,16 @@ def translate(req: TranslateRequest):
     eng = engine()
     if len(req.braille) > MAX_CELLS * 2:
         raise HTTPException(413, f"Input is limited to {MAX_CELLS} cells.")
+    if req.grade not in eng.reader.grades:
+        raise HTTPException(422, f"The loaded model does not read {req.grade}.")
     with eng.lock:
-        out = eng.reader.translate(req.braille, req.mode)
+        out = eng.reader.translate(req.braille, req.mode, req.grade)
     if not out["cells"]:
         raise HTTPException(422, "No braille cells found in the input.")
     if out["cells"] > MAX_CELLS:
         raise HTTPException(413, f"Input is limited to {MAX_CELLS} cells.")
     return {"text": out["text"], "chars": out["chars"], "cells": out["cells"], "ms": out["ms"],
-            "mode": req.mode, "model_version": __version__}
+            "mode": req.mode, "grade": req.grade, "model_version": __version__}
 
 
 @app.get("/", response_class=HTMLResponse, include_in_schema=False)
@@ -102,13 +109,14 @@ def index():
 @app.get("/api/meta", include_in_schema=False)
 def meta():
     eng = engine()
-    return {"samples": eng.samples, "metrics": eng.metrics}
+    return {"samples": eng.samples, "metrics": eng.metrics, **eng.info()}
 
 
 @app.post("/api/translate", include_in_schema=False)
 def demo_translate(req: DemoRequest):
     try:
         return engine().translate({"braille": req.braille, "print": req.print_, "reference": req.reference,
+                                   "baseline": req.baseline, "grade": req.grade,
                                    "noise": req.noise, "seed": req.seed})
     except ValueError as exc:
         return JSONResponse({"error": str(exc)}, status_code=400)   # shape the demo page expects

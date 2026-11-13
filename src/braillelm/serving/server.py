@@ -22,6 +22,7 @@ HERE = Path(__file__).resolve().parent
 
 from braillelm.braille_g1 import (BLANK, CAP, NUM, CELL_TO_LETTER, CELL_TO_PUNCT, SUPPORTED,
                         rule_decode, to_braille)
+from braillelm import louis
 from braillelm.paths import MODEL_ONNX, REPORTS
 from braillelm.runtime import Reader, normalise
 
@@ -48,12 +49,12 @@ def damage(braille, rate, seed):
     return ''.join(out), changed
 
 
-def describe(braille, changed):
+def describe(braille, changed, grade="g1"):
     changed = set(changed)
     cells = []
     for i, ch in enumerate(braille):
         v = ord(ch) - 0x2800
-        if ch == BLANK:
+        if ch == BLANK or grade != "g1":      # a Grade 2 cell has no single meaning out of context
             label = ""
         elif ch == CAP:
             label = "cap"
@@ -73,15 +74,39 @@ class Engine:
         self.samples = read_json(HERE / "samples.json", [])
         self.metrics = read_json(REPORTS / "summary.json", {})
 
+    def info(self):
+        """What this server can do, for the demo page."""
+        return {"grades": list(self.reader.grades), "english_to_g2": louis.available()}
+
+    def baseline(self, grade, shown, clean_baseline, damaged):
+        """Rule-based reading of exactly the cells the model saw, or None if unavailable."""
+        if grade == "g1":
+            return rule_decode(shown), "Rule decoder (lookup table, no context)"
+        name = "liblouis back-translation (rule-based)"
+        if louis.available():
+            return louis.to_print([shown], "g2")[0].replace("…", "..."), name
+        if not damaged and clean_baseline:
+            return clean_baseline, name + ", recorded for this test sentence"
+        return None, name + ": not installed on this machine"
+
     def translate(self, payload):
         text = (payload.get("print") or "").strip()
         reference = payload.get("reference") or None
+        grade = payload.get("grade") or "g1"
+        if grade not in self.reader.grades:
+            raise ValueError(f"The loaded model does not read {grade}.")
         if text:
             if not SUPPORTED.match(text):
                 bad = sorted({c for c in text if not SUPPORTED.match(c)})
                 raise ValueError("English input supports letters, digits and . , ; : ? ! ' - only. "
                                  "Not supported: " + " ".join(bad[:8]))
-            clean = to_braille(text)
+            if grade == "g1":
+                clean = to_braille(text)
+            elif louis.available():
+                clean = normalise(louis.to_braille([" ".join(text.split())], "g2")[0])
+            else:
+                raise ValueError("Converting English to Grade 2 needs liblouis, which is not installed here. "
+                                 "Paste Grade 2 braille or pick a test sentence instead.")
             reference = text
         else:
             clean = normalise(payload.get("braille") or "")
@@ -92,16 +117,16 @@ class Engine:
         rate = min(max(float(payload.get("noise") or 0), 0.0), 0.3)
         shown, changed = damage(clean, rate, int(payload.get("seed") or 1)) if rate else (clean, [])
         with self.lock:
-            faithful = self.reader.translate(shown, "faithful")
-            repair = self.reader.translate(shown, "repair")
-        rule = rule_decode(shown)
+            faithful = self.reader.translate(shown, "faithful", grade)
+            repair = self.reader.translate(shown, "repair", grade)
+        rule, rule_name = self.baseline(grade, shown, payload.get("baseline"), bool(changed))
 
         def exact(text):
-            return None if reference is None else text == reference
-        return {"braille": shown, "cells": describe(shown, changed), "damaged": len(changed),
-                "faithful": faithful, "repair": repair, "rule": {"text": rule}, "reference": reference,
-                "faithful_exact": exact(faithful["text"]), "repair_exact": exact(repair["text"]),
-                "rule_exact": exact(rule)}
+            return None if reference is None or text is None else text == reference
+        return {"braille": shown, "cells": describe(shown, changed, grade), "damaged": len(changed), "grade": grade,
+                "faithful": faithful, "repair": repair, "rule": {"text": rule, "name": rule_name},
+                "reference": reference, "faithful_exact": exact(faithful["text"]),
+                "repair_exact": exact(repair["text"]), "rule_exact": exact(rule)}
 
 
 class Handler(BaseHTTPRequestHandler):
@@ -130,7 +155,7 @@ class Handler(BaseHTTPRequestHandler):
         if path in ("/", "/index.html"):
             self._send(200, (HERE / "index.html").read_bytes(), "text/html; charset=utf-8")
         elif path == "/api/meta":
-            self._json(200, {"samples": engine.samples, "metrics": engine.metrics})
+            self._json(200, {"samples": engine.samples, "metrics": engine.metrics, **engine.info()})
         else:
             self._json(404, {"error": "Not found"})
 
