@@ -13,6 +13,10 @@ sees the whole sentence, so it can use context to repair damaged cells.
 One set of weights serves two modes, selected by a learned mode embedding:
 "faithful" trusts every dot; "repair" assumes some cells may be damaged.
 Keeping them separate stops the repair behaviour from rewriting clean input.
+
+A second learned switch selects the braille grade. Grade 1 spells every letter;
+Grade 2 (contracted) lets one cell stand for several letters or a whole word,
+so models that read Grade 2 emit more CTC frames per cell (`frames`).
 """
 import math
 
@@ -27,10 +31,11 @@ IN_VOCAB = 65
 CTC_BLANK = 0                    # output ids: 0 blank, 1.. PRINT_CHARS
 OUT_VOCAB = len(PRINT_CHARS) + 1
 CHAR_TO_ID = {c: i + 1 for i, c in enumerate(PRINT_CHARS)}
-FRAMES_PER_CELL = 2
+FRAMES_PER_CELL = 2              # default; Grade 2 models use more (see BrailleReader.frames)
 # faithful: every dot is trusted, nothing is "corrected".
 # repair:   the input may contain damaged cells; use context to restore them.
 MODES = ("faithful", "repair")
+GRADES = ("g1", "g2")
 
 
 def encode_cells(braille):
@@ -92,30 +97,40 @@ class Block(nn.Module):
 
 
 class BrailleReader(nn.Module):
-    def __init__(self, d=256, layers=6, heads=4, ff=1024, dropout=0.1):
+    def __init__(self, d=256, layers=6, heads=4, ff=1024, dropout=0.1, frames=FRAMES_PER_CELL, grades=1):
         super().__init__()
-        self.cfg = dict(d=d, layers=layers, heads=heads, ff=ff, dropout=dropout)
+        self.cfg = dict(d=d, layers=layers, heads=heads, ff=ff, dropout=dropout, frames=frames, grades=grades)
+        self.frames, self.grades = frames, grades
+        if grades > 1:
+            self.grade = nn.Embedding(grades, d)
         self.emb = nn.Embedding(IN_VOCAB, d, padding_idx=PAD_IN)
         self.mode = nn.Embedding(len(MODES), d)
         self.blocks = nn.ModuleList(Block(d, heads, ff, dropout) for _ in range(layers))
         self.norm = nn.LayerNorm(d)
-        self.head = nn.Linear(d, FRAMES_PER_CELL * OUT_VOCAB)
+        self.head = nn.Linear(d, frames * OUT_VOCAB)
 
-    def forward(self, cells, mode):
-        """cells [B, T], mode [B] -> logits [B, 2T, OUT_VOCAB]"""
+    def forward(self, cells, mode, grade=None):
+        """cells [B, T], mode [B], grade [B] -> logits [B, frames * T, OUT_VOCAB]"""
         keep = cells != PAD_IN
         mask = keep[:, None, None, :]
         x = self.emb(cells) + self.mode(mode)[:, None, :]
+        if self.grades > 1:
+            if grade is None:
+                grade = torch.zeros_like(mode)
+            x = x + self.grade(grade)[:, None, :]
         for b in self.blocks:
             x = b(x, mask)
         B, T, _ = x.shape
-        return self.head(self.norm(x)).view(B, T * FRAMES_PER_CELL, OUT_VOCAB)
+        return self.head(self.norm(x)).view(B, T * self.frames, OUT_VOCAB)
 
     @torch.no_grad()
-    def translate(self, braille_list, mode="faithful", batch=64):
+    def translate(self, braille_list, mode="faithful", grade="g1", batch=64):
         """Greedy CTC decode. Returns (text, mean per-character confidence)."""
         self.eval()
-        mode_id = MODES.index(mode)
+        mode_id, grade_id = MODES.index(mode), GRADES.index(grade)
+        if grade_id >= self.grades:
+            raise ValueError(f"this model was not trained for {grade}")
+        dev = next(self.parameters()).device
         order = sorted(range(len(braille_list)), key=lambda i: len(braille_list[i]))
         out = [None] * len(braille_list)
         for s in range(0, len(order), batch):
@@ -126,9 +141,11 @@ class BrailleReader(nn.Module):
             for r, q in enumerate(seqs):
                 x[r, :len(q)] = torch.tensor(q)
             m = torch.full((len(seqs),), mode_id, dtype=torch.long)
-            prob, ids = self.forward(x, m).softmax(-1).max(-1)
+            g = torch.full((len(seqs),), grade_id, dtype=torch.long)
+            prob, ids = self.forward(x.to(dev), m.to(dev), g.to(dev)).float().softmax(-1).max(-1)
+            prob, ids = prob.cpu(), ids.cpu()
             for r, i in enumerate(idx):
-                n = len(seqs[r]) * FRAMES_PER_CELL
+                n = len(seqs[r]) * self.frames
                 fr, pr = ids[r, :n].tolist(), prob[r, :n]
                 emitted = pr[ids[r, :n] != CTC_BLANK]
                 conf = float(emitted.mean()) if len(emitted) else 1.0

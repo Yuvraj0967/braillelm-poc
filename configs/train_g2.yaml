@@ -1,0 +1,17 @@
+# BrailleLM v3: one model for Grade 1 and Grade 2, trained on a GPU.
+#   python -m braillelm.pipelines.train --config configs/train_g2.yaml --data data/v3 --out runs/v3
+layers: 8
+d: 384
+heads: 6
+ff: 1536
+dropout: 0.1
+frames: 8           # CTC frames per cell; a Grade 2 cell can stand for a whole word
+p_g2: 0.6           # share of rows shown as Grade 2 (the rest are Grade 1)
+p_noisy: 0.6        # share of rows trained in repair mode
+max_noise: 0.08
+steps: 20000
+warmup: 1000
+lr: 0.0006
+cell_budget: 24000
+eval_every: 1000
+seed: 0

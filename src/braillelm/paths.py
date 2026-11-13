@@ -6,8 +6,11 @@ import os
 from pathlib import Path
 
 REPO = Path(os.environ.get("BRAILLELM_HOME") or Path(__file__).resolve().parents[2])
-MODEL_DIR = REPO / "models" / "braillelm_v2"
-MODEL_ONNX = MODEL_DIR / "braillelm_v2.onnx"
+# The two-grade model (v3) is preferred when it has been released into models/.
+_V3 = REPO / "models" / "braillelm_v3"
+_V2 = REPO / "models" / "braillelm_v2"
+MODEL_DIR = _V3 if (_V3 / "braillelm_v3.onnx").exists() else _V2
+MODEL_ONNX = MODEL_DIR / f"{MODEL_DIR.name}.onnx"
 REPORTS = REPO / "reports"
 LEGACY = REPO / "legacy"
 HELDOUT_DATA = LEGACY / "neural_mac" / "data"          # liblouis-generated rows and the locked test set
