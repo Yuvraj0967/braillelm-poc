@@ -56,7 +56,22 @@ def test_chunking():
     assert all(b[s:s + len(p)] == p for s, p in parts)
     assert normalise("  " + b.replace(BLANK, " \n ") + " ") == b
 
+def test_safe_for_synthesis_validation():
+    # Valid supported text
+    assert safe_for_synthesis("Hello, world!") is True
+    assert safe_for_synthesis("Braille 2026") is True
 
+    # Empty and unsupported input
+    assert safe_for_synthesis("") is False
+    assert safe_for_synthesis("Hello🙂") is False
+
+    # Unsafe letter-number combinations
+    assert safe_for_synthesis("A1") is False
+    assert safe_for_synthesis("1A") is False
+
+    # Unsafe capitalisation patterns
+    assert safe_for_synthesis("ABC DEF GHI") is False
+    assert safe_for_synthesis("ABC's") is False
 if __name__ == "__main__":
     for name, fn in list(globals().items()):
         if name.startswith("test_"):
