@@ -1,9 +1,10 @@
-# Reproducible pipeline. `dvc repro` rebuilds only the stages whose inputs changed;
-# `dvc dag` shows the graph. The same steps are available as plain commands in
-# the Makefile, so DVC is optional.
+# Reproducible pipeline for BrailleLM v3 (Grade 1 + Grade 2). `dvc repro` rebuilds
+# only the stages whose inputs changed; `dvc dag` shows the graph. The same steps
+# are plain commands in the Makefile, and kaggle/train_v3.py runs them on a
+# Kaggle GPU, so DVC is optional.
 #
-# To add Grade 2: add a data stage that writes data/g2, point a new training
-# stage at it with its own config, and reuse evaluate/export unchanged.
+# build_data_g2 needs liblouis (apt-get install liblouis-bin liblouis-data).
+# train is meant for a GPU: about two hours on a Tesla T4.
 stages:
   check_converter:
     cmd: python -m braillelm.pipelines.check_converter
@@ -11,81 +12,49 @@ stages:
       - src/braillelm/braille_g1.py
       - legacy/neural_mac/data
 
-  build_data:
-    cmd: python -m braillelm.pipelines.build_data --out data/v2
+  build_data_g2:
+    cmd: python -m braillelm.pipelines.build_data_g2 --out data/v3
     deps:
-      - src/braillelm/pipelines/build_data.py
+      - src/braillelm/pipelines/build_data_g2.py
       - src/braillelm/braille_g1.py
+      - src/braillelm/louis.py
       - legacy/neural_mac/data
     outs:
-      - data/v2
-
-  build_apostrophe_data:
-    cmd: python -m braillelm.pipelines.build_apostrophe_data --base data/v2 --out data/v2_apostrophe
-    deps:
-      - src/braillelm/pipelines/build_apostrophe_data.py
-      - data/v2
-    outs:
-      - data/v2_apostrophe
+      - data/v3
 
   train:
-    cmd: python -m braillelm.pipelines.train --config configs/train.yaml --data data/v2 --out runs/base
+    cmd: python -m braillelm.pipelines.train --config configs/train_g2.yaml --data data/v3 --out runs/v3
     deps:
       - src/braillelm/pipelines/train.py
       - src/braillelm/model.py
       - src/braillelm/noise.py
-      - configs/train.yaml
-      - data/v2
+      - configs/train_g2.yaml
+      - data/v3
     outs:
-      - runs/base
-
-  finetune_apostrophe:
-    cmd: >-
-      python -m braillelm.pipelines.train --config configs/finetune_apostrophe.yaml
-      --data data/v2_apostrophe --out runs/apostrophe --resume runs/base/best.pt
-    deps:
-      - configs/finetune_apostrophe.yaml
-      - data/v2_apostrophe
-      - runs/base
-    outs:
-      - runs/apostrophe
+      - runs/v3
 
   evaluate:
     cmd: >-
-      python -m braillelm.pipelines.evaluate --ckpt runs/apostrophe/last.pt --data data/v2
-      --files final_test pilot_plain pilot_extended digits_test data/v2_apostrophe/apostrophe_test.jsonl
-      --out reports --train data/v2/train.jsonl
+      python -m braillelm.pipelines.evaluate --ckpt runs/v3/best.pt --data data/v3
+      --files final_test pilot_plain pilot_extended digits_test apostrophe_test
+      --out reports --train data/v3/train.jsonl
     deps:
       - src/braillelm/pipelines/evaluate.py
-      - runs/apostrophe
-      - data/v2
-      - data/v2_apostrophe
+      - runs/v3
+      - data/v3
     metrics:
       - reports/metrics.json:
           cache: false
-    outs:
-      - reports/final_test_predictions.jsonl:
-          cache: false
-      - reports/pilot_plain_predictions.jsonl:
-          cache: false
-      - reports/pilot_extended_predictions.jsonl:
-          cache: false
-      - reports/digits_test_predictions.jsonl:
-          cache: false
-      - reports/apostrophe_test_predictions.jsonl:
-          cache: false
 
   export:
-    cmd: python -m braillelm.pipelines.export_onnx --ckpt runs/apostrophe/last.pt
+    cmd: python -m braillelm.pipelines.export_onnx --ckpt runs/v3/best.pt
     deps:
       - src/braillelm/pipelines/export_onnx.py
-      - runs/apostrophe
+      - runs/v3
     outs:
-      - models/braillelm_v2/braillelm_v2.onnx:
+      - models/braillelm_v3/braillelm_v3.onnx:
           cache: false
-      - models/braillelm_v2/braillelm_v2.pt:
-          cache: false
-      - models/braillelm_v2/model_card.json:
+      - models/braillelm_v3/model_card.json:
           cache: false
 
   summary:
@@ -93,7 +62,6 @@ stages:
     deps:
       - src/braillelm/pipelines/make_summary.py
       - reports/metrics.json
-      - reports/final_test_predictions.jsonl
     outs:
       - reports/summary.json:
           cache: false

@@ -29,22 +29,32 @@ def test_model_reads_both_grades(reader):
     assert reader.grades == ("g1", "g2")
 
 
-def test_reported_numbers_match_the_released_model(reader):
+@pytest.fixture(scope="module")
+def locked(reader):
+    """Exact-match counts on the locked final set, per grade, from the released ONNX file."""
+    rows = _rows("final_test")
+    return {grade: sum(reader.translate(r[key], "faithful", grade)["text"] == r["print"] for r in rows)
+            for grade, key in (("g1", "braille"), ("g2", "braille_g2"))}, len(rows)
+
+
+def test_reported_numbers_match_the_released_model(locked):
     """The ONNX file in the repo reproduces the clean-input numbers in reports/metrics.json."""
     metrics = json.loads((REPORTS / "metrics.json").read_text())["final_test"]
-    rows = _rows("final_test")
-    for grade, key in (("g1", "braille"), ("g2", "braille_g2")):
-        exact = sum(reader.translate(r[key], "faithful", grade)["text"] == r["print"] for r in rows)
-        assert abs(exact - metrics[grade]["clean"]["neural"]["exact"]) <= 1, (grade, exact)
+    for grade, exact in locked[0].items():
+        assert exact == metrics[grade]["clean"]["neural"]["exact"], (grade, exact)
 
 
-def test_grade2_gate(reader):
-    rows = _rows("final_test")
-    exact = sum(reader.translate(r["braille_g2"], "faithful", "g2")["text"] == r["print"] for r in rows)
-    assert exact / len(rows) >= 0.95, f"{exact}/{len(rows)}"
+def test_grade2_gate(locked):
+    assert locked[0]["g2"] / locked[1] >= 0.98, locked
 
 
-def test_grade1_not_regressed(reader):
-    rows = _rows("final_test")
-    exact = sum(reader.translate(r["braille"], "faithful", "g1")["text"] == r["print"] for r in rows)
-    assert exact / len(rows) >= 0.99, f"{exact}/{len(rows)}"
+def test_grade1_not_regressed(locked):
+    assert locked[0]["g1"] / locked[1] >= 0.99, locked
+
+
+def test_one_cell_words_do_not_split_sentences(reader):
+    """Regression: a lone Grade 2 cell ("his") was once mistaken for a question mark ending a sentence."""
+    rows = [r for r in _rows("final_test") if " his " in r["print"] and len(r["braille_g2"]) > 80][:5]
+    assert rows
+    for r in rows:
+        assert reader.translate(r["braille_g2"], "faithful", "g2")["text"] == r["print"]

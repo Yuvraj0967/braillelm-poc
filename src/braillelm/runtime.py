@@ -16,7 +16,7 @@ from braillelm.paths import MODEL_ONNX
 MODES = ("faithful", "repair")
 GRADES = ("g1", "g2")
 BLANK_CELL = chr(0x2800)
-MAX_CHUNK = 110          # cells per forward pass; training sentences are 20-150 cells
+MAX_CHUNK = 140          # cells per forward pass; training sentences are 20-150 cells
 _SENT_END = {PUNCT['.'], PUNCT['?'], PUNCT['!']}
 
 
@@ -49,7 +49,8 @@ def chunk(braille):
             chunks.append(cur)
             cur = []
         cur.append((pos, w))
-        if w and w[-1] in _SENT_END and (pos + len(w)) - cur[0][0] > MAX_CHUNK // 2:
+        # A one-cell word is never a sentence end: in Grade 2 a lone cell is a word ("his", "was").
+        if len(w) > 1 and w[-1] in _SENT_END and (pos + len(w)) - cur[0][0] > MAX_CHUNK // 2:
             chunks.append(cur)
             cur = []
     if cur:

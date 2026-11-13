@@ -1,0 +1,63 @@
+{
+  "seed": 20261112,
+  "liblouis": "/usr/bin/lou_translate (Liblouis) 3.29.0",
+  "frames_per_cell": 8,
+  "train_rows": 815769,
+  "train_dropped": {
+    "g1_differs_from_liblouis": 49,
+    "g2_not_six_dot": 0,
+    "g2_too_dense_for_ctc": 0
+  },
+  "dropped_because_in_heldout": 79,
+  "with_apostrophe": 106273,
+  "with_digits": 220771,
+  "g2_cells_per_g1_cell": 0.8005,
+  "train_sha256": "d5a04a0d2d4dbc833a372cd1cdf9d0ee661d3073d89ce15db6721e5116f23393",
+  "test_sets": {
+    "validation": {
+      "rows": 99,
+      "dropped": 0,
+      "sha256": "006702c01cd14d2a814375dd4ba005f562b511f610e20508fc19b5d9f8d074c3",
+      "liblouis_g2_baseline_exact": 99
+    },
+    "pilot_plain": {
+      "rows": 200,
+      "dropped": 0,
+      "sha256": "8feb6fdf379553a1099f89c5dd8cf21b76a1c870fe05cf284cd4aeb0f8c8c354",
+      "liblouis_g2_baseline_exact": 200
+    },
+    "pilot_extended": {
+      "rows": 199,
+      "dropped": 0,
+      "sha256": "297503004394625a03c962fbfb31dc7faff202ebb74763fbd0da872169751d27",
+      "liblouis_g2_baseline_exact": 198
+    },
+    "final_test": {
+      "rows": 399,
+      "dropped": 0,
+      "sha256": "ebddf52a61e3564ed5d59aa22e24d256d6e3a4d66cf885c68a2bc9521253cd74",
+      "liblouis_g2_baseline_exact": 399
+    },
+    "digits_test": {
+      "rows": 400,
+      "dropped": {
+        "g1_differs_from_liblouis": 0,
+        "g2_not_six_dot": 0,
+        "g2_too_dense_for_ctc": 0
+      },
+      "sha256": "baaf0cb2fd19466ebce42ccb35ee15de08977b5e594c0b7f7cdfd0b0b7da0177",
+      "liblouis_g2_baseline_exact": 398
+    },
+    "apostrophe_test": {
+      "rows": 290,
+      "dropped": {
+        "g1_differs_from_liblouis": 0,
+        "g2_not_six_dot": 0,
+        "g2_too_dense_for_ctc": 0
+      },
+      "sha256": "76a45a28d50ab5b4c524f81eed094484a20005d3bfd342fbbf2af86349ae7d02",
+      "liblouis_g2_baseline_exact": 288
+    }
+  },
+  "heldout_overlap_with_train": 0
+}

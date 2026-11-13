@@ -1,121 +1,129 @@
-# Model card: BrailleLM v2.1
+# Model card: BrailleLM v3
 
 ## What it is
 
-A bidirectional Transformer encoder that reads Unified English Braille, Grade 1
-(uncontracted), into print text.
+One bidirectional Transformer encoder that reads Unified English Braille into
+print text, in Grade 1 (uncontracted) and Grade 2 (contracted).
 
 - **Input:** one token per six-dot cell (64 symbols). No subword merging, so the
   model cannot skip or invent cells.
-- **Output:** CTC over print characters, two frames per cell, so a cell can
-  produce zero, one or two characters. This covers the capital sign, number
-  sign and spaces without a decoder and gives every output character a source
-  cell and a confidence.
-- **Size:** 4 layers, width 256, 4 heads, rotary positions; 3.2M parameters;
-  13 MB as ONNX.
-- **Two modes, one model:** *faithful* (trained on clean braille) trusts every
-  dot. *Repair* (trained with dot flips, wrong cells and missing cells in 0.5 to
-  8% of cells) uses context to fix damage.
+- **Output:** CTC over print characters, eight frames per cell. A Grade 2 cell
+  can stand for several letters or a whole word (`⠅` alone is `knowledge`), so
+  each cell may emit up to eight characters. Every output character has a
+  source cell and a confidence.
+- **Two learned switches:** *grade* (Grade 1 or Grade 2) and *mode*. Faithful
+  mode (trained on clean braille) trusts every dot. Repair mode (trained with
+  dot flips, wrong cells and missing cells in 0.5 to 8% of cells) uses context
+  to fix damage.
+- **Size:** 8 layers, width 384, 6 heads, rotary positions; 14.4M parameters.
 
 ## Training
 
-| Stage | Data | Steps | Config |
-|---|---|---|---|
-| Base | 415,886 sentences: WikiText-103 train split + 15,886 liblouis rows | 5,000 | `configs/train.yaml` |
-| Apostrophe fine-tune | 60,000 WikiText-103 train sentences with apostrophes + 120,000 base rows | 800 | `configs/finetune_apostrophe.yaml` |
+| | |
+|---|---|
+| Data | 815,769 sentences, each rendered in both grades |
+| Text source | WikiText-103 train split (apostrophes rejoined) + the print side of 15,886 earlier rows |
+| Grade 2 braille | liblouis 3.29.0, table `en-ueb-g2.ctb` |
+| Grade 1 braille | this repository's converter; the 49 sentences where it differed from liblouis `en-ueb-g1.ctb` were dropped |
+| Mix | each row shown as Grade 2 with probability 0.6, in repair mode with probability 0.6 |
+| Schedule | 20,000 steps, mixed precision, `configs/train_g2.yaml` |
+| Hardware and time | Kaggle Tesla T4, 115 minutes of training (127 minutes including data build and evaluation) |
+| Checkpoint | step 18,000, chosen on development data only |
 
-The base run was interrupted at step 3,500 and resumed from those weights with
-a fresh optimiser. Total training time was about three hours on an 8-core
-laptop CPU. Checkpoints were chosen on development data only.
-
-The fine-tune exists because the first data build dropped every sentence with
-an apostrophe, so the base model misread all of them (`can't` became `cankt`).
-The locked test set has no apostrophes and did not reveal this; a hand-written
-list of everyday sentences did. That list is now a CI test.
+The run is `kaggle/train_v3.py`; its training curve is in
+`models/braillelm_v3/train_log.json`.
 
 ## Results
 
-"Exact" means the whole sentence matches character for character. The rule
-decoder is a lookup table with no context.
+"Exact" means the whole sentence matches character for character. The
+rule-based baseline is a lookup table for Grade 1 and liblouis
+back-translation for Grade 2, each given exactly the same cells as the model.
 
-### Clean braille, faithful mode
+### Locked final set (399 unseen sentences)
 
-| Test set | Sentences | Model exact | Rule decoder exact |
-|---|---|---|---|
-| Locked final set (`legacy/neural_mac/data/final_test.jsonl`) | 399 | 398 (99.7%, 95% interval 98.6 to 100%) | 399 |
-| Pilot plain | 200 | 200 | 200 |
-| Pilot extended | 199 | 199 | 199 |
-| Sentences with numbers | 400 | 399 | 400 |
-| Sentences with apostrophes | 500 | 500 | 500 |
-| Everyday sentences written by hand | 40 | 40 | 40 |
+| Input | Mode | Grade 1 model | Grade 1 lookup table | Grade 2 model | Grade 2 liblouis |
+|---|---|---|---|---|---|
+| Clean | faithful | 398 (99.7%) | 399 | 398 (99.7%) | 399 |
+| Clean | repair | 394 (98.7%) | 399 | 382 (95.7%) | 399 |
+| 2% of cells damaged | repair | 346 (86.7%) | 111 (27.8%) | 312 (78.2%) | 137 (34.3%) |
+| 5% of cells damaged | repair | 258 (64.7%) | 23 (5.8%) | 240 (60.2%) | 40 (10.0%) |
 
-The v1 LLM scored 216 of 399 (54.1%) on the locked final set.
+The 95% interval for 398 of 399 is 98.6 to 100%. Each damaged cell has one dot
+added or missing. On the 61 sentences containing a word absent from training,
+the model is exact on 61 in both grades.
 
-### Damaged braille, repair mode (locked final set)
+### Other held-out sets, clean braille, faithful mode
 
-Each damaged cell has one dot added or missing.
+| Test set | Sentences | Grade 1 model | Grade 2 model | Grade 2 liblouis |
+|---|---|---|---|---|
+| Pilot plain | 200 | 200 | 200 | 200 |
+| Pilot extended | 199 | 199 | 199 | 198 |
+| Sentences with numbers | 400 | 400 | 400 | 398 |
+| Sentences with apostrophes | 290 | 290 | 289 | 288 |
+| Everyday sentences written by hand | 40 | 40 | 36 | 39 |
 
-| Input | Model exact | Rule decoder exact |
-|---|---|---|
-| 2% of cells damaged | 279 (69.9%) | 111 (27.8%) |
-| 5% of cells damaged | 174 (43.6%) | 23 (5.8%) |
-| Clean input in repair mode | 382 (95.7%) | 399 |
+### What these numbers say
 
-Repair mode costs accuracy on clean input because it sometimes changes a rare
-word that was already right. Use faithful mode unless the input is known to be
-noisy.
+- **Clean braille:** the model equals the rule-based readers to within one
+  sentence. It does not beat them, and on clean input a rule-based reader is a
+  sound choice.
+- **Damaged braille:** the model reads two to three times as many sentences
+  correctly at 2% damage and six to eleven times as many at 5%.
+- **Compared with the previous Grade 1 model (v2.1):** the same clean score,
+  and 346 instead of 279 sentences at 2% damage.
 
 ## How the locked set was used
 
-The locked final set was never used for training or checkpoint selection. It
-has been evaluated three times, each on a checkpoint already chosen on
-development data:
-
-| Checkpoint | Clean exact |
-|---|---|
-| Base, step 3,500 | 399 / 399 |
-| Base, step 5,000 | 399 / 399 |
-| After apostrophe fine-tune (released) | 398 / 399 |
-
-The released model is the last row. The fine-tune fixed apostrophes and
-introduced one error on this set, described below.
+The locked final set was never used for training or checkpoint selection. This
+model was evaluated on it once. Earlier Grade 1 only models were evaluated on
+the Grade 1 version three times (399, 399 and 398 of 399); those models are
+superseded. The released ONNX file reproduces the clean-input counts above, and
+a CI test checks this on every push.
 
 ## Known errors
 
-- `IRAs` is read as `IRA's`. The capitals terminator before the `s` shares a
-  cell with the apostrophe, and after the fine-tune the model sometimes emits
-  an apostrophe there.
-- `WWE.com` is read as `WWE.COM` (the one miss in the numbers set): a capitals
-  terminator followed by a full stop inside a word.
+- `IRAs` is read as `IRA's` (Grade 2) or `IRAU's` (Grade 1): a capitals
+  terminator followed by a lowercase letter.
+- On the 40 everyday sentences in Grade 2 the model missed four that liblouis
+  read correctly: slang (`tmrw` became `tmoorw`), a sentence in all capitals,
+  made-up words (`xyz` became `xyzs`) and a brand name with a capital inside
+  (`OnePlus` became `OneClus`). Grade 2 reading leans on having seen similar
+  words, so unusual spellings are its weak point.
+- liblouis has its own errors on the same kind of input, for example `U.S.`
+  read as `U.So.` and `H.D.` as `H.Do.`; the model read those correctly.
 
 ## Limits
 
-- **Grade 1 only.** Most real English braille is Grade 2 (contracted). The
-  model has never seen a contraction and cannot read Grade 2.
-- **Converter-generated braille.** Not tested on braille typed or embossed by
-  people, or captured by a camera or scanner.
+- **Machine-generated braille.** All training and test braille comes from
+  liblouis or a converter that matches it. Not tested on braille typed or
+  embossed by people, or captured by a camera or scanner.
 - **Simulated damage.** Random single-dot errors, not errors measured from a
   real device.
-- **Clean Grade 1 is deterministic.** A lookup table also reads it perfectly.
-  The clean-input scores show that the model is faithful, not that the task is
-  hard; the value of the model is repair, and its path to Grade 2.
+- **Clean input is not where the model adds value.** Rule-based readers are as
+  accurate there, and faster.
+- **Repair mode changes some correct words.** On clean Grade 2 input it scores
+  382 rather than 398. Use faithful mode unless the input is known to be noisy.
+- **One domain.** Wikipedia prose. Other styles were checked only with the 40
+  everyday sentences, where Grade 2 was 36 of 40.
 - **Character set:** letters, digits and `. , ; : ? ! ' -`. Other characters
   are rejected by the service.
-- **English prose from Wikipedia.** Other styles of text were checked only with
-  the 40 everyday sentences.
-- Number handling follows UEB rules but has not been checked against liblouis,
-  because the liblouis-generated data contains no digits.
+- **One liblouis version.** Grade 2 follows liblouis 3.29.0's reading of UEB.
+- **Speed:** about 1 ms per sentence on the T4 GPU; about 120 ms per sentence
+  on the development laptop (x64 Python emulated on an ARM CPU). Not measured
+  on other CPUs.
 
 ## Data and leakage controls
 
 - Only the WikiText-103 train split is used for training.
 - Sentences equal to any held-out row are removed, and the build asserts that
   no overlap remains.
-- The converter matches all 16,783 liblouis-generated rows in this repository
-  with zero mismatches; CI re-checks this on every push.
+- The exact test files are in `data/test_sets/`, with the liblouis baseline
+  reading stored beside each row; `meta.json` there records row counts, hashes
+  and the liblouis version.
 
 ## Files
 
-`models/braillelm_v2/braillelm_v2.onnx` (inference),
-`braillelm_v2.pt` (PyTorch weights for further training),
-`model_card.json` (config, training arguments and development scores).
+`models/braillelm_v3/braillelm_v3.onnx` (inference), `model_card.json`
+(config, training arguments, development scores) and `train_log.json`. The
+PyTorch weights for further training are in the Kaggle run's output and are
+not stored in git because of their size.

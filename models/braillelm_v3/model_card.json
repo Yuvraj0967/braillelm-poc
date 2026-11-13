@@ -1,0 +1,56 @@
+{
+  "file": "braillelm_v3.onnx",
+  "bytes": 57932826,
+  "max_abs_diff_vs_torch": 2.47955322265625e-05,
+  "config": {
+    "d": 384,
+    "layers": 8,
+    "heads": 6,
+    "ff": 1536,
+    "dropout": 0.1,
+    "frames": 8,
+    "grades": 2
+  },
+  "grades": [
+    "g1",
+    "g2"
+  ],
+  "training": {
+    "args": {
+      "config": "configs/train_g2.yaml",
+      "data": "data/v3",
+      "out": "runs/v3",
+      "steps": 20000,
+      "cell_budget": 24000,
+      "lr": 0.0006,
+      "warmup": 1000,
+      "d": 384,
+      "layers": 8,
+      "heads": 6,
+      "ff": 1536,
+      "dropout": 0.1,
+      "frames": 8,
+      "p_g2": 0.6,
+      "p_noisy": 0.6,
+      "max_noise": 0.08,
+      "eval_every": 1000,
+      "mlflow": null,
+      "limit": 0,
+      "seed": 0,
+      "resume": null,
+      "start_step": 0,
+      "device": "auto"
+    },
+    "params": 14444736,
+    "step": 18000,
+    "epoch": 5,
+    "train_loss": 0.02482,
+    "dev_exact_clean": 1.0,
+    "dev_exact_noise3": 0.7671,
+    "dev_exact_clean_repair_mode": 0.9859,
+    "dev_g2_exact_clean": 1.0,
+    "dev_g2_exact_noise3": 0.7189,
+    "dev_g2_exact_clean_repair_mode": 0.9699,
+    "minutes": 103.3
+  }
+}

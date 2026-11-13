@@ -4,7 +4,7 @@ WORKDIR /app
 ENV BRAILLELM_HOME=/app PYTHONUTF8=1 PYTHONUNBUFFERED=1
 COPY pyproject.toml README.md ./
 COPY src ./src
-COPY models/braillelm_v2/braillelm_v2.onnx models/braillelm_v2/model_card.json ./models/braillelm_v2/
+COPY models/braillelm_v3/braillelm_v3.onnx models/braillelm_v3/model_card.json ./models/braillelm_v3/
 COPY reports/summary.json ./reports/summary.json
 RUN pip install --no-cache-dir ".[serve]"
 EXPOSE 7861

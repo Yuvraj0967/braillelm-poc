@@ -248,7 +248,7 @@ function render(){
     if (g.baseline_exact != null) st.appendChild(stat(pct(g.baseline_exact / g.n), `${g.baseline_name} on the same sentences (${g.baseline_exact}/${g.n})`));
     const d = g.noise.find(r => r.sentences_damaged != null);
     if (d && d.rule != null) st.appendChild(stat(pct(d.neural), `when ${d.label.split(' ')[0]} of cells are damaged, repair mode (${g.baseline_name}: ${pct(d.rule)})`));
-    if (m.params) st.appendChild(stat((m.params/1e6).toFixed(1) + "M", `parameters · ${g.ms_per_sentence} ms per sentence`));
+    if (m.params) st.appendChild(stat((m.params/1e6).toFixed(1) + "M", `parameters in one model for both grades · runs on CPU`));
   }
   const t = $("noiseTable"); t.textContent = "";
   $("noiseCard").hidden = !(g && g.noise && g.noise.length);
