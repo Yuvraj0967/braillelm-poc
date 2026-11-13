@@ -50,12 +50,15 @@ def detect_grade(braille):
     Grade 2 if any word has a cell Grade 1 never uses, a punctuation cell between
     letters, a lone lower-case consonant ("y" is "you") or a letters-only
     shortform. Otherwise Grade 1. The rule was tuned on the repository's test sets,
-    where it is right for all 2,027 sentences in each grade; it is not proven elsewhere.
+    where it is right for all 2,027 full sentences in each grade; it is not proven elsewhere.
+    Very short input can be genuinely ambiguous: the same two cells are "C" in Grade 1 and "Can" in Grade 2.
     """
     for w in normalise(braille).split(BLANK_CELL):
         if any(c not in _G1_CELLS for c in w):
             return "g2"
         core = w.strip(_EDGE)
+        if w.lstrip(CAP) in (PUNCT[";"], PUNCT["?"]):    # a word that is only this cell is "be" or "his"
+            return "g2"
         if NUM in core or CAP in w:
             continue
         if any(c in _MID_WORD for c in core):

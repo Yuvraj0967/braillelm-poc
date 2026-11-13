@@ -9,14 +9,17 @@ sentence is right, character for character):
 
 | Input | Grade 1 | Grade 2 |
 |---|---|---|
-| Clean braille | **398 / 399** (lookup table: 399) | **398 / 399** (liblouis: 399) |
-| 2% of cells damaged | **349 / 399** (lookup table: 111) | **330 / 399** (liblouis: 137) |
-| 5% of cells damaged | **276 / 399** (lookup table: 23) | **271 / 399** (liblouis: 40) |
+| Clean braille | **399 / 399** (lookup table: 399) | **399 / 399** (liblouis: 399) |
+| 2% of cells damaged | **358 / 399** (lookup table: 111) | **335 / 399** (liblouis: 137) |
+| 5% of cells damaged | **296 / 399** (lookup table: 23) | **266 / 399** (liblouis: 40) |
 
 On clean braille the model matches rule-based readers; on damaged braille it
 is far ahead of them. On 400 unusual inputs (all capitals, made-up words,
 shortened words, one to three word fragments) it reads 400 in Grade 1 and 399
-in Grade 2, where liblouis back-translation reads 310.
+in Grade 2, where liblouis back-translation reads 310. On 251 tricky inputs
+(capitals that switch mid-word such as `DVDs` and `HEllo`, letter-digit codes
+such as `B3`, stand-alone Grade 2 wordsigns) it reads 251 in Grade 1 and 247
+in Grade 2, where liblouis reads 231.
 Model: 14.4M parameters, 58 MB ONNX file, CPU inference.
 
 Details, limits and how these were measured: [docs/MODEL_CARD.md](docs/MODEL_CARD.md).
@@ -45,8 +48,10 @@ with only `numpy` and `onnxruntime` installed.
 The demo is one screen: type English or paste braille and it shows the reading.
 Pasted braille can be either grade; the grade is detected from the cells
 (`braillelm.runtime.detect_grade`, also the default in the API). The rule was
-tuned on the committed test sets, where it is right for all 2,027 sentences in
-each grade. Typed English is converted to Grade 2 when liblouis is installed
+tuned on the committed test sets, where it is right for all 2,027 full
+sentences in each grade. Input of one or two words can be ambiguous (the same
+two cells are `C` in Grade 1 and `Can` in Grade 2); on the 251 tricky inputs it
+is wrong for 11. Typed English is converted to Grade 2 when liblouis is installed
 and to Grade 1 otherwise. On Windows,
 unzip the official `liblouis-3.29.0-win64.zip` release into a folder named
 `liblouis-3.29.0` in your user folder and the demo finds it.
@@ -83,7 +88,7 @@ check_converter -> build_data_g2 -> train -> evaluate -> export -> summary
 ```
 
 The released model was produced by `kaggle/train_v3.py`, which runs these
-steps on a Kaggle T4 GPU in about two hours:
+steps on a Kaggle T4 GPU in under five hours:
 
 ```bash
 kaggle kernels push -p kaggle
@@ -115,11 +120,11 @@ Every tool here is optional and sits outside the model code.
 
 The tracking backend is isolated in `src/braillelm/tracking.py`, so moving to
 Weights & Biases, Comet or Neptune changes one file. Spark and dbt are not used:
-the training set is 816,000 short sentences and builds in minutes on one
+the training set is 1.3 million short sentences and builds in minutes on one
 machine. They become worth adding if the corpus grows to many millions of rows.
 
 ## Limits
 
 Tested on machine-generated braille only, not on braille produced by people or
-captured by devices; damage is simulated; on unusual Grade 2 input (slang, all
-capitals, made-up words) the model is weaker than liblouis. See the model card.
+captured by devices; damage is simulated; a Grade 2 wordsign given entirely on
+its own (`as`, `but`, `people`, `rather`) is sometimes misread. See the model card.

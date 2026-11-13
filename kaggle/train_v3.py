@@ -15,7 +15,7 @@ import subprocess
 import sys
 import time
 
-BRANCH = "tricky-text"
+BRANCH = "main"
 REPO_URL = "https://github.com/Yuvraj0967/braillelm-poc.git"
 N_SENTENCES = 800000
 TRAIN_ARGS = []   # extra flags for braillelm.pipelines.train
