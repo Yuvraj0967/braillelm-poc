@@ -24,7 +24,7 @@ from braillelm.braille_g1 import (BLANK, CAP, NUM, CELL_TO_LETTER, CELL_TO_PUNCT
                         rule_decode, to_braille)
 from braillelm import louis
 from braillelm.paths import MODEL_ONNX, REPORTS
-from braillelm.runtime import Reader, normalise
+from braillelm.runtime import Reader, normalise, detect_grade
 
 MAX_CELLS = 2000
 
@@ -92,7 +92,11 @@ class Engine:
     def translate(self, payload):
         text = (payload.get("print") or "").strip()
         reference = payload.get("reference") or None
-        grade = payload.get("grade") or "g1"
+        grade = payload.get("grade") or "auto"
+        two = len(self.reader.grades) > 1
+        if grade == "auto":      # typed English becomes contracted braille, the everyday form, when possible
+            grade = (("g2" if two and louis.available() else "g1") if text
+                     else detect_grade(payload.get("braille") or "") if two else "g1")
         if grade not in self.reader.grades:
             raise ValueError(f"The loaded model does not read {grade}.")
         if text:
@@ -111,7 +115,7 @@ class Engine:
         else:
             clean = normalise(payload.get("braille") or "")
         if not clean:
-            raise ValueError("Enter braille cells, or switch to English input.")
+            raise ValueError("Type some English or paste braille first.")
         if len(clean) > MAX_CELLS:
             raise ValueError(f"Input is limited to {MAX_CELLS} cells.")
         rate = min(max(float(payload.get("noise") or 0), 0.0), 0.3)

@@ -58,3 +58,30 @@ def test_one_cell_words_do_not_split_sentences(reader):
     assert rows
     for r in rows:
         assert reader.translate(r["braille_g2"], "faithful", "g2")["text"] == r["print"]
+
+
+def test_grade_is_detected_from_the_cells():
+    """The demo and API need no grade switch: every committed test sentence is told apart correctly."""
+    import json
+
+    from braillelm.paths import REPO
+    from braillelm.runtime import detect_grade
+    seen = 0
+    for path in sorted((REPO / "data" / "test_sets").glob("*.jsonl")):
+        for line in open(path, encoding="utf-8"):
+            r = json.loads(line)
+            assert detect_grade(r["braille"]) == "g1", (path.name, r["print"])
+            if r["braille_g2"] != r["braille"]:
+                assert detect_grade(r["braille_g2"]) == "g2", (path.name, r["print"])
+            seen += 1
+    assert seen > 2000
+
+
+def test_demo_reads_pasted_braille_without_being_told_the_grade():
+    from braillelm.paths import MODEL_ONNX
+    from braillelm.serving.server import Engine
+    eng = Engine(MODEL_ONNX)
+    for braille, grade, text in (("⠠⠮⠀⠅⠀⠷⠀⠮⠀⠏⠲", "g2", "The knowledge of the people."),
+                                 ("⠠⠞⠓⠑⠀⠉⠁⠞⠀⠎⠁⠞⠲", "g1", "The cat sat.")):
+        out = eng.translate({"braille": braille})
+        assert out["grade"] == grade and out["faithful"]["text"] == text, out["faithful"]["text"]

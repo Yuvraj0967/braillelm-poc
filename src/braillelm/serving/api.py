@@ -23,10 +23,11 @@ from pydantic import BaseModel, Field
 
 from braillelm import __version__
 from braillelm.paths import MODEL_DIR, MODEL_ONNX
+from braillelm.runtime import detect_grade
 from braillelm.serving.server import HERE, MAX_CELLS, Engine
 
 app = FastAPI(title="BrailleLM", version=__version__,
-              description="Cell-level neural reader for Unified English Braille (Grade 1).")
+              description="Cell-level neural reader for Unified English Braille, Grade 1 and Grade 2.")
 _engine: Optional[Engine] = None
 
 
@@ -41,7 +42,8 @@ class TranslateRequest(BaseModel):
     braille: str = Field(..., description="Unicode braille cells (U+2800 to U+283F); spaces are allowed")
     mode: Literal["faithful", "repair"] = Field(
         "faithful", description="faithful trusts every dot; repair may fix damaged cells")
-    grade: Literal["g1", "g2"] = Field("g1", description="g1 is uncontracted braille, g2 is contracted")
+    grade: Literal["auto", "g1", "g2"] = Field(
+        "auto", description="g1 is uncontracted braille, g2 is contracted; auto detects it from the cells")
 
 
 class Char(BaseModel):
@@ -65,7 +67,7 @@ class DemoRequest(BaseModel):
     print_: Optional[str] = Field(None, alias="print")
     reference: Optional[str] = None
     baseline: Optional[str] = None
-    grade: Literal["g1", "g2"] = "g1"
+    grade: Literal["auto", "g1", "g2"] = "auto"
     noise: float = 0.0
     seed: int = 1
 
@@ -89,16 +91,19 @@ def translate(req: TranslateRequest):
     eng = engine()
     if len(req.braille) > MAX_CELLS * 2:
         raise HTTPException(413, f"Input is limited to {MAX_CELLS} cells.")
-    if req.grade not in eng.reader.grades:
-        raise HTTPException(422, f"The loaded model does not read {req.grade}.")
+    grade = req.grade
+    if grade == "auto":
+        grade = detect_grade(req.braille) if len(eng.reader.grades) > 1 else "g1"
+    if grade not in eng.reader.grades:
+        raise HTTPException(422, f"The loaded model does not read {grade}.")
     with eng.lock:
-        out = eng.reader.translate(req.braille, req.mode, req.grade)
+        out = eng.reader.translate(req.braille, req.mode, grade)
     if not out["cells"]:
         raise HTTPException(422, "No braille cells found in the input.")
     if out["cells"] > MAX_CELLS:
         raise HTTPException(413, f"Input is limited to {MAX_CELLS} cells.")
     return {"text": out["text"], "chars": out["chars"], "cells": out["cells"], "ms": out["ms"],
-            "mode": req.mode, "grade": req.grade, "model_version": __version__}
+            "mode": req.mode, "grade": grade, "model_version": __version__}
 
 
 @app.get("/", response_class=HTMLResponse, include_in_schema=False)
