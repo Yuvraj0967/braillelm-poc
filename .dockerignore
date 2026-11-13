@@ -1,0 +1,8 @@
+.git
+legacy
+data
+runs
+tests
+docs
+**/__pycache__
+*.pt

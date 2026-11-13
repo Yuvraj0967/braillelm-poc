@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "braillelm"
+version = "2.1.0"
+description = "Cell-level neural reader for Unified English Braille"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["numpy", "onnxruntime"]
+
+[project.optional-dependencies]
+serve = ["fastapi", "uvicorn"]
+train = ["torch", "onnx", "datasets", "sacrebleu", "pyyaml", "mlflow", "dvc"]
+dev = ["pytest", "ruff", "httpx"]
+
+[project.scripts]
+braillelm = "braillelm.cli:main"
+braillelm-serve = "braillelm.serving.server:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"braillelm.serving" = ["index.html", "samples.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 120
+extend-exclude = ["legacy"]
+
+[tool.ruff.lint]
+select = ["E9", "F63", "F7", "F82"]

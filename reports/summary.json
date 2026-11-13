@@ -1,0 +1,65 @@
+{
+  "final": {
+    "n": 399,
+    "v2_exact": 398,
+    "v2_rate": 0.9974937343358395,
+    "v2_wilson95": [
+      0.9859,
+      0.9996
+    ],
+    "v1_exact": 216,
+    "v1_rate": 0.5414,
+    "unseen": {
+      "n": 263,
+      "exact": 262,
+      "rate": 0.9962,
+      "v1_exact": 116,
+      "v1_rate": 0.4411,
+      "definition": "sentences with a word absent from the v1 training file"
+    },
+    "unseen_vs_v2_training": {
+      "n": 70,
+      "exact": 70,
+      "rate": 1.0
+    }
+  },
+  "noise": [
+    {
+      "label": "Clean braille",
+      "mode": "faithful",
+      "neural": 0.9975,
+      "rule": 1.0,
+      "neural_cer": 3e-05,
+      "rule_cer": 0.0
+    },
+    {
+      "label": "Clean braille",
+      "mode": "repair",
+      "neural": 0.9574,
+      "rule": 1.0,
+      "neural_cer": 0.0005,
+      "rule_cer": 0.0
+    },
+    {
+      "label": "2% of cells have one wrong dot",
+      "mode": "repair",
+      "neural": 0.6992,
+      "rule": 0.2782,
+      "neural_cer": 0.00452,
+      "rule_cer": 0.0176,
+      "sentences_damaged": 288
+    },
+    {
+      "label": "5% of cells have one wrong dot",
+      "mode": "repair",
+      "neural": 0.4361,
+      "rule": 0.0576,
+      "neural_cer": 0.0114,
+      "rule_cer": 0.04342,
+      "sentences_damaged": 376
+    }
+  ],
+  "params": 3213712,
+  "ms_per_sentence": 9.42,
+  "scope": "Converter-generated Grade 1 braille from WikiText test sentences that were never used for training or model selection. Not yet validated on Grade 2 (contracted) braille or on human-entered braille."
+}

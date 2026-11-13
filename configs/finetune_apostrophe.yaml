@@ -1,0 +1,10 @@
+# Short fine-tune that teaches apostrophes (the base data had none).
+#   python -m braillelm.pipelines.train --config configs/finetune_apostrophe.yaml \
+#       --data data/v2_apostrophe --out runs/apostrophe --resume runs/base/best.pt
+layers: 4
+steps: 800
+warmup: 50
+lr: 0.0002
+eval_every: 400
+start_step: 0
+seed: 2

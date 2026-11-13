@@ -1,0 +1,15 @@
+# Base training run for BrailleLM v2 (about 2.5 hours on an 8-core laptop CPU).
+#   python -m braillelm.pipelines.train --config configs/train.yaml --data data/v2 --out runs/base
+layers: 4
+d: 256
+heads: 4
+ff: 1024
+dropout: 0.1
+steps: 5000
+warmup: 300
+lr: 0.001
+cell_budget: 8000
+p_noisy: 0.6        # share of rows trained in repair mode
+max_noise: 0.08     # highest share of damaged cells in a repair-mode row
+eval_every: 500
+seed: 0
