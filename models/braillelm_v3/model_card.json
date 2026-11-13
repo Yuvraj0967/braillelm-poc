@@ -1,7 +1,7 @@
 {
   "file": "braillelm_v3.onnx",
   "bytes": 57932826,
-  "max_abs_diff_vs_torch": 2.47955322265625e-05,
+  "max_abs_diff_vs_torch": 2.6702880859375e-05,
   "config": {
     "d": 384,
     "layers": 8,
@@ -20,7 +20,7 @@
       "config": "configs/train_g2.yaml",
       "data": "data/v3",
       "out": "runs/v3",
-      "steps": 20000,
+      "steps": 48000,
       "cell_budget": 24000,
       "lr": 0.0006,
       "warmup": 1000,
@@ -42,15 +42,15 @@
       "device": "auto"
     },
     "params": 14444736,
-    "step": 18000,
-    "epoch": 5,
-    "train_loss": 0.02482,
+    "step": 41000,
+    "epoch": 9,
+    "train_loss": 0.02198,
     "dev_exact_clean": 1.0,
-    "dev_exact_noise3": 0.7671,
-    "dev_exact_clean_repair_mode": 0.9859,
+    "dev_exact_noise3": 0.7932,
+    "dev_exact_clean_repair_mode": 0.99,
     "dev_g2_exact_clean": 1.0,
-    "dev_g2_exact_noise3": 0.7189,
-    "dev_g2_exact_clean_repair_mode": 0.9699,
-    "minutes": 103.3
+    "dev_g2_exact_noise3": 0.739,
+    "dev_g2_exact_clean_repair_mode": 0.9618,
+    "minutes": 215.3
   }
 }

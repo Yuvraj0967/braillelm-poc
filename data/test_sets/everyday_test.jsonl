@@ -1,0 +1,40 @@
+{"print": "Hello, how are you today?", "braille": "⠠⠓⠑⠇⠇⠕⠂⠀⠓⠕⠺⠀⠁⠗⠑⠀⠽⠕⠥⠀⠞⠕⠙⠁⠽⠦", "braille_g2": "⠠⠓⠑⠇⠇⠕⠂⠀⠓⠪⠀⠜⠑⠀⠽⠀⠞⠙⠦", "louis_g2_back": "Hello, how are you today?"}
+{"print": "My name is Priya and I live in Bengaluru.", "braille": "⠠⠍⠽⠀⠝⠁⠍⠑⠀⠊⠎⠀⠠⠏⠗⠊⠽⠁⠀⠁⠝⠙⠀⠠⠊⠀⠇⠊⠧⠑⠀⠊⠝⠀⠠⠃⠑⠝⠛⠁⠇⠥⠗⠥⠲", "braille_g2": "⠠⠍⠽⠀⠐⠝⠀⠊⠎⠀⠠⠏⠗⠊⠽⠁⠀⠯⠀⠠⠊⠀⠇⠊⠧⠑⠀⠔⠀⠠⠃⠢⠛⠁⠇⠥⠗⠥⠲", "louis_g2_back": "My name is Priya and I live in Bengaluru."}
+{"print": "Please call me at 9845012345 after 6 pm.", "braille": "⠠⠏⠇⠑⠁⠎⠑⠀⠉⠁⠇⠇⠀⠍⠑⠀⠁⠞⠀⠼⠊⠓⠙⠑⠚⠁⠃⠉⠙⠑⠀⠁⠋⠞⠑⠗⠀⠼⠋⠀⠏⠍⠲", "braille_g2": "⠠⠏⠇⠂⠎⠑⠀⠉⠁⠇⠇⠀⠍⠑⠀⠁⠞⠀⠼⠊⠓⠙⠑⠚⠁⠃⠉⠙⠑⠀⠁⠋⠀⠼⠋⠀⠏⠍⠲", "louis_g2_back": "Please call me at 9845012345 after 6 pm."}
+{"print": "The meeting is on 14 November at 10:30 in room 204.", "braille": "⠠⠞⠓⠑⠀⠍⠑⠑⠞⠊⠝⠛⠀⠊⠎⠀⠕⠝⠀⠼⠁⠙⠀⠠⠝⠕⠧⠑⠍⠃⠑⠗⠀⠁⠞⠀⠼⠁⠚⠒⠼⠉⠚⠀⠊⠝⠀⠗⠕⠕⠍⠀⠼⠃⠚⠙⠲", "braille_g2": "⠠⠮⠀⠍⠑⠑⠞⠬⠀⠊⠎⠀⠕⠝⠀⠼⠁⠙⠀⠠⠝⠕⠧⠑⠍⠃⠻⠀⠁⠞⠀⠼⠁⠚⠒⠼⠉⠚⠀⠔⠀⠗⠕⠕⠍⠀⠼⠃⠚⠙⠲", "louis_g2_back": "The meeting is on 14 November at 10:30 in room 204."}
+{"print": "I can't find my keys; have you seen them?", "braille": "⠠⠊⠀⠉⠁⠝⠄⠞⠀⠋⠊⠝⠙⠀⠍⠽⠀⠅⠑⠽⠎⠆⠀⠓⠁⠧⠑⠀⠽⠕⠥⠀⠎⠑⠑⠝⠀⠞⠓⠑⠍⠦", "braille_g2": "⠠⠊⠀⠉⠄⠞⠀⠋⠔⠙⠀⠍⠽⠀⠅⠑⠽⠎⠆⠀⠓⠀⠽⠀⠎⠑⠢⠀⠮⠍⠦", "louis_g2_back": "I can't find my keys; have you seen them?"}
+{"print": "What's the wifi password?", "braille": "⠠⠺⠓⠁⠞⠄⠎⠀⠞⠓⠑⠀⠺⠊⠋⠊⠀⠏⠁⠎⠎⠺⠕⠗⠙⠦", "braille_g2": "⠠⠱⠁⠞⠄⠎⠀⠮⠀⠺⠊⠋⠊⠀⠏⠁⠎⠎⠘⠺⠦", "louis_g2_back": "What's the wifi password?"}
+{"print": "Take 2 tablets twice a day after food.", "braille": "⠠⠞⠁⠅⠑⠀⠼⠃⠀⠞⠁⠃⠇⠑⠞⠎⠀⠞⠺⠊⠉⠑⠀⠁⠀⠙⠁⠽⠀⠁⠋⠞⠑⠗⠀⠋⠕⠕⠙⠲", "braille_g2": "⠠⠞⠁⠅⠑⠀⠼⠃⠀⠞⠁⠃⠇⠑⠞⠎⠀⠞⠺⠊⠉⠑⠀⠁⠀⠐⠙⠀⠁⠋⠀⠋⠕⠕⠙⠲", "louis_g2_back": "Take 2 tablets twice a day after food."}
+{"print": "Platform 7, coach B3, seat 42.", "braille": "⠠⠏⠇⠁⠞⠋⠕⠗⠍⠀⠼⠛⠂⠀⠉⠕⠁⠉⠓⠀⠠⠃⠼⠉⠂⠀⠎⠑⠁⠞⠀⠼⠙⠃⠲", "braille_g2": "⠠⠏⠇⠁⠞⠿⠍⠀⠼⠛⠂⠀⠉⠕⠁⠡⠀⠠⠃⠼⠉⠂⠀⠎⠂⠞⠀⠼⠙⠃⠲", "louis_g2_back": "Platform 7, coach B3, seat 42."}
+{"print": "Dr Mehta's clinic opens at 9.", "braille": "⠠⠙⠗⠀⠠⠍⠑⠓⠞⠁⠄⠎⠀⠉⠇⠊⠝⠊⠉⠀⠕⠏⠑⠝⠎⠀⠁⠞⠀⠼⠊⠲", "braille_g2": "⠠⠙⠗⠀⠠⠍⠑⠓⠞⠁⠄⠎⠀⠉⠇⠔⠊⠉⠀⠕⠏⠢⠎⠀⠁⠞⠀⠼⠊⠲", "louis_g2_back": "Dr Mehta's clinic opens at 9."}
+{"print": "Don't forget to buy milk, eggs and bread.", "braille": "⠠⠙⠕⠝⠄⠞⠀⠋⠕⠗⠛⠑⠞⠀⠞⠕⠀⠃⠥⠽⠀⠍⠊⠇⠅⠂⠀⠑⠛⠛⠎⠀⠁⠝⠙⠀⠃⠗⠑⠁⠙⠲", "braille_g2": "⠠⠙⠕⠝⠄⠞⠀⠿⠛⠑⠞⠀⠞⠕⠀⠃⠥⠽⠀⠍⠊⠇⠅⠂⠀⠑⠶⠎⠀⠯⠀⠃⠗⠂⠙⠲", "louis_g2_back": "Don't forget to buy milk, eggs and bread."}
+{"print": "We're going to Jaipur on Friday.", "braille": "⠠⠺⠑⠄⠗⠑⠀⠛⠕⠊⠝⠛⠀⠞⠕⠀⠠⠚⠁⠊⠏⠥⠗⠀⠕⠝⠀⠠⠋⠗⠊⠙⠁⠽⠲", "braille_g2": "⠠⠺⠑⠄⠗⠑⠀⠛⠕⠬⠀⠞⠕⠀⠠⠚⠁⠊⠏⠥⠗⠀⠕⠝⠀⠠⠋⠗⠊⠐⠙⠲", "louis_g2_back": "We're going to Jaipur on Friday."}
+{"print": "The quick brown fox jumps over the lazy dog.", "braille": "⠠⠞⠓⠑⠀⠟⠥⠊⠉⠅⠀⠃⠗⠕⠺⠝⠀⠋⠕⠭⠀⠚⠥⠍⠏⠎⠀⠕⠧⠑⠗⠀⠞⠓⠑⠀⠇⠁⠵⠽⠀⠙⠕⠛⠲", "braille_g2": "⠠⠮⠀⠟⠅⠀⠃⠗⠪⠝⠀⠋⠕⠭⠀⠚⠥⠍⠏⠎⠀⠕⠧⠻⠀⠮⠀⠇⠁⠵⠽⠀⠙⠕⠛⠲", "louis_g2_back": "The quick brown fox jumps over the lazy dog."}
+{"print": "Is this bus going to Connaught Place?", "braille": "⠠⠊⠎⠀⠞⠓⠊⠎⠀⠃⠥⠎⠀⠛⠕⠊⠝⠛⠀⠞⠕⠀⠠⠉⠕⠝⠝⠁⠥⠛⠓⠞⠀⠠⠏⠇⠁⠉⠑⠦", "braille_g2": "⠠⠊⠎⠀⠹⠀⠃⠥⠎⠀⠛⠕⠬⠀⠞⠕⠀⠠⠒⠝⠁⠥⠣⠞⠀⠠⠏⠇⠁⠉⠑⠦", "louis_g2_back": "Is this bus going to Connaught Place?"}
+{"print": "Rohan's birthday is on 3 March.", "braille": "⠠⠗⠕⠓⠁⠝⠄⠎⠀⠃⠊⠗⠞⠓⠙⠁⠽⠀⠊⠎⠀⠕⠝⠀⠼⠉⠀⠠⠍⠁⠗⠉⠓⠲", "braille_g2": "⠠⠗⠕⠓⠁⠝⠄⠎⠀⠃⠊⠗⠹⠐⠙⠀⠊⠎⠀⠕⠝⠀⠼⠉⠀⠠⠍⠜⠡⠲", "louis_g2_back": "Rohan's birthday is on 3 March."}
+{"print": "I'll be there in 15 minutes.", "braille": "⠠⠊⠄⠇⠇⠀⠃⠑⠀⠞⠓⠑⠗⠑⠀⠊⠝⠀⠼⠁⠑⠀⠍⠊⠝⠥⠞⠑⠎⠲", "braille_g2": "⠠⠊⠄⠇⠇⠀⠆⠀⠐⠮⠀⠔⠀⠼⠁⠑⠀⠍⠔⠥⠞⠑⠎⠲", "louis_g2_back": "I'll be there in 15 minutes."}
+{"print": "Turn left at the second signal, then go straight.", "braille": "⠠⠞⠥⠗⠝⠀⠇⠑⠋⠞⠀⠁⠞⠀⠞⠓⠑⠀⠎⠑⠉⠕⠝⠙⠀⠎⠊⠛⠝⠁⠇⠂⠀⠞⠓⠑⠝⠀⠛⠕⠀⠎⠞⠗⠁⠊⠛⠓⠞⠲", "braille_g2": "⠠⠞⠥⠗⠝⠀⠇⠑⠋⠞⠀⠁⠞⠀⠮⠀⠎⠑⠉⠕⠝⠙⠀⠎⠊⠛⠝⠁⠇⠂⠀⠮⠝⠀⠛⠀⠌⠗⠁⠊⠣⠞⠲", "louis_g2_back": "Turn left at the second signal, then go straight."}
+{"print": "She said, yes, I will come.", "braille": "⠠⠎⠓⠑⠀⠎⠁⠊⠙⠂⠀⠽⠑⠎⠂⠀⠠⠊⠀⠺⠊⠇⠇⠀⠉⠕⠍⠑⠲", "braille_g2": "⠠⠩⠑⠀⠎⠙⠂⠀⠽⠑⠎⠂⠀⠠⠊⠀⠺⠀⠉⠕⠍⠑⠲", "louis_g2_back": "She said, yes, I will come."}
+{"print": "Paracetamol 500 mg, one tablet every 8 hours.", "braille": "⠠⠏⠁⠗⠁⠉⠑⠞⠁⠍⠕⠇⠀⠼⠑⠚⠚⠀⠍⠛⠂⠀⠕⠝⠑⠀⠞⠁⠃⠇⠑⠞⠀⠑⠧⠑⠗⠽⠀⠼⠓⠀⠓⠕⠥⠗⠎⠲", "braille_g2": "⠠⠏⠜⠁⠉⠑⠞⠁⠍⠕⠇⠀⠼⠑⠚⠚⠀⠍⠛⠂⠀⠐⠕⠀⠞⠁⠃⠇⠑⠞⠀⠑⠀⠼⠓⠀⠓⠳⠗⠎⠲", "louis_g2_back": "Paracetamol 500 mg, one tablet every 8 hours."}
+{"print": "ok see you tmrw", "braille": "⠕⠅⠀⠎⠑⠑⠀⠽⠕⠥⠀⠞⠍⠗⠺", "braille_g2": "⠕⠅⠀⠎⠑⠑⠀⠽⠀⠞⠍⠗⠺", "louis_g2_back": "ok see you tmrw"}
+{"print": "WHO IS THE PRIME MINISTER OF INDIA?", "braille": "⠠⠠⠺⠓⠕⠀⠠⠠⠊⠎⠀⠠⠠⠞⠓⠑⠀⠠⠠⠏⠗⠊⠍⠑⠀⠠⠠⠍⠊⠝⠊⠎⠞⠑⠗⠀⠠⠠⠕⠋⠀⠠⠠⠊⠝⠙⠊⠁⠦", "braille_g2": "⠠⠠⠠⠱⠕⠀⠊⠎⠀⠮⠀⠏⠗⠊⠍⠑⠀⠍⠔⠊⠌⠻⠀⠷⠀⠔⠙⠊⠁⠦⠠⠄", "louis_g2_back": "Who is the prime minister of india?"}
+{"print": "My PIN code is 462001.", "braille": "⠠⠍⠽⠀⠠⠠⠏⠊⠝⠀⠉⠕⠙⠑⠀⠊⠎⠀⠼⠙⠋⠃⠚⠚⠁⠲", "braille_g2": "⠠⠍⠽⠀⠠⠠⠏⠔⠀⠉⠕⠙⠑⠀⠊⠎⠀⠼⠙⠋⠃⠚⠚⠁⠲", "louis_g2_back": "My PIN code is 462001."}
+{"print": "The NASA rover landed on Mars.", "braille": "⠠⠞⠓⠑⠀⠠⠠⠝⠁⠎⠁⠀⠗⠕⠧⠑⠗⠀⠇⠁⠝⠙⠑⠙⠀⠕⠝⠀⠠⠍⠁⠗⠎⠲", "braille_g2": "⠠⠮⠀⠠⠠⠝⠁⠎⠁⠀⠗⠕⠧⠻⠀⠇⠯⠫⠀⠕⠝⠀⠠⠍⠜⠎⠲", "louis_g2_back": "The NASA rover landed on Mars."}
+{"print": "Yuvraj scored 98 in maths and 91 in physics.", "braille": "⠠⠽⠥⠧⠗⠁⠚⠀⠎⠉⠕⠗⠑⠙⠀⠼⠊⠓⠀⠊⠝⠀⠍⠁⠞⠓⠎⠀⠁⠝⠙⠀⠼⠊⠁⠀⠊⠝⠀⠏⠓⠽⠎⠊⠉⠎⠲", "braille_g2": "⠠⠽⠥⠧⠗⠁⠚⠀⠎⠉⠕⠗⠫⠀⠼⠊⠓⠀⠔⠀⠍⠁⠹⠎⠀⠯⠀⠼⠊⠁⠀⠔⠀⠏⠓⠽⠎⠊⠉⠎⠲", "louis_g2_back": "Yuvraj scored 98 in maths and 91 in physics."}
+{"print": "its raining again, bring an umbrella", "braille": "⠊⠞⠎⠀⠗⠁⠊⠝⠊⠝⠛⠀⠁⠛⠁⠊⠝⠂⠀⠃⠗⠊⠝⠛⠀⠁⠝⠀⠥⠍⠃⠗⠑⠇⠇⠁", "braille_g2": "⠭⠎⠀⠗⠁⠔⠬⠀⠁⠛⠂⠀⠃⠗⠬⠀⠁⠝⠀⠥⠍⠃⠗⠑⠇⠇⠁", "louis_g2_back": "its raining again, bring an umbrella"}
+{"print": "Flight AI 302 departs at 22:45 from Terminal 3.", "braille": "⠠⠋⠇⠊⠛⠓⠞⠀⠠⠠⠁⠊⠀⠼⠉⠚⠃⠀⠙⠑⠏⠁⠗⠞⠎⠀⠁⠞⠀⠼⠃⠃⠒⠼⠙⠑⠀⠋⠗⠕⠍⠀⠠⠞⠑⠗⠍⠊⠝⠁⠇⠀⠼⠉⠲", "braille_g2": "⠠⠋⠇⠊⠣⠞⠀⠠⠠⠁⠊⠀⠼⠉⠚⠃⠀⠙⠑⠐⠏⠎⠀⠁⠞⠀⠼⠃⠃⠒⠼⠙⠑⠀⠋⠀⠠⠞⠻⠍⠔⠁⠇⠀⠼⠉⠲", "louis_g2_back": "Flight AI 302 departs at 22:45 from Terminal 3."}
+{"print": "Thank you so much for your help!", "braille": "⠠⠞⠓⠁⠝⠅⠀⠽⠕⠥⠀⠎⠕⠀⠍⠥⠉⠓⠀⠋⠕⠗⠀⠽⠕⠥⠗⠀⠓⠑⠇⠏⠖", "braille_g2": "⠠⠹⠁⠝⠅⠀⠽⠀⠎⠀⠍⠡⠀⠿⠀⠽⠗⠀⠓⠑⠇⠏⠖", "louis_g2_back": "Thank you so much for your help!"}
+{"print": "He paid 1,250 rupees for the ticket.", "braille": "⠠⠓⠑⠀⠏⠁⠊⠙⠀⠼⠁⠂⠃⠑⠚⠀⠗⠥⠏⠑⠑⠎⠀⠋⠕⠗⠀⠞⠓⠑⠀⠞⠊⠉⠅⠑⠞⠲", "braille_g2": "⠠⠓⠑⠀⠏⠙⠀⠼⠁⠂⠃⠑⠚⠀⠗⠥⠏⠑⠑⠎⠀⠿⠀⠮⠀⠞⠊⠉⠅⠑⠞⠲", "louis_g2_back": "He paid 1,250 rupees for the ticket."}
+{"print": "xyz qwerty zzyzx", "braille": "⠭⠽⠵⠀⠟⠺⠑⠗⠞⠽⠀⠵⠵⠽⠵⠭", "braille_g2": "⠭⠽⠵⠀⠟⠺⠻⠞⠽⠀⠵⠵⠽⠵⠭", "louis_g2_back": "xyz qwerty zzyzx"}
+{"print": "Lakshmi Narasimhan teaches Sanskrit at Tirupati.", "braille": "⠠⠇⠁⠅⠎⠓⠍⠊⠀⠠⠝⠁⠗⠁⠎⠊⠍⠓⠁⠝⠀⠞⠑⠁⠉⠓⠑⠎⠀⠠⠎⠁⠝⠎⠅⠗⠊⠞⠀⠁⠞⠀⠠⠞⠊⠗⠥⠏⠁⠞⠊⠲", "braille_g2": "⠠⠇⠁⠅⠩⠍⠊⠀⠠⠝⠜⠁⠎⠊⠍⠓⠁⠝⠀⠞⠂⠡⠑⠎⠀⠠⠎⠁⠝⠎⠅⠗⠊⠞⠀⠁⠞⠀⠠⠞⠊⠗⠥⠏⠁⠞⠊⠲", "louis_g2_back": "Lakshmi Narasimhan teaches Sanskrit at Tirupati."}
+{"print": "Open the door - quickly!", "braille": "⠠⠕⠏⠑⠝⠀⠞⠓⠑⠀⠙⠕⠕⠗⠀⠤⠀⠟⠥⠊⠉⠅⠇⠽⠖", "braille_g2": "⠠⠕⠏⠢⠀⠮⠀⠙⠕⠕⠗⠀⠤⠀⠟⠅⠇⠽⠖", "louis_g2_back": "Open the door - quickly!"}
+{"print": "I've read 3 books this month: Dune, Emma and Ulysses.", "braille": "⠠⠊⠄⠧⠑⠀⠗⠑⠁⠙⠀⠼⠉⠀⠃⠕⠕⠅⠎⠀⠞⠓⠊⠎⠀⠍⠕⠝⠞⠓⠒⠀⠠⠙⠥⠝⠑⠂⠀⠠⠑⠍⠍⠁⠀⠁⠝⠙⠀⠠⠥⠇⠽⠎⠎⠑⠎⠲", "braille_g2": "⠠⠊⠄⠧⠑⠀⠗⠂⠙⠀⠼⠉⠀⠃⠕⠕⠅⠎⠀⠹⠀⠍⠕⠝⠹⠒⠀⠠⠙⠥⠝⠑⠂⠀⠠⠑⠍⠍⠁⠀⠯⠀⠠⠥⠇⠽⠎⠎⠑⠎⠲", "louis_g2_back": "I've read 3 books this month: Dune, Emma and Ulysses."}
+{"print": "Is the pharmacy open on Sunday?", "braille": "⠠⠊⠎⠀⠞⠓⠑⠀⠏⠓⠁⠗⠍⠁⠉⠽⠀⠕⠏⠑⠝⠀⠕⠝⠀⠠⠎⠥⠝⠙⠁⠽⠦", "braille_g2": "⠠⠊⠎⠀⠮⠀⠏⠓⠜⠍⠁⠉⠽⠀⠕⠏⠢⠀⠕⠝⠀⠠⠎⠥⠝⠐⠙⠦", "louis_g2_back": "Is the pharmacy open on Sunday?"}
+{"print": "Add 2 cups of rice and 4 cups of water.", "braille": "⠠⠁⠙⠙⠀⠼⠃⠀⠉⠥⠏⠎⠀⠕⠋⠀⠗⠊⠉⠑⠀⠁⠝⠙⠀⠼⠙⠀⠉⠥⠏⠎⠀⠕⠋⠀⠺⠁⠞⠑⠗⠲", "braille_g2": "⠠⠁⠙⠙⠀⠼⠃⠀⠉⠥⠏⠎⠀⠷⠀⠗⠊⠉⠑⠀⠯⠀⠼⠙⠀⠉⠥⠏⠎⠀⠷⠀⠺⠁⠞⠻⠲", "louis_g2_back": "Add 2 cups of rice and 4 cups of water."}
+{"print": "The iPhone costs more than the OnePlus.", "braille": "⠠⠞⠓⠑⠀⠊⠠⠏⠓⠕⠝⠑⠀⠉⠕⠎⠞⠎⠀⠍⠕⠗⠑⠀⠞⠓⠁⠝⠀⠞⠓⠑⠀⠠⠕⠝⠑⠠⠏⠇⠥⠎⠲", "braille_g2": "⠠⠮⠀⠊⠠⠏⠓⠐⠕⠀⠉⠕⠌⠎⠀⠍⠀⠹⠁⠝⠀⠮⠀⠠⠐⠕⠠⠏⠇⠥⠎⠲", "louis_g2_back": "The iPhone costs more than the OnePlus."}
+{"print": "Good morning, everyone.", "braille": "⠠⠛⠕⠕⠙⠀⠍⠕⠗⠝⠊⠝⠛⠂⠀⠑⠧⠑⠗⠽⠕⠝⠑⠲", "braille_g2": "⠠⠛⠙⠀⠍⠕⠗⠝⠬⠂⠀⠐⠑⠽⠐⠕⠲", "louis_g2_back": "Good morning, everyone."}
+{"print": "Where is the nearest ATM?", "braille": "⠠⠺⠓⠑⠗⠑⠀⠊⠎⠀⠞⠓⠑⠀⠝⠑⠁⠗⠑⠎⠞⠀⠠⠠⠁⠞⠍⠦", "braille_g2": "⠠⠐⠱⠀⠊⠎⠀⠮⠀⠝⠑⠜⠑⠌⠀⠠⠠⠁⠞⠍⠦", "louis_g2_back": "Where is the nearest ATM?"}
+{"print": "Mr O'Brien won't be in today.", "braille": "⠠⠍⠗⠀⠠⠕⠄⠠⠃⠗⠊⠑⠝⠀⠺⠕⠝⠄⠞⠀⠃⠑⠀⠊⠝⠀⠞⠕⠙⠁⠽⠲", "braille_g2": "⠠⠍⠗⠀⠠⠕⠄⠠⠃⠗⠊⠢⠀⠺⠕⠝⠄⠞⠀⠆⠀⠔⠀⠞⠙⠲", "louis_g2_back": "Mr O'Brien won't be in today."}
+{"print": "Chapter 12 begins on page 187.", "braille": "⠠⠉⠓⠁⠏⠞⠑⠗⠀⠼⠁⠃⠀⠃⠑⠛⠊⠝⠎⠀⠕⠝⠀⠏⠁⠛⠑⠀⠼⠁⠓⠛⠲", "braille_g2": "⠠⠡⠁⠏⠞⠻⠀⠼⠁⠃⠀⠆⠛⠔⠎⠀⠕⠝⠀⠏⠁⠛⠑⠀⠼⠁⠓⠛⠲", "louis_g2_back": "Chapter 12 begins on page 187."}
+{"print": "a", "braille": "⠁", "braille_g2": "⠁", "louis_g2_back": "a"}
+{"print": "Wait... what?", "braille": "⠠⠺⠁⠊⠞⠲⠲⠲⠀⠺⠓⠁⠞⠦", "braille_g2": "⠠⠺⠁⠊⠞⠲⠲⠲⠀⠱⠁⠞⠦", "louis_g2_back": "Wait... what?"}

@@ -23,7 +23,7 @@ data:
 train:
 	python -m braillelm.pipelines.train --config configs/train_g2.yaml --data $(DATA) --out $(RUN)
 evaluate:
-	python -m braillelm.pipelines.evaluate --ckpt $(CKPT) --data $(DATA) --files final_test pilot_plain pilot_extended digits_test apostrophe_test --out reports --train $(DATA)/train.jsonl
+	python -m braillelm.pipelines.evaluate --ckpt $(CKPT) --data $(DATA) --files final_test pilot_plain pilot_extended digits_test apostrophe_test unusual_test everyday_test --out reports --train $(DATA)/train.jsonl
 export:
 	python -m braillelm.pipelines.export_onnx --ckpt $(CKPT)
 summary:
