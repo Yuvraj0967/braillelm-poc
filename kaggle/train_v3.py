@@ -15,7 +15,7 @@ import subprocess
 import sys
 import time
 
-BRANCH = "main"
+BRANCH = "tricky-text"
 REPO_URL = "https://github.com/Yuvraj0967/braillelm-poc.git"
 N_SENTENCES = 800000
 TRAIN_ARGS = []   # extra flags for braillelm.pipelines.train
@@ -42,12 +42,12 @@ sh(f"cp {WORK}/data/v3/meta.json {RELEASE}/data_meta.json")
 sh(f"{py}.train --config configs/train_g2.yaml --data data/v3 --out runs/v3 " + " ".join(TRAIN_ARGS))
 sh(f"cp {WORK}/runs/v3/train_log.json {RELEASE}/")
 sh(f"{py}.evaluate --ckpt runs/v3/best.pt --data data/v3 "
-   f"--files final_test pilot_plain pilot_extended digits_test apostrophe_test unusual_test everyday_test "
+   f"--files final_test pilot_plain pilot_extended digits_test apostrophe_test unusual_test tricky_test everyday_test "
    f"--out {RELEASE}/reports --train data/v3/train.jsonl")
 sh(f"{py}.export_onnx --ckpt runs/v3/best.pt --out {RELEASE}/braillelm_v3")
 os.makedirs(f"{RELEASE}/test_sets", exist_ok=True)
 for name in ["validation", "pilot_plain", "pilot_extended", "final_test", "digits_test", "apostrophe_test",
-             "unusual_test", "everyday_test"]:
+             "unusual_test", "tricky_test", "everyday_test"]:
     shutil.copy(f"{WORK}/data/v3/{name}.jsonl", f"{RELEASE}/test_sets/{name}.jsonl")
 sh(f"ls -la {RELEASE} {RELEASE}/braillelm_v3 && du -sh {RELEASE}")
 print(f"finished in {(time.time() - T0) / 60:.1f} min", flush=True)

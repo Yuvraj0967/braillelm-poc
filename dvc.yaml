@@ -36,7 +36,7 @@ stages:
   evaluate:
     cmd: >-
       python -m braillelm.pipelines.evaluate --ckpt runs/v3/best.pt --data data/v3
-      --files final_test pilot_plain pilot_extended digits_test apostrophe_test unusual_test everyday_test
+      --files final_test pilot_plain pilot_extended digits_test apostrophe_test unusual_test tricky_test everyday_test
       --out reports --train data/v3/train.jsonl
     deps:
       - src/braillelm/pipelines/evaluate.py

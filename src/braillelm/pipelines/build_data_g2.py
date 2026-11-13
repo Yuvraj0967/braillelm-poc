@@ -18,6 +18,10 @@ holding the liblouis rule-based reading of the Grade 2 braille (the baseline):
     validation, pilot_plain, pilot_extended   development (used for model selection)
     final_test                                locked set, same sentences as v1/v2
     digits_test, apostrophe_test              WikiText-103 TEST split
+    unusual_test                              TEST split, rewritten five ways (augment.KINDS)
+    tricky_test                               TEST split, rewritten three more ways (augment.MORE_KINDS)
+                                              plus data/tricky_sentences.txt, written by hand
+    everyday_test                             data/everyday_sentences.txt, written by hand
 
 Leakage controls: no training sentence equals a held-out sentence
 (case-insensitive); the build asserts this before writing.
@@ -102,10 +106,11 @@ def vary(sents, kind, rng, blocked):
     """Apply one augment.KINDS transform; drop results that are unusable or held out."""
     out, seen = [], set()
     for s in sents:
-        v = augment.KINDS[kind](s, rng)
+        v = augment.ALL_KINDS[kind](s, rng)
         # safe_for_synthesis rejects runs of capitals because the two Grade 1 forms differ there;
         # render() handles that case explicitly, so all-capital text only needs the character check.
-        usable = SUPPORTED.match(v) if kind == "all_caps" else safe_for_synthesis(v)
+        loose = kind == "all_caps" or kind in augment.MORE_KINDS      # these are what the filter excludes
+        usable = v and (SUPPORTED.match(v) if loose else safe_for_synthesis(v))
         if v and v != s and v not in seen and v.lower() not in blocked and usable:
             seen.add(v)
             out.append(v)
@@ -174,6 +179,16 @@ def main():
                 if line.strip()]
     blocked |= {v.lower() for _, v in unusual} | {s.lower() for s in everyday}
 
+    # Tricky text: its own generator and its own slice of the pool, so unusual_test above is unchanged.
+    rng = random.Random(SEED + 7)
+    tricky = []
+    for k, kind in enumerate(augment.MORE_KINDS, start=len(augment.KINDS)):
+        for v in vary(rest[k * 150:(k + 1) * 150], kind, rng, blocked)[:80]:
+            tricky.append((kind, v))
+    tricky += [("hand", line.strip()) for line in open(REPO / "data" / "tricky_sentences.txt", encoding="utf-8")
+               if line.strip()]
+    blocked |= {v.lower() for _, v in tricky}
+
     # Training sentences.
     base = [r["print"] for r in read(HELDOUT_DATA / "train.jsonl")]
     cand = sentences(train_split)
@@ -187,7 +202,7 @@ def main():
     meta["augmented"] = {}
     rng = random.Random(SEED + 6)
     spare = cand[args.n:]
-    for k, kind in enumerate(augment.KINDS if args.n_aug else []):
+    for k, kind in enumerate(augment.ALL_KINDS if args.n_aug else []):
         source = spare[k * args.n_aug:(k + 1) * args.n_aug] or rng.sample(prints, min(len(prints), args.n_aug))
         extra_rows, st = render(vary(source, kind, rng, blocked), g1="both", tag=kind)
         rows += extra_rows
@@ -220,6 +235,11 @@ def main():
         part, _ = render([v for k, v in unusual if k == kind], g1="mine", tag=kind)
         rs += part
     meta["test_sets"]["unusual_test"] = {"rows": len(rs), "sha256": write(out / "unusual_test.jsonl", with_baseline(rs))}
+    rs = []
+    for kind in [*augment.MORE_KINDS, "hand"]:
+        part, _ = render([v for k, v in tricky if k == kind], g1="mine", tag=kind)
+        rs += part
+    meta["test_sets"]["tricky_test"] = {"rows": len(rs), "sha256": write(out / "tricky_test.jsonl", with_baseline(rs))}
     rs, st = render(everyday, g1="mine")
     meta["test_sets"]["everyday_test"] = {"rows": len(rs), "dropped": st,
                                           "sha256": write(out / "everyday_test.jsonl", with_baseline(rs))}

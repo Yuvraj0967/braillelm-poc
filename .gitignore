@@ -3,6 +3,7 @@ data/*
 !data/README.md
 !data/test_sets/
 !data/everyday_sentences.txt
+!data/tricky_sentences.txt
 runs/
 out_*/
 out/
