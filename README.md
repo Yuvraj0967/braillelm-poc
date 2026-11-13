@@ -47,9 +47,7 @@ Pasted braille can be either grade; the grade is detected from the cells
 (`braillelm.runtime.detect_grade`, also the default in the API). The rule was
 tuned on the committed test sets, where it is right for all 2,027 sentences in
 each grade. Typed English is converted to Grade 2 when liblouis is installed
-and to Grade 1 otherwise. Converting typed English to
-Grade 2 needs liblouis (`lou_translate`) on the machine; without it, the Grade 2
-tab works with the built-in test sentences and pasted braille. On Windows,
+and to Grade 1 otherwise. On Windows,
 unzip the official `liblouis-3.29.0-win64.zip` release into a folder named
 `liblouis-3.29.0` in your user folder and the demo finds it.
 
