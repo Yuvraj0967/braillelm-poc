@@ -18,7 +18,7 @@ import time
 BRANCH = "unusual-text"
 REPO_URL = "https://github.com/Yuvraj0967/braillelm-poc.git"
 N_SENTENCES = 800000
-TRAIN_ARGS = ["--steps", "36000"]    # extra flags for braillelm.pipelines.train
+TRAIN_ARGS = ["--steps", "48000"]    # extra flags for braillelm.pipelines.train
 WORK = "/kaggle/temp/braillelm"      # not saved as output
 RELEASE = "/kaggle/working/release"
 T0 = time.time()
