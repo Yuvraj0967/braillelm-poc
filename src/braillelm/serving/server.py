@@ -36,6 +36,29 @@ def read_json(path, default):
         return default
 
 
+_SAME = {"\u2019": "'", "\u2018": "'", "\u201c": '"', "\u201d": '"', "\u2013": "-", "\u2014": "-", "\u2026": "..."}
+
+
+def tidy(text):
+    """Make typed English fit what the model reads. Returns (text, note or None).
+
+    Curly quotes, long dashes and the ellipsis character become their plain
+    forms. Quotation marks are left out, because the model was not trained on
+    them: every double quote, and any apostrophe that does not touch a letter
+    or digit (so "can't" and "Poets'" keep theirs).
+    """
+    for a, b in _SAME.items():
+        text = text.replace(a, b)
+    out, dropped = [], False
+    for i, ch in enumerate(text):
+        touches = (i > 0 and text[i - 1].isalnum()) or (i + 1 < len(text) and text[i + 1].isalnum())
+        if ch == '"' or (ch == "'" and not touches):
+            dropped = True
+        else:
+            out.append(ch)
+    return " ".join("".join(out).split()), ("Quotation marks were left out." if dropped else None)
+
+
 def damage(braille, rate, seed):
     """Flip one dot in a share of the non-blank cells. Returns (text, changed indexes)."""
     rng = random.Random(seed)
@@ -90,7 +113,7 @@ class Engine:
         return None, name + ": not installed on this machine"
 
     def translate(self, payload):
-        text = (payload.get("print") or "").strip()
+        text, note = tidy(payload.get("print") or "")
         reference = payload.get("reference") or None
         grade = payload.get("grade") or "auto"
         two = len(self.reader.grades) > 1
@@ -128,6 +151,7 @@ class Engine:
         def exact(text):
             return None if reference is None or text is None else text == reference
         return {"braille": shown, "cells": describe(shown, changed, grade), "damaged": len(changed), "grade": grade,
+                "note": note,
                 "faithful": faithful, "repair": repair, "rule": {"text": rule, "name": rule_name},
                 "reference": reference, "faithful_exact": exact(faithful["text"]),
                 "repair_exact": exact(repair["text"]), "rule_exact": exact(rule)}

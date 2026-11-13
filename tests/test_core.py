@@ -63,3 +63,11 @@ if __name__ == "__main__":
             fn()
             print("ok", name)
     print("ALL V2 CHECKS PASSED")
+
+
+def test_typed_quotation_marks_are_left_out():
+    from braillelm.serving.server import tidy
+    assert tidy("' hello my name is yuvraj pateria \"") == ("hello my name is yuvraj pateria", "Quotation marks were left out.")
+    assert tidy("She said, \u201cI can\u2019t\u201d \u2014 the Poets' Club") == ("She said, I can't - the Poets' Club",
+                                                                           "Quotation marks were left out.")
+    assert tidy("Don't panic, it's 9 am.") == ("Don't panic, it's 9 am.", None)

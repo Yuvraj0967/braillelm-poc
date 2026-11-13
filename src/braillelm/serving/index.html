@@ -201,7 +201,7 @@ function show(d){
   const fix = $("fix").checked, ans = fix ? d.repair : d.faithful, exact = fix ? d.repair_exact : d.faithful_exact;
   paint($("aTxt"), ans.text, d.reference, ans.chars);
   badge($("aBadge"), exact, "matches the original", "differs from the original");
-  $("aMeta").textContent = `${GRADE_NAME[d.grade] || ""} · ${ans.cells} cells · ${ans.ms} ms`;
+  $("aMeta").textContent = `${GRADE_NAME[d.grade] || ""} · ${ans.cells} cells · ${ans.ms} ms` + (d.note ? " · " + d.note : "");
   // The conventional reader is shown when it is the interesting contrast: damaged input, or it got this one wrong.
   const showRule = d.rule.text != null && (d.damaged > 0 || d.rule_exact === false);
   $("ruleBox").hidden = !showRule;
