@@ -9,6 +9,9 @@ out/
 braille_tokens.json
 experiment_results.json
 
+# Local liblouis for Windows (see src/braillelm/louis.py)
+tools/
+
 # Python
 __pycache__/
 *.py[cod]

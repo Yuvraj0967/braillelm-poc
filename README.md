@@ -44,7 +44,9 @@ with only `numpy` and `onnxruntime` installed.
 
 The demo converts typed English to Grade 1 itself. Converting typed English to
 Grade 2 needs liblouis (`lou_translate`) on the machine; without it, the Grade 2
-tab works with the built-in test sentences and pasted braille.
+tab works with the built-in test sentences and pasted braille. On Windows,
+unzip the official `liblouis-3.29.0-win64.zip` release into a folder named
+`liblouis-3.29.0` in your user folder and the demo finds it.
 
 ## Repository layout
 

@@ -7,19 +7,45 @@ does not need it at run time.
     apt-get install liblouis-bin liblouis-data        # provides lou_translate
 
 Set LOU_TRANSLATE to the binary and LOUIS_TABLEPATH to the tables directory if
-they are not on the default paths.
+they are not on the default paths. On Windows, unzip the official
+liblouis-<version>-win64.zip release into a folder named liblouis-<version>
+in your user folder (or tools/liblouis/ in this repository) and it is found
+automatically.
 """
 import os
 import shutil
 import subprocess
+from pathlib import Path
+
+from braillelm.paths import REPO
 
 G1 = "unicode.dis,en-ueb-g1.ctb"
 G2 = "unicode.dis,en-ueb-g2.ctb"
 TABLES = {"g1": G1, "g2": G2}
 
 
+def _local():
+    """An unzipped Windows release: tools/liblouis in the repository, or ~/liblouis*."""
+    for base in [REPO / "tools" / "liblouis", *sorted(Path.home().glob("liblouis*"), reverse=True)]:
+        if (base / "bin" / "lou_translate.exe").exists():
+            return base
+    return None
+
+
 def binary():
-    return os.environ.get("LOU_TRANSLATE") or shutil.which("lou_translate")
+    found = os.environ.get("LOU_TRANSLATE") or shutil.which("lou_translate")
+    if not found and _local():
+        found = str(_local() / "bin" / "lou_translate.exe")
+    return found
+
+
+def _env():
+    """The local Windows copy does not know where its tables are; tell it."""
+    env = dict(os.environ)
+    base = _local()
+    if "LOUIS_TABLEPATH" not in env and base and (base / "share" / "liblouis" / "tables").exists():
+        env["LOUIS_TABLEPATH"] = str(base / "share" / "liblouis" / "tables")
+    return env
 
 
 def available():
@@ -37,8 +63,8 @@ def _run(lines, table, direction):
     for s in range(0, len(lines), 20000):
         part = lines[s:s + 20000]
         res = subprocess.run([exe, direction, table], input=("\n".join(part) + "\n").encode("utf-8"),
-                             stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=True)
-        got = res.stdout.decode("utf-8").split("\n")
+                             stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=True, env=_env())
+        got = res.stdout.decode("utf-8").replace("\r\n", "\n").split("\n")
         if got and got[-1] == "":
             got.pop()
         if len(got) != len(part):
